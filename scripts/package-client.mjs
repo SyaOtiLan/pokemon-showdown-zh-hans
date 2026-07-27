@@ -9,9 +9,13 @@ const output = path.resolve(process.env.PS_CLIENT_OUTPUT || path.join(root, 'dis
 const serverHost = process.env.PS_SERVER_HOST || '127.0.0.1';
 const serverPort = Number(process.env.PS_SERVER_PORT || 8000);
 const registered = process.env.PS_SERVER_REGISTERED === 'true';
+const graphicsPath = path.join(source, 'data', 'graphics.js');
 
 if (!fs.existsSync(path.join(source, 'caches', 'index-new.html'))) {
 	throw new Error('Built index missing. Run `npm run build:full` first.');
+}
+if (!fs.existsSync(graphicsPath) || !fs.readFileSync(graphicsPath, 'utf8').includes('BattleScene')) {
+	throw new Error('Battle graphics bundle missing. Run `npm run build` before packaging.');
 }
 if (!Number.isInteger(serverPort) || serverPort < 1 || serverPort > 65535) {
 	throw new Error(`Invalid PS_SERVER_PORT: ${process.env.PS_SERVER_PORT}`);

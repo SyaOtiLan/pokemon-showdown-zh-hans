@@ -76,22 +76,22 @@ diff --git a/play.pokemonshowdown.com/src/panel-mainmenu.tsx b/play.pokemonshowd
 +	renderAIChallenge() {
 +		if (!Config.aiChallengeEndpoint) return null;
 +		return <div class="menugroup">
-+			<p class="label"><strong>人机对战</strong></p>
-+			<p>
-+				<label class="label">Gen9 随机对战<br />
-+					<select class="button" value={this.aiDifficulty} onChange={this.changeAIDifficulty} disabled={this.aiPending}>
-+						<option value="easy">入门</option>
-+						<option value="normal">普通</option>
-+						<option value="hard">困难</option>
-+						<option value="max">最高</option>
-+					</select>
-+				</label>
-+			</p>
++			<p><strong>人机对战</strong><br /><small>Gen 9 随机对战</small></p>
++			<p><select
++				class="button" aria-label="人机对战难度" value={this.aiDifficulty}
++				onChange={this.changeAIDifficulty} disabled={this.aiPending}
++				style={{ width: '160px', textAlign: 'center' }}
++			>
++				<option value="easy">入门</option>
++				<option value="normal">普通</option>
++				<option value="hard">困难</option>
++				<option value="max">最高</option>
++			</select></p>
 +			<p><button
-+				class="mainmenu1 mainmenu big button" onClick={this.startAIChallenge}
++				class="mainmenu4 mainmenu big button" onClick={this.startAIChallenge}
 +				disabled={this.aiPending || PS.isOffline}
 +			>
-+				<strong>{this.aiPending ? '正在准备…' : '挑战电脑'}</strong><br />
++				<strong>{this.aiPending ? '正在准备…' : '开始对战'}</strong><br />
 +				<small>机器人准备好后会向你发起挑战</small>
 +			</button></p>
 +			{!!this.aiMessage && <p><small>{this.aiMessage}</small></p>}
