@@ -43,6 +43,255 @@ index 4dc1c78..a358960 100644
  	<script defer src="/js/panels.js?"></script>
  	<script defer src="/js/panel-mainmenu.js?"></script>
  	<script defer src="/js/panel-rooms.js?"></script>
+diff --git a/play.pokemonshowdown.com/src/battle-animations-moves.ts b/play.pokemonshowdown.com/src/battle-animations-moves.ts
+index eeb9ad0..23d2679 100644
+--- a/play.pokemonshowdown.com/src/battle-animations-moves.ts
++++ b/play.pokemonshowdown.com/src/battle-animations-moves.ts
+@@ -12,6 +12,8 @@
+ import { type AnimTable, BattleOtherAnims } from './battle-animations';
+ import { Config } from './client-main';
+ 
++const localAssetRoot = () => Config.localOrigin?.replace(/\/$/, '') || `https://${Config.routes.client}`;
++
+ export const BattleMoveAnims: AnimTable = {
+ 	taunt: {
+ 		anim(scene, [attacker, defender]) {
+@@ -712,7 +714,7 @@ export const BattleMoveAnims: AnimTable = {
+ 					time: 1550,
+ 				}, 'decel');
+ 			}
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-hail.png')`, 750, 1, 800);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}weather-hail.png')`, 750, 1, 800);
+ 		},
+ 	},
+ 	sandstorm: {
+@@ -1534,7 +1536,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	orderup: {
+ 		anim(scene, [attacker, defender]) {
+ 			const tatsugiriSprite = {
+-				url: `https://${Config.routes.client}/sprites/gen5/tatsugiri${['-droopy', '-stretchy', ''][Math.floor(Math.random() * 3)]}.png`,
++				url: `${localAssetRoot() + '/'}sprites/gen5/tatsugiri${['-droopy', '-stretchy', ''][Math.floor(Math.random() * 3)]}.png`,
+ 				w: 96,
+ 				h: 96,
+ 			};
+@@ -3611,7 +3613,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	morningsun: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-sunnyday.jpg')`, 700, 0.5);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}weather-sunnyday.jpg')`, 700, 0.5);
+ 			scene.showEffect('wisp', {
+ 				x: attacker.x + 40,
+ 				y: attacker.y - 40,
+@@ -3664,7 +3666,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	moonlight: {
+ 		anim(scene, [attacker]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 800, 0.6);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 800, 0.6);
+ 			scene.showEffect('moon', {
+ 				x: attacker.x,
+ 				y: attacker.y + 150,
+@@ -3748,7 +3750,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	lunarblessing: {
+ 		anim(scene, [attacker, ...defenders]) {
+ 			for (const defender of defenders) {
+-				scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 900, 0.6);
++				scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 900, 0.6);
+ 				scene.showEffect('moon', {
+ 					x: attacker.x,
+ 					y: attacker.y + 150,
+@@ -3872,7 +3874,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	cosmicpower: {
+ 		anim(scene, [attacker]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 600, 0.6);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 600, 0.6);
+ 			scene.showEffect('wisp', {
+ 				x: attacker.x + 40,
+ 				y: attacker.y - 40,
+@@ -5755,7 +5757,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	seismictoss: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 500, 0.6, 300);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 500, 0.6, 300);
+ 			scene.showEffect('wisp', {
+ 				x: defender.x,
+ 				y: defender.y + 10,
+@@ -8587,7 +8589,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	meteormash: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 1000, 0.4);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 1000, 0.4);
+ 			scene.showEffect(attacker.sp, {
+ 				x: attacker.leftof(20),
+ 				y: attacker.y,
+@@ -19198,7 +19200,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	psystrike: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-psychicterrain.png')`, 950, 0.6);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}weather-psychicterrain.png')`, 950, 0.6);
+ 			scene.showEffect('poisonwisp', {
+ 				x: defender.x - 100,
+ 				y: defender.y,
+@@ -20060,7 +20062,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	moonblast: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 800, 0.6);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 800, 0.6);
+ 			scene.showEffect('moon', {
+ 				x: attacker.x,
+ 				y: attacker.y,
+@@ -20365,7 +20367,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	wish: {
+ 		anim(scene, [attacker]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 600, 0.4);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 600, 0.4);
+ 
+ 			scene.showEffect('wisp', {
+ 				x: attacker.x,
+@@ -20379,7 +20381,7 @@ export const BattleMoveAnims: AnimTable = {
+ 			}, 'accel');
+ 		},
+ 		residualAnim(scene, [attacker]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 600, 0.4);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 600, 0.4);
+ 
+ 			scene.showEffect('wisp', {
+ 				x: attacker.x,
+@@ -21628,7 +21630,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	dracometeor: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 1100, 0.8);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 1100, 0.8);
+ 			scene.showEffect('flareball', {
+ 				x: defender.leftof(-200),
+ 				y: defender.y + 175,
+@@ -23142,7 +23144,7 @@ export const BattleMoveAnims: AnimTable = {
+ 			let ystep = (defender.x - 200 - attacker.x) / 5;
+ 			let zstep = (defender.z - attacker.z) / 5;
+ 
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-sunnyday.jpg')`, 900, 0.5);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}weather-sunnyday.jpg')`, 900, 0.5);
+ 
+ 			for (let i = 0; i < 5; i++) {
+ 				scene.showEffect('energyball', {
+@@ -23501,7 +23503,7 @@ export const BattleMoveAnims: AnimTable = {
+ 			let ystep = 20;
+ 			let zstep = 0;
+ 
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-sunnyday.jpg')`, 900, 0.5);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}weather-sunnyday.jpg')`, 900, 0.5);
+ 
+ 			scene.showEffect('sword', {
+ 				x: attacker.leftof(10),
+@@ -23786,7 +23788,7 @@ export const BattleMoveAnims: AnimTable = {
+ 			let ystep = (defender.x - 200 - attacker.x) / 5;
+ 			let zstep = (defender.z - attacker.z) / 5;
+ 
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 900, 0.6);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 900, 0.6);
+ 
+ 			for (let i = 0; i < 5; i++) {
+ 				scene.showEffect('mudwisp', {
+@@ -23986,7 +23988,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	sheercold: { // Reminder: Improve this later
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/sprites/gen6bgs/bg-icecave.jpg')`, 1000, 0.6);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/'}sprites/gen6bgs/bg-icecave.jpg')`, 1000, 0.6);
+ 			scene.showEffect('icicle', {
+ 				x: defender.x,
+ 				y: defender.y,
+@@ -24004,7 +24006,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	glaciallance: {
+ 		anim(scene, [attacker, ...defenders]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/sprites/gen6bgs/bg-icecave.jpg')`, 1000, 0.6);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/'}sprites/gen6bgs/bg-icecave.jpg')`, 1000, 0.6);
+ 			for (const defender of defenders) {
+ 				scene.showEffect('icicle', {
+ 					x: defender.x,
+@@ -26319,7 +26321,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	dragonascent: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 1000, 0.7);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 1000, 0.7);
+ 			scene.showEffect('iceball', {
+ 				x: attacker.leftof(-25),
+ 				y: attacker.y + 250,
+@@ -29810,7 +29812,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	plasmafists: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/sprites/gen6bgs/bg-earthycave.jpg')`, 2000, 1);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/'}sprites/gen6bgs/bg-earthycave.jpg')`, 2000, 1);
+ 			scene.backgroundEffect('#000000', 1000, 0.6);
+ 			scene.backgroundEffect('#FFFFFF', 300, 0.6, 1000);
+ 			scene.showEffect('electroball', {
+@@ -30053,7 +30055,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	collisioncourse: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-sunnyday.jpg')`, 1300, 0.5);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}weather-sunnyday.jpg')`, 1300, 0.5);
+ 			scene.showEffect(attacker.sp, {
+ 				x: attacker.x,
+ 				y: attacker.y,
+@@ -30199,7 +30201,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	electrodrift: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-electricterrain.png')`, 1300, 0.5);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}weather-electricterrain.png')`, 1300, 0.5);
+ 			scene.showEffect(attacker.sp, {
+ 				x: attacker.x,
+ 				y: attacker.y,
+@@ -34222,7 +34224,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	oceanicoperetta: {
+ 		anim(scene, [attacker, defender]) {
+ 			scene.backgroundEffect('linear-gradient(#000000 20%, #0000DD)', 2700, 0.4);
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-raindance.jpg')`, 700, 0.2, 2000);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}weather-raindance.jpg')`, 700, 0.2, 2000);
+ 			scene.showEffect('iceball', {
+ 				x: attacker.x,
+ 				y: attacker.y + 120,
+@@ -34545,7 +34547,7 @@ export const BattleMoveAnims: AnimTable = {
+ 	},
+ 	splinteredstormshards: {
+ 		anim(scene, [attacker, defender]) {
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/sprites/gen6bgs/bg-earthycave.jpg')`, 2700, 0.8, 300);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/'}sprites/gen6bgs/bg-earthycave.jpg')`, 2700, 0.8, 300);
+ 			scene.backgroundEffect('linear-gradient(#FFC720 15%, #421800)', 2700, 0.7);
+ 			scene.backgroundEffect('#ffffff', 400, 0.6, 2500);
+ 			scene.showEffect('rock3', {
+@@ -35268,7 +35270,7 @@ export const BattleMoveAnims: AnimTable = {
+ 			}
+ 			const defender = defenders[1] || defenders[0];
+ 			scene.backgroundEffect('#000000', 300, 0.9);
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/sprites/gen6bgs/bg-earthycave.jpg')`, 2000, 0.7, 300);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/'}sprites/gen6bgs/bg-earthycave.jpg')`, 2000, 0.7, 300);
+ 			scene.backgroundEffect('linear-gradient(#FB5C1E 20%, #3F1D0F', 2000, 0.6, 300);
+ 			scene.backgroundEffect('#FFFFFF', 1000, 0.9, 2200);
+ 			scene.showEffect('shine', {
+@@ -35940,8 +35942,8 @@ export const BattleMoveAnims: AnimTable = {
+ 			let ystep = (defender.x - 200 - attacker.x) / 5;
+ 			let zstep = (defender.z - attacker.z) / 5;
+ 
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/weather-trickroom.png')`, 700, 1);
+-			scene.backgroundEffect(`url('https://${Config.routes.client}/fx/bg-space.jpg')`, 2500, 1, 700);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}weather-trickroom.png')`, 700, 1);
++			scene.backgroundEffect(`url('${localAssetRoot() + '/fx/'}bg-space.jpg')`, 2500, 1, 700);
+ 			scene.backgroundEffect('#FFFFFF', 1500, 1, 2500);
+ 
+ 			scene.showEffect('flareball', {
 diff --git a/play.pokemonshowdown.com/src/battle-animations.ts b/play.pokemonshowdown.com/src/battle-animations.ts
 index 9ed8a19..9c438e4 100644
 --- a/play.pokemonshowdown.com/src/battle-animations.ts
@@ -100,8 +349,29 @@ index b17c547..26ffd4b 100644
  		query = toID(query);
  		if (this.query === query && this.results) {
  			return false;
+diff --git a/play.pokemonshowdown.com/src/battle-dex.ts b/play.pokemonshowdown.com/src/battle-dex.ts
+index 3ef61f0..42344d6 100644
+--- a/play.pokemonshowdown.com/src/battle-dex.ts
++++ b/play.pokemonshowdown.com/src/battle-dex.ts
+@@ -243,12 +243,16 @@ export const Dex = new class implements ModdedDex {
+ 	pokeballs: string[] | null = null;
+ 
+ 	resourcePrefix = (() => {
++		const localOrigin = window.Config?.localOrigin;
++		if (localOrigin) return `${localOrigin.replace(/\/$/, '')}/`;
+ 		let prefix = '';
+ 		if (window.document?.location?.protocol !== 'http:') prefix = 'https:';
+ 		return `${prefix}//${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/`;
+ 	})();
+ 
+ 	fxPrefix = (() => {
++		const localOrigin = window.Config?.localOrigin;
++		if (localOrigin) return `${localOrigin.replace(/\/$/, '')}/fx/`;
+ 		const protocol = (window.document?.location?.protocol !== 'http:') ? 'https:' : '';
+ 		return `${protocol}//${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/fx/`;
+ 	})();
 diff --git a/play.pokemonshowdown.com/src/battle-log.ts b/play.pokemonshowdown.com/src/battle-log.ts
-index 77cf1d8..d4c4b5b 100644
+index 77cf1d8..c1057b9 100644
 --- a/play.pokemonshowdown.com/src/battle-log.ts
 +++ b/play.pokemonshowdown.com/src/battle-log.ts
 @@ -979,10 +979,14 @@ export class BattleLog {
@@ -129,6 +399,30 @@ index 77cf1d8..d4c4b5b 100644
  		if (this.innerElem.childNodes.length) {
  			this.innerElem.insertBefore(el, this.innerElem.childNodes[0]);
  		} else {
+@@ -1835,6 +1842,7 @@ export class BattleLog {
+ 		// TODO: do this synchronously so large battles aren't cut off
+ 		battle.seekTurn(Infinity);
+ 		if (!battle.atQueueEnd) return null;
++		const replayClientRoot = Config.localOrigin?.replace(/\/$/, '') || `https://${Config.routes.client}`;
+ 		let buf = '<!DOCTYPE html>\n';
+ 		buf += '<meta charset="utf-8" />\n';
+ 		buf += '<!-- version 1 -->\n';
+@@ -1846,13 +1854,13 @@ export class BattleLog {
+ 		buf += '<div class="wrapper replay-wrapper" style="max-width:1180px;margin:0 auto">\n';
+ 		buf += '<input type="hidden" name="replayid" value="' + replayid + '" />\n';
+ 		buf += '<div class="battle"></div><div class="battle-log"></div><div class="replay-controls"></div><div class="replay-controls-2"></div>\n';
+-		buf += `<h1 style="font-weight:normal;text-align:center"><strong>${BattleLog.escapeHTML(battle.tier)}</strong><br /><a href="http://${Config.routes.users}/${toID(battle.p1.name)}" class="subtle" target="_blank">${BattleLog.escapeHTML(battle.p1.name)}</a> vs. <a href="http://${Config.routes.users}/${toID(battle.p2.name)}" class="subtle" target="_blank">${BattleLog.escapeHTML(battle.p2.name)}</a></h1>\n`;
++		buf += `<h1 style="font-weight:normal;text-align:center"><strong>${BattleLog.escapeHTML(battle.tier)}</strong><br />${BattleLog.escapeHTML(battle.p1.name)} vs. ${BattleLog.escapeHTML(battle.p2.name)}</h1>\n`;
+ 		buf += '<script type="text/plain" class="battle-log-data">' + battle.stepQueue.join('\n').replace(/\//g, '\\/') + '</script>\n'; // lgtm [js/incomplete-sanitization]
+ 		buf += '</div>\n';
+ 		buf += '<div class="battle-log battle-log-inline"><div class="inner">' + battle.scene.log.elem.innerHTML + '</div></div>\n';
+ 		buf += '</div>\n';
+ 		buf += '<script>\n';
+-		buf += `let daily = Math.floor(Date.now()/1000/60/60/24);document.write('<script src="https://${Config.routes.client}/js/replay-embed.js?version'+daily+'"></'+'script>');\n`;
++		buf += `window.Config={localOrigin:${JSON.stringify(replayClientRoot)}};let daily=Math.floor(Date.now()/1000/60/60/24);document.write('<script src="${replayClientRoot}/js/replay-embed.js?version'+daily+'"></'+'script>');\n`;
+ 		buf += '</script>\n';
+ 		return buf;
+ 	}
 diff --git a/play.pokemonshowdown.com/src/battle-searchresults.tsx b/play.pokemonshowdown.com/src/battle-searchresults.tsx
 index af920c9..f1bdabe 100644
 --- a/play.pokemonshowdown.com/src/battle-searchresults.tsx
@@ -380,6 +674,33 @@ index af920c9..f1bdabe 100644
  		return `<li class="result resultpage"><button class="button" data-page="${direction}">${label}</button></li>`;
  	}
  
+diff --git a/play.pokemonshowdown.com/src/battle-sound.ts b/play.pokemonshowdown.com/src/battle-sound.ts
+index f710437..30b312e 100644
+--- a/play.pokemonshowdown.com/src/battle-sound.ts
++++ b/play.pokemonshowdown.com/src/battle-sound.ts
+@@ -116,7 +116,8 @@ export const BattleSound = new class {
+ 		if (this.soundCache[url]) return this.soundCache[url];
+ 		try {
+ 			const sound = document.createElement('audio');
+-			sound.src = `https://${Config.routes.client}/${url}`;
++			const clientRoot = Config.localOrigin?.replace(/\/$/, '') || `https://${Config.routes.client}`;
++			sound.src = `${clientRoot}/${url}`;
+ 			sound.volume = this.effectVolume / 100;
+ 			this.soundCache[url] = sound;
+ 			return sound;
+diff --git a/play.pokemonshowdown.com/src/battle-team-editor.tsx b/play.pokemonshowdown.com/src/battle-team-editor.tsx
+index 3e9cbab..02ec859 100644
+--- a/play.pokemonshowdown.com/src/battle-team-editor.tsx
++++ b/play.pokemonshowdown.com/src/battle-team-editor.tsx
+@@ -835,7 +835,7 @@ export class TeamEditorState extends PSModel {
+ 		}
+ 		if (!(formatid in this._sampleSetPromises)) {
+ 			this._sampleSetPromises[formatid] = Net(
+-				`https://${Config.routes.client}/data/sets/${formatid}.json`
++				`${Config.localOrigin?.replace(/\/$/, '') || `https://${Config.routes.client}`}/data/sets/${formatid}.json`
+ 			).get().then(json => {
+ 				const data = JSON.parse(json);
+ 				TeamEditorState.sampleSets[formatid] = data;
 diff --git a/play.pokemonshowdown.com/src/battle-tooltips.ts b/play.pokemonshowdown.com/src/battle-tooltips.ts
 index d2d0ebe..2ce5aa3 100644
 --- a/play.pokemonshowdown.com/src/battle-tooltips.ts
@@ -392,6 +713,386 @@ index d2d0ebe..2ce5aa3 100644
  		BattleTooltips.isLocked = false;
  
  		let height = $(BattleTooltips.elem).outerHeight()!;
+diff --git a/play.pokemonshowdown.com/src/client-connection.ts b/play.pokemonshowdown.com/src/client-connection.ts
+index 246cd77..83beb40 100644
+--- a/play.pokemonshowdown.com/src/client-connection.ts
++++ b/play.pokemonshowdown.com/src/client-connection.ts
+@@ -448,6 +448,9 @@ PSConnection.connect();
+ 
+ export const PSLoginServer = new class {
+ 	rawQuery(act: string, data: PostData): Promise<string | null> {
++		// A private local-auth server has no accounts service. Never let a missed
++		// call fall through to /~~showdown/action.php and wait on the public site.
++		if (Config.localAuth) return Promise.resolve(null);
+ 		// commenting out because for some reason this is working in Chrome????
+ 		// if (location.protocol === 'file:') {
+ 		// 	alert("Sorry, login server queries don't work in the testclient. To log in, see README.md to set up testclient-key.js");
+diff --git a/play.pokemonshowdown.com/src/client-core.ts b/play.pokemonshowdown.com/src/client-core.ts
+index 80af2ed..4e16721 100644
+--- a/play.pokemonshowdown.com/src/client-core.ts
++++ b/play.pokemonshowdown.com/src/client-core.ts
+@@ -21,7 +21,8 @@ declare const ColorThief: any;
+  *********************************************************************/
+ // PS's model classes are defined here
+ 
+-const PSURL = `${document.location.protocol !== 'http:' ? 'https:' : ''}//${Config.routes.client}/`;
++const PSURL = Config.localOrigin ? `${Config.localOrigin.replace(/\/$/, '')}/` :
++	`${document.location.protocol !== 'http:' ? 'https:' : ''}//${Config.routes.client}/`;
+ 
+ export class PSSubscription<T = any> {
+ 	observable: PSModel<T> | PSStreamModel<T>;
+diff --git a/play.pokemonshowdown.com/src/client-main.ts b/play.pokemonshowdown.com/src/client-main.ts
+index 6e1feb0..18d210f 100644
+--- a/play.pokemonshowdown.com/src/client-main.ts
++++ b/play.pokemonshowdown.com/src/client-main.ts
+@@ -44,6 +44,10 @@ export interface ServerInfo {
+ export interface PSConfig {
+ 	server: ServerInfo;
+ 	defaultserver: ServerInfo;
++	/** Allow passwordless nicknames on a private server with noguestsecurity enabled. */
++	localAuth?: boolean;
++	/** Serve client assets from this browser origin instead of the public PS CDN. */
++	localOrigin?: string;
+ 	includes?: {
+ 		mainmenuHTML?: string,
+ 		roomlistTopHTML?: string,
+@@ -533,6 +537,7 @@ class PSTeams extends PSStreamModel<'team' | 'format'> {
+ 		};
+ 	}
+ 	loadRemoteTeams() {
++		if (Config.localAuth) return;
+ 		PSLoginServer.query('getteams').then(data => {
+ 			if (!data) return;
+ 			if (data.actionerror) {
+@@ -611,6 +616,7 @@ class PSTeams extends PSStreamModel<'team' | 'format'> {
+ 	loadTeam(team: Team | undefined | null): Promise<void>;
+ 	loadTeam(team: Team | undefined | null, ifNeeded?: boolean): void | Promise<void> {
+ 		if (!team?.uploaded || team.uploadedPackedTeam) return ifNeeded ? undefined : Promise.resolve();
++		if (Config.localAuth) return ifNeeded ? undefined : Promise.resolve();
+ 		if (team.uploaded.notLoaded && team.uploaded.notLoaded !== true) return team.uploaded.notLoaded;
+ 
+ 		const notLoaded = team.uploaded.notLoaded;
+@@ -726,6 +732,18 @@ class PSUser extends PSStreamModel<PSLoginState | null> {
+ 			this.update({ success: true });
+ 			return;
+ 		}
++		if (Config.localAuth) {
++			// Private/local servers can accept an empty assertion when
++			// `noguestsecurity` is enabled. This avoids depending on the public
++			// Pokémon Showdown login service for a local nickname.
++			this.loggingIn = name;
++			this.update(null);
++			PS.send(`/trn ${name},0,`);
++			this.loggingIn = null;
++			this.update({ success: true });
++			this.updateRegExp();
++			return;
++		}
+ 		this.loggingIn = name;
+ 		this.update(null);
+ 		PSLoginServer.rawQuery(
+@@ -736,6 +754,10 @@ class PSUser extends PSStreamModel<PSLoginState | null> {
+ 		});
+ 	}
+ 	changeNameWithPassword(name: string, password: string, special: PSLoginState = { needsPassword: true }) {
++		if (Config.localAuth) {
++			this.changeName(name);
++			return;
++		}
+ 		this.loggingIn = name;
+ 		if (!password && !special) {
+ 			this.updateLogin({
+@@ -807,9 +829,11 @@ class PSUser extends PSStreamModel<PSLoginState | null> {
+ 		}
+ 	}
+ 	logOut() {
+-		PSLoginServer.query(
+-			'logout', { userid: this.userid }
+-		);
++		if (!Config.localAuth) {
++			PSLoginServer.query(
++				'logout', { userid: this.userid }
++			);
++		}
+ 		PS.send(`/logout`);
+ 		PS.connection?.disconnect();
+ 
+diff --git a/play.pokemonshowdown.com/src/panel-battle.tsx b/play.pokemonshowdown.com/src/panel-battle.tsx
+index cfd6ca1..31d8134 100644
+--- a/play.pokemonshowdown.com/src/panel-battle.tsx
++++ b/play.pokemonshowdown.com/src/panel-battle.tsx
+@@ -218,6 +218,12 @@ export class BattleRoom extends ChatRoom {
+ 	}
+ 
+ 	loadReplay() {
++		if (Config.localAuth) {
++			this.title = 'Replay unavailable';
++			this.battle.stepQueue = ['|error|Remote replay loading is disabled in local mode.'];
++			this.update(null);
++			return;
++		}
+ 		const replayid = this.id.slice(7);
+ 		Net(`https://replay.pokemonshowdown.com/${replayid}.json`).get().catch(() => '').then(data => {
+ 			try {
+@@ -1258,15 +1264,15 @@ class BattlePanel extends PSRoomPanel<BattleRoom> {
+ 				<span style="float: right">
+ 					<a
+ 						onClick={this.handleDownloadReplay}
+-						href={`//${Config.routes.replays}/download`}
++						href="#"
+ 						class="button replayDownloadButton"
+ 					>
+ 						<i class="fa fa-download" aria-hidden></i> Download replay</a>
+ 					<br />
+ 					<br />
+-					<button class="button" data-cmd="/savereplay">
++					{!Config.localAuth && <button class="button" data-cmd="/savereplay">
+ 						<i class="fa fa-upload" aria-hidden></i> Upload and share replay
+-					</button>
++					</button>}
+ 				</span>
+ 
+ 				<button class="button" data-cmd="/play" style="min-width:4.5em">
+diff --git a/play.pokemonshowdown.com/src/panel-chat.tsx b/play.pokemonshowdown.com/src/panel-chat.tsx
+index ea8cd0e..5167d9f 100644
+--- a/play.pokemonshowdown.com/src/panel-chat.tsx
++++ b/play.pokemonshowdown.com/src/panel-chat.tsx
+@@ -459,7 +459,7 @@ export class ChatRoom extends PSRoom {
+ 			}
+ 		},
+ 		'rank,ranking,rating,ladder'(target) {
+-			if (PS.teams.usesLocalLadder) return `/rank ${target}`;
++			if (Config.localAuth || PS.teams.usesLocalLadder) return `/rank ${target}`;
+ 
+ 			let arg = target;
+ 			if (!arg) {
+diff --git a/play.pokemonshowdown.com/src/panel-ladder.tsx b/play.pokemonshowdown.com/src/panel-ladder.tsx
+index 7fbaba8..9b24ea2 100644
+--- a/play.pokemonshowdown.com/src/panel-ladder.tsx
++++ b/play.pokemonshowdown.com/src/panel-ladder.tsx
+@@ -93,7 +93,7 @@ export class LadderFormatRoom extends PSRoom {
+ 		this.error = undefined;
+ 		this.ladderData = undefined;
+ 		this.ladderHTML = undefined;
+-		if (PS.teams.usesLocalLadder) {
++		if (Config.localAuth || PS.teams.usesLocalLadder) {
+ 			const prefix = toID(this.searchValue);
+ 			PS.send(`/cmd laddertop ${this.format}${prefix ? ` ,${prefix}` : ''}`);
+ 		} else if (this.format !== undefined) {
+@@ -296,11 +296,11 @@ class LadderListPanel extends PSRoomPanel {
+ 		const room = this.props.room;
+ 		return <PSPanelWrapper room={room}>
+ 			<div class="ladder pad">
+-				<p>
++				{Config.localAuth ? <p>Use <code>/rating username</code> in chat to look up a local rating.</p> : <p>
+ 					<a class="button" href={`//${Config.routes.users}/`} target="_blank">
+ 						Look up a specific user's rating
+ 					</a>
+-				</p>
++				</p>}
+ 				<p>
+ 					<button data-href="view-ladderhelp" class="button">
+ 						<i class="fa fa-info-circle" aria-hidden></i> How the ladder works
+diff --git a/play.pokemonshowdown.com/src/panel-mainmenu.tsx b/play.pokemonshowdown.com/src/panel-mainmenu.tsx
+index ca1196d..d9eafe3 100644
+--- a/play.pokemonshowdown.com/src/panel-mainmenu.tsx
++++ b/play.pokemonshowdown.com/src/panel-mainmenu.tsx
+@@ -126,6 +126,10 @@ export class MainMenuRoom extends PSRoom {
+ 		case 'challstr': {
+ 			const [, challstr] = args;
+ 			PS.user.challstr = challstr;
++			if (Config.localAuth) {
++				PS.user.initializing = false;
++				return;
++			}
+ 			PSLoginServer.query(
+ 				'upkeep', { challstr }
+ 			).then(res => {
+@@ -149,7 +153,7 @@ export class MainMenuRoom extends PSRoom {
+ 				PS.prefs.set('serversettings', { ...PS.prefs.serversettings, ...JSON.parse(settingsJSON) });
+ 			}
+ 			PS.user.setName(fullName, named, avatar);
+-			PS.teams.loadRemoteTeams();
++			if (!Config.localAuth) PS.teams.loadRemoteTeams();
+ 			return;
+ 		} case 'updatechallenges': {
+ 			const [, challengesBuf] = args;
+@@ -665,7 +669,7 @@ class MainMenuPanel extends PSRoomPanel<MainMenuRoom> {
+ 				)}
+ 				<p>
+ 					<div style={{ textAlign: 'center' }}>
+-						<img width="96" height="96" src={`//${Config.routes.client}/sprites/gen5/teddiursa.png`} alt="" />
++						<img width="96" height="96" src={`${Dex.resourcePrefix}sprites/gen5/teddiursa.png`} alt="" />
+ 					</div>
+ 					Bear with us as we freak out.
+ 				</p>
+diff --git a/play.pokemonshowdown.com/src/panel-popups.tsx b/play.pokemonshowdown.com/src/panel-popups.tsx
+index f2f29ac..ac4afdd 100644
+--- a/play.pokemonshowdown.com/src/panel-popups.tsx
++++ b/play.pokemonshowdown.com/src/panel-popups.tsx
+@@ -277,12 +277,12 @@ class UserPanel extends PSRoomPanel<UserRoom> {
+ 			) : (
+ 				<img src={avatar} class="trainersprite" />
+ 			))}
+-			<strong><a
+-				href={`//${Config.routes.users}/${user.userid}`} target="_blank"
+-				style={`color: ${away ? '#888888' : BattleLog.usernameColor(user.userid)}`}
+-			>
+-				{user.name}
+-			</a></strong><br />
++			<strong style={`color: ${away ? '#888888' : BattleLog.usernameColor(user.userid)}`}>
++				{Config.localAuth ? user.name : <a
++					href={`//${Config.routes.users}/${user.userid}`} target="_blank"
++					style={`color: ${away ? '#888888' : BattleLog.usernameColor(user.userid)}`}
++				>{user.name}</a>}
++			</strong><br />
+ 			{isSelf && !hideInteraction ? (
+ 				<StatusEditor />
+ 			) : status ? (
+@@ -691,7 +691,7 @@ class OptionsPanel extends PSRoomPanel {
+ 				<button class="button" data-href="avatars">Avatar...</button>
+ 			</p>
+ 
+-			{PS.user.named && (PS.user.registered?.userid === PS.user.userid ?
++			{!Config.localAuth && PS.user.named && (PS.user.registered?.userid === PS.user.userid ?
+ 				<button className="button" data-href="changepassword">Password...</button> :
+ 				<button className="button" data-href="register">Register</button>)}
+ 
+@@ -1103,6 +1103,7 @@ class ChangePasswordPanel extends PSRoomPanel {
+ 
+ 	handleChangePassword = (ev: Event) => {
+ 		ev.preventDefault();
++		if (Config.localAuth) return this.setState({ errorMsg: "Local nickname mode does not use passwords." });
+ 		let oldpassword = this.base?.querySelector<HTMLInputElement>('input[name=oldpassword]')?.value;
+ 		let password = this.base?.querySelector<HTMLInputElement>('input[name=password]')?.value;
+ 		let cpassword = this.base?.querySelector<HTMLInputElement>('input[name=cpassword]')?.value;
+@@ -1128,6 +1129,10 @@ class ChangePasswordPanel extends PSRoomPanel {
+ 
+ 	override render() {
+ 		const room = this.props.room;
++		if (Config.localAuth) return <PSPanelWrapper room={room} width={280}><div class="pad">
++			<p>Local nickname mode does not use accounts or passwords.</p>
++			<p><button type="button" data-cmd="/close" class="button">Close</button></p>
++		</div></PSPanelWrapper>;
+ 
+ 		return <PSPanelWrapper room={room} width={280}><div class="pad">
+ 			<form onSubmit={this.handleChangePassword}>
+@@ -1182,6 +1187,7 @@ class RegisterPanel extends PSRoomPanel {
+ 
+ 	handleRegisterUser = (ev: Event) => {
+ 		ev.preventDefault();
++		if (Config.localAuth) return this.setState({ errorMsg: "Local nickname mode does not use account registration." });
+ 		let captcha = this.base?.querySelector<HTMLInputElement>('input[name=captcha]')?.value;
+ 		let password = this.base?.querySelector<HTMLInputElement>('input[name=password]')?.value;
+ 		let cpassword = this.base?.querySelector<HTMLInputElement>('input[name=cpassword]')?.value;
+@@ -1214,6 +1220,10 @@ class RegisterPanel extends PSRoomPanel {
+ 
+ 	override render() {
+ 		const room = this.props.room;
++		if (Config.localAuth) return <PSPanelWrapper room={room} width={280}><div class="pad">
++			<p>Local nickname mode does not use account registration.</p>
++			<p><button type="button" data-cmd="/close" class="button">Close</button></p>
++		</div></PSPanelWrapper>;
+ 
+ 		return <PSPanelWrapper room={room} width={280}><div class="pad">
+ 			<form onSubmit={this.handleRegisterUser}>
+diff --git a/play.pokemonshowdown.com/src/panel-teambuilder-team.tsx b/play.pokemonshowdown.com/src/panel-teambuilder-team.tsx
+index b14cf76..9ede698 100644
+--- a/play.pokemonshowdown.com/src/panel-teambuilder-team.tsx
++++ b/play.pokemonshowdown.com/src/panel-teambuilder-team.tsx
+@@ -5,7 +5,7 @@
+  * @license AGPLv3
+  */
+ 
+-import { PS, PSRoom, type RoomOptions, type Team } from "./client-main";
++import { Config, PS, PSRoom, type RoomOptions, type Team } from "./client-main";
+ import { PSPanelWrapper, PSRoomPanel } from "./panels";
+ import { toID, type ID } from "./battle-dex";
+ import { BattleLog } from "./battle-log";
+@@ -118,6 +118,7 @@ class TeamPanel extends PSRoomPanel<TeamRoom> {
+ 	static formatResources = {} as Record<string, FormatResource>;
+ 
+ 	static getFormatResources(format: string): Promise<FormatResource> {
++		if (Config.localAuth) return Promise.resolve(null);
+ 		if (format in this.formatResources) return Promise.resolve(this.formatResources[format]);
+ 		return Net('https://www.smogon.com/dex/api/formats/by-ps-name/' + format).get()
+ 			.then(result => {
+diff --git a/play.pokemonshowdown.com/src/panel-topbar.tsx b/play.pokemonshowdown.com/src/panel-topbar.tsx
+index 0c4b34f..2addaeb 100644
+--- a/play.pokemonshowdown.com/src/panel-topbar.tsx
++++ b/play.pokemonshowdown.com/src/panel-topbar.tsx
+@@ -247,7 +247,7 @@ export class PSHeader extends preact.Component {
+ 			<div class="scrollable-part">
+ 				<img
+ 					class="logo"
+-					src={`https://${Config.routes.client}/favicon-256.png`}
++					src={`${Config.localOrigin?.replace(/\/$/, '') || `https://${Config.routes.client}`}/favicon-256.png`}
+ 					alt="Pokémon Showdown! (beta)"
+ 					width="50" height="50"
+ 				/>
+@@ -300,7 +300,7 @@ export class PSHeader extends preact.Component {
+ 					<li>
+ 						<img
+ 							class="logo"
+-							src={`https://${Config.routes.client}/favicon-256.png`}
++							src={`${Config.localOrigin?.replace(/\/$/, '') || `https://${Config.routes.client}`}/favicon-256.png`}
+ 							alt="Pokémon Showdown! (beta)"
+ 							width="48" height="48"
+ 						/>
+diff --git a/play.pokemonshowdown.com/src/replay-embed.ts b/play.pokemonshowdown.com/src/replay-embed.ts
+index 1f9b83c..8635787 100644
+--- a/play.pokemonshowdown.com/src/replay-embed.ts
++++ b/play.pokemonshowdown.com/src/replay-embed.ts
+@@ -33,27 +33,28 @@ function requireScript(url: string) {
+ 	document.head.appendChild(scriptEl);
+ }
+ 
+-linkStyle('https://play.pokemonshowdown.com/style/font-awesome.css?');
+-linkStyle('https://play.pokemonshowdown.com/style/battle.css?a7');
+-linkStyle('https://play.pokemonshowdown.com/style/replay.css?a7');
+-linkStyle('https://play.pokemonshowdown.com/style/utilichart.css?a7');
+-
+-requireScript('https://play.pokemonshowdown.com/js/lib/ps-polyfill.js');
+-requireScript('https://play.pokemonshowdown.com/config/config.js?a7');
+-requireScript('https://play.pokemonshowdown.com/js/lib/jquery-1.11.0.min.js');
+-requireScript('https://play.pokemonshowdown.com/js/lib/html-sanitizer-minified.js');
+-requireScript('https://play.pokemonshowdown.com/js/battle-sound.js');
+-requireScript('https://play.pokemonshowdown.com/js/battledata.js?a7');
+-requireScript('https://play.pokemonshowdown.com/data/pokedex-mini.js?a7');
+-requireScript('https://play.pokemonshowdown.com/data/pokedex-mini-bw.js?a7');
+-requireScript('https://play.pokemonshowdown.com/data/graphics.js?a7');
+-requireScript('https://play.pokemonshowdown.com/data/pokedex.js?a7');
+-requireScript('https://play.pokemonshowdown.com/data/moves.js?a7');
+-requireScript('https://play.pokemonshowdown.com/data/abilities.js?a7');
+-requireScript('https://play.pokemonshowdown.com/data/items.js?a7');
+-requireScript('https://play.pokemonshowdown.com/data/teambuilder-tables.js?a7');
+-requireScript('https://play.pokemonshowdown.com/js/battle-tooltips.js?a7');
+-requireScript('https://play.pokemonshowdown.com/js/battle.js?a7');
++const replayRoot = new URL('../', document.currentScript?.getAttribute('src') || document.baseURI).href.replace(/\/$/, '');
++linkStyle(`${replayRoot}/style/font-awesome.css?`);
++linkStyle(`${replayRoot}/style/battle.css?a7`);
++linkStyle(`${replayRoot}/style/replay.css?a7`);
++linkStyle(`${replayRoot}/style/utilichart.css?a7`);
++
++requireScript(`${replayRoot}/js/lib/ps-polyfill.js`);
++requireScript(`${replayRoot}/config/config.js?a7`);
++requireScript(`${replayRoot}/js/lib/jquery-1.11.0.min.js`);
++requireScript(`${replayRoot}/js/lib/html-sanitizer-minified.js`);
++requireScript(`${replayRoot}/js/battle-sound.js`);
++requireScript(`${replayRoot}/js/battledata.js?a7`);
++requireScript(`${replayRoot}/data/pokedex-mini.js?a7`);
++requireScript(`${replayRoot}/data/pokedex-mini-bw.js?a7`);
++requireScript(`${replayRoot}/data/graphics.js?a7`);
++requireScript(`${replayRoot}/data/pokedex.js?a7`);
++requireScript(`${replayRoot}/data/moves.js?a7`);
++requireScript(`${replayRoot}/data/abilities.js?a7`);
++requireScript(`${replayRoot}/data/items.js?a7`);
++requireScript(`${replayRoot}/data/teambuilder-tables.js?a7`);
++requireScript(`${replayRoot}/js/battle-tooltips.js?a7`);
++requireScript(`${replayRoot}/js/battle.js?a7`);
+ 
+ const Replays = {
+ 	$el: null! as JQuery,
 diff --git a/play.pokemonshowdown.com/testclient-new.html b/play.pokemonshowdown.com/testclient-new.html
 index d36feae..84992af 100644
 --- a/play.pokemonshowdown.com/testclient-new.html
@@ -412,36 +1113,3 @@ index d36feae..84992af 100644
  	<script src="js/panels.js"></script>
  	<script src="js/panel-mainmenu.js"></script>
  	<script src="js/panel-rooms.js"></script>
-
-diff --git a/play.pokemonshowdown.com/src/client-main.ts b/play.pokemonshowdown.com/src/client-main.ts
-index 6e1feb0..01faffb 100644
---- a/play.pokemonshowdown.com/src/client-main.ts
-+++ b/play.pokemonshowdown.com/src/client-main.ts
-@@ -44,6 +44,8 @@ export interface ServerInfo {
- export interface PSConfig {
- 	server: ServerInfo;
- 	defaultserver: ServerInfo;
-+	/** Allow passwordless nicknames on a private server with noguestsecurity enabled. */
-+	localAuth?: boolean;
- 	includes?: {
- 		mainmenuHTML?: string,
- 		roomlistTopHTML?: string,
-@@ -726,6 +728,18 @@ class PSUser extends PSStreamModel<PSLoginState | null> {
- 			this.update({ success: true });
- 			return;
- 		}
-+		if (Config.localAuth) {
-+			// Private/local servers can accept an empty assertion when
-+			// `noguestsecurity` is enabled. This avoids depending on the public
-+			// Pokémon Showdown login service for a local nickname.
-+			this.loggingIn = name;
-+			this.update(null);
-+			PS.send(`/trn ${name},0,`);
-+			this.loggingIn = null;
-+			this.update({ success: true });
-+			this.updateRegExp();
-+			return;
-+		}
- 		this.loggingIn = name;
- 		this.update(null);
- 		PSLoginServer.rawQuery(

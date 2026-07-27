@@ -58,6 +58,8 @@ PS_SERVER_HOST=127.0.0.1 PS_SERVER_PORT=8000 npm run package
 
 私服昵称模式不设置密码：用户输入昵称后由本机 Showdown 服务直接接纳。队伍、偏好和会话数据保存在用户自己的浏览器存储中，服务端日志及对战数据保存在 VPS；不会上传到本项目或额外的第三方数据库。昵称不具备所有权保护，因此只适合受信任的小范围私服。
 
+私服昵称模式下，账号状态、登录注册、远程队伍、个人 rating、天梯列表、客户端素材、推荐配招和回放下载均使用本地路径；不支持官方账号注册、密码修改和在线回放上传。Nginx 示例还会立即拦截旧缓存客户端误发到 `/~~showdown/action.php` 的请求，避免 VPS 因无法连接官方登录站而长时间等待。Smogon 资料链接和 Poképaste 导入仍是用户主动触发的外部功能。
+
 ## 更新策略
 
 更新三个上游仓库后重新运行 `npm run build:full`。覆盖率测试只要发现任一当前官方分类低于 100% 就会失败；新增缺失项会出现在 `localization/generated/*.missing.json`，少量人工校对放在 `localization/overrides.zh-Hans.json`。

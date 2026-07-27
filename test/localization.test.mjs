@@ -71,12 +71,26 @@ test('generated browser assets are syntactically valid', () => {
 
 test('local server login bypasses the unreachable public login service', () => {
 	const clientMain = fs.readFileSync(path.join(clientRoot, 'src', 'client-main.ts'), 'utf8');
+	const connection = fs.readFileSync(path.join(clientRoot, 'src', 'client-connection.ts'), 'utf8');
+	const mainMenu = fs.readFileSync(path.join(clientRoot, 'src', 'panel-mainmenu.tsx'), 'utf8');
+	const chat = fs.readFileSync(path.join(clientRoot, 'src', 'panel-chat.tsx'), 'utf8');
+	const battle = fs.readFileSync(path.join(clientRoot, 'src', 'panel-battle.tsx'), 'utf8');
 	assert.match(clientMain, /if \(Config\.localAuth\)/);
 	assert.match(clientMain, /PS\.send\(`\/trn \$\{name\},0,`\)/);
 	assert.match(clientMain, /localAuth\?: boolean/);
+	assert.match(connection, /if \(Config\.localAuth\) return Promise\.resolve\(null\)/);
+	assert.match(mainMenu, /if \(!Config\.localAuth\) PS\.teams\.loadRemoteTeams\(\)/);
+	assert.match(chat, /Config\.localAuth \|\| PS\.teams\.usesLocalLadder/);
+	assert.match(battle, /!Config\.localAuth && <button class="button" data-cmd="\/savereplay">/);
 
 	const packager = fs.readFileSync(path.join(root, 'scripts', 'package-client.mjs'), 'utf8');
 	assert.match(packager, /Config\.localAuth = \$\{!registered\}/);
+	assert.match(packager, /Config\.localOrigin = Config\.localAuth/);
+
+	const nginx = fs.readFileSync(path.join(root, 'deploy', 'nginx-pokemon-showdown-client.conf'), 'utf8');
+	const serverConfig = fs.readFileSync(path.join(root, 'deploy', 'pokemon-showdown', 'config.js'), 'utf8');
+	assert.match(nginx, /return 200 '\]null'/);
+	assert.match(serverConfig, /loginserver = 'http:\/\/127\.0\.0\.1:8080\/~~showdown\/'/);
 });
 
 test('standalone userscript works without a self-hosted server', () => {
