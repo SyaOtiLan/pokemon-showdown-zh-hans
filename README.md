@@ -2,6 +2,17 @@
 
 这是一个可重复生成的 Pokémon Showdown 简体中文本地化层，不修改对战协议、队伍文本或 Showdown 内部英文 ID。用户可以用中文搜索宝可梦、招式、特性和道具，客户端仍向服务器发送官方英文 ID。
 
+## 普通玩家直接安装
+
+不需要自己的服务器。安装 Tampermonkey/Violentmonkey 后，从 GitHub Release 下载并安装 [`pokemon-showdown-zh-hans.user.js`](release/pokemon-showdown-zh-hans.user.js)，即可在 Pokémon Showdown 官方站使用中文界面、中文战报和中文名称搜索。
+
+自建客户端和服务器只是服主选项，不是普通玩家使用汉化的前置条件。
+
+| 发行方式 | 面向用户 | 是否需要自建服务器 | 功能 |
+| --- | --- | --- | --- |
+| `.user.js` | 普通玩家 | 否 | 官方站/常见服务器汉化、战报、中文搜索 |
+| 集成客户端 | 服主 | 是 | 源码级集成、独立部署、可指定私服 |
+
 ## 覆盖范围
 
 - 当前官方宝可梦、招式、特性、道具、性格名称：100%；
@@ -44,6 +55,8 @@ PS_SERVER_HOST=127.0.0.1 PS_SERVER_PORT=8000 npm run package
 ## 更新策略
 
 更新三个上游仓库后重新运行 `npm run build:full`。覆盖率测试只要发现任一当前官方分类低于 100% 就会失败；新增缺失项会出现在 `localization/generated/*.missing.json`，少量人工校对放在 `localization/overrides.zh-Hans.json`。
+
+`npm run generate` 同时生成集成客户端运行时和普通玩家使用的 `.user.js`。推送 `v*` 标签时，GitHub Actions 会自动校验并把油猴脚本附加到 Release。
 
 ## 来源与许可
 

@@ -1,5 +1,8 @@
 name: localization
 
+permissions:
+  contents: write
+
 on:
   push:
   pull_request:
@@ -17,3 +20,9 @@ jobs:
       - run: npm run generate
       - run: npm test
       - run: npm run build
+      - run: git diff --exit-code -- release/pokemon-showdown-zh-hans.user.js
+      - name: Publish userscript release
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: gh release create "$GITHUB_REF_NAME" release/pokemon-showdown-zh-hans.user.js --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}

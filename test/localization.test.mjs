@@ -65,3 +65,12 @@ test('generated browser assets are syntactically valid', () => {
 	assert.doesNotThrow(() => new vm.Script(runtime));
 	assert.doesNotThrow(() => new vm.Script(init));
 });
+
+test('standalone userscript works without a self-hosted server', () => {
+	const userscript = fs.readFileSync(path.join(root, 'release', 'pokemon-showdown-zh-hans.user.js'), 'utf8');
+	assert.match(userscript, /@match\s+https:\/\/play\.pokemonshowdown\.com\/\*/);
+	assert.match(userscript, /installStandaloneZhHans/);
+	assert.match(userscript, /installChineseSearch/);
+	assert.equal(userscript.includes('PS_SERVER_HOST'), false);
+	assert.doesNotThrow(() => new vm.Script(userscript));
+});

@@ -10,6 +10,7 @@ const generatedPath = path.join(root, 'localization', 'generated');
 const clientRoot = path.join(root, 'upstream', 'pokemon-showdown-client', 'play.pokemonshowdown.com');
 const outputPath = path.join(clientRoot, 'js', 'localization-zh-hans.js');
 const preactInitPath = path.join(clientRoot, 'js', 'localization-preact-init.js');
+const userscriptOutputPath = path.join(root, 'release', 'pokemon-showdown-zh-hans.user.js');
 
 function readJSON(filename) {
 	return JSON.parse(fs.readFileSync(filename, 'utf8'));
@@ -52,6 +53,11 @@ const exact = {
 	...readJSON(path.join(root, 'localization', 'ui-overrides.zh-Hans.json')),
 };
 const catalog = buildCatalog();
+for (const category of ['species', 'moves', 'abilities', 'items', 'natures']) {
+	for (const entry of readJSON(path.join(generatedPath, `${category}.json`)).filter(isOfficial)) {
+		if (!exact[entry.name]) exact[entry.name] = entry.zhHans;
+	}
+}
 const prefixes = extractDescriptionPrefixes(userscript);
 const battleEngine = extractBattleEngine(userscript);
 
@@ -112,11 +118,31 @@ function translateElement(element) {
   while ((node = walker.nextNode())) nodes.push(node);
   if (element.nodeType === Node.TEXT_NODE) nodes.unshift(element);
   for (var i = 0; i < nodes.length; i++) {
+    var parent = nodes[i].parentElement;
+    var protectedText = false;
+    while (parent) {
+      var className = String(parent.className || '');
+      if (/(?:^|\\s)(?:username|usernametext|chat|message-pm|userlist)(?:\\s|$)/.test(className) ||
+          /^(?:SCRIPT|STYLE|TEXTAREA|INPUT)$/.test(parent.tagName) || parent.isContentEditable) {
+        protectedText = true;
+        break;
+      }
+      if (parent === element) break;
+      parent = parent.parentElement;
+    }
+    if (protectedText) continue;
     var value = nodes[i].nodeValue || '';
     var translated = translateDescription(value);
     if (translated === value) translated = translateBattleText(value);
     if (translated === value) translated = translateExact(value);
-    nodes[i].nodeValue = translated;
+    if (translated !== value) nodes[i].nodeValue = translated;
+  }
+  var elements = element.querySelectorAll ? [element].concat(Array.from(element.querySelectorAll('[placeholder], [title], [aria-label]'))) : [];
+  for (var j = 0; j < elements.length; j++) {
+    ['placeholder', 'title', 'aria-label'].forEach(function (key) {
+      var value = elements[j].getAttribute && elements[j].getAttribute(key);
+      if (value) elements[j].setAttribute(key, translateExact(value));
+    });
   }
   return element;
 }
@@ -184,9 +210,85 @@ global.PSLocalizer = {
 fs.mkdirSync(path.dirname(outputPath), {recursive: true});
 fs.writeFileSync(outputPath, runtime);
 fs.writeFileSync(preactInitPath, `/* Generated locale bootstrap: install before panel components are evaluated. */\nif (window.PSLocalizer && window.preact) {\n\twindow.PSLocalizer.installPreact(window.preact);\n}\n`);
+const standaloneBootstrap = `
+(function installStandaloneZhHans() {
+  'use strict';
+  var localizer = window.PSLocalizer;
+  if (!localizer || window.__psZhHansStandaloneInstalled) return;
+  window.__psZhHansStandaloneInstalled = true;
+
+  if (window.preact) localizer.installPreact(window.preact);
+  if (document.body) localizer.element(document.body);
+
+  var observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.type === 'characterData') {
+        localizer.element(mutation.target);
+        return;
+      }
+      mutation.addedNodes.forEach(function (node) { localizer.element(node); });
+    });
+  });
+  if (document.body) observer.observe(document.body, {childList: true, characterData: true, subtree: true});
+
+  function installChineseSearch() {
+    if (!window.DexSearch || window.DexSearch.prototype.__psZhHansSearchInstalled) return false;
+    var prototype = window.DexSearch.prototype;
+    var originalFind = prototype.find;
+    prototype.find = function (query) {
+      var localizedQuery = String(query || '').trim();
+      var rows = localizer.search(localizedQuery, this.typedSearch ? this.typedSearch.searchType : '');
+      if (!rows || !rows.length) return originalFind.call(this, query);
+      var queryKey = 'zh:' + localizedQuery;
+      if (this.query === queryKey && this.results) return false;
+      this.query = queryKey;
+      if (this.typedSearch) {
+        var allowed = Object.create(null);
+        this.typedSearch.getResults(this.filters, this.sortCol, this.reverseSort).forEach(function (row) {
+          allowed[row[0] + ':' + row[1]] = true;
+        });
+        this.results = rows.filter(function (row) { return allowed[row[0] + ':' + row[1]]; });
+      } else {
+        this.results = rows;
+      }
+      this.selection = this.getFirstResultIndex();
+      this.exactMatch = this.results.length === 1;
+      return true;
+    };
+    prototype.__psZhHansSearchInstalled = true;
+    return true;
+  }
+
+  if (!installChineseSearch()) {
+    var attempts = 0;
+    var searchTimer = setInterval(function () {
+      if (installChineseSearch() || ++attempts >= 100) clearInterval(searchTimer);
+    }, 100);
+  }
+})();
+`;
+const userscriptHeader = `// ==UserScript==
+// @name         Pokémon Showdown 简体中文
+// @namespace    https://github.com/pokemon-showdown-zh-hans
+// @version      0.1.0
+// @description  官方站及常见 PS 服务器的简体中文界面、战报与中文名称搜索
+// @author       AL、WyAK and contributors
+// @license      AGPL-3.0
+// @match        https://play.pokemonshowdown.com/*
+// @match        https://replay.pokemonshowdown.com/*
+// @match        https://dex.pokemonshowdown.com/*
+// @match        https://*.psim.us/*
+// @match        http://*.psim.us/*
+// @grant        none
+// @run-at       document-end
+// ==/UserScript==
+`;
+fs.mkdirSync(path.dirname(userscriptOutputPath), {recursive: true});
+fs.writeFileSync(userscriptOutputPath, `${userscriptHeader}\n${runtime}\n${standaloneBootstrap}`);
 console.log(JSON.stringify({
 	output: path.relative(root, outputPath),
 	preactInit: path.relative(root, preactInitPath),
+	userscript: path.relative(root, userscriptOutputPath),
 	exactEntries: Object.keys(exact).length,
 	descriptionPrefixRules: prefixes.length,
 	battleEngineBytes: Buffer.byteLength(battleEngine),
