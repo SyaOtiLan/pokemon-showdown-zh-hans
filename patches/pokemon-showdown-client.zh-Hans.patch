@@ -384,7 +384,17 @@ diff --git a/play.pokemonshowdown.com/src/battle-tooltips.ts b/play.pokemonshowd
 index d2d0ebe..2ce5aa3 100644
 --- a/play.pokemonshowdown.com/src/battle-tooltips.ts
 +++ b/play.pokemonshowdown.com/src/battle-tooltips.ts
-@@ -464,6 +464,7 @@ export class BattleTooltips {
+@@ -152,6 +152,9 @@ export class BattleTooltips {
+ 	constructor(battle: Battle) {
+ 		this.battle = battle;
+ 	}
++	moveDisplayName(move: Dex.Move) {
++		return window.PSLocalizer?.name('moves', move.id, move.name) || move.name;
++	}
+ 
+ 	// tooltips
+ 	// Touch delay, pressing finger more than that time will cause the tooltip to open.
+@@ -464,6 +467,7 @@ export class BattleTooltips {
  		innerHTML = `<div class="tooltipinner"><div class="tooltip tooltip-${type!}">${innerHTML}</div></div>`;
  		$wrapper.html(innerHTML).appendTo(document.body);
  		BattleTooltips.elem = $wrapper.find('.tooltip')[0] as HTMLDivElement;
@@ -392,6 +402,56 @@ index d2d0ebe..2ce5aa3 100644
  		BattleTooltips.isLocked = false;
  
  		let height = $(BattleTooltips.elem).outerHeight()!;
+@@ -664,7 +668,7 @@ export class BattleTooltips {
+ 			});
+ 		}
+ 
+-		text += `<h2>${move.name}<br />`;
++		text += `<h2>${this.moveDisplayName(move)}<br />`;
+ 
+ 		text += Dex.getTypeIcon(moveType);
+ 		text += ` ${Dex.getCategoryIcon(category)}</h2>`;
+@@ -1021,7 +1025,7 @@ export class BattleTooltips {
+ 			const battlePokemon = clientPokemon || this.battle.findCorrespondingPokemon(pokemon);
+ 			for (const moveid of serverPokemon.moves) {
+ 				const move = this.battle.dex.moves.get(moveid);
+-				let moveName = `&#8226; ${move.name}`;
++				let moveName = `&#8226; ${this.moveDisplayName(move)}`;
+ 				if (battlePokemon?.moveTrack) {
+ 					for (const row of battlePokemon.moveTrack) {
+ 						if (moveName === row[0]) {
+@@ -1038,7 +1042,7 @@ export class BattleTooltips {
+ 			text += `<p class="tooltip-section">`;
+ 			for (const [moveName] of clientPokemon.moveTrack) {
+ 				const move = this.battle.dex.moves.get(moveName);
+-				text += `&#8226; ${move.name}<br />`;
++				text += `&#8226; ${this.moveDisplayName(move)}<br />`;
+ 			}
+ 			text += `</p>`;
+ 		} else if (!this.battle.hardcoreMode && clientPokemon?.moveTrack.length) {
+@@ -1566,17 +1570,18 @@ export class BattleTooltips {
+ 			}
+ 		}
+ 		const bullet = moveName.startsWith('*') || move.isZ ? '<span style="color:#888">&#8226;</span>' : '&#8226;';
++		const displayName = this.moveDisplayName(move);
+ 		if (ppUsed === Infinity) {
+-			return `${bullet} ${move.name} <small>(0/${maxpp})</small>`;
++			return `${bullet} ${displayName} <small>(0/${maxpp})</small>`;
+ 		}
+ 		if (ppUsed || moveName.startsWith('*')) {
+ 			if (typeof ppUsed === 'number') {
+-				return `${bullet} ${move.name} <small>(${maxpp - ppUsed}/${maxpp})</small>`;
++				return `${bullet} ${displayName} <small>(${maxpp - ppUsed}/${maxpp})</small>`;
+ 			} else {
+-				return `${bullet} ${move.name} <small>(${maxpp - ppUsed[0]}/${maxpp} to ${maxpp - ppUsed[1]}/${maxpp})</small>`;
++				return `${bullet} ${displayName} <small>(${maxpp - ppUsed[0]}/${maxpp} to ${maxpp - ppUsed[1]}/${maxpp})</small>`;
+ 			}
+ 		}
+-		return `${bullet} ${move.name} ${showKnown ? ' <small>(revealed)</small>' : ''}`;
++		return `${bullet} ${displayName} ${showKnown ? ' <small>(revealed)</small>' : ''}`;
+ 	}
+ 
+ 	ppUsed(move: Dex.Move, pokemon: Pokemon) {
 diff --git a/play.pokemonshowdown.com/src/client-connection.ts b/play.pokemonshowdown.com/src/client-connection.ts
 index 246cd77..83beb40 100644
 --- a/play.pokemonshowdown.com/src/client-connection.ts

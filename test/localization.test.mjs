@@ -56,11 +56,14 @@ test('client loads locale before localized components', () => {
 test('localized client keeps protocol values and chat content untouched', () => {
 	const searchResults = fs.readFileSync(path.join(clientRoot, 'src', 'battle-searchresults.tsx'), 'utf8');
 	const battleLog = fs.readFileSync(path.join(clientRoot, 'src', 'battle-log.ts'), 'utf8');
+	const battleTooltips = fs.readFileSync(path.join(clientRoot, 'src', 'battle-tooltips.ts'), 'utf8');
 	assert.match(searchResults, /data-entry="pokemon\|\$\{escapeHTML\(pokemon\.name\)\}"/);
 	assert.match(searchResults, /data-entry="item\|\$\{escapeHTML\(item\.name\)\}"/);
 	assert.match(searchResults, /data-entry="ability\|\$\{escapeHTML\(ability\.name\)\}"/);
 	assert.match(searchResults, /const entry = slot \? `move\|\$\{move\.name\}\|\$\{slot\}` : `move\|\$\{move\.name\}`/);
 	assert.match(battleLog, /if \(!node\.classList\.contains\('chat'\) \|\| node\.classList\.contains\('message-error'\)\)/);
+	assert.match(battleTooltips, /moveDisplayName\(move: Dex\.Move\)/);
+	assert.match(battleTooltips, /const displayName = this\.moveDisplayName\(move\)/);
 });
 
 test('generated browser assets are syntactically valid', () => {
