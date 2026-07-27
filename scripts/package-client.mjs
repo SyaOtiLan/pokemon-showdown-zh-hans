@@ -10,12 +10,31 @@ const serverHost = process.env.PS_SERVER_HOST || '127.0.0.1';
 const serverPort = Number(process.env.PS_SERVER_PORT || 8000);
 const registered = process.env.PS_SERVER_REGISTERED === 'true';
 const graphicsPath = path.join(source, 'data', 'graphics.js');
+const requiredData = new Map([
+	['pokedex.js', 'BattlePokedex'],
+	['moves.js', 'BattleMovedex'],
+	['items.js', 'BattleItems'],
+	['abilities.js', 'BattleAbilities'],
+	['teambuilder-tables.js', 'BattleTeambuilderTable'],
+	['typechart.js', 'BattleTypeChart'],
+	['text.js', 'BattleText'],
+	['pokedex-mini.js', 'BattlePokemonSprites'],
+	['pokedex-mini-bw.js', 'BattlePokemonSpritesBW'],
+]);
 
 if (!fs.existsSync(path.join(source, 'caches', 'index-new.html'))) {
 	throw new Error('Built index missing. Run `npm run build:full` first.');
 }
 if (!fs.existsSync(graphicsPath) || !fs.readFileSync(graphicsPath, 'utf8').includes('BattleScene')) {
 	throw new Error('Battle graphics bundle missing. Run `npm run build` before packaging.');
+}
+const missingData = [];
+for (const [filename, marker] of requiredData) {
+	const file = path.join(source, 'data', filename);
+	if (!fs.existsSync(file) || !fs.readFileSync(file, 'utf8').includes(marker)) missingData.push(filename);
+}
+if (missingData.length) {
+	throw new Error(`Required battle data missing: ${missingData.join(', ')}. Run npm run build:full.`);
 }
 if (!Number.isInteger(serverPort) || serverPort < 1 || serverPort > 65535) {
 	throw new Error(`Invalid PS_SERVER_PORT: ${process.env.PS_SERVER_PORT}`);
@@ -52,5 +71,13 @@ fs.writeFileSync(path.join(output, 'localization-build.json'), `${JSON.stringify
 	coverage: coverage.catalogs,
 	builtAt: new Date().toISOString(),
 }, null, 2)}\n`);
+
+const referencedAssets = [...indexHTML.matchAll(/(?:src|href)="(\/[^/"][^"]+)"/g)]
+	.map(match => match[1].split(/[?#]/, 1)[0].slice(1))
+	.filter(asset => /\.(?:css|js|png|gif|ico|webp|json)$/.test(asset));
+const missingAssets = referencedAssets.filter(asset => !fs.existsSync(path.join(output, asset)));
+if (missingAssets.length) {
+	throw new Error(`Packaged index references missing assets: ${missingAssets.join(', ')}`);
+}
 
 console.log(JSON.stringify({output, serverHost, serverPort, registered}, null, 2));
