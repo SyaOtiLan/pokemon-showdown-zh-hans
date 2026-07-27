@@ -39,6 +39,8 @@ PS_SERVER_HOST=127.0.0.1 PS_SERVER_PORT=8000 npm run package
 
 静态成品位于 `dist/client/`。Nginx 示例见 `deploy/nginx-pokemon-showdown-client.conf`。
 
+默认以私服昵称模式运行，不依赖 Showdown 官方登录站。若服务器能够访问官方登录服务并且已经正确注册，可额外设置 `PS_SERVER_REGISTERED=true`。
+
 ## 更新策略
 
 更新三个上游仓库后重新运行 `npm run build:full`。覆盖率测试只要发现任一当前官方分类低于 100% 就会失败；新增缺失项会出现在 `localization/generated/*.missing.json`，少量人工校对放在 `localization/overrides.zh-Hans.json`。
