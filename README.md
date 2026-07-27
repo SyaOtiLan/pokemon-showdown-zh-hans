@@ -52,6 +52,8 @@ PS_SERVER_HOST=127.0.0.1 PS_SERVER_PORT=8000 npm run package
 
 默认以私服昵称模式运行，不依赖 Showdown 官方登录站。若服务器能够访问官方登录服务并且已经正确注册，可额外设置 `PS_SERVER_REGISTERED=true`。
 
+私服昵称模式不设置密码：用户输入昵称后由本机 Showdown 服务直接接纳。队伍、偏好和会话数据保存在用户自己的浏览器存储中，服务端日志及对战数据保存在 VPS；不会上传到本项目或额外的第三方数据库。昵称不具备所有权保护，因此只适合受信任的小范围私服。
+
 ## 更新策略
 
 更新三个上游仓库后重新运行 `npm run build:full`。覆盖率测试只要发现任一当前官方分类低于 100% 就会失败；新增缺失项会出现在 `localization/generated/*.missing.json`，少量人工校对放在 `localization/overrides.zh-Hans.json`。

@@ -69,6 +69,16 @@ test('generated browser assets are syntactically valid', () => {
 	assert.match(init, /installDOM\(document\.body\)/);
 });
 
+test('local server login bypasses the unreachable public login service', () => {
+	const clientMain = fs.readFileSync(path.join(clientRoot, 'src', 'client-main.ts'), 'utf8');
+	assert.match(clientMain, /if \(Config\.localAuth\)/);
+	assert.match(clientMain, /PS\.send\(`\/trn \$\{name\},0,`\)/);
+	assert.match(clientMain, /localAuth\?: boolean/);
+
+	const packager = fs.readFileSync(path.join(root, 'scripts', 'package-client.mjs'), 'utf8');
+	assert.match(packager, /Config\.localAuth = \$\{!registered\}/);
+});
+
 test('standalone userscript works without a self-hosted server', () => {
 	const userscript = fs.readFileSync(path.join(root, 'release', 'pokemon-showdown-zh-hans.user.js'), 'utf8');
 	assert.match(userscript, /@match\s+https:\/\/play\.pokemonshowdown\.com\/\*/);

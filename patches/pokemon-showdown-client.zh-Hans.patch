@@ -412,3 +412,36 @@ index d36feae..84992af 100644
  	<script src="js/panels.js"></script>
  	<script src="js/panel-mainmenu.js"></script>
  	<script src="js/panel-rooms.js"></script>
+
+diff --git a/play.pokemonshowdown.com/src/client-main.ts b/play.pokemonshowdown.com/src/client-main.ts
+index 6e1feb0..01faffb 100644
+--- a/play.pokemonshowdown.com/src/client-main.ts
++++ b/play.pokemonshowdown.com/src/client-main.ts
+@@ -44,6 +44,8 @@ export interface ServerInfo {
+ export interface PSConfig {
+ 	server: ServerInfo;
+ 	defaultserver: ServerInfo;
++	/** Allow passwordless nicknames on a private server with noguestsecurity enabled. */
++	localAuth?: boolean;
+ 	includes?: {
+ 		mainmenuHTML?: string,
+ 		roomlistTopHTML?: string,
+@@ -726,6 +728,18 @@ class PSUser extends PSStreamModel<PSLoginState | null> {
+ 			this.update({ success: true });
+ 			return;
+ 		}
++		if (Config.localAuth) {
++			// Private/local servers can accept an empty assertion when
++			// `noguestsecurity` is enabled. This avoids depending on the public
++			// Pokémon Showdown login service for a local nickname.
++			this.loggingIn = name;
++			this.update(null);
++			PS.send(`/trn ${name},0,`);
++			this.loggingIn = null;
++			this.update({ success: true });
++			this.updateRegExp();
++			return;
++		}
+ 		this.loggingIn = name;
+ 		this.update(null);
+ 		PSLoginServer.rawQuery(
