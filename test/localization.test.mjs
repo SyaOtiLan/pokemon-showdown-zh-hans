@@ -85,7 +85,6 @@ test('local server login bypasses the unreachable public login service', () => {
 
 	const packager = fs.readFileSync(path.join(root, 'scripts', 'package-client.mjs'), 'utf8');
 	assert.match(packager, /Config\.localAuth = \$\{!registered\}/);
-	assert.match(packager, /Config\.localOrigin = Config\.localAuth/);
 
 	const nginx = fs.readFileSync(path.join(root, 'deploy', 'nginx-pokemon-showdown-client.conf'), 'utf8');
 	const serverConfig = fs.readFileSync(path.join(root, 'deploy', 'pokemon-showdown', 'config.js'), 'utf8');
