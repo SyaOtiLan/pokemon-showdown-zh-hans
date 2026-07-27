@@ -581,12 +581,35 @@ index 7fbaba8..369cf58 100644
  			const prefix = toID(this.searchValue);
  			PS.send(`/cmd laddertop ${this.format}${prefix ? ` ,${prefix}` : ''}`);
  		} else if (this.format !== undefined) {
-@@ -296,11 +307,11 @@ class LadderListPanel extends PSRoomPanel {
+@@ -276,10 +287,17 @@ class LadderListPanel extends PSRoomPanel {
+ 		if (!window.BattleFormats) {
+ 			return <p>Loading...</p>;
+ 		}
++		let formats = Object.entries(BattleFormats).filter(([, format]) => format.rated && format.searchShow);
++		if (Config.localAuth) {
++			const currentGen = Math.max(0, ...formats.map(([id]) => Number(/^gen(\d+)/.exec(id)?.[1] || 0)));
++			const currentFormats = formats.filter(([id]) => id.startsWith(`gen${currentGen}`));
++			const champions = currentFormats.filter(([id]) => id.includes('champions')).slice(0, 8);
++			const standard = currentFormats.filter(([id]) => !id.includes('champions')).slice(0, 12);
++			formats = [...standard, ...champions];
++		}
+ 		let currentSection = "";
+ 		const buf: JSX.Element[] = [];
+-		for (const [id, format] of Object.entries(BattleFormats)) {
+-			if (!format.rated || !format.searchShow) continue;
++		for (const [id, format] of formats) {
+ 			if (format.section !== currentSection) {
+ 				currentSection = format.section;
+ 				buf.push(<h3>{currentSection}</h3>);
+@@ -296,11 +314,14 @@ class LadderListPanel extends PSRoomPanel {
  		const room = this.props.room;
  		return <PSPanelWrapper room={room}>
  			<div class="ladder pad">
 -				<p>
-+				{Config.localAuth ? <p>Use <code>/rating username</code> in chat to look up a local rating.</p> : <p>
++				{Config.localAuth ? <>
++					<p>本地排行榜仅显示当前世代常用格式，以免一次加载全部格式导致页面卡顿。</p>
++					<p>可在聊天中输入 <code>/rating 用户名</code> 查询本地积分。</p>
++				</> : <p>
  					<a class="button" href={`//${Config.routes.users}/`} target="_blank">
  						Look up a specific user's rating
  					</a>
