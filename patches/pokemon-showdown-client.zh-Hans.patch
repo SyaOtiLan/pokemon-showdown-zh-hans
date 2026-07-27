@@ -114,7 +114,7 @@ index 77cf1d8..d4c4b5b 100644
  	}
  	addNode(node: HTMLElement, preempt?: boolean) {
 +		if (!node.classList.contains('chat') || node.classList.contains('message-error')) {
-+			window.PSLocalizer?.element(node);
++			window.PSLocalizer?.element(node, true);
 +		}
  		(preempt ? this.preemptElem : this.innerElem).appendChild(node);
  		if (this.atBottom) {
@@ -124,7 +124,7 @@ index 77cf1d8..d4c4b5b 100644
  		el.className = className;
  		el.innerHTML = innerHTML;
 +		if (!el.classList.contains('chat') || el.classList.contains('message-error')) {
-+			window.PSLocalizer?.element(el);
++			window.PSLocalizer?.element(el, true);
 +		}
  		if (this.innerElem.childNodes.length) {
  			this.innerElem.insertBefore(el, this.innerElem.childNodes[0]);

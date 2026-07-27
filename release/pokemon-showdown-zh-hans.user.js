@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pokémon Showdown 简体中文
 // @namespace    https://github.com/SyaOtiLan/pokemon-showdown-zh-hans
-// @version      0.1.4
+// @version      0.1.5
 // @description  官方站及常见 PS 服务器的简体中文界面、战报与中文名称搜索
 // @author       SyaOtiLan、AL、WyAK 及贡献者
 // @license      AGPL-3.0
@@ -15919,7 +15919,7 @@ function translateBattleText(value) {
   }).join('\n');
 }
 
-function translateElement(element) {
+function translateElement(element, battleMode) {
   if (!element || typeof document === 'undefined') return element;
   var walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
   var nodes = [];
@@ -15929,8 +15929,10 @@ function translateElement(element) {
   for (var i = 0; i < nodes.length; i++) {
     var parent = nodes[i].parentElement;
     var protectedText = false;
+    var isBattleText = !!battleMode;
     while (parent) {
       var className = String(parent.className || '');
+      if (/(?:^|\s)(?:battle-log|battle-history)(?:\s|$)/.test(className)) isBattleText = true;
       if (/(?:^|\s)(?:username|usernametext|chat|message-pm|userlist)(?:\s|$)/.test(className) ||
           /^(?:SCRIPT|STYLE|TEXTAREA|INPUT)$/.test(parent.tagName) || parent.isContentEditable) {
         protectedText = true;
@@ -15941,9 +15943,9 @@ function translateElement(element) {
     }
     if (protectedText) continue;
     var value = nodes[i].nodeValue || '';
-    var translated = translateDescription(value);
-    if (translated === value) translated = translateBattleText(value);
-    if (translated === value) translated = translateExact(value);
+    var translated = translateExact(value);
+    if (translated === value) translated = translateDescription(value);
+    if (translated === value && isBattleText) translated = translateBattleText(value);
     if (translated !== value) nodes[i].nodeValue = translated;
   }
   var elements = element.querySelectorAll ? [element].concat(Array.from(element.querySelectorAll('[placeholder], [title], [aria-label]'))) : [];

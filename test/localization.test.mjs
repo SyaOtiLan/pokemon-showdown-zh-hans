@@ -39,6 +39,8 @@ test('runtime reuses battle rules and provides a guarded DOM observer', () => {
 	assert.match(source, /MutationObserver/);
 	assert.match(source, /pendingNodes = new Set\(\)/);
 	assert.match(source, /Promise\.resolve\(\)\.then/);
+	assert.match(source, /translated === value && isBattleText/);
+	assert.match(source, /battle-log\|battle-history/);
 	assert.match(source, /username\|usernametext\|chat\|message-pm\|userlist/);
 });
 
@@ -61,7 +63,7 @@ test('localized client keeps protocol values and chat content untouched', () => 
 	assert.match(searchResults, /data-entry="item\|\$\{escapeHTML\(item\.name\)\}"/);
 	assert.match(searchResults, /data-entry="ability\|\$\{escapeHTML\(ability\.name\)\}"/);
 	assert.match(searchResults, /const entry = slot \? `move\|\$\{move\.name\}\|\$\{slot\}` : `move\|\$\{move\.name\}`/);
-	assert.match(battleLog, /if \(!node\.classList\.contains\('chat'\) \|\| node\.classList\.contains\('message-error'\)\)/);
+	assert.match(battleLog, /PSLocalizer\?\.element\(node, true\)/);
 	assert.match(battleTooltips, /moveDisplayName\(move: Dex\.Move\)/);
 	assert.match(battleTooltips, /const displayName = this\.moveDisplayName\(move\)/);
 });
