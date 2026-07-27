@@ -60,6 +60,23 @@ PS_SERVER_HOST=127.0.0.1 PS_SERVER_PORT=8000 npm run package
 
 私服昵称模式下，账号状态、远程队伍、个人 rating 和天梯列表均使用本地路径；不支持官方账号注册、密码修改和在线回放上传。Nginx 示例还会立即拦截旧缓存客户端误发到 `/~~showdown/action.php` 的请求，避免 VPS 因无法连接官方登录站而长时间等待。精灵图片、音效等公开静态素材仍由浏览器直接从 Showdown CDN 加载，不经过 VPS；Smogon 资料链接和 Poképaste 导入仍是用户主动触发的外部功能。
 
+## 私服人机对战（可选）
+
+集成客户端提供“人机对战”入口，当前支持 Gen9 随机对战和四档难度：入门、普通、困难、最高。最高档使用 Foul Play 的完整 MCTS 策略；其余档位通过减少搜索时间并在接近最优的候选动作中增加随机性来降低强度，不会生成非法操作。
+
+Pokémon Showdown 客户端本身没有通用的 AI 或难度接口，因此本项目提供了一个只监听本机的轻量挑战服务：浏览器向同源 `/ai/challenge` 发请求，Nginx 转发给 `ai/challenge_service.py`，服务再按需启动一个 Foul Play 进程并向玩家发起挑战。它不会修改 Showdown 的对战规则或结算结果。
+
+为适合小型 VPS，默认只允许一个机器人对局，单线程运行，并由 systemd 限制为最多 90% 单核 CPU 和 520 MB 内存。300 秒没有对战消息时机器人会自动退出，随机对战集合从本地缓存读取，不在每次挑战时请求外站。部署文件位于：
+
+```text
+ai/challenge_service.py
+ai/foul_play_local_runner.py
+deploy/pokemon-showdown/pokemon-showdown-ai.service
+deploy/pokemon-showdown/nginx-ai-location.conf
+```
+
+运行前需另行克隆并安装 [Foul Play](https://github.com/pmariglia/foul-play)，把 Gen9 随机对战集合缓存到 `fp/data/pkmn_sets_cache/gen9randombattle.json`，再安装上述 systemd 服务和 Nginx location。Foul Play 不打包在本仓库中，其代码及依赖遵循各自的许可证。
+
 ## 更新策略
 
 更新三个上游仓库后重新运行 `npm run build:full`。覆盖率测试只要发现任一当前官方分类低于 100% 就会失败；新增缺失项会出现在 `localization/generated/*.missing.json`，少量人工校对放在 `localization/overrides.zh-Hans.json`。

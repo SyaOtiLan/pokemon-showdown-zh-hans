@@ -28,10 +28,15 @@ for (const [directory, url] of repositories) {
 }
 
 const clientRoot = path.join(upstream, 'pokemon-showdown-client');
-const patch = path.join(root, 'patches', 'pokemon-showdown-client.zh-Hans.patch');
-if (!run('git', ['apply', '--reverse', '--check', patch], clientRoot, true)) {
-	run('git', ['apply', '--check', patch], clientRoot);
-	run('git', ['apply', patch], clientRoot);
+const patches = [
+	'pokemon-showdown-client.zh-Hans.patch',
+	'pokemon-showdown-client.ai.patch',
+];
+for (const patchName of patches) {
+	const patch = path.join(root, 'patches', patchName);
+	if (!run('git', ['apply', '--reverse', '--check', patch], clientRoot, true)) {
+		run('git', ['apply', '--check', patch], clientRoot);
+		run('git', ['apply', patch], clientRoot);
+	}
 }
 run('npm', ['ci', '--no-audit', '--no-fund'], clientRoot);
-

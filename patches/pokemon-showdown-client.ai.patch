@@ -1,0 +1,111 @@
+diff --git a/play.pokemonshowdown.com/src/client-main.ts b/play.pokemonshowdown.com/src/client-main.ts
+--- a/play.pokemonshowdown.com/src/client-main.ts
++++ b/play.pokemonshowdown.com/src/client-main.ts
+@@ -46,6 +46,7 @@ export interface PSConfig {
+ 	defaultserver: ServerInfo;
+ 	/** Allow passwordless nicknames on a private server with noguestsecurity enabled. */
+ 	localAuth?: boolean;
++	aiChallengeEndpoint?: string;
+ 	includes?: {
+ 		mainmenuHTML?: string,
+ 		roomlistTopHTML?: string,
+diff --git a/play.pokemonshowdown.com/src/panel-mainmenu.tsx b/play.pokemonshowdown.com/src/panel-mainmenu.tsx
+--- a/play.pokemonshowdown.com/src/panel-mainmenu.tsx
++++ b/play.pokemonshowdown.com/src/panel-mainmenu.tsx
+@@ -6,7 +6,7 @@
+  */
+ 
+ import preact from "../js/lib/preact";
+-import { PSLoginServer } from "./client-connection";
++import { Net, PSLoginServer } from "./client-connection";
+ import { PSBackground } from "./client-core";
+ import { Config, PS, PSRoom, type PSRoomFocusOptions, type RoomID, type RoomOptions, type Team } from "./client-main";
+ import { PSIcon, PSPanelErrorBoundary, PSPanelWrapper, PSRoomPanel, PSView, ReconnectTimer } from "./panels";
+@@ -560,6 +560,9 @@ class MainMenuPanel extends PSRoomPanel<MainMenuRoom> {
+ 	static readonly routes = [''];
+ 	static readonly Model = MainMenuRoom;
+ 	static readonly icon = <i class="fa fa-home" aria-hidden></i>;
++	aiDifficulty = 'normal';
++	aiPending = false;
++	aiMessage = '';
+ 	override componentDidMount() {
+ 		super.componentDidMount();
+ 		this.subscribeTo(PSBackground);
+@@ -582,6 +585,37 @@ class MainMenuPanel extends PSRoomPanel<MainMenuRoom> {
+ 		}
+ 		PS.mainmenu.startSearch(format, team, ev.target as HTMLElement);
+ 	};
++	changeAIDifficulty = (ev: Event) => {
++		this.aiDifficulty = (ev.currentTarget as HTMLSelectElement).value;
++		this.aiMessage = '';
++		this.forceUpdate();
++	};
++	startAIChallenge = (ev: Event) => {
++		ev.preventDefault();
++		if (!PS.user.named) {
++			PS.join('login' as RoomID, { parentElem: ev.currentTarget as HTMLElement });
++			return;
++		}
++		if (!Config.aiChallengeEndpoint) {
++			PS.alert('本服务器尚未启用人机对战服务。');
++			return;
++		}
++		this.aiPending = true;
++		this.aiMessage = '正在启动机器人…';
++		this.forceUpdate();
++		Net(Config.aiChallengeEndpoint).post({}, JSON.stringify({
++			username: PS.user.name,
++			difficulty: this.aiDifficulty,
++		})).then(response => {
++			const result = JSON.parse(response) as { ok?: boolean, message?: string };
++			this.aiMessage = result.message || (result.ok ? '机器人即将向你发起挑战。' : '机器人启动失败。');
++		}).catch(() => {
++			this.aiMessage = '暂时无法连接人机对战服务，请稍后再试。';
++		}).then(() => {
++			this.aiPending = false;
++			this.forceUpdate();
++		});
++	};
+ 	handleDragStart = (e: DragEvent) => {
+ 		const room = PS.getRoom(e.currentTarget);
+ 		if (!room) return;
+@@ -758,6 +792,30 @@ class MainMenuPanel extends PSRoomPanel<MainMenuRoom> {
+ 			)}
+ 		</TeamForm>;
+ 	}
++	renderAIChallenge() {
++		if (!Config.aiChallengeEndpoint) return null;
++		return <div class="menugroup">
++			<p class="label"><strong>人机对战</strong></p>
++			<p>
++				<label class="label">Gen9 随机对战<br />
++					<select class="button" value={this.aiDifficulty} onChange={this.changeAIDifficulty} disabled={this.aiPending}>
++						<option value="easy">入门</option>
++						<option value="normal">普通</option>
++						<option value="hard">困难</option>
++						<option value="max">最高</option>
++					</select>
++				</label>
++			</p>
++			<p><button
++				class="mainmenu1 mainmenu big button" onClick={this.startAIChallenge}
++				disabled={this.aiPending || PS.isOffline}
++			>
++				<strong>{this.aiPending ? '正在准备…' : '挑战电脑'}</strong><br />
++				<small>机器人准备好后会向你发起挑战</small>
++			</button></p>
++			{!!this.aiMessage && <p><small>{this.aiMessage}</small></p>}
++		</div>;
++	}
+ 	renderBackgroundCredit() {
+ 		const attrib = PSBackground.attrib;
+ 		if (!attrib) return null;
+@@ -807,6 +865,8 @@ class MainMenuPanel extends PSRoomPanel<MainMenuRoom> {
+ 
+ 					{this.renderSearchButton()}
+ 
++					{this.renderAIChallenge()}
++
+ 					<div class="menugroup">
+ 						<p><a class="mainmenu2 mainmenu button" href="teambuilder">Teambuilder</a></p>
+ 						<p><a class={"mainmenu3 mainmenu" + onlineButton} href="ladder">Ladder</a></p>

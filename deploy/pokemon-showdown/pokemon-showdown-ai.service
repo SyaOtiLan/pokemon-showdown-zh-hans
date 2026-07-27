@@ -1,0 +1,34 @@
+[Unit]
+Description=Pokemon Showdown Foul Play challenge service
+After=network-online.target pokemon-showdown.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=showdown
+Group=showdown
+WorkingDirectory=/opt/pokemon-showdown-ai
+Environment=FOUL_PLAY_DIR=/opt/foul-play
+Environment=FOUL_PLAY_RUNNER=/opt/pokemon-showdown-ai/foul_play_local_runner.py
+Environment=PS_WEBSOCKET_URI=ws://127.0.0.1:8000/showdown/websocket
+Environment=AI_BATTLE_FORMAT=gen9randombattle
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=FOUL_PLAY_IDLE_TIMEOUT=300
+ExecStart=/usr/bin/python3 /opt/pokemon-showdown-ai/challenge_service.py
+Restart=on-failure
+RestartSec=3
+Nice=10
+CPUAccounting=true
+CPUQuota=90%
+MemoryAccounting=true
+MemoryHigh=400M
+MemoryMax=520M
+OOMPolicy=stop
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/foul-play/fp/data /var/log/pokemon-showdown-ai
+
+[Install]
+WantedBy=multi-user.target
