@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pokémon Showdown 简体中文
 // @namespace    https://github.com/SyaOtiLan/pokemon-showdown-zh-hans
-// @version      0.1.3
+// @version      0.1.4
 // @description  官方站及常见 PS 服务器的简体中文界面、战报与中文名称搜索
 // @author       SyaOtiLan、AL、WyAK 及贡献者
 // @license      AGPL-3.0
@@ -16009,14 +16009,33 @@ function installDOM(root) {
   if (!root || typeof MutationObserver === 'undefined') return null;
   if (global.__psZhHansDOMObserver) return global.__psZhHansDOMObserver;
   translateElement(root);
+  var pendingNodes = new Set();
+  var flushScheduled = false;
+  function scheduleTranslation(node) {
+    if (!node) return;
+    pendingNodes.add(node);
+    if (flushScheduled) return;
+    flushScheduled = true;
+    Promise.resolve().then(function () {
+      flushScheduled = false;
+      var nodes = Array.from(pendingNodes);
+      pendingNodes.clear();
+      var nodeSet = new Set(nodes);
+      nodes.forEach(function (candidate) {
+        var parent = candidate.parentNode;
+        while (parent && !nodeSet.has(parent)) parent = parent.parentNode;
+        if (!parent) translateElement(candidate);
+      });
+    });
+  }
   var observer = new MutationObserver(function (mutations) {
     mutations.forEach(function (mutation) {
       if (mutation.type === 'characterData') {
-        translateElement(mutation.target);
+        scheduleTranslation(mutation.target);
       } else if (mutation.type === 'attributes') {
-        translateElement(mutation.target);
+        scheduleTranslation(mutation.target);
       } else {
-        mutation.addedNodes.forEach(function (node) { translateElement(node); });
+        mutation.addedNodes.forEach(scheduleTranslation);
       }
     });
   });

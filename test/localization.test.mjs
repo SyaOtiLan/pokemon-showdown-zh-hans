@@ -37,6 +37,8 @@ test('runtime reuses battle rules and provides a guarded DOM observer', () => {
 	assert.equal(localizer.battle('The opposing Pikachu fainted!'), '对手的皮卡丘倒下了！');
 	assert.equal(typeof localizer.installDOM, 'function');
 	assert.match(source, /MutationObserver/);
+	assert.match(source, /pendingNodes = new Set\(\)/);
+	assert.match(source, /Promise\.resolve\(\)\.then/);
 	assert.match(source, /username\|usernametext\|chat\|message-pm\|userlist/);
 });
 
@@ -82,6 +84,8 @@ test('local server login bypasses the unreachable public login service', () => {
 	assert.match(mainMenu, /if \(!Config\.localAuth\) PS\.teams\.loadRemoteTeams\(\)/);
 	assert.match(chat, /Config\.localAuth \|\| PS\.teams\.usesLocalLadder/);
 	assert.match(battle, /!Config\.localAuth && <button class="button" data-cmd="\/savereplay">/);
+	const ladder = fs.readFileSync(path.join(clientRoot, 'src', 'panel-ladder.tsx'), 'utf8');
+	assert.match(ladder, /Local ladder request timed out/);
 
 	const packager = fs.readFileSync(path.join(root, 'scripts', 'package-client.mjs'), 'utf8');
 	assert.match(packager, /Config\.localAuth = \$\{!registered\}/);
