@@ -1,0 +1,74 @@
+[
+  {
+    "id": "dragonize",
+    "name": "Dragonize",
+    "num": 312,
+    "nonstandard": "Future",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "eelevate",
+    "name": "Eelevate",
+    "num": 313,
+    "nonstandard": "Future",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "firemane",
+    "name": "Fire Mane",
+    "num": 316,
+    "nonstandard": "Future",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "megasol",
+    "name": "Mega Sol",
+    "num": 315,
+    "nonstandard": "Future",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "piercingdrill",
+    "name": "Piercing Drill",
+    "num": 311,
+    "nonstandard": "Future",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "spicyspray",
+    "name": "Spicy Spray",
+    "num": 318,
+    "nonstandard": "Future",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "mountaineer",
+    "name": "Mountaineer",
+    "num": -1,
+    "nonstandard": "CAP",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "rebound",
+    "name": "Rebound",
+    "num": -2,
+    "nonstandard": "CAP",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "persistent",
+    "name": "Persistent",
+    "num": -3,
+    "nonstandard": "CAP",
+    "baseSpecies": null,
+    "forme": null
+  }
+]

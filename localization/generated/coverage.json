@@ -1,0 +1,65 @@
+{
+  "userscriptEntries": 6942,
+  "catalogs": {
+    "species": {
+      "all": {
+        "total": 1517,
+        "translated": 1418,
+        "coverage": 93.47
+      },
+      "current": {
+        "total": 1418,
+        "translated": 1418,
+        "coverage": 100
+      }
+    },
+    "moves": {
+      "all": {
+        "total": 954,
+        "translated": 951,
+        "coverage": 99.69
+      },
+      "current": {
+        "total": 685,
+        "translated": 685,
+        "coverage": 100
+      }
+    },
+    "abilities": {
+      "all": {
+        "total": 320,
+        "translated": 311,
+        "coverage": 97.19
+      },
+      "current": {
+        "total": 310,
+        "translated": 310,
+        "coverage": 100
+      }
+    },
+    "items": {
+      "all": {
+        "total": 583,
+        "translated": 581,
+        "coverage": 99.66
+      },
+      "current": {
+        "total": 249,
+        "translated": 249,
+        "coverage": 100
+      }
+    },
+    "natures": {
+      "all": {
+        "total": 25,
+        "translated": 25,
+        "coverage": 100
+      },
+      "current": {
+        "total": 25,
+        "translated": 25,
+        "coverage": 100
+      }
+    }
+  }
+}

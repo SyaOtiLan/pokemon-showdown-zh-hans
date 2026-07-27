@@ -1,0 +1,414 @@
+diff --git a/play.pokemonshowdown.com/index-new.html b/play.pokemonshowdown.com/index-new.html
+index 4dc1c78..a358960 100644
+--- a/play.pokemonshowdown.com/index-new.html
++++ b/play.pokemonshowdown.com/index-new.html
+@@ -44,7 +44,7 @@ https://psim.us/dev
+ 		<div class="ps-room scrollable" id="room-">
+ 			<div class="mainmenu-mini-windows">
+ 				<div class="mini-window" data-roomid="news">
+-					<h3 class="mini-window-header"><button class="closebutton" tabindex="-1" aria-label="Close"><i class="fa fa-times-circle"></i></button>News</h3>
++					<h3 class="mini-window-header"><button class="closebutton" tabindex="-1" aria-label="关闭"><i class="fa fa-times-circle"></i></button>新闻</h3>
+ 					<div id="room-news" class="mini-window-contents ps-room-light scrollable" style="height: auto;" data-newsid="<!-- newsid -->">
+ 						<div class="readable-bg">
+ 							<!-- build-tools/news-embed.php -->
+@@ -53,19 +53,20 @@ https://psim.us/dev
+ 				</div>
+ 			</div>
+ 			<div class="mainmenu">
+-				<div id="loading-message" class="mainmessage">Loading... <noscript>FAILED<br /><br />Pok&eacute;mon Showdown requires JavaScript.</noscript></div>
++				<div id="loading-message" class="mainmessage">加载中…… <noscript>加载失败<br /><br />Pok&eacute;mon Showdown 需要启用 JavaScript。</noscript></div>
+ 			</div>
+ 			<div class="mainmenufooter">
+ 				<div class="bgcredit"></div>
+ 				<small>
+-					<a href="//dex.pokemonshowdown.com/" target="_blank">Pok&eacute;dex</a> | <a href="//replay.pokemonshowdown.com/" target="_blank">Replays</a> | <a href="http://smogon.com/forums/" target="_blank">Forum</a><br />
+-					<a href="//pokemonshowdown.com/rules" target="_blank">Rules</a> | <a href="//pokemonshowdown.com/credits" target="_blank">Credits</a> | <a href="//pokemonshowdown.com/privacy" target="_blank">Privacy</a>
++					<a href="//dex.pokemonshowdown.com/" target="_blank">图鉴</a> | <a href="//replay.pokemonshowdown.com/" target="_blank">回放</a> | <a href="http://smogon.com/forums/" target="_blank">论坛</a><br />
++					<a href="//pokemonshowdown.com/rules" target="_blank">规则</a> | <a href="//pokemonshowdown.com/credits" target="_blank">贡献者</a> | <a href="//pokemonshowdown.com/privacy" target="_blank">隐私</a>
+ 				</small>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<script nomodule defer src="/js/lib/ps-polyfill.js"></script>
+ 	<script defer src="/config/config.js?"></script>
++	<script defer src="/js/localization-zh-hans.js?"></script>
+ 	<script defer src="/js/client-core.js?"></script>
+ 	<!-- At this point, background and dark mode are loaded -->
+ 	<!-- config/head-custom.html -->
+@@ -91,6 +92,7 @@ https://psim.us/dev
+ 	<script defer src="/js/client-connection.js?"></script>
+ 
+ 	<script defer src="/js/lib/preact.min.js?"></script>
++	<script defer src="/js/localization-preact-init.js?"></script>
+ 	<script defer src="/js/panels.js?"></script>
+ 	<script defer src="/js/panel-mainmenu.js?"></script>
+ 	<script defer src="/js/panel-rooms.js?"></script>
+diff --git a/play.pokemonshowdown.com/src/battle-animations.ts b/play.pokemonshowdown.com/src/battle-animations.ts
+index 9ed8a19..9c438e4 100644
+--- a/play.pokemonshowdown.com/src/battle-animations.ts
++++ b/play.pokemonshowdown.com/src/battle-animations.ts
+@@ -1077,7 +1077,8 @@ export class BattleScene implements BattleSceneStub {
+ 			this.$turn.html('');
+ 			return;
+ 		}
+-		this.$turn.html(`<div class="turn has-tooltip" data-tooltip="field" data-ownheight="1">Turn ${this.battle.turn}</div>`);
++		const turnText = window.PSLocalizer?.battle(`Turn ${this.battle.turn}`) || `Turn ${this.battle.turn}`;
++		this.$turn.html(`<div class="turn has-tooltip" data-tooltip="field" data-ownheight="1">${BattleLog.escapeHTML(turnText)}</div>`);
+ 	}
+ 	incrementTurn() {
+ 		if (!this.animating) return;
+@@ -1085,7 +1086,8 @@ export class BattleScene implements BattleSceneStub {
+ 		const turn = this.battle.turn;
+ 		if (turn <= 0) return;
+ 		const $prevTurn = this.$turn.children();
+-		const $newTurn = $(`<div class="turn has-tooltip" data-tooltip="field" data-ownheight="1">Turn ${turn}</div>`);
++		const turnText = window.PSLocalizer?.battle(`Turn ${turn}`) || `Turn ${turn}`;
++		const $newTurn = $(`<div class="turn has-tooltip" data-tooltip="field" data-ownheight="1">${BattleLog.escapeHTML(turnText)}</div>`);
+ 		$newTurn.css({
+ 			opacity: 0,
+ 			left: 160,
+diff --git a/play.pokemonshowdown.com/src/battle-dex-search.ts b/play.pokemonshowdown.com/src/battle-dex-search.ts
+index b17c547..26ffd4b 100644
+--- a/play.pokemonshowdown.com/src/battle-dex-search.ts
++++ b/play.pokemonshowdown.com/src/battle-dex-search.ts
+@@ -109,6 +109,28 @@ export class DexSearch {
+ 	}
+ 
+ 	find(query: string) {
++		const localizedQuery = query.trim();
++		const localizedRows = window.PSLocalizer?.search(
++			localizedQuery,
++			this.typedSearch?.searchType || ''
++		) as SearchRow[] | null;
++		if (localizedRows?.length) {
++			const queryKey = `zh:${localizedQuery}`;
++			if (this.query === queryKey && this.results) return false;
++			this.query = queryKey;
++			if (this.typedSearch) {
++				const allowed: { [key: string]: 1 } = {};
++				for (const row of this.typedSearch.getResults(this.filters, this.sortCol, this.reverseSort)) {
++					allowed[`${row[0]}:${row[1]}`] = 1;
++				}
++				this.results = localizedRows.filter(row => allowed[`${row[0]}:${row[1]}`]);
++			} else {
++				this.results = localizedRows;
++			}
++			this.selection = this.getFirstResultIndex();
++			this.exactMatch = this.results.length === 1;
++			return true;
++		}
+ 		query = toID(query);
+ 		if (this.query === query && this.results) {
+ 			return false;
+diff --git a/play.pokemonshowdown.com/src/battle-log.ts b/play.pokemonshowdown.com/src/battle-log.ts
+index 77cf1d8..d4c4b5b 100644
+--- a/play.pokemonshowdown.com/src/battle-log.ts
++++ b/play.pokemonshowdown.com/src/battle-log.ts
+@@ -979,10 +979,14 @@ export class BattleLog {
+ 		];
+ 	}
+ 	message(message: string, sceneMessage = message) {
++		sceneMessage = window.PSLocalizer?.battle(sceneMessage) || sceneMessage;
+ 		this.scene?.message(sceneMessage);
+ 		this.addDiv('battle-history', message);
+ 	}
+ 	addNode(node: HTMLElement, preempt?: boolean) {
++		if (!node.classList.contains('chat') || node.classList.contains('message-error')) {
++			window.PSLocalizer?.element(node);
++		}
+ 		(preempt ? this.preemptElem : this.innerElem).appendChild(node);
+ 		if (this.atBottom) {
+ 			this.elem.scrollTop = this.elem.scrollHeight;
+@@ -1003,6 +1007,9 @@ export class BattleLog {
+ 		const el = document.createElement('div');
+ 		el.className = className;
+ 		el.innerHTML = innerHTML;
++		if (!el.classList.contains('chat') || el.classList.contains('message-error')) {
++			window.PSLocalizer?.element(el);
++		}
+ 		if (this.innerElem.childNodes.length) {
+ 			this.innerElem.insertBefore(el, this.innerElem.childNodes[0]);
+ 		} else {
+diff --git a/play.pokemonshowdown.com/src/battle-searchresults.tsx b/play.pokemonshowdown.com/src/battle-searchresults.tsx
+index af920c9..f1bdabe 100644
+--- a/play.pokemonshowdown.com/src/battle-searchresults.tsx
++++ b/play.pokemonshowdown.com/src/battle-searchresults.tsx
+@@ -27,6 +27,10 @@ function escapeCSSString(text: string) {
+ 	return text.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\a ').replace(/\r/g, '\\d ');
+ }
+ 
++function localize(text: string) {
++	return window.PSLocalizer?.exact(text) || text;
++}
++
+ export class PSSearchResults extends preact.Component<{
+ 	search: DexSearch, class?: string, style?: string | null,
+ 	prepend?: preact.ComponentChildren, children?: preact.ComponentChildren,
+@@ -51,17 +55,17 @@ export class PSSearchResults extends preact.Component<{
+ 		return [
+ 			`<li class="result" value="${index}"><div class="sortrow">`,
+ 			`<button class="sortcol numsortcol${!sortCol ? ' cur' : ''}">`,
+-			`${!sortCol ? 'Sort: ' : escapeHTML(search.firstPokemonColumn)}</button>`,
+-			`<button class="sortcol pnamesortcol${sortCol === 'name' ? ' cur' : ''}" data-sort="name">Name</button>`,
+-			`<button class="sortcol typesortcol${sortCol === 'type' ? ' cur' : ''}" data-sort="type">Types</button>`,
+-			`<button class="sortcol abilitysortcol${sortCol === 'ability' ? ' cur' : ''}" data-sort="ability">Abilities</button>`,
++			`${escapeHTML(localize(!sortCol ? 'Sort: ' : search.firstPokemonColumn))}</button>`,
++			`<button class="sortcol pnamesortcol${sortCol === 'name' ? ' cur' : ''}" data-sort="name">${escapeHTML(localize('Name'))}</button>`,
++			`<button class="sortcol typesortcol${sortCol === 'type' ? ' cur' : ''}" data-sort="type">${escapeHTML(localize('Types'))}</button>`,
++			`<button class="sortcol abilitysortcol${sortCol === 'ability' ? ' cur' : ''}" data-sort="ability">${escapeHTML(localize('Abilities'))}</button>`,
+ 			`<button class="sortcol statsortcol${sortCol === 'hp' ? ' cur' : ''}" data-sort="hp">HP</button>`,
+-			`<button class="sortcol statsortcol${sortCol === 'atk' ? ' cur' : ''}" data-sort="atk">Atk</button>`,
+-			`<button class="sortcol statsortcol${sortCol === 'def' ? ' cur' : ''}" data-sort="def">Def</button>`,
+-			`<button class="sortcol statsortcol${sortCol === 'spa' ? ' cur' : ''}" data-sort="spa">SpA</button>`,
+-			`<button class="sortcol statsortcol${sortCol === 'spd' ? ' cur' : ''}" data-sort="spd">SpD</button>`,
+-			`<button class="sortcol statsortcol${sortCol === 'spe' ? ' cur' : ''}" data-sort="spe">Spe</button>`,
+-			`<button class="sortcol statsortcol${sortCol === 'bst' ? ' cur' : ''}" data-sort="bst">BST</button>`,
++			`<button class="sortcol statsortcol${sortCol === 'atk' ? ' cur' : ''}" data-sort="atk">${escapeHTML(localize('Atk'))}</button>`,
++			`<button class="sortcol statsortcol${sortCol === 'def' ? ' cur' : ''}" data-sort="def">${escapeHTML(localize('Def'))}</button>`,
++			`<button class="sortcol statsortcol${sortCol === 'spa' ? ' cur' : ''}" data-sort="spa">${escapeHTML(localize('SpA'))}</button>`,
++			`<button class="sortcol statsortcol${sortCol === 'spd' ? ' cur' : ''}" data-sort="spd">${escapeHTML(localize('SpD'))}</button>`,
++			`<button class="sortcol statsortcol${sortCol === 'spe' ? ' cur' : ''}" data-sort="spe">${escapeHTML(localize('Spe'))}</button>`,
++			`<button class="sortcol statsortcol${sortCol === 'bst' ? ' cur' : ''}" data-sort="bst">${escapeHTML(localize('BST'))}</button>`,
+ 			`</div></li>`,
+ 		].join('');
+ 	}
+@@ -69,11 +73,11 @@ export class PSSearchResults extends preact.Component<{
+ 	renderMoveSortRowHTML(index: number) {
+ 		const sortCol = this.props.search.sortCol;
+ 		return `<li class="result" value="${index}"><div class="sortrow">` +
+-			`<button class="sortcol movenamesortcol${sortCol === 'name' ? ' cur' : ''}" data-sort="name">Name</button>` +
+-			`<button class="sortcol movetypesortcol${sortCol === 'type' ? ' cur' : ''}" data-sort="type">Type</button>` +
+-			`<button class="sortcol movetypesortcol${sortCol === 'category' ? ' cur' : ''}" data-sort="category">Cat</button>` +
+-			`<button class="sortcol powersortcol${sortCol === 'power' ? ' cur' : ''}" data-sort="power">Pow</button>` +
+-			`<button class="sortcol accuracysortcol${sortCol === 'accuracy' ? ' cur' : ''}" data-sort="accuracy">Acc</button>` +
++			`<button class="sortcol movenamesortcol${sortCol === 'name' ? ' cur' : ''}" data-sort="name">${escapeHTML(localize('Name'))}</button>` +
++			`<button class="sortcol movetypesortcol${sortCol === 'type' ? ' cur' : ''}" data-sort="type">${escapeHTML(localize('Type'))}</button>` +
++			`<button class="sortcol movetypesortcol${sortCol === 'category' ? ' cur' : ''}" data-sort="category">${escapeHTML(localize('Cat'))}</button>` +
++			`<button class="sortcol powersortcol${sortCol === 'power' ? ' cur' : ''}" data-sort="power">${escapeHTML(localize('Pow'))}</button>` +
++			`<button class="sortcol accuracysortcol${sortCol === 'accuracy' ? ' cur' : ''}" data-sort="accuracy">${escapeHTML(localize('Acc'))}</button>` +
+ 			`<button class="sortcol ppsortcol${sortCol === 'pp' ? ' cur' : ''}" data-sort="pp">PP</button>` +
+ 			`</div></li>`;
+ 	}
+@@ -81,9 +85,9 @@ export class PSSearchResults extends preact.Component<{
+ 	renderPokemonRowHTML(index: number, id: ID, matchStart: number, matchEnd: number, errorMessage?: string) {
+ 		const search = this.props.search;
+ 		const pokemon = search.dex.species.get(id);
+-		if (!pokemon) return `<li class="result" value="${index}">Unrecognized pokemon</li>`;
++		if (!pokemon) return `<li class="result" value="${index}">${escapeHTML(localize('Unrecognized pokemon'))}</li>`;
+ 
+-		const tagStart = (pokemon.forme ? pokemon.name.length - pokemon.forme.length - 1 : 0);
++		const displayName = window.PSLocalizer?.name('species', id, pokemon.name) || pokemon.name;
+ 		const stats = pokemon.baseStats;
+ 		let bst = 0;
+ 		for (const stat of Object.values(stats)) bst += stat;
+@@ -94,7 +98,7 @@ export class PSSearchResults extends preact.Component<{
+ 			`data-entry="pokemon|${escapeHTML(pokemon.name)}">` +
+ 			`<span class="col numcol">${escapeHTML(search.getTier(pokemon))}</span>` +
+ 			`<span class="col iconcol"><span class="pixelated" style="${escapeHTML(Dex.getPokemonIcon(pokemon.id))}"></span></span>` +
+-			`<span class="col pokemonnamecol">${this.renderNameHTML(pokemon.name, matchStart, matchEnd, tagStart)}</span>`;
++			`<span class="col pokemonnamecol">${this.renderNameHTML(displayName, 0, 0)}</span>`;
+ 		if (errorMessage) return `${buf}${errorMessage}</a></li>`;
+ 
+ 		buf += `<span class="col typecol">${pokemon.types.map(type =>
+@@ -103,16 +107,16 @@ export class PSSearchResults extends preact.Component<{
+ 
+ 		if (search.dex.gen >= 3) {
+ 			buf += pokemon.abilities['1'] ?
+-				`<span class="col twoabilitycol">${escapeHTML(pokemon.abilities['0'])}<br />${escapeHTML(pokemon.abilities['1'])}</span>` :
+-				`<span class="col abilitycol">${escapeHTML(pokemon.abilities['0'])}</span>`;
++				`<span class="col twoabilitycol">${escapeHTML(window.PSLocalizer?.name('abilities', toID(pokemon.abilities['0']), pokemon.abilities['0']) || pokemon.abilities['0'])}<br />${escapeHTML(window.PSLocalizer?.name('abilities', toID(pokemon.abilities['1']), pokemon.abilities['1']) || pokemon.abilities['1'])}</span>` :
++				`<span class="col abilitycol">${escapeHTML(window.PSLocalizer?.name('abilities', toID(pokemon.abilities['0']), pokemon.abilities['0']) || pokemon.abilities['0'])}</span>`;
+ 		}
+ 		if (search.dex.gen >= 5) {
+ 			if (pokemon.abilities['S']) {
+ 				buf += `<span class="col twoabilitycol${pokemon.unreleasedHidden ? ' unreleasedhacol' : ''}">` +
+-					`${escapeHTML(pokemon.abilities['H'] || '')}<br />${escapeHTML(pokemon.abilities['S'])}</span>`;
++					`${escapeHTML(window.PSLocalizer?.name('abilities', toID(pokemon.abilities['H'] || ''), pokemon.abilities['H'] || '') || pokemon.abilities['H'] || '')}<br />${escapeHTML(window.PSLocalizer?.name('abilities', toID(pokemon.abilities['S']), pokemon.abilities['S']) || pokemon.abilities['S'])}</span>`;
+ 			} else if (pokemon.abilities['H']) {
+ 				buf += `<span class="col abilitycol${pokemon.unreleasedHidden ? ' unreleasedhacol' : ''}">` +
+-					`${escapeHTML(pokemon.abilities['H'])}</span>`;
++					`${escapeHTML(window.PSLocalizer?.name('abilities', toID(pokemon.abilities['H']), pokemon.abilities['H']) || pokemon.abilities['H'])}</span>`;
+ 			} else {
+ 				buf += `<span class="col abilitycol"></span>`;
+ 			}
+@@ -131,7 +135,7 @@ export class PSSearchResults extends preact.Component<{
+ 	}
+ 
+ 	renderNameHTML(name: string, matchStart: number, matchEnd: number, tagStart?: number) {
+-		if (name === 'No Ability') return `<i>(no ability)</i>`;
++		if (name === 'No Ability') return `<i>${escapeHTML(localize('(no ability)'))}</i>`;
+ 
+ 		if (!matchEnd) {
+ 			if (!tagStart) return escapeHTML(name);
+@@ -155,27 +159,31 @@ export class PSSearchResults extends preact.Component<{
+ 	renderItemRowHTML(index: number, id: ID, matchStart: number, matchEnd: number, errorMessage?: string) {
+ 		const search = this.props.search;
+ 		const item = search.dex.items.get(id);
+-		if (!item) return `<li class="result" value="${index}">Unrecognized item</li>`;
++		if (!item) return `<li class="result" value="${index}">${escapeHTML(localize('Unrecognized item'))}</li>`;
+ 
++		const displayName = window.PSLocalizer?.name('items', id, item.name) || item.name;
++		const description = window.PSLocalizer?.description(item.shortDesc) || item.shortDesc;
+ 		return `<li class="result" value="${index}"><a href="${this.URL_ROOT}items/${id}" ` +
+ 			`class="${id === this.itemId ? 'cur' : ''}" data-target="push" data-entry="item|${escapeHTML(item.name)}">` +
+ 			`<span class="col itemiconcol"><span class="pixelated" style="${escapeHTML(Dex.getItemIcon(item))}"></span></span>` +
+-			`<span class="col namecol">${id ? this.renderNameHTML(item.name, matchStart, matchEnd) : '<i>(no item)</i>'}</span>` +
++			`<span class="col namecol">${id ? this.renderNameHTML(displayName, 0, 0) : `<i>${escapeHTML(localize('(no item)'))}</i>`}</span>` +
+ 			(id ? (errorMessage || '') : '') +
+-			(!errorMessage ? `<span class="col itemdesccol">${escapeHTML(item.shortDesc)}</span>` : '') +
++			(!errorMessage ? `<span class="col itemdesccol">${escapeHTML(description)}</span>` : '') +
+ 			`</a></li>`;
+ 	}
+ 
+ 	renderAbilityRowHTML(index: number, id: ID, matchStart: number, matchEnd: number, errorMessage?: string) {
+ 		const search = this.props.search;
+ 		const ability = search.dex.abilities.get(id);
+-		if (!ability) return `<li class="result" value="${index}">Unrecognized ability</li>`;
++		if (!ability) return `<li class="result" value="${index}">${escapeHTML(localize('Unrecognized ability'))}</li>`;
+ 
++		const displayName = window.PSLocalizer?.name('abilities', id, ability.name) || ability.name;
++		const description = window.PSLocalizer?.description(ability.shortDesc) || ability.shortDesc;
+ 		return `<li class="result" value="${index}"><a href="${this.URL_ROOT}abilities/${id}" ` +
+ 			`class="${id === this.abilityId ? 'cur' : ''}" data-target="push" data-entry="ability|${escapeHTML(ability.name)}">` +
+-			`<span class="col namecol">${id ? this.renderNameHTML(ability.name, matchStart, matchEnd) : '<i>(no ability)</i>'}</span>` +
++			`<span class="col namecol">${id ? this.renderNameHTML(displayName, 0, 0) : `<i>${escapeHTML(localize('(no ability)'))}</i>`}</span>` +
+ 			(errorMessage || '') +
+-			(!errorMessage ? `<span class="col abilitydesccol">${escapeHTML(ability.shortDesc)}</span>` : '') +
++			(!errorMessage ? `<span class="col abilitydesccol">${escapeHTML(description)}</span>` : '') +
+ 			`</a></li>`;
+ 	}
+ 
+@@ -192,13 +200,14 @@ export class PSSearchResults extends preact.Component<{
+ 
+ 		const search = this.props.search;
+ 		const move = search.dex.moves.get(id);
+-		if (!move) return `<li class="result" value="${index}">Unrecognized move</li>`;
++		if (!move) return `<li class="result" value="${index}">${escapeHTML(localize('Unrecognized move'))}</li>`;
+ 		const entry = slot ? `move|${move.name}|${slot}` : `move|${move.name}`;
+-		const tagStart = (move.name.startsWith('Hidden Power') ? 12 : 0);
++		const displayName = window.PSLocalizer?.name('moves', id, move.name) || move.name;
++		const description = window.PSLocalizer?.description(move.shortDesc) || move.shortDesc;
+ 
+ 		let buf = `<li class="result" value="${index}"><a href="${this.URL_ROOT}moves/${id}" ` +
+ 			`class="${this.moveIds.includes(id) ? 'cur' : ''}" data-target="push" data-entry="${escapeHTML(entry)}">` +
+-			`<span class="col movenamecol">${this.renderNameHTML(move.name, matchStart, matchEnd, tagStart)}</span>`;
++			`<span class="col movenamecol">${this.renderNameHTML(displayName, 0, 0)}</span>`;
+ 		if (errorMessage) return `${buf}${errorMessage}</a></li>`;
+ 
+ 		let pp = (move.pp === 1 || move.noPPBoosts ? move.pp : move.pp * 8 / 5);
+@@ -213,20 +222,21 @@ export class PSSearchResults extends preact.Component<{
+ 			`<img src="${Dex.resourcePrefix}sprites/categories/${escapeHTML(move.category)}.png" ` +
+ 			`alt="${escapeHTML(move.category)}" height="14" width="32" class="pixelated" />` +
+ 			`</span>` +
+-			`<span class="col labelcol">${move.category !== 'Status' ? `<em>Power</em><br />${move.basePower || '&mdash;'}` : ''}</span>` +
+-			`<span class="col widelabelcol"><em>Accuracy</em><br />` +
++			`<span class="col labelcol">${move.category !== 'Status' ? `<em>${escapeHTML(localize('Power'))}</em><br />${move.basePower || '&mdash;'}` : ''}</span>` +
++			`<span class="col widelabelcol"><em>${escapeHTML(localize('Accuracy'))}</em><br />` +
+ 			`${move.accuracy && move.accuracy !== true ? `${move.accuracy}%` : '&mdash;'}</span>` +
+ 			`<span class="col pplabelcol"><em>PP</em><br />${pp}</span>` +
+-			`<span class="col movedesccol">${escapeHTML(move.shortDesc)}</span></a></li>`;
++			`<span class="col movedesccol">${escapeHTML(description)}</span></a></li>`;
+ 		return buf;
+ 	}
+ 
+ 	renderTypeRowHTML(index: number, id: ID, matchStart: number, matchEnd: number, errorMessage?: string) {
+ 		const name = id.charAt(0).toUpperCase() + id.slice(1);
++		const displayName = localize(name);
+ 
+ 		return `<li class="result" value="${index}"><a href="${this.URL_ROOT}types/${id}" ` +
+ 			`data-target="push" data-entry="type|${escapeHTML(name)}">` +
+-			`<span class="col namecol">${this.renderNameHTML(name, matchStart, matchEnd)}</span>` +
++			`<span class="col namecol">${this.renderNameHTML(displayName, 0, 0)}</span>` +
+ 			`<span class="col typecol"><img src="${Dex.resourcePrefix}sprites/types/${encodeURIComponent(name)}.png" ` +
+ 			`alt="${escapeHTML(name)}" height="14" width="32" class="pixelated" /></span>` +
+ 			(errorMessage || '') +
+@@ -235,10 +245,11 @@ export class PSSearchResults extends preact.Component<{
+ 
+ 	renderCategoryRowHTML(index: number, id: ID, matchStart: number, matchEnd: number, errorMessage?: string) {
+ 		const name = id.charAt(0).toUpperCase() + id.slice(1);
++		const displayName = localize(name);
+ 
+ 		return `<li class="result" value="${index}"><a href="${this.URL_ROOT}categories/${id}" ` +
+ 			`data-target="push" data-entry="category|${escapeHTML(name)}">` +
+-			`<span class="col namecol">${this.renderNameHTML(name, matchStart, matchEnd)}</span>` +
++			`<span class="col namecol">${this.renderNameHTML(displayName, 0, 0)}</span>` +
+ 			`<span class="col typecol"><img src="${Dex.resourcePrefix}sprites/categories/${escapeHTML(name)}.png" ` +
+ 			`alt="${escapeHTML(name)}" height="14" width="32" class="pixelated" /></span>` +
+ 			(errorMessage || '') +
+@@ -252,7 +263,7 @@ export class PSSearchResults extends preact.Component<{
+ 		return `<li class="result" value="${index}"><a href="${this.URL_ROOT}articles/${id}" ` +
+ 			`data-target="push" data-entry="article|${escapeHTML(name)}">` +
+ 			`<span class="col namecol">${this.renderNameHTML(name, matchStart, matchEnd)}</span>` +
+-			`<span class="col movedesccol">${isSearchType ? "(search type)" : "(article)"}</span>` +
++			`<span class="col movedesccol">${escapeHTML(localize(isSearchType ? "(search type)" : "(article)"))}</span>` +
+ 			(errorMessage || '') +
+ 			`</a></li>`;
+ 	}
+@@ -273,7 +284,7 @@ export class PSSearchResults extends preact.Component<{
+ 		return `<li class="result" value="${index}"><a href="${this.URL_ROOT}egggroups/${id}" ` +
+ 			`data-target="push" data-entry="egggroup|${escapeHTML(name)}">` +
+ 			`<span class="col namecol">${this.renderNameHTML(name, matchStart, matchEnd)}</span>` +
+-			`<span class="col movedesccol">(egg group)</span>` +
++			`<span class="col movedesccol">${escapeHTML(localize('(egg group)'))}</span>` +
+ 			(errorMessage || '') +
+ 			`</a></li>`;
+ 	}
+@@ -290,7 +301,7 @@ export class PSSearchResults extends preact.Component<{
+ 		return `<li class="result" value="${index}"><a href="${this.URL_ROOT}tiers/${id}" ` +
+ 			`data-target="push" data-entry="tier|${escapeHTML(name)}">` +
+ 			`<span class="col namecol">${this.renderNameHTML(name, matchStart, matchEnd)}</span>` +
+-			`<span class="col movedesccol">(tier)</span>` +
++			`<span class="col movedesccol">${escapeHTML(localize('(tier)'))}</span>` +
+ 			(errorMessage || '') +
+ 			`</a></li>`;
+ 	}
+@@ -344,7 +355,7 @@ export class PSSearchResults extends preact.Component<{
+ 		case 'article':
+ 			return this.renderArticleRowHTML(index, id, matchStart, matchEnd, errorMessage);
+ 		}
+-		return `<li>Error: not found</li>`;
++		return `<li>${escapeHTML(localize('Error: not found'))}</li>`;
+ 	}
+ 
+ 	static renderFilters(search: DexSearch, showHints?: boolean) {
+@@ -372,7 +383,7 @@ export class PSSearchResults extends preact.Component<{
+ 	}
+ 
+ 	renderPagerHTML(direction: -1 | 1) {
+-		const label = direction < 0 ? 'Show previous search results' : 'Show next search results';
++		const label = localize(direction < 0 ? 'Show previous search results' : 'Show next search results');
+ 		return `<li class="result resultpage"><button class="button" data-page="${direction}">${label}</button></li>`;
+ 	}
+ 
+diff --git a/play.pokemonshowdown.com/src/battle-tooltips.ts b/play.pokemonshowdown.com/src/battle-tooltips.ts
+index d2d0ebe..2ce5aa3 100644
+--- a/play.pokemonshowdown.com/src/battle-tooltips.ts
++++ b/play.pokemonshowdown.com/src/battle-tooltips.ts
+@@ -464,6 +464,7 @@ export class BattleTooltips {
+ 		innerHTML = `<div class="tooltipinner"><div class="tooltip tooltip-${type!}">${innerHTML}</div></div>`;
+ 		$wrapper.html(innerHTML).appendTo(document.body);
+ 		BattleTooltips.elem = $wrapper.find('.tooltip')[0] as HTMLDivElement;
++		window.PSLocalizer?.element(BattleTooltips.elem);
+ 		BattleTooltips.isLocked = false;
+ 
+ 		let height = $(BattleTooltips.elem).outerHeight()!;
+diff --git a/play.pokemonshowdown.com/testclient-new.html b/play.pokemonshowdown.com/testclient-new.html
+index d36feae..84992af 100644
+--- a/play.pokemonshowdown.com/testclient-new.html
++++ b/play.pokemonshowdown.com/testclient-new.html
+@@ -103,6 +103,7 @@
+ 	<script nomodule src="/js/lib/ps-polyfill.js"></script>
+ 	<script src="../config/testclient-key.js"></script>
+ 	<script src="js/client-core.js" onerror="alert('You must build the client with `node build` before using testclient.html')"></script>
++	<script src="js/localization-zh-hans.js"></script>
+ 
+ 	<script src="js/battle-dex-data.js"></script>
+ 	<script src="js/battle-dex.js"></script>
+@@ -114,6 +115,7 @@
+ 	<script> Net.defaultRoute = 'https://play.pokemonshowdown.com'; </script>
+ 
+ 	<script src="js/lib/preact.min.js"></script>
++	<script src="js/localization-preact-init.js"></script>
+ 	<script src="js/panels.js"></script>
+ 	<script src="js/panel-mainmenu.js"></script>
+ 	<script src="js/panel-rooms.js"></script>

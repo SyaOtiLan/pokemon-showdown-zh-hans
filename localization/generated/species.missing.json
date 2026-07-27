@@ -1,0 +1,794 @@
+[
+  {
+    "id": "syclar",
+    "name": "Syclar",
+    "num": -1,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "syclant",
+    "name": "Syclant",
+    "num": -2,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "revenankh",
+    "name": "Revenankh",
+    "num": -3,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "embirch",
+    "name": "Embirch",
+    "num": -4,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "flarelm",
+    "name": "Flarelm",
+    "num": -5,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pyroak",
+    "name": "Pyroak",
+    "num": -6,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "breezi",
+    "name": "Breezi",
+    "num": -7,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "fidgit",
+    "name": "Fidgit",
+    "num": -8,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "rebble",
+    "name": "Rebble",
+    "num": -9,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "tactite",
+    "name": "Tactite",
+    "num": -10,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "stratagem",
+    "name": "Stratagem",
+    "num": -11,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "privatyke",
+    "name": "Privatyke",
+    "num": -12,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "arghonaut",
+    "name": "Arghonaut",
+    "num": -13,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "kitsunoh",
+    "name": "Kitsunoh",
+    "num": -14,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "cyclohm",
+    "name": "Cyclohm",
+    "num": -15,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "colossoil",
+    "name": "Colossoil",
+    "num": -16,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "krilowatt",
+    "name": "Krilowatt",
+    "num": -17,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "voodoll",
+    "name": "Voodoll",
+    "num": -18,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "voodoom",
+    "name": "Voodoom",
+    "num": -19,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "scratchet",
+    "name": "Scratchet",
+    "num": -20,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "tomohawk",
+    "name": "Tomohawk",
+    "num": -21,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "necturine",
+    "name": "Necturine",
+    "num": -22,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "necturna",
+    "name": "Necturna",
+    "num": -23,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "mollux",
+    "name": "Mollux",
+    "num": -24,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "cupra",
+    "name": "Cupra",
+    "num": -25,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "argalis",
+    "name": "Argalis",
+    "num": -26,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "aurumoth",
+    "name": "Aurumoth",
+    "num": -27,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "brattler",
+    "name": "Brattler",
+    "num": -28,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "malaconda",
+    "name": "Malaconda",
+    "num": -29,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "cawdet",
+    "name": "Cawdet",
+    "num": -30,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "cawmodore",
+    "name": "Cawmodore",
+    "num": -31,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "volkritter",
+    "name": "Volkritter",
+    "num": -32,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "volkraken",
+    "name": "Volkraken",
+    "num": -33,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "snugglow",
+    "name": "Snugglow",
+    "num": -34,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "plasmanta",
+    "name": "Plasmanta",
+    "num": -35,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "floatoy",
+    "name": "Floatoy",
+    "num": -36,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "caimanoe",
+    "name": "Caimanoe",
+    "num": -37,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "naviathan",
+    "name": "Naviathan",
+    "num": -38,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "crucibelle",
+    "name": "Crucibelle",
+    "num": -39,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "crucibellemega",
+    "name": "Crucibelle-Mega",
+    "num": -39,
+    "nonstandard": null,
+    "baseSpecies": "Crucibelle",
+    "forme": "Mega"
+  },
+  {
+    "id": "pluffle",
+    "name": "Pluffle",
+    "num": -40,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "kerfluffle",
+    "name": "Kerfluffle",
+    "num": -41,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pajantom",
+    "name": "Pajantom",
+    "num": -42,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "mumbao",
+    "name": "Mumbao",
+    "num": -43,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "jumbao",
+    "name": "Jumbao",
+    "num": -44,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "fawnifer",
+    "name": "Fawnifer",
+    "num": -45,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "electrelk",
+    "name": "Electrelk",
+    "num": -46,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "caribolt",
+    "name": "Caribolt",
+    "num": -47,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "smogecko",
+    "name": "Smogecko",
+    "num": -48,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "smoguana",
+    "name": "Smoguana",
+    "num": -49,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "smokomodo",
+    "name": "Smokomodo",
+    "num": -50,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "swirlpool",
+    "name": "Swirlpool",
+    "num": -51,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "coribalis",
+    "name": "Coribalis",
+    "num": -52,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "snaelstrom",
+    "name": "Snaelstrom",
+    "num": -53,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "justyke",
+    "name": "Justyke",
+    "num": -54,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "equilibra",
+    "name": "Equilibra",
+    "num": -55,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "solotl",
+    "name": "Solotl",
+    "num": -56,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "astrolotl",
+    "name": "Astrolotl",
+    "num": -57,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "miasmite",
+    "name": "Miasmite",
+    "num": -58,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "miasmaw",
+    "name": "Miasmaw",
+    "num": -59,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "chromera",
+    "name": "Chromera",
+    "num": -60,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "nohface",
+    "name": "Nohface",
+    "num": -61,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "monohm",
+    "name": "Monohm",
+    "num": -62,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "duohm",
+    "name": "Duohm",
+    "num": -63,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "dorsoil",
+    "name": "Dorsoil",
+    "num": -64,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "protowatt",
+    "name": "Protowatt",
+    "num": -65,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "venomicon",
+    "name": "Venomicon",
+    "num": -66,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "venomiconepilogue",
+    "name": "Venomicon-Epilogue",
+    "num": -66,
+    "nonstandard": null,
+    "baseSpecies": "Venomicon",
+    "forme": "Epilogue"
+  },
+  {
+    "id": "saharascal",
+    "name": "Saharascal",
+    "num": -67,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "saharaja",
+    "name": "Saharaja",
+    "num": -68,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "ababo",
+    "name": "Ababo",
+    "num": -69,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "scattervein",
+    "name": "Scattervein",
+    "num": -70,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "hemogoblin",
+    "name": "Hemogoblin",
+    "num": -71,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "cresceidon",
+    "name": "Cresceidon",
+    "num": -72,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "chuggon",
+    "name": "Chuggon",
+    "num": -73,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "draggalong",
+    "name": "Draggalong",
+    "num": -74,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "chuggalong",
+    "name": "Chuggalong",
+    "num": -75,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "flox",
+    "name": "Flox",
+    "num": -76,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "shox",
+    "name": "Shox",
+    "num": -77,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "ramnarok",
+    "name": "Ramnarok",
+    "num": -78,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "ramnarokradiant",
+    "name": "Ramnarok-Radiant",
+    "num": -78,
+    "nonstandard": null,
+    "baseSpecies": "Ramnarok",
+    "forme": "Radiant"
+  },
+  {
+    "id": "obliteryx",
+    "name": "Obliteryx",
+    "num": -80,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarsmeargle",
+    "name": "Pokestar Smeargle",
+    "num": -5000,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarufo",
+    "name": "Pokestar UFO",
+    "num": -5001,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarufo2",
+    "name": "Pokestar UFO-2",
+    "num": -5001,
+    "nonstandard": null,
+    "baseSpecies": "Pokestar UFO",
+    "forme": "2"
+  },
+  {
+    "id": "pokestarbrycenman",
+    "name": "Pokestar Brycen-Man",
+    "num": -5002,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarmt",
+    "name": "Pokestar MT",
+    "num": -5003,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarmt2",
+    "name": "Pokestar MT2",
+    "num": -5004,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestartransport",
+    "name": "Pokestar Transport",
+    "num": -5005,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestargiant",
+    "name": "Pokestar Giant",
+    "num": -5006,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarhumanoid",
+    "name": "Pokestar Humanoid",
+    "num": -5007,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarmonster",
+    "name": "Pokestar Monster",
+    "num": -5008,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarf00",
+    "name": "Pokestar F-00",
+    "num": -5009,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarf002",
+    "name": "Pokestar F-002",
+    "num": -5010,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarspirit",
+    "name": "Pokestar Spirit",
+    "num": -5011,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarblackdoor",
+    "name": "Pokestar Black Door",
+    "num": -5012,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarwhitedoor",
+    "name": "Pokestar White Door",
+    "num": -5013,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarblackbelt",
+    "name": "Pokestar Black Belt",
+    "num": -5014,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "pokestarufopropu2",
+    "name": "Pokestar UFO-PropU2",
+    "num": -5001,
+    "nonstandard": null,
+    "baseSpecies": "Pokestar UFO",
+    "forme": "PropU2"
+  }
+]

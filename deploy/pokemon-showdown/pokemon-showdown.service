@@ -1,0 +1,23 @@
+[Unit]
+Description=Pokemon Showdown server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=showdown
+Group=showdown
+WorkingDirectory=/opt/pokemon-showdown
+Environment=PATH=/opt/node-v22.11.0-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Environment=NODE_OPTIONS=--max-old-space-size=640
+ExecStart=/opt/node-v22.11.0-linux-x64/bin/node /opt/pokemon-showdown/pokemon-showdown start --skip-build 8000
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+MemoryAccounting=true
+MemoryHigh=768M
+MemoryMax=900M
+OOMPolicy=stop
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,252 @@
+[
+  {
+    "id": "adamant",
+    "name": "Adamant",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "固执 (+攻击, -特攻)",
+    "source": "userscript"
+  },
+  {
+    "id": "bashful",
+    "name": "Bashful",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "害羞",
+    "source": "userscript"
+  },
+  {
+    "id": "bold",
+    "name": "Bold",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "大胆 (+防御, -攻击)",
+    "source": "userscript"
+  },
+  {
+    "id": "brave",
+    "name": "Brave",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "勇敢 (+攻击, -速度)",
+    "source": "userscript"
+  },
+  {
+    "id": "calm",
+    "name": "Calm",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "温和 (+特防, -攻击)",
+    "source": "userscript"
+  },
+  {
+    "id": "careful",
+    "name": "Careful",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "慎重 (+特防, -特攻)",
+    "source": "userscript"
+  },
+  {
+    "id": "docile",
+    "name": "Docile",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "坦率",
+    "source": "userscript"
+  },
+  {
+    "id": "gentle",
+    "name": "Gentle",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "温顺 (+特防, -防御)",
+    "source": "userscript"
+  },
+  {
+    "id": "hardy",
+    "name": "Hardy",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "勤奋",
+    "source": "userscript"
+  },
+  {
+    "id": "hasty",
+    "name": "Hasty",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "急躁 (+速度, -防御)",
+    "source": "userscript"
+  },
+  {
+    "id": "impish",
+    "name": "Impish",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "淘气 (+防御, -特攻)",
+    "source": "userscript"
+  },
+  {
+    "id": "jolly",
+    "name": "Jolly",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "爽朗 (+速度, -特攻)",
+    "source": "userscript"
+  },
+  {
+    "id": "lax",
+    "name": "Lax",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "乐天 (+防御, -特防)",
+    "source": "userscript"
+  },
+  {
+    "id": "lonely",
+    "name": "Lonely",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "怕寂寞 (+攻击, -防御)",
+    "source": "userscript"
+  },
+  {
+    "id": "mild",
+    "name": "Mild",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "慢吞吞 (+特攻, -防御)",
+    "source": "userscript"
+  },
+  {
+    "id": "modest",
+    "name": "Modest",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "内敛 (+特攻, -攻击)",
+    "source": "userscript"
+  },
+  {
+    "id": "naive",
+    "name": "Naive",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "天真 (+速度, -特防)",
+    "source": "userscript"
+  },
+  {
+    "id": "naughty",
+    "name": "Naughty",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "顽皮 (+攻击, -特防)",
+    "source": "userscript"
+  },
+  {
+    "id": "quiet",
+    "name": "Quiet",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "冷静 (+特攻, -速度)",
+    "source": "userscript"
+  },
+  {
+    "id": "quirky",
+    "name": "Quirky",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "浮躁",
+    "source": "userscript"
+  },
+  {
+    "id": "rash",
+    "name": "Rash",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "马虎 (+特攻, -特防)",
+    "source": "userscript"
+  },
+  {
+    "id": "relaxed",
+    "name": "Relaxed",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "悠闲 (+防御, -速度)",
+    "source": "userscript"
+  },
+  {
+    "id": "sassy",
+    "name": "Sassy",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "自大 (+特防, -速度)",
+    "source": "userscript"
+  },
+  {
+    "id": "serious",
+    "name": "Serious",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "认真",
+    "source": "userscript"
+  },
+  {
+    "id": "timid",
+    "name": "Timid",
+    "num": null,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "胆小 (+速度, -攻击)",
+    "source": "userscript"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "paleowave",
+    "name": "Paleo Wave",
+    "num": -1,
+    "nonstandard": "CAP",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "shadowstrike",
+    "name": "Shadow Strike",
+    "num": -2,
+    "nonstandard": "CAP",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "polarflare",
+    "name": "Polar Flare",
+    "num": -3,
+    "nonstandard": "CAP",
+    "baseSpecies": null,
+    "forme": null
+  }
+]

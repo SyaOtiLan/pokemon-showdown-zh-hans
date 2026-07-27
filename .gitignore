@@ -1,0 +1,6 @@
+upstream/
+dist/
+repository/
+node_modules/
+*.Zone.Identifier
+*.tar.gz

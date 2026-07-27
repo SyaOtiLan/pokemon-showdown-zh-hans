@@ -1,0 +1,3112 @@
+[
+  {
+    "id": "noability",
+    "name": "No Ability",
+    "num": 0,
+    "nonstandard": "Past",
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "无特性",
+    "source": "userscript"
+  },
+  {
+    "id": "adaptability",
+    "name": "Adaptability",
+    "num": 91,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "适应力",
+    "source": "userscript"
+  },
+  {
+    "id": "aerilate",
+    "name": "Aerilate",
+    "num": 184,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "飞行皮肤",
+    "source": "userscript"
+  },
+  {
+    "id": "aftermath",
+    "name": "Aftermath",
+    "num": 106,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "引爆",
+    "source": "userscript"
+  },
+  {
+    "id": "airlock",
+    "name": "Air Lock",
+    "num": 76,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "气闸",
+    "source": "userscript"
+  },
+  {
+    "id": "analytic",
+    "name": "Analytic",
+    "num": 148,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "分析",
+    "source": "userscript"
+  },
+  {
+    "id": "angerpoint",
+    "name": "Anger Point",
+    "num": 83,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "愤怒穴位",
+    "source": "userscript"
+  },
+  {
+    "id": "angershell",
+    "name": "Anger Shell",
+    "num": 271,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "愤怒甲壳",
+    "source": "userscript"
+  },
+  {
+    "id": "anticipation",
+    "name": "Anticipation",
+    "num": 107,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "危险预知",
+    "source": "userscript"
+  },
+  {
+    "id": "arenatrap",
+    "name": "Arena Trap",
+    "num": 71,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "沙穴",
+    "source": "userscript"
+  },
+  {
+    "id": "armortail",
+    "name": "Armor Tail",
+    "num": 296,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "尾甲",
+    "source": "userscript"
+  },
+  {
+    "id": "aromaveil",
+    "name": "Aroma Veil",
+    "num": 165,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "芳香幕",
+    "source": "userscript"
+  },
+  {
+    "id": "asoneglastrier",
+    "name": "As One (Glastrier)",
+    "num": 266,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "人马一体 (雪暴马)",
+    "source": "userscript"
+  },
+  {
+    "id": "asonespectrier",
+    "name": "As One (Spectrier)",
+    "num": 267,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "人马一体 (灵幽马)",
+    "source": "userscript"
+  },
+  {
+    "id": "aurabreak",
+    "name": "Aura Break",
+    "num": 188,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "气场破坏",
+    "source": "userscript"
+  },
+  {
+    "id": "baddreams",
+    "name": "Bad Dreams",
+    "num": 123,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "梦魇",
+    "source": "userscript"
+  },
+  {
+    "id": "ballfetch",
+    "name": "Ball Fetch",
+    "num": 237,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "捡球",
+    "source": "userscript"
+  },
+  {
+    "id": "battery",
+    "name": "Battery",
+    "num": 217,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "蓄电池",
+    "source": "userscript"
+  },
+  {
+    "id": "battlearmor",
+    "name": "Battle Armor",
+    "num": 4,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "战斗盔甲",
+    "source": "userscript"
+  },
+  {
+    "id": "battlebond",
+    "name": "Battle Bond",
+    "num": 210,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "牵绊变身",
+    "source": "userscript"
+  },
+  {
+    "id": "beadsofruin",
+    "name": "Beads of Ruin",
+    "num": 284,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "灾祸之玉",
+    "source": "userscript"
+  },
+  {
+    "id": "beastboost",
+    "name": "Beast Boost",
+    "num": 224,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "异兽提升",
+    "source": "userscript"
+  },
+  {
+    "id": "berserk",
+    "name": "Berserk",
+    "num": 201,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "怒火冲天",
+    "source": "userscript"
+  },
+  {
+    "id": "bigpecks",
+    "name": "Big Pecks",
+    "num": 145,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "健壮胸肌",
+    "source": "userscript"
+  },
+  {
+    "id": "blaze",
+    "name": "Blaze",
+    "num": 66,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "猛火",
+    "source": "userscript"
+  },
+  {
+    "id": "bulletproof",
+    "name": "Bulletproof",
+    "num": 171,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "防弹",
+    "source": "userscript"
+  },
+  {
+    "id": "cheekpouch",
+    "name": "Cheek Pouch",
+    "num": 167,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "颊囊",
+    "source": "userscript"
+  },
+  {
+    "id": "chillingneigh",
+    "name": "Chilling Neigh",
+    "num": 264,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "苍白嘶鸣",
+    "source": "userscript"
+  },
+  {
+    "id": "chlorophyll",
+    "name": "Chlorophyll",
+    "num": 34,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "叶绿素",
+    "source": "userscript"
+  },
+  {
+    "id": "clearbody",
+    "name": "Clear Body",
+    "num": 29,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "恒净之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "cloudnine",
+    "name": "Cloud Nine",
+    "num": 13,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "无关天气",
+    "source": "userscript"
+  },
+  {
+    "id": "colorchange",
+    "name": "Color Change",
+    "num": 16,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "变色",
+    "source": "userscript"
+  },
+  {
+    "id": "comatose",
+    "name": "Comatose",
+    "num": 213,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "绝对睡眠",
+    "source": "userscript"
+  },
+  {
+    "id": "commander",
+    "name": "Commander",
+    "num": 279,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "发号施令",
+    "source": "userscript"
+  },
+  {
+    "id": "competitive",
+    "name": "Competitive",
+    "num": 172,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "好胜",
+    "source": "userscript"
+  },
+  {
+    "id": "compoundeyes",
+    "name": "Compound Eyes",
+    "num": 14,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "复眼",
+    "source": "userscript"
+  },
+  {
+    "id": "contrary",
+    "name": "Contrary",
+    "num": 126,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "唱反调",
+    "source": "userscript"
+  },
+  {
+    "id": "corrosion",
+    "name": "Corrosion",
+    "num": 212,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "腐蚀",
+    "source": "userscript"
+  },
+  {
+    "id": "costar",
+    "name": "Costar",
+    "num": 294,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "同台共演",
+    "source": "userscript"
+  },
+  {
+    "id": "cottondown",
+    "name": "Cotton Down",
+    "num": 238,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "棉絮",
+    "source": "userscript"
+  },
+  {
+    "id": "cudchew",
+    "name": "Cud Chew",
+    "num": 291,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "反刍",
+    "source": "userscript"
+  },
+  {
+    "id": "curiousmedicine",
+    "name": "Curious Medicine",
+    "num": 261,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "怪药",
+    "source": "userscript"
+  },
+  {
+    "id": "cursedbody",
+    "name": "Cursed Body",
+    "num": 130,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "诅咒之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "cutecharm",
+    "name": "Cute Charm",
+    "num": 56,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "迷人之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "damp",
+    "name": "Damp",
+    "num": 6,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "湿气",
+    "source": "userscript"
+  },
+  {
+    "id": "dancer",
+    "name": "Dancer",
+    "num": 216,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "舞者",
+    "source": "userscript"
+  },
+  {
+    "id": "darkaura",
+    "name": "Dark Aura",
+    "num": 186,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "暗黑气场",
+    "source": "userscript"
+  },
+  {
+    "id": "dauntlessshield",
+    "name": "Dauntless Shield",
+    "num": 235,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "不屈之盾",
+    "source": "userscript"
+  },
+  {
+    "id": "dazzling",
+    "name": "Dazzling",
+    "num": 219,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "鲜艳之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "defeatist",
+    "name": "Defeatist",
+    "num": 129,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "软弱",
+    "source": "userscript"
+  },
+  {
+    "id": "defiant",
+    "name": "Defiant",
+    "num": 128,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "不服输",
+    "source": "userscript"
+  },
+  {
+    "id": "deltastream",
+    "name": "Delta Stream",
+    "num": 191,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "德尔塔气流",
+    "source": "userscript"
+  },
+  {
+    "id": "desolateland",
+    "name": "Desolate Land",
+    "num": 190,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "终结之地",
+    "source": "userscript"
+  },
+  {
+    "id": "disguise",
+    "name": "Disguise",
+    "num": 209,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "画皮",
+    "source": "userscript"
+  },
+  {
+    "id": "download",
+    "name": "Download",
+    "num": 88,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "下载",
+    "source": "userscript"
+  },
+  {
+    "id": "dragonsmaw",
+    "name": "Dragon's Maw",
+    "num": 263,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "龙颚",
+    "source": "userscript"
+  },
+  {
+    "id": "drizzle",
+    "name": "Drizzle",
+    "num": 2,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "降雨",
+    "source": "userscript"
+  },
+  {
+    "id": "drought",
+    "name": "Drought",
+    "num": 70,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "日照",
+    "source": "userscript"
+  },
+  {
+    "id": "dryskin",
+    "name": "Dry Skin",
+    "num": 87,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "干燥皮肤",
+    "source": "userscript"
+  },
+  {
+    "id": "earlybird",
+    "name": "Early Bird",
+    "num": 48,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "早起",
+    "source": "userscript"
+  },
+  {
+    "id": "eartheater",
+    "name": "Earth Eater",
+    "num": 297,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "食土",
+    "source": "userscript"
+  },
+  {
+    "id": "effectspore",
+    "name": "Effect Spore",
+    "num": 27,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "孢子",
+    "source": "userscript"
+  },
+  {
+    "id": "electricsurge",
+    "name": "Electric Surge",
+    "num": 226,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "电气制造者",
+    "source": "userscript"
+  },
+  {
+    "id": "electromorphosis",
+    "name": "Electromorphosis",
+    "num": 280,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "电力转换",
+    "source": "userscript"
+  },
+  {
+    "id": "embodyaspectcornerstone",
+    "name": "Embody Aspect (Cornerstone)",
+    "num": 304,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "面影辉映(础石)",
+    "source": "userscript"
+  },
+  {
+    "id": "embodyaspecthearthflame",
+    "name": "Embody Aspect (Hearthflame)",
+    "num": 303,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "面影辉映(火灶)",
+    "source": "userscript"
+  },
+  {
+    "id": "embodyaspectteal",
+    "name": "Embody Aspect (Teal)",
+    "num": 301,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "面影辉映(碧草)",
+    "source": "userscript"
+  },
+  {
+    "id": "embodyaspectwellspring",
+    "name": "Embody Aspect (Wellspring)",
+    "num": 302,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "面影辉映(水井)",
+    "source": "userscript"
+  },
+  {
+    "id": "emergencyexit",
+    "name": "Emergency Exit",
+    "num": 194,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "危险回避",
+    "source": "userscript"
+  },
+  {
+    "id": "fairyaura",
+    "name": "Fairy Aura",
+    "num": 187,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "妖精气场",
+    "source": "userscript"
+  },
+  {
+    "id": "filter",
+    "name": "Filter",
+    "num": 111,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "过滤",
+    "source": "userscript"
+  },
+  {
+    "id": "flamebody",
+    "name": "Flame Body",
+    "num": 49,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "火焰之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "flareboost",
+    "name": "Flare Boost",
+    "num": 138,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "受热激升",
+    "source": "userscript"
+  },
+  {
+    "id": "flashfire",
+    "name": "Flash Fire",
+    "num": 18,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "引火",
+    "source": "userscript"
+  },
+  {
+    "id": "flowergift",
+    "name": "Flower Gift",
+    "num": 122,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "花之礼",
+    "source": "userscript"
+  },
+  {
+    "id": "flowerveil",
+    "name": "Flower Veil",
+    "num": 166,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "花幕",
+    "source": "userscript"
+  },
+  {
+    "id": "fluffy",
+    "name": "Fluffy",
+    "num": 218,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "毛茸茸",
+    "source": "userscript"
+  },
+  {
+    "id": "forecast",
+    "name": "Forecast",
+    "num": 59,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "阴晴不定",
+    "source": "userscript"
+  },
+  {
+    "id": "forewarn",
+    "name": "Forewarn",
+    "num": 108,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "预知梦",
+    "source": "userscript"
+  },
+  {
+    "id": "friendguard",
+    "name": "Friend Guard",
+    "num": 132,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "友情防守",
+    "source": "userscript"
+  },
+  {
+    "id": "frisk",
+    "name": "Frisk",
+    "num": 119,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "察觉",
+    "source": "userscript"
+  },
+  {
+    "id": "fullmetalbody",
+    "name": "Full Metal Body",
+    "num": 230,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "金属防护",
+    "source": "userscript"
+  },
+  {
+    "id": "furcoat",
+    "name": "Fur Coat",
+    "num": 169,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "毛皮大衣",
+    "source": "userscript"
+  },
+  {
+    "id": "galewings",
+    "name": "Gale Wings",
+    "num": 177,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "疾风之翼",
+    "source": "userscript"
+  },
+  {
+    "id": "galvanize",
+    "name": "Galvanize",
+    "num": 206,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "电气皮肤",
+    "source": "userscript"
+  },
+  {
+    "id": "gluttony",
+    "name": "Gluttony",
+    "num": 82,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "贪吃鬼",
+    "source": "userscript"
+  },
+  {
+    "id": "goodasgold",
+    "name": "Good as Gold",
+    "num": 283,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "黄金之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "gooey",
+    "name": "Gooey",
+    "num": 183,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "黏滑",
+    "source": "userscript"
+  },
+  {
+    "id": "gorillatactics",
+    "name": "Gorilla Tactics",
+    "num": 255,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "一猩一意",
+    "source": "userscript"
+  },
+  {
+    "id": "grasspelt",
+    "name": "Grass Pelt",
+    "num": 179,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "草之毛皮",
+    "source": "userscript"
+  },
+  {
+    "id": "grassysurge",
+    "name": "Grassy Surge",
+    "num": 229,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "青草制造者",
+    "source": "userscript"
+  },
+  {
+    "id": "grimneigh",
+    "name": "Grim Neigh",
+    "num": 265,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "漆黑嘶鸣",
+    "source": "userscript"
+  },
+  {
+    "id": "guarddog",
+    "name": "Guard Dog",
+    "num": 275,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "看门犬",
+    "source": "userscript"
+  },
+  {
+    "id": "gulpmissile",
+    "name": "Gulp Missile",
+    "num": 241,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "一口导弹",
+    "source": "userscript"
+  },
+  {
+    "id": "guts",
+    "name": "Guts",
+    "num": 62,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "毅力",
+    "source": "userscript"
+  },
+  {
+    "id": "hadronengine",
+    "name": "Hadron Engine",
+    "num": 289,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "强子引擎",
+    "source": "userscript"
+  },
+  {
+    "id": "harvest",
+    "name": "Harvest",
+    "num": 139,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "收获",
+    "source": "userscript"
+  },
+  {
+    "id": "healer",
+    "name": "Healer",
+    "num": 131,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "治愈之心",
+    "source": "userscript"
+  },
+  {
+    "id": "heatproof",
+    "name": "Heatproof",
+    "num": 85,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "耐热",
+    "source": "userscript"
+  },
+  {
+    "id": "heavymetal",
+    "name": "Heavy Metal",
+    "num": 134,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "重金属",
+    "source": "userscript"
+  },
+  {
+    "id": "honeygather",
+    "name": "Honey Gather",
+    "num": 118,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "集蜜",
+    "source": "userscript"
+  },
+  {
+    "id": "hospitality",
+    "name": "Hospitality",
+    "num": 299,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "款待",
+    "source": "userscript"
+  },
+  {
+    "id": "hugepower",
+    "name": "Huge Power",
+    "num": 37,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "大力士",
+    "source": "userscript"
+  },
+  {
+    "id": "hungerswitch",
+    "name": "Hunger Switch",
+    "num": 258,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "饱了又饿",
+    "source": "userscript"
+  },
+  {
+    "id": "hustle",
+    "name": "Hustle",
+    "num": 55,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "活力",
+    "source": "userscript"
+  },
+  {
+    "id": "hydration",
+    "name": "Hydration",
+    "num": 93,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "湿润之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "hypercutter",
+    "name": "Hyper Cutter",
+    "num": 52,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "怪力钳",
+    "source": "userscript"
+  },
+  {
+    "id": "icebody",
+    "name": "Ice Body",
+    "num": 115,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "冰冻之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "iceface",
+    "name": "Ice Face",
+    "num": 248,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "结冻头",
+    "source": "userscript"
+  },
+  {
+    "id": "icescales",
+    "name": "Ice Scales",
+    "num": 246,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "冰鳞粉",
+    "source": "userscript"
+  },
+  {
+    "id": "illuminate",
+    "name": "Illuminate",
+    "num": 35,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "发光",
+    "source": "userscript"
+  },
+  {
+    "id": "illusion",
+    "name": "Illusion",
+    "num": 149,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "幻觉",
+    "source": "userscript"
+  },
+  {
+    "id": "immunity",
+    "name": "Immunity",
+    "num": 17,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "免疫",
+    "source": "userscript"
+  },
+  {
+    "id": "imposter",
+    "name": "Imposter",
+    "num": 150,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "变身者",
+    "source": "userscript"
+  },
+  {
+    "id": "infiltrator",
+    "name": "Infiltrator",
+    "num": 151,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "穿透",
+    "source": "userscript"
+  },
+  {
+    "id": "innardsout",
+    "name": "Innards Out",
+    "num": 215,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "飞出的内在物",
+    "source": "userscript"
+  },
+  {
+    "id": "innerfocus",
+    "name": "Inner Focus",
+    "num": 39,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "精神力",
+    "source": "userscript"
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia",
+    "num": 15,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "不眠",
+    "source": "userscript"
+  },
+  {
+    "id": "intimidate",
+    "name": "Intimidate",
+    "num": 22,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "威吓",
+    "source": "userscript"
+  },
+  {
+    "id": "intrepidsword",
+    "name": "Intrepid Sword",
+    "num": 234,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "不挠之剑",
+    "source": "userscript"
+  },
+  {
+    "id": "ironbarbs",
+    "name": "Iron Barbs",
+    "num": 160,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "铁刺",
+    "source": "userscript"
+  },
+  {
+    "id": "ironfist",
+    "name": "Iron Fist",
+    "num": 89,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "铁拳",
+    "source": "userscript"
+  },
+  {
+    "id": "justified",
+    "name": "Justified",
+    "num": 154,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "正义之心",
+    "source": "userscript"
+  },
+  {
+    "id": "keeneye",
+    "name": "Keen Eye",
+    "num": 51,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "锐利目光",
+    "source": "userscript"
+  },
+  {
+    "id": "klutz",
+    "name": "Klutz",
+    "num": 103,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "笨拙",
+    "source": "userscript"
+  },
+  {
+    "id": "leafguard",
+    "name": "Leaf Guard",
+    "num": 102,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "叶子防守",
+    "source": "userscript"
+  },
+  {
+    "id": "levitate",
+    "name": "Levitate",
+    "num": 26,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "飘浮",
+    "source": "userscript"
+  },
+  {
+    "id": "libero",
+    "name": "Libero",
+    "num": 236,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "自由者",
+    "source": "userscript"
+  },
+  {
+    "id": "lightmetal",
+    "name": "Light Metal",
+    "num": 135,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "轻金属",
+    "source": "userscript"
+  },
+  {
+    "id": "lightningrod",
+    "name": "Lightning Rod",
+    "num": 31,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "避雷针",
+    "source": "userscript"
+  },
+  {
+    "id": "limber",
+    "name": "Limber",
+    "num": 7,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "柔软",
+    "source": "userscript"
+  },
+  {
+    "id": "lingeringaroma",
+    "name": "Lingering Aroma",
+    "num": 268,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "甩不掉的气味",
+    "source": "userscript"
+  },
+  {
+    "id": "liquidooze",
+    "name": "Liquid Ooze",
+    "num": 64,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "污泥浆",
+    "source": "userscript"
+  },
+  {
+    "id": "liquidvoice",
+    "name": "Liquid Voice",
+    "num": 204,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "湿润之声",
+    "source": "userscript"
+  },
+  {
+    "id": "longreach",
+    "name": "Long Reach",
+    "num": 203,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "远隔",
+    "source": "userscript"
+  },
+  {
+    "id": "magicbounce",
+    "name": "Magic Bounce",
+    "num": 156,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "魔法镜",
+    "source": "userscript"
+  },
+  {
+    "id": "magicguard",
+    "name": "Magic Guard",
+    "num": 98,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "魔法防守",
+    "source": "userscript"
+  },
+  {
+    "id": "magician",
+    "name": "Magician",
+    "num": 170,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "魔术师",
+    "source": "userscript"
+  },
+  {
+    "id": "magmaarmor",
+    "name": "Magma Armor",
+    "num": 40,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "熔岩铠甲",
+    "source": "userscript"
+  },
+  {
+    "id": "magnetpull",
+    "name": "Magnet Pull",
+    "num": 42,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "磁力",
+    "source": "userscript"
+  },
+  {
+    "id": "marvelscale",
+    "name": "Marvel Scale",
+    "num": 63,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "神奇鳞片",
+    "source": "userscript"
+  },
+  {
+    "id": "megalauncher",
+    "name": "Mega Launcher",
+    "num": 178,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "超级发射器",
+    "source": "userscript"
+  },
+  {
+    "id": "merciless",
+    "name": "Merciless",
+    "num": 196,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "不仁不义",
+    "source": "userscript"
+  },
+  {
+    "id": "mimicry",
+    "name": "Mimicry",
+    "num": 250,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "拟态",
+    "source": "userscript"
+  },
+  {
+    "id": "mindseye",
+    "name": "Mind's Eye",
+    "num": 300,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "心眼",
+    "source": "userscript"
+  },
+  {
+    "id": "minus",
+    "name": "Minus",
+    "num": 58,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "负电",
+    "source": "userscript"
+  },
+  {
+    "id": "mirrorarmor",
+    "name": "Mirror Armor",
+    "num": 240,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "镜甲",
+    "source": "userscript"
+  },
+  {
+    "id": "mistysurge",
+    "name": "Misty Surge",
+    "num": 228,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "薄雾制造者",
+    "source": "userscript"
+  },
+  {
+    "id": "moldbreaker",
+    "name": "Mold Breaker",
+    "num": 104,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "破格",
+    "source": "userscript"
+  },
+  {
+    "id": "moody",
+    "name": "Moody",
+    "num": 141,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "心情不定",
+    "source": "userscript"
+  },
+  {
+    "id": "motordrive",
+    "name": "Motor Drive",
+    "num": 78,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "电气引擎",
+    "source": "userscript"
+  },
+  {
+    "id": "moxie",
+    "name": "Moxie",
+    "num": 153,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "自信过度",
+    "source": "userscript"
+  },
+  {
+    "id": "multiscale",
+    "name": "Multiscale",
+    "num": 136,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "多重鳞片",
+    "source": "userscript"
+  },
+  {
+    "id": "multitype",
+    "name": "Multitype",
+    "num": 121,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "多属性",
+    "source": "userscript"
+  },
+  {
+    "id": "mummy",
+    "name": "Mummy",
+    "num": 152,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "木乃伊",
+    "source": "userscript"
+  },
+  {
+    "id": "myceliummight",
+    "name": "Mycelium Might",
+    "num": 298,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "菌丝之力",
+    "source": "userscript"
+  },
+  {
+    "id": "naturalcure",
+    "name": "Natural Cure",
+    "num": 30,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "自然回复",
+    "source": "userscript"
+  },
+  {
+    "id": "neuroforce",
+    "name": "Neuroforce",
+    "num": 233,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "脑核之力",
+    "source": "userscript"
+  },
+  {
+    "id": "neutralizinggas",
+    "name": "Neutralizing Gas",
+    "num": 256,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "化学变化气体",
+    "source": "userscript"
+  },
+  {
+    "id": "noguard",
+    "name": "No Guard",
+    "num": 99,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "无防守",
+    "source": "userscript"
+  },
+  {
+    "id": "normalize",
+    "name": "Normalize",
+    "num": 96,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "一般皮肤",
+    "source": "userscript"
+  },
+  {
+    "id": "oblivious",
+    "name": "Oblivious",
+    "num": 12,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "迟钝",
+    "source": "userscript"
+  },
+  {
+    "id": "opportunist",
+    "name": "Opportunist",
+    "num": 290,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "跟风",
+    "source": "userscript"
+  },
+  {
+    "id": "orichalcumpulse",
+    "name": "Orichalcum Pulse",
+    "num": 288,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "绯红脉动",
+    "source": "userscript"
+  },
+  {
+    "id": "overcoat",
+    "name": "Overcoat",
+    "num": 142,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "防尘",
+    "source": "userscript"
+  },
+  {
+    "id": "overgrow",
+    "name": "Overgrow",
+    "num": 65,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "茂盛",
+    "source": "userscript"
+  },
+  {
+    "id": "owntempo",
+    "name": "Own Tempo",
+    "num": 20,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "我行我素",
+    "source": "userscript"
+  },
+  {
+    "id": "parentalbond",
+    "name": "Parental Bond",
+    "num": 185,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "亲子爱",
+    "source": "userscript"
+  },
+  {
+    "id": "pastelveil",
+    "name": "Pastel Veil",
+    "num": 257,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "粉彩护幕",
+    "source": "userscript"
+  },
+  {
+    "id": "perishbody",
+    "name": "Perish Body",
+    "num": 253,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "灭亡之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "pickpocket",
+    "name": "Pickpocket",
+    "num": 124,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "顺手牵羊",
+    "source": "userscript"
+  },
+  {
+    "id": "pickup",
+    "name": "Pickup",
+    "num": 53,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "捡拾",
+    "source": "userscript"
+  },
+  {
+    "id": "pixilate",
+    "name": "Pixilate",
+    "num": 182,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "妖精皮肤",
+    "source": "userscript"
+  },
+  {
+    "id": "plus",
+    "name": "Plus",
+    "num": 57,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "正电",
+    "source": "userscript"
+  },
+  {
+    "id": "poisonheal",
+    "name": "Poison Heal",
+    "num": 90,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "毒疗",
+    "source": "userscript"
+  },
+  {
+    "id": "poisonpoint",
+    "name": "Poison Point",
+    "num": 38,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "毒刺",
+    "source": "userscript"
+  },
+  {
+    "id": "poisonpuppeteer",
+    "name": "Poison Puppeteer",
+    "num": 310,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "毒傀儡",
+    "source": "userscript"
+  },
+  {
+    "id": "poisontouch",
+    "name": "Poison Touch",
+    "num": 143,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "毒手",
+    "source": "userscript"
+  },
+  {
+    "id": "powerconstruct",
+    "name": "Power Construct",
+    "num": 211,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "群聚变形",
+    "source": "userscript"
+  },
+  {
+    "id": "powerofalchemy",
+    "name": "Power of Alchemy",
+    "num": 223,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "化学之力",
+    "source": "userscript"
+  },
+  {
+    "id": "powerspot",
+    "name": "Power Spot",
+    "num": 249,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "能量点",
+    "source": "userscript"
+  },
+  {
+    "id": "prankster",
+    "name": "Prankster",
+    "num": 158,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "恶作剧之心",
+    "source": "userscript"
+  },
+  {
+    "id": "pressure",
+    "name": "Pressure",
+    "num": 46,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "压迫感",
+    "source": "userscript"
+  },
+  {
+    "id": "primordialsea",
+    "name": "Primordial Sea",
+    "num": 189,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "始源之海",
+    "source": "userscript"
+  },
+  {
+    "id": "prismarmor",
+    "name": "Prism Armor",
+    "num": 232,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "棱镜装甲",
+    "source": "userscript"
+  },
+  {
+    "id": "propellertail",
+    "name": "Propeller Tail",
+    "num": 239,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "螺旋尾鳍",
+    "source": "userscript"
+  },
+  {
+    "id": "protean",
+    "name": "Protean",
+    "num": 168,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "变幻自如",
+    "source": "userscript"
+  },
+  {
+    "id": "protosynthesis",
+    "name": "Protosynthesis",
+    "num": 281,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "古代活性",
+    "source": "userscript"
+  },
+  {
+    "id": "psychicsurge",
+    "name": "Psychic Surge",
+    "num": 227,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "精神制造者",
+    "source": "userscript"
+  },
+  {
+    "id": "punkrock",
+    "name": "Punk Rock",
+    "num": 244,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "庞克摇滚",
+    "source": "userscript"
+  },
+  {
+    "id": "purepower",
+    "name": "Pure Power",
+    "num": 74,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "瑜珈之力",
+    "source": "userscript"
+  },
+  {
+    "id": "purifyingsalt",
+    "name": "Purifying Salt",
+    "num": 272,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "洁净之盐",
+    "source": "userscript"
+  },
+  {
+    "id": "quarkdrive",
+    "name": "Quark Drive",
+    "num": 282,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "夸克充能",
+    "source": "userscript"
+  },
+  {
+    "id": "queenlymajesty",
+    "name": "Queenly Majesty",
+    "num": 214,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "女王的威严",
+    "source": "userscript"
+  },
+  {
+    "id": "quickdraw",
+    "name": "Quick Draw",
+    "num": 259,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "速击",
+    "source": "userscript"
+  },
+  {
+    "id": "quickfeet",
+    "name": "Quick Feet",
+    "num": 95,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "飞毛腿",
+    "source": "userscript"
+  },
+  {
+    "id": "raindish",
+    "name": "Rain Dish",
+    "num": 44,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "雨盘",
+    "source": "userscript"
+  },
+  {
+    "id": "rattled",
+    "name": "Rattled",
+    "num": 155,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "胆怯",
+    "source": "userscript"
+  },
+  {
+    "id": "receiver",
+    "name": "Receiver",
+    "num": 222,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "接球手",
+    "source": "userscript"
+  },
+  {
+    "id": "reckless",
+    "name": "Reckless",
+    "num": 120,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "舍身",
+    "source": "userscript"
+  },
+  {
+    "id": "refrigerate",
+    "name": "Refrigerate",
+    "num": 174,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "冰冻皮肤",
+    "source": "userscript"
+  },
+  {
+    "id": "regenerator",
+    "name": "Regenerator",
+    "num": 144,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "再生力",
+    "source": "userscript"
+  },
+  {
+    "id": "ripen",
+    "name": "Ripen",
+    "num": 247,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "熟成",
+    "source": "userscript"
+  },
+  {
+    "id": "rivalry",
+    "name": "Rivalry",
+    "num": 79,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "斗争心",
+    "source": "userscript"
+  },
+  {
+    "id": "rkssystem",
+    "name": "RKS System",
+    "num": 225,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "AR系统",
+    "source": "userscript"
+  },
+  {
+    "id": "rockhead",
+    "name": "Rock Head",
+    "num": 69,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "坚硬脑袋",
+    "source": "userscript"
+  },
+  {
+    "id": "rockypayload",
+    "name": "Rocky Payload",
+    "num": 276,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "搬岩",
+    "source": "userscript"
+  },
+  {
+    "id": "roughskin",
+    "name": "Rough Skin",
+    "num": 24,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "粗糙皮肤",
+    "source": "userscript"
+  },
+  {
+    "id": "runaway",
+    "name": "Run Away",
+    "num": 50,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "逃跑",
+    "source": "userscript"
+  },
+  {
+    "id": "sandforce",
+    "name": "Sand Force",
+    "num": 159,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "沙之力",
+    "source": "userscript"
+  },
+  {
+    "id": "sandrush",
+    "name": "Sand Rush",
+    "num": 146,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "泼沙",
+    "source": "userscript"
+  },
+  {
+    "id": "sandspit",
+    "name": "Sand Spit",
+    "num": 245,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "吐沙",
+    "source": "userscript"
+  },
+  {
+    "id": "sandstream",
+    "name": "Sand Stream",
+    "num": 45,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "扬沙",
+    "source": "userscript"
+  },
+  {
+    "id": "sandveil",
+    "name": "Sand Veil",
+    "num": 8,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "沙隐",
+    "source": "userscript"
+  },
+  {
+    "id": "sapsipper",
+    "name": "Sap Sipper",
+    "num": 157,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "食草",
+    "source": "userscript"
+  },
+  {
+    "id": "schooling",
+    "name": "Schooling",
+    "num": 208,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "鱼群",
+    "source": "userscript"
+  },
+  {
+    "id": "scrappy",
+    "name": "Scrappy",
+    "num": 113,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "胆量",
+    "source": "userscript"
+  },
+  {
+    "id": "screencleaner",
+    "name": "Screen Cleaner",
+    "num": 251,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "除障",
+    "source": "userscript"
+  },
+  {
+    "id": "seedsower",
+    "name": "Seed Sower",
+    "num": 269,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "掉出种子",
+    "source": "userscript"
+  },
+  {
+    "id": "serenegrace",
+    "name": "Serene Grace",
+    "num": 32,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "天恩",
+    "source": "userscript"
+  },
+  {
+    "id": "shadowshield",
+    "name": "Shadow Shield",
+    "num": 231,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "幻影防守",
+    "source": "userscript"
+  },
+  {
+    "id": "shadowtag",
+    "name": "Shadow Tag",
+    "num": 23,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "踩影",
+    "source": "userscript"
+  },
+  {
+    "id": "sharpness",
+    "name": "Sharpness",
+    "num": 292,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "锋锐",
+    "source": "userscript"
+  },
+  {
+    "id": "shedskin",
+    "name": "Shed Skin",
+    "num": 61,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "蜕皮",
+    "source": "userscript"
+  },
+  {
+    "id": "sheerforce",
+    "name": "Sheer Force",
+    "num": 125,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "强行",
+    "source": "userscript"
+  },
+  {
+    "id": "shellarmor",
+    "name": "Shell Armor",
+    "num": 75,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "硬壳盔甲",
+    "source": "userscript"
+  },
+  {
+    "id": "shielddust",
+    "name": "Shield Dust",
+    "num": 19,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "鳞粉",
+    "source": "userscript"
+  },
+  {
+    "id": "shieldsdown",
+    "name": "Shields Down",
+    "num": 197,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "界限盾壳",
+    "source": "userscript"
+  },
+  {
+    "id": "simple",
+    "name": "Simple",
+    "num": 86,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "单纯",
+    "source": "userscript"
+  },
+  {
+    "id": "skilllink",
+    "name": "Skill Link",
+    "num": 92,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "连续攻击",
+    "source": "userscript"
+  },
+  {
+    "id": "slowstart",
+    "name": "Slow Start",
+    "num": 112,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "慢启动",
+    "source": "userscript"
+  },
+  {
+    "id": "slushrush",
+    "name": "Slush Rush",
+    "num": 202,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "拨雪",
+    "source": "userscript"
+  },
+  {
+    "id": "sniper",
+    "name": "Sniper",
+    "num": 97,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "狙击手",
+    "source": "userscript"
+  },
+  {
+    "id": "snowcloak",
+    "name": "Snow Cloak",
+    "num": 81,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "雪隐",
+    "source": "userscript"
+  },
+  {
+    "id": "snowwarning",
+    "name": "Snow Warning",
+    "num": 117,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "降雪",
+    "source": "userscript"
+  },
+  {
+    "id": "solarpower",
+    "name": "Solar Power",
+    "num": 94,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "太阳之力",
+    "source": "userscript"
+  },
+  {
+    "id": "solidrock",
+    "name": "Solid Rock",
+    "num": 116,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "坚硬岩石",
+    "source": "userscript"
+  },
+  {
+    "id": "soulheart",
+    "name": "Soul-Heart",
+    "num": 220,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "魂心",
+    "source": "userscript"
+  },
+  {
+    "id": "soundproof",
+    "name": "Soundproof",
+    "num": 43,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "隔音",
+    "source": "userscript"
+  },
+  {
+    "id": "speedboost",
+    "name": "Speed Boost",
+    "num": 3,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "加速",
+    "source": "userscript"
+  },
+  {
+    "id": "stakeout",
+    "name": "Stakeout",
+    "num": 198,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "蹲守",
+    "source": "userscript"
+  },
+  {
+    "id": "stall",
+    "name": "Stall",
+    "num": 100,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "慢出",
+    "source": "userscript"
+  },
+  {
+    "id": "stalwart",
+    "name": "Stalwart",
+    "num": 242,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "坚毅",
+    "source": "userscript"
+  },
+  {
+    "id": "stamina",
+    "name": "Stamina",
+    "num": 192,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "持久力",
+    "source": "userscript"
+  },
+  {
+    "id": "stancechange",
+    "name": "Stance Change",
+    "num": 176,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "战斗切换",
+    "source": "userscript"
+  },
+  {
+    "id": "static",
+    "name": "Static",
+    "num": 9,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "静电",
+    "source": "userscript"
+  },
+  {
+    "id": "steadfast",
+    "name": "Steadfast",
+    "num": 80,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "不屈之心",
+    "source": "userscript"
+  },
+  {
+    "id": "steamengine",
+    "name": "Steam Engine",
+    "num": 243,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "蒸汽机",
+    "source": "userscript"
+  },
+  {
+    "id": "steelworker",
+    "name": "Steelworker",
+    "num": 200,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "钢能力者",
+    "source": "userscript"
+  },
+  {
+    "id": "steelyspirit",
+    "name": "Steely Spirit",
+    "num": 252,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "钢之意志",
+    "source": "userscript"
+  },
+  {
+    "id": "stench",
+    "name": "Stench",
+    "num": 1,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "恶臭",
+    "source": "userscript"
+  },
+  {
+    "id": "stickyhold",
+    "name": "Sticky Hold",
+    "num": 60,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "黏着",
+    "source": "userscript"
+  },
+  {
+    "id": "stormdrain",
+    "name": "Storm Drain",
+    "num": 114,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "引水",
+    "source": "userscript"
+  },
+  {
+    "id": "strongjaw",
+    "name": "Strong Jaw",
+    "num": 173,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "强壮之颚",
+    "source": "userscript"
+  },
+  {
+    "id": "sturdy",
+    "name": "Sturdy",
+    "num": 5,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "结实",
+    "source": "userscript"
+  },
+  {
+    "id": "suctioncups",
+    "name": "Suction Cups",
+    "num": 21,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "吸盘",
+    "source": "userscript"
+  },
+  {
+    "id": "superluck",
+    "name": "Super Luck",
+    "num": 105,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "超幸运",
+    "source": "userscript"
+  },
+  {
+    "id": "supersweetsyrup",
+    "name": "Supersweet Syrup",
+    "num": 306,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "甘露之蜜",
+    "source": "userscript"
+  },
+  {
+    "id": "supremeoverlord",
+    "name": "Supreme Overlord",
+    "num": 293,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "大将",
+    "source": "userscript"
+  },
+  {
+    "id": "surgesurfer",
+    "name": "Surge Surfer",
+    "num": 207,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "冲浪之尾",
+    "source": "userscript"
+  },
+  {
+    "id": "swarm",
+    "name": "Swarm",
+    "num": 68,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "虫之预感",
+    "source": "userscript"
+  },
+  {
+    "id": "sweetveil",
+    "name": "Sweet Veil",
+    "num": 175,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "甜幕",
+    "source": "userscript"
+  },
+  {
+    "id": "swiftswim",
+    "name": "Swift Swim",
+    "num": 33,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "悠游自如",
+    "source": "userscript"
+  },
+  {
+    "id": "swordofruin",
+    "name": "Sword of Ruin",
+    "num": 285,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "灾祸之剑",
+    "source": "userscript"
+  },
+  {
+    "id": "symbiosis",
+    "name": "Symbiosis",
+    "num": 180,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "共生",
+    "source": "userscript"
+  },
+  {
+    "id": "synchronize",
+    "name": "Synchronize",
+    "num": 28,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "同步",
+    "source": "userscript"
+  },
+  {
+    "id": "tabletsofruin",
+    "name": "Tablets of Ruin",
+    "num": 284,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "灾祸之简",
+    "source": "userscript"
+  },
+  {
+    "id": "tangledfeet",
+    "name": "Tangled Feet",
+    "num": 77,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "蹒跚",
+    "source": "userscript"
+  },
+  {
+    "id": "tanglinghair",
+    "name": "Tangling Hair",
+    "num": 221,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "卷发",
+    "source": "userscript"
+  },
+  {
+    "id": "technician",
+    "name": "Technician",
+    "num": 101,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "技术高手",
+    "source": "userscript"
+  },
+  {
+    "id": "telepathy",
+    "name": "Telepathy",
+    "num": 140,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "心灵感应",
+    "source": "userscript"
+  },
+  {
+    "id": "teraformzero",
+    "name": "Teraform Zero",
+    "num": 309,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "归零化境",
+    "source": "userscript"
+  },
+  {
+    "id": "terashell",
+    "name": "Tera Shell",
+    "num": 308,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "太晶甲壳",
+    "source": "userscript"
+  },
+  {
+    "id": "terashift",
+    "name": "Tera Shift",
+    "num": 307,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "太晶变形",
+    "source": "userscript"
+  },
+  {
+    "id": "teravolt",
+    "name": "Teravolt",
+    "num": 164,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "兆级电压",
+    "source": "userscript"
+  },
+  {
+    "id": "thermalexchange",
+    "name": "Thermal Exchange",
+    "num": 270,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "热交换",
+    "source": "userscript"
+  },
+  {
+    "id": "thickfat",
+    "name": "Thick Fat",
+    "num": 47,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "厚脂肪",
+    "source": "userscript"
+  },
+  {
+    "id": "tintedlens",
+    "name": "Tinted Lens",
+    "num": 110,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "有色眼镜",
+    "source": "userscript"
+  },
+  {
+    "id": "torrent",
+    "name": "Torrent",
+    "num": 67,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "激流",
+    "source": "userscript"
+  },
+  {
+    "id": "toughclaws",
+    "name": "Tough Claws",
+    "num": 181,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "硬爪",
+    "source": "userscript"
+  },
+  {
+    "id": "toxicboost",
+    "name": "Toxic Boost",
+    "num": 137,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "中毒激升",
+    "source": "userscript"
+  },
+  {
+    "id": "toxicchain",
+    "name": "Toxic Chain",
+    "num": 305,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "毒锁链",
+    "source": "userscript"
+  },
+  {
+    "id": "toxicdebris",
+    "name": "Toxic Debris",
+    "num": 295,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "毒满地",
+    "source": "userscript"
+  },
+  {
+    "id": "trace",
+    "name": "Trace",
+    "num": 36,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "复制",
+    "source": "userscript"
+  },
+  {
+    "id": "transistor",
+    "name": "Transistor",
+    "num": 262,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "电晶体",
+    "source": "userscript"
+  },
+  {
+    "id": "triage",
+    "name": "Triage",
+    "num": 205,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "先行治疗",
+    "source": "userscript"
+  },
+  {
+    "id": "truant",
+    "name": "Truant",
+    "num": 54,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "懒惰",
+    "source": "userscript"
+  },
+  {
+    "id": "turboblaze",
+    "name": "Turboblaze",
+    "num": 163,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "涡轮火焰",
+    "source": "userscript"
+  },
+  {
+    "id": "unaware",
+    "name": "Unaware",
+    "num": 109,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "纯朴",
+    "source": "userscript"
+  },
+  {
+    "id": "unburden",
+    "name": "Unburden",
+    "num": 84,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "轻装",
+    "source": "userscript"
+  },
+  {
+    "id": "unnerve",
+    "name": "Unnerve",
+    "num": 127,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "紧张感",
+    "source": "userscript"
+  },
+  {
+    "id": "unseenfist",
+    "name": "Unseen Fist",
+    "num": 260,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "无形拳",
+    "source": "userscript"
+  },
+  {
+    "id": "vesselofruin",
+    "name": "Vessel of Ruin",
+    "num": 284,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "灾祸之鼎",
+    "source": "userscript"
+  },
+  {
+    "id": "victorystar",
+    "name": "Victory Star",
+    "num": 162,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "胜利之星",
+    "source": "userscript"
+  },
+  {
+    "id": "vitalspirit",
+    "name": "Vital Spirit",
+    "num": 72,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "干劲",
+    "source": "userscript"
+  },
+  {
+    "id": "voltabsorb",
+    "name": "Volt Absorb",
+    "num": 10,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "蓄电",
+    "source": "userscript"
+  },
+  {
+    "id": "wanderingspirit",
+    "name": "Wandering Spirit",
+    "num": 254,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "游魂",
+    "source": "userscript"
+  },
+  {
+    "id": "waterabsorb",
+    "name": "Water Absorb",
+    "num": 11,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "储水",
+    "source": "userscript"
+  },
+  {
+    "id": "waterbubble",
+    "name": "Water Bubble",
+    "num": 199,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "水泡",
+    "source": "userscript"
+  },
+  {
+    "id": "watercompaction",
+    "name": "Water Compaction",
+    "num": 195,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "遇水凝固",
+    "source": "userscript"
+  },
+  {
+    "id": "waterveil",
+    "name": "Water Veil",
+    "num": 41,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "水幕",
+    "source": "userscript"
+  },
+  {
+    "id": "weakarmor",
+    "name": "Weak Armor",
+    "num": 133,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "碎裂铠甲",
+    "source": "userscript"
+  },
+  {
+    "id": "wellbakedbody",
+    "name": "Well-Baked Body",
+    "num": 273,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "焦香之躯",
+    "source": "userscript"
+  },
+  {
+    "id": "whitesmoke",
+    "name": "White Smoke",
+    "num": 73,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "白色烟雾",
+    "source": "userscript"
+  },
+  {
+    "id": "wimpout",
+    "name": "Wimp Out",
+    "num": 193,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "跃跃欲逃",
+    "source": "userscript"
+  },
+  {
+    "id": "windpower",
+    "name": "Wind Power",
+    "num": 277,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "风力发电",
+    "source": "userscript"
+  },
+  {
+    "id": "windrider",
+    "name": "Wind Rider",
+    "num": 274,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "乘风",
+    "source": "userscript"
+  },
+  {
+    "id": "wonderguard",
+    "name": "Wonder Guard",
+    "num": 25,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "神奇守护",
+    "source": "userscript"
+  },
+  {
+    "id": "wonderskin",
+    "name": "Wonder Skin",
+    "num": 147,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "奇迹皮肤",
+    "source": "userscript"
+  },
+  {
+    "id": "zenmode",
+    "name": "Zen Mode",
+    "num": 161,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "达摩模式",
+    "source": "userscript"
+  },
+  {
+    "id": "zerotohero",
+    "name": "Zero to Hero",
+    "num": 278,
+    "nonstandard": null,
+    "baseSpecies": null,
+    "forme": null,
+    "zhHans": "全能变身",
+    "source": "userscript"
+  }
+]

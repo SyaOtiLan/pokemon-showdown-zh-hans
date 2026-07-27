@@ -1,0 +1,18 @@
+[
+  {
+    "id": "crucibellite",
+    "name": "Crucibellite",
+    "num": -1,
+    "nonstandard": "CAP",
+    "baseSpecies": null,
+    "forme": null
+  },
+  {
+    "id": "vilevial",
+    "name": "Vile Vial",
+    "num": -2,
+    "nonstandard": "CAP",
+    "baseSpecies": null,
+    "forme": null
+  }
+]
