@@ -1,10 +1,14 @@
 // ==UserScript==
 // @name         Pokémon Showdown 简体中文
-// @namespace    https://github.com/pokemon-showdown-zh-hans
+// @namespace    https://github.com/SyaOtiLan/pokemon-showdown-zh-hans
 // @version      0.1.0
 // @description  官方站及常见 PS 服务器的简体中文界面、战报与中文名称搜索
 // @author       AL、WyAK and contributors
 // @license      AGPL-3.0
+// @homepageURL  https://github.com/SyaOtiLan/pokemon-showdown-zh-hans
+// @supportURL   https://github.com/SyaOtiLan/pokemon-showdown-zh-hans/issues
+// @downloadURL  https://raw.githubusercontent.com/SyaOtiLan/pokemon-showdown-zh-hans/main/release/pokemon-showdown-zh-hans.user.js
+// @updateURL    https://raw.githubusercontent.com/SyaOtiLan/pokemon-showdown-zh-hans/main/release/pokemon-showdown-zh-hans.user.js
 // @match        https://play.pokemonshowdown.com/*
 // @match        https://replay.pokemonshowdown.com/*
 // @match        https://dex.pokemonshowdown.com/*

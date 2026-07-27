@@ -4,7 +4,7 @@
 
 ## 普通玩家直接安装
 
-不需要自己的服务器。安装 Tampermonkey/Violentmonkey 后，从 GitHub Release 下载并安装 [`pokemon-showdown-zh-hans.user.js`](release/pokemon-showdown-zh-hans.user.js)，即可在 Pokémon Showdown 官方站使用中文界面、中文战报和中文名称搜索。
+不需要自己的服务器。安装 Tampermonkey/Violentmonkey 后，[点击这里一键安装油猴脚本](https://raw.githubusercontent.com/SyaOtiLan/pokemon-showdown-zh-hans/main/release/pokemon-showdown-zh-hans.user.js)，即可在 Pokémon Showdown 官方站使用中文界面、中文战报和中文名称搜索。
 
 自建客户端和服务器只是服主选项，不是普通玩家使用汉化的前置条件。
 

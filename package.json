@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "homepage": "https://github.com/SyaOtiLan/pokemon-showdown-zh-hans",
+  "repository": "github:SyaOtiLan/pokemon-showdown-zh-hans",
   "scripts": {
 	"bootstrap": "node scripts/bootstrap.mjs",
     "generate": "node scripts/audit-localization.mjs && node scripts/generate-client-localization.mjs",
