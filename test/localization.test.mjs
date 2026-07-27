@@ -31,11 +31,13 @@ test('runtime translates names and resolves Chinese searches to protocol IDs', (
 	assert.equal(localizer.catalog.species.syclar, undefined, 'CAP species must stay out of the official catalog');
 });
 
-test('runtime reuses battle rules without a MutationObserver', () => {
+test('runtime reuses battle rules and provides a guarded DOM observer', () => {
 	const {localizer, source} = loadRuntime();
 	assert.equal(localizer.battle('Pikachu used '), '皮卡丘使出了');
 	assert.equal(localizer.battle('The opposing Pikachu fainted!'), '对手的皮卡丘倒下了！');
-	assert.equal(source.includes('MutationObserver'), false);
+	assert.equal(typeof localizer.installDOM, 'function');
+	assert.match(source, /MutationObserver/);
+	assert.match(source, /username\|usernametext\|chat\|message-pm\|userlist/);
 });
 
 test('client loads locale before localized components', () => {
@@ -64,6 +66,7 @@ test('generated browser assets are syntactically valid', () => {
 	const init = fs.readFileSync(path.join(clientRoot, 'js', 'localization-preact-init.js'), 'utf8');
 	assert.doesNotThrow(() => new vm.Script(runtime));
 	assert.doesNotThrow(() => new vm.Script(init));
+	assert.match(init, /installDOM\(document\.body\)/);
 });
 
 test('standalone userscript works without a self-hosted server', () => {

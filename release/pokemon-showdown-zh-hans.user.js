@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pokémon Showdown 简体中文
 // @namespace    https://github.com/SyaOtiLan/pokemon-showdown-zh-hans
-// @version      0.1.0
+// @version      0.1.1
 // @description  官方站及常见 PS 服务器的简体中文界面、战报与中文名称搜索
 // @author       AL、WyAK and contributors
 // @license      AGPL-3.0
@@ -4564,7 +4564,10 @@ function translateElement(element) {
   for (var j = 0; j < elements.length; j++) {
     ['placeholder', 'title', 'aria-label'].forEach(function (key) {
       var value = elements[j].getAttribute && elements[j].getAttribute(key);
-      if (value) elements[j].setAttribute(key, translateExact(value));
+      if (value) {
+        var translated = translateExact(value);
+        if (translated !== value) elements[j].setAttribute(key, translated);
+      }
     });
   }
   return element;
@@ -4616,6 +4619,32 @@ function installPreact(preact) {
   };
 }
 
+function installDOM(root) {
+  if (!root || typeof MutationObserver === 'undefined') return null;
+  if (global.__psZhHansDOMObserver) return global.__psZhHansDOMObserver;
+  translateElement(root);
+  var observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.type === 'characterData') {
+        translateElement(mutation.target);
+      } else if (mutation.type === 'attributes') {
+        translateElement(mutation.target);
+      } else {
+        mutation.addedNodes.forEach(function (node) { translateElement(node); });
+      }
+    });
+  });
+  observer.observe(root, {
+    childList: true,
+    characterData: true,
+    attributes: true,
+    attributeFilter: ['placeholder', 'title', 'aria-label'],
+    subtree: true
+  });
+  global.__psZhHansDOMObserver = observer;
+  return observer;
+}
+
 global.PSLocalizer = {
   locale: 'zh-Hans',
   catalog: catalog,
@@ -4625,7 +4654,8 @@ global.PSLocalizer = {
   element: translateElement,
   name: displayName,
   search: search,
-  installPreact: installPreact
+  installPreact: installPreact,
+  installDOM: installDOM
 };
 })(typeof window !== 'undefined' ? window : globalThis);
 
@@ -4637,18 +4667,7 @@ global.PSLocalizer = {
   window.__psZhHansStandaloneInstalled = true;
 
   if (window.preact) localizer.installPreact(window.preact);
-  if (document.body) localizer.element(document.body);
-
-  var observer = new MutationObserver(function (mutations) {
-    mutations.forEach(function (mutation) {
-      if (mutation.type === 'characterData') {
-        localizer.element(mutation.target);
-        return;
-      }
-      mutation.addedNodes.forEach(function (node) { localizer.element(node); });
-    });
-  });
-  if (document.body) observer.observe(document.body, {childList: true, characterData: true, subtree: true});
+  localizer.installDOM(document.body);
 
   function installChineseSearch() {
     if (!window.DexSearch || window.DexSearch.prototype.__psZhHansSearchInstalled) return false;
