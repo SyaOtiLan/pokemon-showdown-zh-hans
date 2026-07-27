@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pokémon Showdown 简体中文
 // @namespace    https://github.com/SyaOtiLan/pokemon-showdown-zh-hans
-// @version      0.1.2
+// @version      0.1.3
 // @description  官方站及常见 PS 服务器的简体中文界面、战报与中文名称搜索
 // @author       SyaOtiLan、AL、WyAK 及贡献者
 // @license      AGPL-3.0

@@ -11,6 +11,7 @@ const clientRoot = path.join(root, 'upstream', 'pokemon-showdown-client', 'play.
 const outputPath = path.join(clientRoot, 'js', 'localization-zh-hans.js');
 const preactInitPath = path.join(clientRoot, 'js', 'localization-preact-init.js');
 const userscriptOutputPath = path.join(root, 'release', 'pokemon-showdown-zh-hans.user.js');
+const packageVersion = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8')).version;
 
 function readJSON(filename) {
 	return JSON.parse(fs.readFileSync(filename, 'utf8'));
@@ -295,7 +296,7 @@ const standaloneBootstrap = `
 const userscriptHeader = `// ==UserScript==
 // @name         Pokémon Showdown 简体中文
 // @namespace    https://github.com/SyaOtiLan/pokemon-showdown-zh-hans
-// @version      0.1.2
+// @version      ${packageVersion}
 // @description  官方站及常见 PS 服务器的简体中文界面、战报与中文名称搜索
 // @author       SyaOtiLan、AL、WyAK 及贡献者
 // @license      AGPL-3.0
