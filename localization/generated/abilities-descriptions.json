@@ -1,0 +1,2783 @@
+[
+  {
+    "id": "adaptability",
+    "name": "Adaptability",
+    "shortDesc": {
+      "en": "This Pokemon's same-type attack bonus (STAB) is 2 instead of 1.5.",
+      "zhHans": "与自身属性一致的招式威力由1.5倍变为2倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "aerilate",
+    "name": "Aerilate",
+    "shortDesc": {
+      "en": "This Pokemon's Normal-type moves become Flying type and have 1.2x power.",
+      "zhHans": "一般属性招式变为飞行属性招式，威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "aftermath",
+    "name": "Aftermath",
+    "shortDesc": {
+      "en": "If this Pokemon is KOed with a contact move, that move's user loses 1/4 its max HP.",
+      "zhHans": "因接触类招式被击倒时，发动该攻击的宝可梦损失1/4最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "airlock",
+    "name": "Air Lock",
+    "shortDesc": {
+      "en": "While this Pokemon is active, the effects of weather conditions are disabled.",
+      "zhHans": "该宝可梦在场时，所有天气的影响都会消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "analytic",
+    "name": "Analytic",
+    "shortDesc": {
+      "en": "This Pokemon's attacks have 1.3x power if it is the last to move in a turn.",
+      "zhHans": "回合最后行动的话威力提升30%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "angerpoint",
+    "name": "Anger Point",
+    "shortDesc": {
+      "en": "If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages.",
+      "zhHans": "被击中要害时攻击提升12级，替身状态下不会发动",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "angershell",
+    "name": "Anger Shell",
+    "shortDesc": {
+      "en": "At 1/2 or less of this Pokemon's max HP: +1 Atk, Sp. Atk, Spe, and -1 Def, Sp. Def.",
+      "zhHans": "HP因受到攻击变为1/2以下时，防御和特防降低1级，攻击、特攻和速度提高1级。",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "anticipation",
+    "name": "Anticipation",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon shudders if any foe has a supereffective or OHKO move.",
+      "zhHans": "登场时可以预知对方的效果绝佳和一击必杀招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "arenatrap",
+    "name": "Arena Trap",
+    "shortDesc": {
+      "en": "Prevents opposing Pokemon from choosing to switch out unless they are airborne.",
+      "zhHans": "使对方所有非幽灵属性的地面上的宝可梦无法替换",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "armortail",
+    "name": "Armor Tail",
+    "shortDesc": {
+      "en": "This Pokemon and its allies are protected from opposing priority moves.",
+      "zhHans": "使对手无法对我方使出先制招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "aromaveil",
+    "name": "Aroma Veil",
+    "shortDesc": {
+      "en": "Protects user/allies from Attract, Disable, Encore, Heal Block, Taunt, and Torment.",
+      "zhHans": "己方宝可梦不会受到迷人、定身法、再来一次、回复封锁、挑衅和无理取闹的影响",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "asoneglastrier",
+    "name": "As One (Glastrier)",
+    "shortDesc": {
+      "en": "Combination of the Unnerve and Chilling Neigh Abilities.",
+      "zhHans": "兼备紧张感和苍白嘶鸣这两种特性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "asonespectrier",
+    "name": "As One (Spectrier)",
+    "shortDesc": {
+      "en": "Combination of the Unnerve and Grim Neigh Abilities.",
+      "zhHans": "兼备紧张感和漆黑嘶鸣这两种特性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "aurabreak",
+    "name": "Aura Break",
+    "shortDesc": {
+      "en": "While this Pokemon is active, the Dark Aura and Fairy Aura power modifier is 0.75x.",
+      "zhHans": "反转气场类特性，令其对恶属性和妖精属性的加成变为降低25%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "baddreams",
+    "name": "Bad Dreams",
+    "shortDesc": {
+      "en": "Causes sleeping foes to lose 1/8 of their max HP at the end of each turn.",
+      "zhHans": "使对手的处于睡眠状态的宝可梦每回合损失最大HP的1/8",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "ballfetch",
+    "name": "Ball Fetch",
+    "shortDesc": {
+      "en": "No competitive use.",
+      "zhHans": "没有实战用途",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "battery",
+    "name": "Battery",
+    "shortDesc": {
+      "en": "This Pokemon's allies have the power of their special attacks multiplied by 1.3.",
+      "zhHans": "我方场上所有宝可梦使用特殊招式的威力增加30%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "battlearmor",
+    "name": "Battle Armor",
+    "shortDesc": {
+      "en": "This Pokemon cannot be struck by a critical hit.",
+      "zhHans": "不会被击中要害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "battlebond",
+    "name": "Battle Bond",
+    "shortDesc": {
+      "en": "After KOing a Pokemon: raises Attack, Sp. Atk, Speed by 1 stage. Once per battle.",
+      "zhHans": "击败对手一只宝可梦后，攻击、特攻和速度提升1级。每场对战仅能发动一次",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "beadsofruin",
+    "name": "Beads of Ruin",
+    "shortDesc": {
+      "en": "Active Pokemon without this Ability have their Special Defense multiplied by 0.75.",
+      "zhHans": "在场时，除该特性的宝可梦外，其他特性的宝可梦的特防降低为原本的75%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "beastboost",
+    "name": "Beast Boost",
+    "shortDesc": {
+      "en": "This Pokemon's highest stat is raised by 1 if it attacks and KOes another Pokemon.",
+      "zhHans": "击倒对方一只宝可梦之后最高一项能力提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "berserk",
+    "name": "Berserk",
+    "shortDesc": {
+      "en": "This Pokemon's Sp. Atk is raised by 1 when it reaches 1/2 or less of its max HP.",
+      "zhHans": "因对手的攻击HP变为1/2时，特攻会提高1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "bigpecks",
+    "name": "Big Pecks",
+    "shortDesc": {
+      "en": "Prevents other Pokemon from lowering this Pokemon's Defense stat stage.",
+      "zhHans": "防御不会下降",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "blaze",
+    "name": "Blaze",
+    "shortDesc": {
+      "en": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Fire attacks.",
+      "zhHans": "当HP小于1/3时，火属性招式的威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "bulletproof",
+    "name": "Bulletproof",
+    "shortDesc": {
+      "en": "This Pokemon is immune to bullet moves.",
+      "zhHans": "免疫球和弹类招式的伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "cheekpouch",
+    "name": "Cheek Pouch",
+    "shortDesc": {
+      "en": "If this Pokemon eats a Berry, it restores 1/3 of its max HP after the Berry's effect.",
+      "zhHans": "食用树果触发效果之后额外回复1/3最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "chillingneigh",
+    "name": "Chilling Neigh",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is raised by 1 stage if it attacks and KOes another Pokemon.",
+      "zhHans": "每击倒对方一只宝可梦攻击提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "chlorophyll",
+    "name": "Chlorophyll",
+    "shortDesc": {
+      "en": "If Sunny Day is active, this Pokemon's Speed is doubled.",
+      "zhHans": "大晴天下速度翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "clearbody",
+    "name": "Clear Body",
+    "shortDesc": {
+      "en": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+      "zhHans": "不会因为对手的招式或特性而被降低能力",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "cloudnine",
+    "name": "Cloud Nine",
+    "shortDesc": {
+      "en": "While this Pokemon is active, the effects of weather conditions are disabled.",
+      "zhHans": "该宝可梦在场时，所有天气的影响都会消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "colorchange",
+    "name": "Color Change",
+    "shortDesc": {
+      "en": "This Pokemon's type changes to the type of a move it's hit by, unless it has the type.",
+      "zhHans": "受到伤害时若招式属性和宝可梦当前属性不同，则宝可梦在伤害结算后变为该属性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "comatose",
+    "name": "Comatose",
+    "shortDesc": {
+      "en": "This Pokemon cannot be statused, and is considered to be asleep.",
+      "zhHans": "不会陷入任何异常状态，始终视为处于睡眠状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "commander",
+    "name": "Commander",
+    "shortDesc": {
+      "en": "If ally is Dondozo: this Pokemon cannot act or be hit, +2 to all Dondozo's stats.",
+      "zhHans": "若我方有吃吼霸，则该宝可梦无法被攻击，吃吼霸全属性提高2级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "competitive",
+    "name": "Competitive",
+    "shortDesc": {
+      "en": "This Pokemon's Sp. Atk is raised by 2 for each of its stats that is lowered by a foe.",
+      "zhHans": "能力阶级被降低时特攻提升2级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "compoundeyes",
+    "name": "Compound Eyes",
+    "shortDesc": {
+      "en": "This Pokemon's moves have their accuracy multiplied by 1.3.",
+      "zhHans": "命中率提升30%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "contrary",
+    "name": "Contrary",
+    "shortDesc": {
+      "en": "If this Pokemon has a stat stage raised it is lowered instead, and vice versa.",
+      "zhHans": "能力阶级的下降变为上升，上升变为下降",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "corrosion",
+    "name": "Corrosion",
+    "shortDesc": {
+      "en": "This Pokemon can poison or badly poison a Pokemon regardless of its typing.",
+      "zhHans": "该宝可梦使用的招式可以使毒属性和钢属性的宝可梦中毒",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "costar",
+    "name": "Costar",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon copies all of its ally's stat stage changes.",
+      "zhHans": "该特性的宝可梦出场时，会复制同伴的能力变化",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "cottondown",
+    "name": "Cotton Down",
+    "shortDesc": {
+      "en": "If this Pokemon is hit, it lowers the Speed of all other Pokemon on the field 1 stage.",
+      "zhHans": "受到攻击时，令除该特性以外的宝可梦速度降低1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "cudchew",
+    "name": "Cud Chew",
+    "shortDesc": {
+      "en": "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn.",
+      "zhHans": "食用树果，或受到投掷的树果影响后，会在下一回合结束时，再食用1次该树果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "curiousmedicine",
+    "name": "Curious Medicine",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon's allies have their stat stages reset to 0.",
+      "zhHans": "出场时会从贝壳撒药，将我方的能力变化复原 ",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "cursedbody",
+    "name": "Cursed Body",
+    "shortDesc": {
+      "en": "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled.",
+      "zhHans": "受到伤害时有30%几率令其进入定身法状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "cutecharm",
+    "name": "Cute Charm",
+    "shortDesc": {
+      "en": "30% chance of infatuating Pokemon of the opposite gender if they make contact.",
+      "zhHans": "受到接触类伤害时有30%几率令其进入着迷状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "damp",
+    "name": "Damp",
+    "shortDesc": {
+      "en": "Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.",
+      "zhHans": "当该特性的宝可梦在场时，自爆、大爆炸、惊爆大头和薄雾炸裂会使用失败",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "dancer",
+    "name": "Dancer",
+    "shortDesc": {
+      "en": "After another Pokemon uses a dance move, this Pokemon uses the same move.",
+      "zhHans": "有其他宝可梦使用跳舞招式时，立即使用相同的招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "darkaura",
+    "name": "Dark Aura",
+    "shortDesc": {
+      "en": "While this Pokemon is active, a Dark move used by any Pokemon has 1.33x power.",
+      "zhHans": "场上所有恶属性招式威力提升33%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "dauntlessshield",
+    "name": "Dauntless Shield",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon's Defense is raised by 1 stage. Once per battle.",
+      "zhHans": "出场时，提升1级防御。每场对战仅能发动一次",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "dazzling",
+    "name": "Dazzling",
+    "shortDesc": {
+      "en": "This Pokemon and its allies are protected from opposing priority moves.",
+      "zhHans": "使对手无法对我方使出先制招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "defeatist",
+    "name": "Defeatist",
+    "shortDesc": {
+      "en": "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",
+      "zhHans": "HP低于50%时攻击和特攻减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "defiant",
+    "name": "Defiant",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is raised by 2 for each of its stats that is lowered by a foe.",
+      "zhHans": "能力阶级被降低时攻击提升2级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "deltastream",
+    "name": "Delta Stream",
+    "shortDesc": {
+      "en": "On switch-in, strong winds begin until this Ability is not active in battle.",
+      "zhHans": "登场时天气变为乱流，直到该宝可梦离场，除非天气被终结之地和始源之海更改",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "desolateland",
+    "name": "Desolate Land",
+    "shortDesc": {
+      "en": "On switch-in, extremely harsh sunlight begins until this Ability is not active in battle.",
+      "zhHans": "登场时天气变为大日照，直到该宝可梦离场，除非天气被德尔塔气流和始源之海更改",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "disguise",
+    "name": "Disguise",
+    "shortDesc": {
+      "en": "(Mimikyu only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
+      "zhHans": "首次受到的伤害改为损失1/8最大HP，该特性只对谜拟Q有效",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "download",
+    "name": "Download",
+    "shortDesc": {
+      "en": "On switch-in, Attack or Sp. Atk is raised 1 stage based on the foes' weaker Defense.",
+      "zhHans": "登场时，对方防御小于特防时，自身攻击提升1级；否则特攻提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "dragonsmaw",
+    "name": "Dragon's Maw",
+    "shortDesc": {
+      "en": "This Pokemon's offensive stat is multiplied by 1.5 while using a Dragon-type attack.",
+      "zhHans": "龙属性招式威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "drizzle",
+    "name": "Drizzle",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon summons Rain Dance.",
+      "zhHans": "登场时，天气变为下雨",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "drought",
+    "name": "Drought",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon summons Sunny Day.",
+      "zhHans": "登场时，天气变为大晴天",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "dryskin",
+    "name": "Dry Skin",
+    "shortDesc": {
+      "en": "This Pokemon is healed 1/4 by Water, 1/8 by Rain; is hurt 1.25x by Fire, 1/8 by Sun.",
+      "zhHans": "免疫水伤害并回复1/4HP，受到火伤害增加25%；下雨每回合回复1/8HP；大晴天每回合损失1/8HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "earlybird",
+    "name": "Early Bird",
+    "shortDesc": {
+      "en": "This Pokemon's sleep counter drops by 2 instead of 1.",
+      "zhHans": "陷入睡眠的持续回合变为原来的一半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "eartheater",
+    "name": "Earth Eater",
+    "shortDesc": {
+      "en": "This Pokemon heals 1/4 of its max HP when hit by Ground moves; Ground immunity.",
+      "zhHans": "该特性的宝可梦不受地面属性招式的影响；当被地面属性的招式击中时，回复25%最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "effectspore",
+    "name": "Effect Spore",
+    "shortDesc": {
+      "en": "30% chance of poison/paralysis/sleep on others making contact with this Pokemon.",
+      "zhHans": "受到接触类伤害时有30%几率令对方陷入中毒/麻痹/睡眠状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "electricsurge",
+    "name": "Electric Surge",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon summons Electric Terrain.",
+      "zhHans": "登场时释放电气场地",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "electromorphosis",
+    "name": "Electromorphosis",
+    "shortDesc": {
+      "en": "This Pokemon gains the Charge effect when it takes a hit from an attack.",
+      "zhHans": "受到伤害时，会进入充电状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "embodyaspectcornerstone",
+    "name": "Embody Aspect (Cornerstone)",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon's Defense is raised by 1 stage.",
+      "zhHans": "出场时，防御上升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "embodyaspecthearthflame",
+    "name": "Embody Aspect (Hearthflame)",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon's Attack is raised by 1 stage.",
+      "zhHans": "出场时，攻击上升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "embodyaspectteal",
+    "name": "Embody Aspect (Teal)",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon's Speed is raised by 1 stage.",
+      "zhHans": "出场时，速度上升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "embodyaspectwellspring",
+    "name": "Embody Aspect (Wellspring)",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon's Special Defense is raised by 1 stage.",
+      "zhHans": "出场时，特防上升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "emergencyexit",
+    "name": "Emergency Exit",
+    "shortDesc": {
+      "en": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP.",
+      "zhHans": "HP低于50%时自身退场",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "fairyaura",
+    "name": "Fairy Aura",
+    "shortDesc": {
+      "en": "While this Pokemon is active, a Fairy move used by any Pokemon has 1.33x power.",
+      "zhHans": "场上所有妖精属性招式威力提升33%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "filter",
+    "name": "Filter",
+    "shortDesc": {
+      "en": "This Pokemon receives 3/4 damage from supereffective attacks.",
+      "zhHans": "受到效果绝佳伤害时伤害降低25%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "flamebody",
+    "name": "Flame Body",
+    "shortDesc": {
+      "en": "30% chance a Pokemon making contact with this Pokemon will be burned.",
+      "zhHans": "受到接触类伤害时有30%几率概率陷入灼伤状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "flareboost",
+    "name": "Flare Boost",
+    "shortDesc": {
+      "en": "While this Pokemon is burned, its special attacks have 1.5x power.",
+      "zhHans": "陷入灼伤状态时特攻提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "flashfire",
+    "name": "Flash Fire",
+    "shortDesc": {
+      "en": "This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.",
+      "zhHans": "免疫火属性招式伤害，受到火属性招式攻击时火属性招式威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "flowergift",
+    "name": "Flower Gift",
+    "shortDesc": {
+      "en": "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x.",
+      "zhHans": "在大晴天和大日照天气时己方所有宝可梦攻击和特防提升50%，樱花儿的形态会改变",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "flowerveil",
+    "name": "Flower Veil",
+    "shortDesc": {
+      "en": "This side's Grass types can't have stats lowered or status inflicted by other Pokemon.",
+      "zhHans": "己方所有宝可梦草属性能力阶级不会被降低且不会进入异常状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "fluffy",
+    "name": "Fluffy",
+    "shortDesc": {
+      "en": "This Pokemon takes 1/2 damage from contact moves, 2x damage from Fire moves.",
+      "zhHans": "受到的接触类伤害减半，受到火属性招式伤害翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "forecast",
+    "name": "Forecast",
+    "shortDesc": {
+      "en": "Castform's type changes to the current weather condition's type, except Sandstorm.",
+      "zhHans": "漂浮泡泡的形态和属性根据天气而变化",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "forewarn",
+    "name": "Forewarn",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon is alerted to the foes' move with the highest power.",
+      "zhHans": "登场时，预知对方威力最高的招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "friendguard",
+    "name": "Friend Guard",
+    "shortDesc": {
+      "en": "This Pokemon's allies receive 3/4 damage from other Pokemon's attacks.",
+      "zhHans": "己方其他宝可梦受到的伤害降低25%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "frisk",
+    "name": "Frisk",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon.",
+      "zhHans": "登场时，预知对方所有宝可梦的道具",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "fullmetalbody",
+    "name": "Full Metal Body",
+    "shortDesc": {
+      "en": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+      "zhHans": "不会因为对手的招式或特性而被降低能力",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "furcoat",
+    "name": "Fur Coat",
+    "shortDesc": {
+      "en": "This Pokemon's Defense is doubled.",
+      "zhHans": "防御翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "galewings",
+    "name": "Gale Wings",
+    "shortDesc": {
+      "en": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1.",
+      "zhHans": "HP全满时飞行属性招式优先度+1",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "galvanize",
+    "name": "Galvanize",
+    "shortDesc": {
+      "en": "This Pokemon's Normal-type moves become Electric type and have 1.2x power.",
+      "zhHans": "一般属性招式变为电属性招式，威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "gluttony",
+    "name": "Gluttony",
+    "shortDesc": {
+      "en": "This Pokemon eats Berries at 1/2 max HP or less instead of their usual 1/4 max HP.",
+      "zhHans": "1/2最大HP时就可以食用树果，而不是通常的1/4",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "goodasgold",
+    "name": "Good as Gold",
+    "shortDesc": {
+      "en": "This Pokemon is immune to Status moves.",
+      "zhHans": "不会受到对手的变化招式的影响",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "gooey",
+    "name": "Gooey",
+    "shortDesc": {
+      "en": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+      "zhHans": "受到接触伤害时对方速度降低1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "gorillatactics",
+    "name": "Gorilla Tactics",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is 1.5x, but it can only select the first move it executes.",
+      "zhHans": "攻击提升至1.5倍，但只能使用一开始使用的招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "grasspelt",
+    "name": "Grass Pelt",
+    "shortDesc": {
+      "en": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5.",
+      "zhHans": "青草场地下防御提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "grassysurge",
+    "name": "Grassy Surge",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon summons Grassy Terrain.",
+      "zhHans": "登场时，释放青草场地",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "grimneigh",
+    "name": "Grim Neigh",
+    "shortDesc": {
+      "en": "This Pokemon's Sp. Atk is raised by 1 stage if it attacks and KOes another Pokemon.",
+      "zhHans": "每打败一只宝可梦都将使特攻提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "guarddog",
+    "name": "Guard Dog",
+    "shortDesc": {
+      "en": "Immune to Intimidate. Intimidated: +1 Attack. Cannot be forced to switch out.",
+      "zhHans": "受到威吓时使物攻提升1级，令替换宝可梦的招式和道具无效",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "gulpmissile",
+    "name": "Gulp Missile",
+    "shortDesc": {
+      "en": "When hit after Surf/Dive, attacker takes 1/4 max HP and -1 Defense or paralysis.",
+      "zhHans": "使出冲浪或潜水后被击中时，使对手HP减少1/4或使对手的防御降低1级，又或使对手陷入麻痹",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "guts",
+    "name": "Guts",
+    "shortDesc": {
+      "en": "If this Pokemon is statused, its Attack is 1.5x; ignores burn halving physical damage.",
+      "zhHans": "陷入异常状态时攻击提升50%，无视灼伤状态减半物理招式伤害效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "hadronengine",
+    "name": "Hadron Engine",
+    "shortDesc": {
+      "en": "On switch-in, summons Electric Terrain. During Electric Terrain, Sp. Atk is 1.3333x.",
+      "zhHans": "出场时，场地转为电气场地并持续5回合。场地为电气场地时，特攻提高33%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "harvest",
+    "name": "Harvest",
+    "shortDesc": {
+      "en": "If last item used is a Berry, 50% chance to restore it each end of turn. 100% in Sun.",
+      "zhHans": "使用树果后每回合50%概率回收该树果，大晴天和大日照天气下则必定回收",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "healer",
+    "name": "Healer",
+    "shortDesc": {
+      "en": "30% chance this Pokemon's ally has its status cured at the end of each turn.",
+      "zhHans": "每回合结束有30%几率治愈一名同伴的异常状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "heatproof",
+    "name": "Heatproof",
+    "shortDesc": {
+      "en": "Fire damage against this Pokemon is dealt with 1/2 offensive stat; 1/2 burn damage.",
+      "zhHans": "火属性招式和灼伤对您造成的伤害变为原本的一半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "heavymetal",
+    "name": "Heavy Metal",
+    "shortDesc": {
+      "en": "This Pokemon's weight is doubled.",
+      "zhHans": "体重翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "honeygather",
+    "name": "Honey Gather",
+    "shortDesc": {
+      "en": "No competitive use.",
+      "zhHans": "没有实战用途",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "hospitality",
+    "name": "Hospitality",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon restores 1/4 of its ally's maximum HP, rounded down.",
+      "zhHans": "出场时款待同伴，使其回复1/4最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "hugepower",
+    "name": "Huge Power",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is doubled.",
+      "zhHans": "攻击翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "hungerswitch",
+    "name": "Hunger Switch",
+    "shortDesc": {
+      "en": "If Morpeko, it changes between Full Belly and Hangry Mode at the end of each turn.",
+      "zhHans": "每回合都会改变自身的样子，气场轮会根据不同形态变为不同的属性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "hustle",
+    "name": "Hustle",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is 1.5x and accuracy of its physical attacks is 0.8x.",
+      "zhHans": "以物理招式的命中率降低20%为代价提升50%攻击",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "hydration",
+    "name": "Hydration",
+    "shortDesc": {
+      "en": "This Pokemon has its status cured at the end of each turn if Rain Dance is active.",
+      "zhHans": "下雨和大雨天气时，每回合结束治愈异常状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "hypercutter",
+    "name": "Hyper Cutter",
+    "shortDesc": {
+      "en": "Prevents other Pokemon from lowering this Pokemon's Attack stat stage.",
+      "zhHans": "攻击能力不会被对方降低",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "icebody",
+    "name": "Ice Body",
+    "shortDesc": {
+      "en": "If Snow is active, this Pokemon heals 1/16 of its max HP each turn.",
+      "zhHans": "天气处于冰雹或下雪状态时，每回合结束时回复最大HP的1/16",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "iceface",
+    "name": "Ice Face",
+    "shortDesc": {
+      "en": "If Eiscue, the first physical hit it takes deals 0 damage. Effect is restored in Snow.",
+      "zhHans": "抵御一次物理伤害，并转换为解冻头形态。天气变成下雪时，恢复为结冻头",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "icescales",
+    "name": "Ice Scales",
+    "shortDesc": {
+      "en": "This Pokemon receives 1/2 damage from special attacks.",
+      "zhHans": "受到特殊招式攻击伤害减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "illuminate",
+    "name": "Illuminate",
+    "shortDesc": {
+      "en": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.",
+      "zhHans": "命中率不会被下降，无视对方闪避率等级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "illusion",
+    "name": "Illusion",
+    "shortDesc": {
+      "en": "This Pokemon appears as the last Pokemon in the party until it takes direct damage.",
+      "zhHans": "受到伤害前始终显示为队伍中最后一个宝可梦的形象",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "immunity",
+    "name": "Immunity",
+    "shortDesc": {
+      "en": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it.",
+      "zhHans": "不会陷入中毒状态。获得特性时可治愈中毒状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "imposter",
+    "name": "Imposter",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it.",
+      "zhHans": "登场时以对应宝可梦为目标进入变身状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "infiltrator",
+    "name": "Infiltrator",
+    "shortDesc": {
+      "en": "Moves ignore substitutes and foe's Reflect/Light Screen/Safeguard/Mist/Aurora Veil.",
+      "zhHans": "自身使用招式时无视对方的替身/反射壁/光墙/神秘守护/白雾/极光幕",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "innardsout",
+    "name": "Innards Out",
+    "shortDesc": {
+      "en": "If this Pokemon is KOed with a move, that move's user loses an equal amount of HP.",
+      "zhHans": "被击倒时对方损失同样数量的HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "innerfocus",
+    "name": "Inner Focus",
+    "shortDesc": {
+      "en": "This Pokemon cannot be made to flinch. Immune to Intimidate.",
+      "zhHans": "不会陷入畏缩状态。免疫威吓",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia",
+    "shortDesc": {
+      "en": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
+      "zhHans": "不会陷入睡眠状态，在睡眠状态时获得这个特性可以治愈睡眠",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "intimidate",
+    "name": "Intimidate",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon lowers the Attack of opponents by 1 stage.",
+      "zhHans": "出场时使范围内的对手攻击下降1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "intrepidsword",
+    "name": "Intrepid Sword",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon's Attack is raised by 1 stage. Once per battle.",
+      "zhHans": "出场时，提升1级攻击。每场对战仅能发动一次",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "ironbarbs",
+    "name": "Iron Barbs",
+    "shortDesc": {
+      "en": "Pokemon making contact with this Pokemon lose 1/8 of their max HP.",
+      "zhHans": "受到接触伤害时对方损失1/8最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "ironfist",
+    "name": "Iron Fist",
+    "shortDesc": {
+      "en": "This Pokemon's punch-based attacks have 1.2x power. Sucker Punch is not boosted.",
+      "zhHans": "拳类招式威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "justified",
+    "name": "Justified",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move.",
+      "zhHans": "受到恶属性招式攻击时攻击提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "keeneye",
+    "name": "Keen Eye",
+    "shortDesc": {
+      "en": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.",
+      "zhHans": "命中率不会被下降，无视对方闪避率等级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "klutz",
+    "name": "Klutz",
+    "shortDesc": {
+      "en": "This Pokemon's held item has no effect, except Macho Brace. Fling cannot be used.",
+      "zhHans": "携带的道具无效，超级石、Z纯晶和影响基础点数、经验值和亲密度的携带物品除外，无法使用投掷",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "leafguard",
+    "name": "Leaf Guard",
+    "shortDesc": {
+      "en": "If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.",
+      "zhHans": "大晴天和大日照天气下不会陷入异常状态，使用睡觉会无效",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "levitate",
+    "name": "Levitate",
+    "shortDesc": {
+      "en": "This Pokemon is immune to Ground; Gravity/Ingrain/Smack Down/Iron Ball nullify it.",
+      "zhHans": "免疫地面属性伤害，但受到重力、扎根、击落和黑色铁球影响时仍会受到伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "libero",
+    "name": "Libero",
+    "shortDesc": {
+      "en": "This Pokemon's type changes to the type of the move it is using. Once per switch-in.",
+      "zhHans": "自身属性变为即将使用的招式的属性。每次出场仅能发动一次",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lightmetal",
+    "name": "Light Metal",
+    "shortDesc": {
+      "en": "This Pokemon's weight is halved.",
+      "zhHans": "体重减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lightningrod",
+    "name": "Lightning Rod",
+    "shortDesc": {
+      "en": "This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.",
+      "zhHans": "自动成为对方电属性招式的攻击目标并提升1级特攻；免疫电属性攻击",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "limber",
+    "name": "Limber",
+    "shortDesc": {
+      "en": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it.",
+      "zhHans": "不会陷入麻痹状态，获得特性时可治愈麻痹状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lingeringaroma",
+    "name": "Lingering Aroma",
+    "shortDesc": {
+      "en": "Making contact with this Pokemon has the attacker's Ability become Lingering Aroma.",
+      "zhHans": "该特性的宝可梦在受到接触类招式的攻击时，对手的特性会变成甩不掉的气味",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "liquidooze",
+    "name": "Liquid Ooze",
+    "shortDesc": {
+      "en": "This Pokemon damages those draining HP from it for as much as they would heal.",
+      "zhHans": "受到吸取HP的招式伤害时，对方本应吸取的体力会转为受到同等的伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "liquidvoice",
+    "name": "Liquid Voice",
+    "shortDesc": {
+      "en": "This Pokemon's sound-based moves become Water type.",
+      "zhHans": "声音类招式均变为水属性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "longreach",
+    "name": "Long Reach",
+    "shortDesc": {
+      "en": "This Pokemon's attacks do not make contact with the target.",
+      "zhHans": "所有招式均视为非接触类招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "magicbounce",
+    "name": "Magic Bounce",
+    "shortDesc": {
+      "en": "This Pokemon blocks certain Status moves and bounces them back to the user.",
+      "zhHans": "无效并反弹部分以自身为目标的变化招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "magicguard",
+    "name": "Magic Guard",
+    "shortDesc": {
+      "en": "This Pokemon can only be damaged by direct attacks.",
+      "zhHans": "免疫除攻击招式以外的一切造成的伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "magician",
+    "name": "Magician",
+    "shortDesc": {
+      "en": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack.",
+      "zhHans": "造成伤害时，如果没有携带道具则获得对方道具",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "magmaarmor",
+    "name": "Magma Armor",
+    "shortDesc": {
+      "en": "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it.",
+      "zhHans": "不会陷入冰冻状态。获得特性时可治愈冰冻状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "magnetpull",
+    "name": "Magnet Pull",
+    "shortDesc": {
+      "en": "Prevents opposing Steel-type Pokemon from choosing to switch out.",
+      "zhHans": "使对方非幽灵属性的钢属性宝可梦无法替换",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "marvelscale",
+    "name": "Marvel Scale",
+    "shortDesc": {
+      "en": "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5.",
+      "zhHans": "异常状态时防御提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "megalauncher",
+    "name": "Mega Launcher",
+    "shortDesc": {
+      "en": "This Pokemon's pulse moves have 1.5x power. Heal Pulse heals 3/4 target's max HP.",
+      "zhHans": "波动类和波导类招式威力提升50%，治愈波动回复量上升为3/4最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "merciless",
+    "name": "Merciless",
+    "shortDesc": {
+      "en": "This Pokemon's attacks are critical hits if the target is poisoned.",
+      "zhHans": "此特性的宝可梦攻击处于中毒或剧毒状态的宝可梦必定会击中要害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "mimicry",
+    "name": "Mimicry",
+    "shortDesc": {
+      "en": "This Pokemon's types change to match the Terrain. Type reverts when Terrain ends.",
+      "zhHans": "该特性的宝可梦会因当前的场地不同而改变属性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "mindseye",
+    "name": "Mind's Eye",
+    "shortDesc": {
+      "en": "Fighting, Normal moves hit Ghost. Accuracy can't be lowered, ignores evasiveness.",
+      "zhHans": "使出一般属性和格斗属性的招式时可以击中幽灵属性的宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "minus",
+    "name": "Minus",
+    "shortDesc": {
+      "en": "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 1.5x.",
+      "zhHans": "场上己方同伴具有负电或正电特性时，特攻变为1.5倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "mirrorarmor",
+    "name": "Mirror Armor",
+    "shortDesc": {
+      "en": "If this Pokemon's stat stages would be lowered, the attacker's are lowered instead.",
+      "zhHans": "反弹来自对方招式或特性的能力下降效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "mistysurge",
+    "name": "Misty Surge",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon summons Misty Terrain.",
+      "zhHans": "登场时，释放薄雾场地",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "moldbreaker",
+    "name": "Mold Breaker",
+    "shortDesc": {
+      "en": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon.",
+      "zhHans": "招式无视对方特性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "moody",
+    "name": "Moody",
+    "shortDesc": {
+      "en": "Boosts a random stat (except accuracy/evasion) +2 and another stat -1 every turn.",
+      "zhHans": "每回合结束时随机降低一项能力等级并提升两项能力等级，闪避率/命中率除外",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "motordrive",
+    "name": "Motor Drive",
+    "shortDesc": {
+      "en": "This Pokemon's Speed is raised 1 stage if hit by an Electric move; Electric immunity.",
+      "zhHans": "受到电属性招式攻击时速度提升1级；免疫电属性招式伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "moxie",
+    "name": "Moxie",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is raised by 1 stage if it attacks and KOes another Pokemon.",
+      "zhHans": "每击倒对方一只宝可梦攻击提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "multiscale",
+    "name": "Multiscale",
+    "shortDesc": {
+      "en": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+      "zhHans": "HP全满时受到的伤害减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "multitype",
+    "name": "Multitype",
+    "shortDesc": {
+      "en": "If this Pokemon is an Arceus, its type changes to match its held Plate.",
+      "zhHans": "携带相应石板或Z纯晶时改变属性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "mummy",
+    "name": "Mummy",
+    "shortDesc": {
+      "en": "Pokemon making contact with this Pokemon have their Ability changed to Mummy.",
+      "zhHans": "受到接触类伤害时令对手的特性变为木乃伊",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "myceliummight",
+    "name": "Mycelium Might",
+    "shortDesc": {
+      "en": "This Pokemon's Status moves go last in their priority bracket and ignore Abilities.",
+      "zhHans": "该特性的宝可梦使出变化招式时，使目标的特性失效。在同一优先度下最晚行动",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "naturalcure",
+    "name": "Natural Cure",
+    "shortDesc": {
+      "en": "This Pokemon has its non-volatile status condition cured when it switches out.",
+      "zhHans": "回到同行队伍后，异常状态就会被治愈",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "neuroforce",
+    "name": "Neuroforce",
+    "shortDesc": {
+      "en": "This Pokemon's attacks that are super effective against the target do 1.25x damage.",
+      "zhHans": "使用效果绝佳的招式，伤害变为1.25倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "neutralizinggas",
+    "name": "Neutralizing Gas",
+    "shortDesc": {
+      "en": "While this Pokemon is active, Abilities have no effect.",
+      "zhHans": "让周围宝可梦变为无特性状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "noguard",
+    "name": "No Guard",
+    "shortDesc": {
+      "en": "Every move used by or against this Pokemon will always hit.",
+      "zhHans": "自身使用和以自身为目标的招式必定命中",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "normalize",
+    "name": "Normalize",
+    "shortDesc": {
+      "en": "This Pokemon's moves are changed to be Normal type and have 1.2x power.",
+      "zhHans": "全部招式变为一般属性招式，威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "oblivious",
+    "name": "Oblivious",
+    "shortDesc": {
+      "en": "This Pokemon cannot be infatuated or taunted. Immune to Intimidate.",
+      "zhHans": "不会陷入着迷和挑衅状态。免疫威吓",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "opportunist",
+    "name": "Opportunist",
+    "shortDesc": {
+      "en": "When an opposing Pokemon has a stat stage raised, this Pokemon copies the effect.",
+      "zhHans": "对手的能力提高时，自己也会趁机同样地提高能力",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "orichalcumpulse",
+    "name": "Orichalcum Pulse",
+    "shortDesc": {
+      "en": "On switch-in, summons Sunny Day. During Sunny Day, Attack is 1.3333x.",
+      "zhHans": "出场时，天气变为大晴天并持续5回合。天气为大晴天时，攻击提高33%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "overcoat",
+    "name": "Overcoat",
+    "shortDesc": {
+      "en": "This Pokemon is immune to powder moves, Sandstorm damage, and Effect Spore.",
+      "zhHans": "该特性的宝可梦不会受到沙暴和冰雹天气带来的影响，并免疫粉末类招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "overgrow",
+    "name": "Overgrow",
+    "shortDesc": {
+      "en": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Grass attacks.",
+      "zhHans": "当HP小于1/3时，草属性招式的威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "owntempo",
+    "name": "Own Tempo",
+    "shortDesc": {
+      "en": "This Pokemon cannot be confused. Immune to Intimidate.",
+      "zhHans": "不会陷入混乱状态。免疫威吓",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "parentalbond",
+    "name": "Parental Bond",
+    "shortDesc": {
+      "en": "This Pokemon's damaging moves hit twice. The second hit has its damage quartered.",
+      "zhHans": "攻击两次；第二次攻击伤害变为第一次的1/4",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "pastelveil",
+    "name": "Pastel Veil",
+    "shortDesc": {
+      "en": "This Pokemon and its allies cannot be poisoned. On switch-in, cures poisoned allies.",
+      "zhHans": "使己方免疫中毒状态，上场时还可治疗己方的中毒状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "perishbody",
+    "name": "Perish Body",
+    "shortDesc": {
+      "en": "Making contact with this Pokemon starts the Perish Song effect for it and the attacker.",
+      "zhHans": "受到接触类招式攻击时，3个回合后双方都会失去战斗能力",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "pickpocket",
+    "name": "Pickpocket",
+    "shortDesc": {
+      "en": "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item.",
+      "zhHans": "当该特性的宝可梦未携带任何道具时受到接触类招式攻击，可以获得对手的道具",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "pickup",
+    "name": "Pickup",
+    "shortDesc": {
+      "en": "If this Pokemon has no item, it finds one used by an adjacent Pokemon this turn.",
+      "zhHans": "回合结束时，若没有携带道具则获得本回合其他宝可梦使用或投掷过的道具",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "pixilate",
+    "name": "Pixilate",
+    "shortDesc": {
+      "en": "This Pokemon's Normal-type moves become Fairy type and have 1.2x power.",
+      "zhHans": "一般属性招式变为妖精属性招式，威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "plus",
+    "name": "Plus",
+    "shortDesc": {
+      "en": "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
+      "zhHans": "场上己方同伴具有负电或正电特性时，特攻变为1.5倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "poisonheal",
+    "name": "Poison Heal",
+    "shortDesc": {
+      "en": "This Pokemon is healed by 1/8 of its max HP each turn when poisoned; no HP loss.",
+      "zhHans": "处于中毒或剧毒状态时不会损失HP，每回合回复1/8最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "poisonpoint",
+    "name": "Poison Point",
+    "shortDesc": {
+      "en": "30% chance a Pokemon making contact with this Pokemon will be poisoned.",
+      "zhHans": "受到接触类伤害时有30%几率令其陷入中毒状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "poisonpuppeteer",
+    "name": "Poison Puppeteer",
+    "shortDesc": {
+      "en": "Pecharunt: If this Pokemon poisons a target, the target also becomes confused.",
+      "zhHans": "因桃歹郎的招式而陷入中毒状态的对手同时也会陷入混乱状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "poisontouch",
+    "name": "Poison Touch",
+    "shortDesc": {
+      "en": "This Pokemon's contact moves have a 30% chance of poisoning.",
+      "zhHans": "接触类招式造成伤害时有30%几率令其陷入中毒状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "powerconstruct",
+    "name": "Power Construct",
+    "shortDesc": {
+      "en": "If Zygarde 10%/50%, changes to Complete if at 1/2 max HP or less at end of turn.",
+      "zhHans": "基格尔德10%形态或50%的HP低于50%时在回合结束会变为完全体形态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "powerofalchemy",
+    "name": "Power of Alchemy",
+    "shortDesc": {
+      "en": "This Pokemon copies the Ability of an ally that faints.",
+      "zhHans": "同伴被击倒后自身特性变为与之相同",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "powerspot",
+    "name": "Power Spot",
+    "shortDesc": {
+      "en": "This Pokemon's allies have the power of their moves multiplied by 1.3.",
+      "zhHans": "己方其他宝可梦的招式威力提高30%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "prankster",
+    "name": "Prankster",
+    "shortDesc": {
+      "en": "This Pokemon's Status moves have priority raised by 1, but Dark types are immune.",
+      "zhHans": "变化招式的优先度+1，但对恶属性宝可梦无效",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "pressure",
+    "name": "Pressure",
+    "shortDesc": {
+      "en": "If this Pokemon is the target of a foe's move, that move loses one additional PP.",
+      "zhHans": "对方以自身为目标的招式额外消耗1PP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "primordialsea",
+    "name": "Primordial Sea",
+    "shortDesc": {
+      "en": "On switch-in, heavy rain begins until this Ability is not active in battle.",
+      "zhHans": "登场时天气变为大雨，直到该宝可梦离场，除非天气被德尔塔气流和终结之地更改",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "prismarmor",
+    "name": "Prism Armor",
+    "shortDesc": {
+      "en": "This Pokemon receives 3/4 damage from supereffective attacks.",
+      "zhHans": "受到效果绝佳伤害时伤害降低25%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "propellertail",
+    "name": "Propeller Tail",
+    "shortDesc": {
+      "en": "This Pokemon's moves cannot be redirected to a different target by any effect.",
+      "zhHans": "攻击原本选定的目标",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "protean",
+    "name": "Protean",
+    "shortDesc": {
+      "en": "This Pokemon's type changes to the type of the move it is using. Once per switch-in.",
+      "zhHans": "自身属性变为即将使用的招式的属性。每次出场仅能发动一次",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "protosynthesis",
+    "name": "Protosynthesis",
+    "shortDesc": {
+      "en": "Sunny Day active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.",
+      "zhHans": "携带驱劲能量或天气为大晴天时，数值最高的能力会提高30%；若该项能力为速度，则会提高50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "psychicsurge",
+    "name": "Psychic Surge",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon summons Psychic Terrain.",
+      "zhHans": "登场时，释放精神场地",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "punkrock",
+    "name": "Punk Rock",
+    "shortDesc": {
+      "en": "This Pokemon receives 1/2 damage from sound moves. Its own have 1.3x power.",
+      "zhHans": "该特性的宝可梦发出的声音类招式威力提升30%；受到声音招式伤害减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "purepower",
+    "name": "Pure Power",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is doubled.",
+      "zhHans": "攻击翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "purifyingsalt",
+    "name": "Purifying Salt",
+    "shortDesc": {
+      "en": "Ghost damage to this Pokemon dealt with a halved offensive stat; can't be statused.",
+      "zhHans": "该特性的宝可梦不会陷入异常状态。受到幽灵属性的攻击招式伤害减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "quarkdrive",
+    "name": "Quark Drive",
+    "shortDesc": {
+      "en": "Electric Terrain active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.",
+      "zhHans": "携带驱劲能量或场地处于电气场地时，数值最高的能力会提高30%；若该项能力为速度，则会提高50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "queenlymajesty",
+    "name": "Queenly Majesty",
+    "shortDesc": {
+      "en": "This Pokemon and its allies are protected from opposing priority moves.",
+      "zhHans": "使对手无法对我方使出先制招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "quickdraw",
+    "name": "Quick Draw",
+    "shortDesc": {
+      "en": "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves.",
+      "zhHans": "30%几率在相同优先度下先出手",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "quickfeet",
+    "name": "Quick Feet",
+    "shortDesc": {
+      "en": "If this Pokemon is statused, its Speed is 1.5x; ignores Speed drop from paralysis.",
+      "zhHans": "异常状态下速度增加50%，无视麻痹带来的速度降低影响",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "raindish",
+    "name": "Rain Dish",
+    "shortDesc": {
+      "en": "If Rain Dance is active, this Pokemon heals 1/16 of its max HP each turn.",
+      "zhHans": "下雨天气下每回合回复1/16最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rattled",
+    "name": "Rattled",
+    "shortDesc": {
+      "en": "Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated.",
+      "zhHans": "受到虫/恶/幽灵属性招式攻击或者被威吓后速度提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "receiver",
+    "name": "Receiver",
+    "shortDesc": {
+      "en": "This Pokemon copies the Ability of an ally that faints.",
+      "zhHans": "同伴被击倒后自身特性变为与之相同",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "reckless",
+    "name": "Reckless",
+    "shortDesc": {
+      "en": "This Pokemon's attacks with recoil or crash damage have 1.2x power; not Struggle.",
+      "zhHans": "使用具有反作用力伤害的招式时威力提升20%，挣扎除外",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "refrigerate",
+    "name": "Refrigerate",
+    "shortDesc": {
+      "en": "This Pokemon's Normal-type moves become Ice type and have 1.2x power.",
+      "zhHans": "一般属性招式变为冰属性招式，威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "regenerator",
+    "name": "Regenerator",
+    "shortDesc": {
+      "en": "This Pokemon restores 1/3 of its maximum HP, rounded down, when it switches out.",
+      "zhHans": "下场时回复1/3最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "ripen",
+    "name": "Ripen",
+    "shortDesc": {
+      "en": "When this Pokemon eats certain Berries, the effects are doubled.",
+      "zhHans": "食用树果的效果变为原来的2倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rivalry",
+    "name": "Rivalry",
+    "shortDesc": {
+      "en": "This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.",
+      "zhHans": "对方与自身性别相同时威力提升25%，性别不同时下降25%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rkssystem",
+    "name": "RKS System",
+    "shortDesc": {
+      "en": "If this Pokemon is a Silvally, its type changes to match its held Memory.",
+      "zhHans": "银伴战兽的属性随着它携带的存储碟改变",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rockhead",
+    "name": "Rock Head",
+    "shortDesc": {
+      "en": "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
+      "zhHans": "不会受到自身招式的反作用力伤害，挣扎、飞踢和飞膝踢除外；生命宝珠的副作用不受影响",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rockypayload",
+    "name": "Rocky Payload",
+    "shortDesc": {
+      "en": "This Pokemon's offensive stat is multiplied by 1.5 while using a Rock-type attack.",
+      "zhHans": "岩石属性的招式威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "roughskin",
+    "name": "Rough Skin",
+    "shortDesc": {
+      "en": "Pokemon making contact with this Pokemon lose 1/8 of their max HP.",
+      "zhHans": "受到接触伤害时对方损失1/8最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "runaway",
+    "name": "Run Away",
+    "shortDesc": {
+      "en": "No competitive use.",
+      "zhHans": "没有实战用途",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sandforce",
+    "name": "Sand Force",
+    "shortDesc": {
+      "en": "This Pokemon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it.",
+      "zhHans": "沙暴天气下地面/岩石/钢属性招式威力提升30%；免疫沙暴伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sandrush",
+    "name": "Sand Rush",
+    "shortDesc": {
+      "en": "If Sandstorm is active, this Pokemon's Speed is doubled; immunity to Sandstorm.",
+      "zhHans": "沙暴天气下速度翻倍；免疫沙暴伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sandspit",
+    "name": "Sand Spit",
+    "shortDesc": {
+      "en": "When this Pokemon is hit by an attack, the effect of Sandstorm begins.",
+      "zhHans": "受到攻击时转为沙暴天气",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sandstream",
+    "name": "Sand Stream",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon summons Sandstorm.",
+      "zhHans": "登场时，天气变为沙暴",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sandveil",
+    "name": "Sand Veil",
+    "shortDesc": {
+      "en": "If Sandstorm is active, this Pokemon's evasiveness is 1.25x; immunity to Sandstorm.",
+      "zhHans": "沙暴天气下闪避率增加25%；免疫沙暴伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sapsipper",
+    "name": "Sap Sipper",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is raised 1 stage if hit by a Grass move; Grass immunity.",
+      "zhHans": "受到草属性招式攻击时攻击提升1级；免疫草属性招式伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "schooling",
+    "name": "Schooling",
+    "shortDesc": {
+      "en": "If user is Wishiwashi, changes to School Form if it has > 1/4 max HP, else Solo Form.",
+      "zhHans": "弱丁鱼的HP高于1/4时变为鱼群的样子，否则变为单独的样子",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "scrappy",
+    "name": "Scrappy",
+    "shortDesc": {
+      "en": "Fighting, Normal moves hit Ghost. Immune to Intimidate.",
+      "zhHans": "一般和格斗属性招式可以攻击到幽灵属性宝可梦。免疫威吓",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "screencleaner",
+    "name": "Screen Cleaner",
+    "shortDesc": {
+      "en": "On switch-in, the effects of Aurora Veil, Light Screen, and Reflect end for both sides.",
+      "zhHans": "出场时清除双方的光墙、反射壁和极光幕",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "seedsower",
+    "name": "Seed Sower",
+    "shortDesc": {
+      "en": "When this Pokemon is hit by an attack, the effect of Grassy Terrain begins.",
+      "zhHans": "受到攻击时转为青草场地",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "serenegrace",
+    "name": "Serene Grace",
+    "shortDesc": {
+      "en": "This Pokemon's moves have their secondary effect chance doubled.",
+      "zhHans": "招式的追加效果出现率翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "shadowshield",
+    "name": "Shadow Shield",
+    "shortDesc": {
+      "en": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+      "zhHans": "HP全满时受到的伤害减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "shadowtag",
+    "name": "Shadow Tag",
+    "shortDesc": {
+      "en": "Prevents foes from choosing to switch unless they also have this Ability.",
+      "zhHans": "使对方全部不持有踩影特性的非幽灵属性宝可梦无法替换",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sharpness",
+    "name": "Sharpness",
+    "shortDesc": {
+      "en": "This Pokemon's slicing moves have their power multiplied by 1.5.",
+      "zhHans": "该特性的宝可梦使出的切割类招式威力提高50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "shedskin",
+    "name": "Shed Skin",
+    "shortDesc": {
+      "en": "This Pokemon has a 33% chance to have its status cured at the end of each turn.",
+      "zhHans": "回合结束时，33%几率治愈异常状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sheerforce",
+    "name": "Sheer Force",
+    "shortDesc": {
+      "en": "This Pokemon's attacks with secondary effects have 1.3x power; nullifies the effects.",
+      "zhHans": "以无视招式的追加效果为代价，带有追加效果的招式的威力提升33%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "shellarmor",
+    "name": "Shell Armor",
+    "shortDesc": {
+      "en": "This Pokemon cannot be struck by a critical hit.",
+      "zhHans": "不会被击中要害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "shielddust",
+    "name": "Shield Dust",
+    "shortDesc": {
+      "en": "This Pokemon is not affected by the secondary effect of another Pokemon's attack.",
+      "zhHans": "受到攻击时对方招式的追加效果不会发动",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "shieldsdown",
+    "name": "Shields Down",
+    "shortDesc": {
+      "en": "If Minior, switch-in/end of turn it changes to Core at 1/2 max HP or less, else Meteor.",
+      "zhHans": "当HP变为50%以下时，壳会坏掉，变得有攻击性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "simple",
+    "name": "Simple",
+    "shortDesc": {
+      "en": "When one of this Pokemon's stat stages is raised or lowered, the amount is doubled.",
+      "zhHans": "能力阶级变化变为原来的两倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "skilllink",
+    "name": "Skill Link",
+    "shortDesc": {
+      "en": "This Pokemon's multi-hit attacks always hit the maximum number of times.",
+      "zhHans": "使用连续招式时，攻击次数会固定在五次",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "slowstart",
+    "name": "Slow Start",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns.",
+      "zhHans": "登场之后的5回合内攻击和速度减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "slushrush",
+    "name": "Slush Rush",
+    "shortDesc": {
+      "en": "If Snow is active, this Pokemon's Speed is doubled.",
+      "zhHans": "下雪时速度翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sniper",
+    "name": "Sniper",
+    "shortDesc": {
+      "en": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5.",
+      "zhHans": "击中要害的招式伤害提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "snowcloak",
+    "name": "Snow Cloak",
+    "shortDesc": {
+      "en": "If Snow is active, this Pokemon's evasiveness is 1.25x.",
+      "zhHans": "天气处于冰雹或下雪状态时，闪避率提升25%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "snowwarning",
+    "name": "Snow Warning",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon summons Snow.",
+      "zhHans": "出场时，会将天气变为下雪",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "solarpower",
+    "name": "Solar Power",
+    "shortDesc": {
+      "en": "If Sunny Day is active, this Pokemon's Sp. Atk is 1.5x; loses 1/8 max HP per turn.",
+      "zhHans": "大晴天天气下特攻增加50%；大晴天天气下回合结束时损失1/8最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "solidrock",
+    "name": "Solid Rock",
+    "shortDesc": {
+      "en": "This Pokemon receives 3/4 damage from supereffective attacks.",
+      "zhHans": "受到效果绝佳伤害时伤害降低25%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "soulheart",
+    "name": "Soul-Heart",
+    "shortDesc": {
+      "en": "This Pokemon's Special Attack is raised by 1 stage when another Pokemon faints.",
+      "zhHans": "每当场上有宝可梦被打倒时特攻+1",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "soundproof",
+    "name": "Soundproof",
+    "shortDesc": {
+      "en": "This Pokemon is immune to sound-based moves, unless it used the move.",
+      "zhHans": "不受声音的招式影响",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "speedboost",
+    "name": "Speed Boost",
+    "shortDesc": {
+      "en": "This Pokemon's Speed is raised 1 stage at the end of each full turn on the field.",
+      "zhHans": "回合结束时速度提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stakeout",
+    "name": "Stakeout",
+    "shortDesc": {
+      "en": "This Pokemon's offensive stat is doubled against a target that switched in this turn.",
+      "zhHans": "对本回合替换上场的宝可梦造成的伤害*2",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stall",
+    "name": "Stall",
+    "shortDesc": {
+      "en": "This Pokemon moves last among Pokemon using the same or greater priority moves.",
+      "zhHans": "优先度相同时必定后出",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stalwart",
+    "name": "Stalwart",
+    "shortDesc": {
+      "en": "This Pokemon's moves cannot be redirected to a different target by any effect.",
+      "zhHans": "攻击原本选定的目标",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stamina",
+    "name": "Stamina",
+    "shortDesc": {
+      "en": "This Pokemon's Defense is raised by 1 stage after it is damaged by a move.",
+      "zhHans": "受到伤害后防御提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stancechange",
+    "name": "Stance Change",
+    "shortDesc": {
+      "en": "If Aegislash, changes Forme to Blade before attacks and Shield before King's Shield.",
+      "zhHans": "坚盾剑怪使用攻击招式时会变为刀剑形态，使用王者盾牌时变为盾牌形态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "static",
+    "name": "Static",
+    "shortDesc": {
+      "en": "30% chance a Pokemon making contact with this Pokemon will be paralyzed.",
+      "zhHans": "受到接触伤害时有30%几率令对方陷入麻痹状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "steadfast",
+    "name": "Steadfast",
+    "shortDesc": {
+      "en": "If this Pokemon flinches, its Speed is raised by 1 stage.",
+      "zhHans": "畏缩时提升1级速度",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "steamengine",
+    "name": "Steam Engine",
+    "shortDesc": {
+      "en": "This Pokemon's Speed is raised by 6 stages after it is damaged by Fire/Water moves.",
+      "zhHans": "受到火属性或者水属性的招式攻击后，速度上升6级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "steelworker",
+    "name": "Steelworker",
+    "shortDesc": {
+      "en": "This Pokemon's offensive stat is multiplied by 1.5 while using a Steel-type attack.",
+      "zhHans": "该特性的宝可梦使出钢属性招式的威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "steelyspirit",
+    "name": "Steely Spirit",
+    "shortDesc": {
+      "en": "This Pokemon and its allies' Steel-type moves have their power multiplied by 1.5.",
+      "zhHans": "己方全员的钢属性招式威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stench",
+    "name": "Stench",
+    "shortDesc": {
+      "en": "This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch.",
+      "zhHans": "使用招式攻击对手造成伤害时，对方有10%几率陷入畏缩",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stickyhold",
+    "name": "Sticky Hold",
+    "shortDesc": {
+      "en": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack.",
+      "zhHans": "携带道具不受其他宝可梦影响",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stormdrain",
+    "name": "Storm Drain",
+    "shortDesc": {
+      "en": "This Pokemon draws Water moves to itself to raise Sp. Atk by 1; Water immunity.",
+      "zhHans": "自动成为对方水属性招式的攻击目标并提升1级特攻；免疫水属性攻击",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "strongjaw",
+    "name": "Strong Jaw",
+    "shortDesc": {
+      "en": "This Pokemon's bite-based attacks have 1.5x power. Bug Bite is not boosted.",
+      "zhHans": "啃咬类招式威力提升50%，虫咬除外",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sturdy",
+    "name": "Sturdy",
+    "shortDesc": {
+      "en": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO.",
+      "zhHans": "HP全满时受到致命伤害会保留1HP；免疫一击必杀招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "suctioncups",
+    "name": "Suction Cups",
+    "shortDesc": {
+      "en": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+      "zhHans": "不会因对方招式退场",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "superluck",
+    "name": "Super Luck",
+    "shortDesc": {
+      "en": "This Pokemon's critical hit ratio is raised by 1 stage.",
+      "zhHans": "击中要害等级提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "supersweetsyrup",
+    "name": "Supersweet Syrup",
+    "shortDesc": {
+      "en": "On switch-in, this Pokemon lowers the evasiveness of opponents 1 stage. Once per battle.",
+      "zhHans": "首次出场时，令对手的闪避率下降1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "supremeoverlord",
+    "name": "Supreme Overlord",
+    "shortDesc": {
+      "en": "This Pokemon's moves have 10% more power for each fainted ally, up to 5 allies.",
+      "zhHans": "我方每有一只宝可梦陷入过濒死，招式威力提升10%。最多触发5次",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "surgesurfer",
+    "name": "Surge Surfer",
+    "shortDesc": {
+      "en": "If Electric Terrain is active, this Pokemon's Speed is doubled.",
+      "zhHans": "电气场地下速度翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "swarm",
+    "name": "Swarm",
+    "shortDesc": {
+      "en": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks.",
+      "zhHans": "当HP小于1/3时，虫属性招式的威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sweetveil",
+    "name": "Sweet Veil",
+    "shortDesc": {
+      "en": "This Pokemon and its allies cannot fall asleep; those already asleep do not wake up.",
+      "zhHans": "使己方免疫睡眠状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "swiftswim",
+    "name": "Swift Swim",
+    "shortDesc": {
+      "en": "If Rain Dance is active, this Pokemon's Speed is doubled.",
+      "zhHans": "在下雨时速度翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "swordofruin",
+    "name": "Sword of Ruin",
+    "shortDesc": {
+      "en": "Active Pokemon without this Ability have their Defense multiplied by 0.75.",
+      "zhHans": "在场时，除该特性的宝可梦外，其他特性的宝可梦的防御降低为原本的75%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "symbiosis",
+    "name": "Symbiosis",
+    "shortDesc": {
+      "en": "If an ally uses its item, this Pokemon gives its item to that ally immediately.",
+      "zhHans": "同伴使用道具后会立即将您的道具交给它",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "synchronize",
+    "name": "Synchronize",
+    "shortDesc": {
+      "en": "If another Pokemon burns/poisons/paralyzes this Pokemon, it also gets that status.",
+      "zhHans": "如果因对方招式而陷入灼伤/中毒/麻痹状态，对方也同样陷入同样的状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "tabletsofruin",
+    "name": "Tablets of Ruin",
+    "shortDesc": {
+      "en": "Active Pokemon without this Ability have their Attack multiplied by 0.75.",
+      "zhHans": "在场时，除该特性的宝可梦外，其他特性的宝可梦的攻击降低为原本的75%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "tangledfeet",
+    "name": "Tangled Feet",
+    "shortDesc": {
+      "en": "This Pokemon's evasiveness is doubled as long as it is confused.",
+      "zhHans": "混乱状态下闪避率翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "tanglinghair",
+    "name": "Tangling Hair",
+    "shortDesc": {
+      "en": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+      "zhHans": "受到接触伤害时对方速度降低1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "technician",
+    "name": "Technician",
+    "shortDesc": {
+      "en": "This Pokemon's moves of 60 power or less have 1.5x power, including Struggle.",
+      "zhHans": "使用威力≤60的招式，威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "telepathy",
+    "name": "Telepathy",
+    "shortDesc": {
+      "en": "This Pokemon does not take damage from attacks made by its allies.",
+      "zhHans": "不会受到同伴招式的伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "teraformzero",
+    "name": "Teraform Zero",
+    "shortDesc": {
+      "en": "Terapagos: Terastallizing ends the effects of weather and terrain. Once per battle.",
+      "zhHans": "令场上所有的天气型状态和场地型状态消失。每场对战仅能发动1次",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "terashell",
+    "name": "Tera Shell",
+    "shortDesc": {
+      "en": "Terapagos: If full HP, attacks taken have 0.5x effectiveness unless naturally immune.",
+      "zhHans": "HP全满时，如果受到的攻击招式的属性相性倍率为1或以上，将变为效果不好",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "terashift",
+    "name": "Tera Shift",
+    "shortDesc": {
+      "en": "If this Pokemon is a Terapagos, it transforms into its Terastal Form on entry.",
+      "zhHans": "出场时会吸收周围的能量，变为太晶形态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "teravolt",
+    "name": "Teravolt",
+    "shortDesc": {
+      "en": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon.",
+      "zhHans": "招式无视对方特性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "thermalexchange",
+    "name": "Thermal Exchange",
+    "shortDesc": {
+      "en": "This Pokemon's Attack is raised by 1 when damaged by Fire moves; can't be burned.",
+      "zhHans": "受到火属性招式攻击时攻击提升1级；不会陷入灼伤状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "thickfat",
+    "name": "Thick Fat",
+    "shortDesc": {
+      "en": "Fire-/Ice-type moves against this Pokemon deal damage with a halved offensive stat.",
+      "zhHans": "受到冰属性或火属性招式攻击时，在伤害计算中对方的攻击或特攻减半。",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "tintedlens",
+    "name": "Tinted Lens",
+    "shortDesc": {
+      "en": "This Pokemon's attacks that are not very effective on a target deal double damage.",
+      "zhHans": "该特性的宝可梦自身发动效果不好的招式伤害翻倍。",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "torrent",
+    "name": "Torrent",
+    "shortDesc": {
+      "en": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Water attacks.",
+      "zhHans": "当HP小于1/3时，水属性招式的威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "toughclaws",
+    "name": "Tough Claws",
+    "shortDesc": {
+      "en": "This Pokemon's contact moves have their power multiplied by 1.3.",
+      "zhHans": "接触类招式威力提升30%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "toxicboost",
+    "name": "Toxic Boost",
+    "shortDesc": {
+      "en": "While this Pokemon is poisoned, its physical attacks have 1.5x power.",
+      "zhHans": "中毒和剧毒状态下物理招式威力提升50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "toxicdebris",
+    "name": "Toxic Debris",
+    "shortDesc": {
+      "en": "If this Pokemon is hit by a physical attack, Toxic Spikes are set on the opposing side.",
+      "zhHans": "该特性的宝可梦受到物理招式攻击时，会向对手的场地撒下毒菱",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "trace",
+    "name": "Trace",
+    "shortDesc": {
+      "en": "On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability.",
+      "zhHans": "登场时复制一个随机对方宝可梦的特性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "transistor",
+    "name": "Transistor",
+    "shortDesc": {
+      "en": "This Pokemon's offensive stat is multiplied by 1.3 while using an Electric-type attack.",
+      "zhHans": "电属性招式威力提升30%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "triage",
+    "name": "Triage",
+    "shortDesc": {
+      "en": "This Pokemon's healing moves have their priority increased by 3.",
+      "zhHans": "回复HP的招式优先度+3",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "truant",
+    "name": "Truant",
+    "shortDesc": {
+      "en": "This Pokemon skips every other turn instead of using a move.",
+      "zhHans": "使用招式之后，下一回合不能使用招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "turboblaze",
+    "name": "Turboblaze",
+    "shortDesc": {
+      "en": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon.",
+      "zhHans": "招式无视对方特性",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "unaware",
+    "name": "Unaware",
+    "shortDesc": {
+      "en": "This Pokemon ignores other Pokemon's stat stages when taking or doing damage.",
+      "zhHans": "使用或受到招式造成伤害时无视对方的能力阶级变化",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "unburden",
+    "name": "Unburden",
+    "shortDesc": {
+      "en": "Speed is doubled on held item loss; boost is lost if it switches, gets new item/Ability.",
+      "zhHans": "失去道具时速度翻倍，退场或获得新道具后复原",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "unnerve",
+    "name": "Unnerve",
+    "shortDesc": {
+      "en": "While this Pokemon is active, it prevents opposing Pokemon from using their Berries.",
+      "zhHans": "对方宝可梦不可使用树果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "unseenfist",
+    "name": "Unseen Fist",
+    "shortDesc": {
+      "en": "This Pokemon's contact moves ignore the target's protection, except Max Guard.",
+      "zhHans": "使用接触类招式时，能无视对方除极巨防壁外守住类状态的效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "vesselofruin",
+    "name": "Vessel of Ruin",
+    "shortDesc": {
+      "en": "Active Pokemon without this Ability have their Special Attack multiplied by 0.75.",
+      "zhHans": "在场时，除该特性的宝可梦外，其他特性的宝可梦的特攻降低为原本的75%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "victorystar",
+    "name": "Victory Star",
+    "shortDesc": {
+      "en": "This Pokemon and its allies' moves have their accuracy multiplied by 1.1.",
+      "zhHans": "场上己方所有宝可梦命中率提升10%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "vitalspirit",
+    "name": "Vital Spirit",
+    "shortDesc": {
+      "en": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
+      "zhHans": "不会陷入睡眠状态，在睡眠状态时获得这个特性可以治愈睡眠",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "voltabsorb",
+    "name": "Volt Absorb",
+    "shortDesc": {
+      "en": "This Pokemon heals 1/4 of its max HP when hit by Electric moves; Electric immunity.",
+      "zhHans": "受到电属性招式攻击时回复1/4最大HP；免疫电属性伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "wanderingspirit",
+    "name": "Wandering Spirit",
+    "shortDesc": {
+      "en": "Pokemon making contact with this Pokemon have their Ability swapped with this one.",
+      "zhHans": "受到接触类招式攻击时，自己获得攻击方的特性，同时攻击方的特性变为游魂",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "waterabsorb",
+    "name": "Water Absorb",
+    "shortDesc": {
+      "en": "This Pokemon heals 1/4 of its max HP when hit by Water moves; Water immunity.",
+      "zhHans": "受到水属性招式攻击时回复1/4最大HP；免疫水属性伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "waterbubble",
+    "name": "Water Bubble",
+    "shortDesc": {
+      "en": "This Pokemon's Water power is 2x; it can't be burned; Fire power against it is halved.",
+      "zhHans": "水属性招式威力翻倍；不会陷入灼伤状态；受到的火属性招式伤害减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "watercompaction",
+    "name": "Water Compaction",
+    "shortDesc": {
+      "en": "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move.",
+      "zhHans": "受到水属性招式攻击时防御提升2级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "waterveil",
+    "name": "Water Veil",
+    "shortDesc": {
+      "en": "This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+      "zhHans": "不会陷入灼伤状态。获得特性时可治愈灼伤状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "weakarmor",
+    "name": "Weak Armor",
+    "shortDesc": {
+      "en": "If a physical attack hits this Pokemon, Defense is lowered by 1, Speed is raised by 2.",
+      "zhHans": "受到物理招式伤害时防御降低1级，同时速度提升2级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "wellbakedbody",
+    "name": "Well-Baked Body",
+    "shortDesc": {
+      "en": "This Pokemon's Defense is raised 2 stages if hit by a Fire move; Fire immunity.",
+      "zhHans": "受到火属性的招式攻击时，不会受到伤害，而是会提升2级防御",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "whitesmoke",
+    "name": "White Smoke",
+    "shortDesc": {
+      "en": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+      "zhHans": "不会因为对手的招式或特性而被降低能力",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "wimpout",
+    "name": "Wimp Out",
+    "shortDesc": {
+      "en": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP.",
+      "zhHans": "HP低于50%时自身退场",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "windpower",
+    "name": "Wind Power",
+    "shortDesc": {
+      "en": "This Pokemon gains the Charge effect when hit by a wind move or Tailwind begins.",
+      "zhHans": "受到风的招式攻击或己方使用顺风时，会进入充电状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "windrider",
+    "name": "Wind Rider",
+    "shortDesc": {
+      "en": "Attack raised by 1 if hit by a wind move or Tailwind begins. Wind move immunity.",
+      "zhHans": "受到风的招式攻击或己方使用顺风时，提升1级攻击。不受风的招式影响。",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "wonderguard",
+    "name": "Wonder Guard",
+    "shortDesc": {
+      "en": "This Pokemon can only be damaged by supereffective moves and indirect damage.",
+      "zhHans": "只会受到效果绝佳招式的攻击伤害，天气、异常状态、附加伤害效果依然有效",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "wonderskin",
+    "name": "Wonder Skin",
+    "shortDesc": {
+      "en": "Status moves with accuracy checks are 50% accurate when used on this Pokemon.",
+      "zhHans": "变化招式对该特性的宝可梦命中率减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "zenmode",
+    "name": "Zen Mode",
+    "shortDesc": {
+      "en": "If Darmanitan, at end of turn changes Mode to Standard if > 1/2 max HP, else Zen.",
+      "zhHans": "HP不足一半时转变为达摩形态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "zerotohero",
+    "name": "Zero to Hero",
+    "shortDesc": {
+      "en": "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form.",
+      "zhHans": "回到同行队伍后，会变为全能形态",
+      "source": "userscript"
+    }
+  }
+]

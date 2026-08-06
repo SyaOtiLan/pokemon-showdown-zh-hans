@@ -1,0 +1,1964 @@
+[
+  {
+    "id": "absorbbulb",
+    "name": "Absorb Bulb",
+    "shortDesc": {
+      "en": "Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use.",
+      "zhHans": "受到水属性招式攻击时特攻提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "adamantcrystal",
+    "name": "Adamant Crystal",
+    "shortDesc": {
+      "en": "If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.",
+      "zhHans": "帝牙卢卡携带后钢属性和龙属性招式威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "adamantorb",
+    "name": "Adamant Orb",
+    "shortDesc": {
+      "en": "If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.",
+      "zhHans": "帝牙卢卡携带后钢属性和龙属性招式威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "adrenalineorb",
+    "name": "Adrenaline Orb",
+    "shortDesc": {
+      "en": "Raises holder's Speed by 1 stage if it gets affected by Intimidate. Single use.",
+      "zhHans": "受到威吓时速度提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "airballoon",
+    "name": "Air Balloon",
+    "shortDesc": {
+      "en": "Holder is immune to Ground-type attacks. Pops when holder is hit.",
+      "zhHans": "携带后会浮在空中。受到攻击就会破裂",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "apicotberry",
+    "name": "Apicot Berry",
+    "shortDesc": {
+      "en": "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
+      "zhHans": "HP低于25%时特防提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "aspearberry",
+    "name": "Aspear Berry",
+    "shortDesc": {
+      "en": "Holder is cured if it is frozen. Single use.",
+      "zhHans": "解除冰冻状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "assaultvest",
+    "name": "Assault Vest",
+    "shortDesc": {
+      "en": "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
+      "zhHans": "会变得富有攻击性的背心。虽然携带后特防会提高50%，但会无法使出变化招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "babiriberry",
+    "name": "Babiri Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Steel-type attack. Single use.",
+      "zhHans": "受到效果绝佳的钢属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "beastball",
+    "name": "Beast Ball",
+    "shortDesc": {
+      "en": "A special Poke Ball designed to catch Ultra Beasts.",
+      "zhHans": "为捕获究极异兽而制作的特殊精灵球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "berrysweet",
+    "name": "Berry Sweet",
+    "shortDesc": {
+      "en": "Evolves Milcery into Alcremie when held and spun around.",
+      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "bignugget",
+    "name": "Big Nugget",
+    "shortDesc": {
+      "en": "A big nugget of pure gold that gives off a lustrous gleam.",
+      "zhHans": "以纯金制成，闪着金光的大珠子。可以在商店高价出售",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "bigroot",
+    "name": "Big Root",
+    "shortDesc": {
+      "en": "Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.",
+      "zhHans": "使用吸取HP的招式、寄生种子、水流环、扎根和吸取力量时HP回复量提升30%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "bindingband",
+    "name": "Binding Band",
+    "shortDesc": {
+      "en": "Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8.",
+      "zhHans": "绑紧招式所造成的束缚伤害从1/8提升至1/6",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "blackbelt",
+    "name": "Black Belt",
+    "shortDesc": {
+      "en": "Holder's Fighting-type attacks have 1.2x power.",
+      "zhHans": "携带者的格斗属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "blacksludge",
+    "name": "Black Sludge",
+    "shortDesc": {
+      "en": "Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not.",
+      "zhHans": "毒属性宝可梦每回合结束时回复1/16最大HP，非毒属性宝可梦每回合结束时失去1/8最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "blackglasses",
+    "name": "Black Glasses",
+    "shortDesc": {
+      "en": "Holder's Dark-type attacks have 1.2x power.",
+      "zhHans": "携带者的恶属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "blunderpolicy",
+    "name": "Blunder Policy",
+    "shortDesc": {
+      "en": "If the holder misses due to accuracy, its Speed is raised by 2 stages. Single use.",
+      "zhHans": "招式因命中率影响而落空时，速度会提升2级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "boosterenergy",
+    "name": "Booster Energy",
+    "shortDesc": {
+      "en": "Activates the Protosynthesis or Quark Drive Abilities. Single use.",
+      "zhHans": "给特性为古代活性或夸克充能的宝可梦激活特性。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "bottlecap",
+    "name": "Bottle Cap",
+    "shortDesc": {
+      "en": "Used for Hyper Training. One of a Pokemon's stats is calculated with an IV of 31.",
+      "zhHans": "用作极限特训，提升一项个体值到最大值",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "brightpowder",
+    "name": "Bright Powder",
+    "shortDesc": {
+      "en": "The accuracy of attacks against the holder is 0.9x.",
+      "zhHans": "对手的命中率降低10%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "cellbattery",
+    "name": "Cell Battery",
+    "shortDesc": {
+      "en": "Raises holder's Attack by 1 if hit by an Electric-type attack. Single use.",
+      "zhHans": "受到电属性招式攻击时提升1级攻击。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "charcoal",
+    "name": "Charcoal",
+    "shortDesc": {
+      "en": "Holder's Fire-type attacks have 1.2x power.",
+      "zhHans": "携带者的火属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "chartiberry",
+    "name": "Charti Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Rock-type attack. Single use.",
+      "zhHans": "受到效果绝佳的岩石属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "cheriberry",
+    "name": "Cheri Berry",
+    "shortDesc": {
+      "en": "Holder cures itself if it is paralyzed. Single use.",
+      "zhHans": "解除麻痹状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "chestoberry",
+    "name": "Chesto Berry",
+    "shortDesc": {
+      "en": "Holder wakes up if it is asleep. Single use.",
+      "zhHans": "解除睡眠状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "chilanberry",
+    "name": "Chilan Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a Normal-type attack. Single use.",
+      "zhHans": "受到一般属性招式时伤害减半。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "choiceband",
+    "name": "Choice Band",
+    "shortDesc": {
+      "en": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+      "zhHans": "虽然携带后攻击会提高50%，但只能使出相同的招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "choicescarf",
+    "name": "Choice Scarf",
+    "shortDesc": {
+      "en": "Holder's Speed is 1.5x, but it can only select the first move it executes.",
+      "zhHans": "虽然携带后速度会提高50%，但只能使出相同的招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "choicespecs",
+    "name": "Choice Specs",
+    "shortDesc": {
+      "en": "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
+      "zhHans": "虽然携带后特攻会提高50%，但只能使出相同的招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "chopleberry",
+    "name": "Chople Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Fighting-type attack. Single use.",
+      "zhHans": "受到效果绝佳的格斗属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "clearamulet",
+    "name": "Clear Amulet",
+    "shortDesc": {
+      "en": "Prevents other Pokemon from lowering the holder's stat stages.",
+      "zhHans": "携带后不会因其他宝可梦的招式或特性而降低能力",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "cloversweet",
+    "name": "Clover Sweet",
+    "shortDesc": {
+      "en": "Evolves Milcery into Alcremie when held and spun around.",
+      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "cobaberry",
+    "name": "Coba Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Flying-type attack. Single use.",
+      "zhHans": "受到效果绝佳的飞行属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "colburberry",
+    "name": "Colbur Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Dark-type attack. Single use.",
+      "zhHans": "受到效果绝佳的恶属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "cornerstonemask",
+    "name": "Cornerstone Mask",
+    "shortDesc": {
+      "en": "Ogerpon-Cornerstone: 1.2x power attacks; Terastallize to gain Embody Aspect.",
+      "zhHans": "厄诡椪-础石携带后招式威力提升20%；太晶化后特性变为面影辉映",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "covertcloak",
+    "name": "Covert Cloak",
+    "shortDesc": {
+      "en": "Holder is not affected by the secondary effect of another Pokemon's attack.",
+      "zhHans": "不受其他宝可梦的招式追加效果影响",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "custapberry",
+    "name": "Custap Berry",
+    "shortDesc": {
+      "en": "Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.",
+      "zhHans": "HP低于25%时能优先攻击一次。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "damprock",
+    "name": "Damp Rock",
+    "shortDesc": {
+      "en": "Holder's use of Rain Dance lasts 8 turns instead of 5.",
+      "zhHans": "引起的下雨天气从5回合延长至8回合",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "dawnstone",
+    "name": "Dawn Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "destinyknot",
+    "name": "Destiny Knot",
+    "shortDesc": {
+      "en": "If holder becomes infatuated, the other Pokemon also becomes infatuated.",
+      "zhHans": "携带者陷入着迷时令对手着迷",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "diveball",
+    "name": "Dive Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that works especially well on Pokemon that live underwater.",
+      "zhHans": "能很容易地捕捉生活在水世界里的宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "dracoplate",
+    "name": "Draco Plate",
+    "shortDesc": {
+      "en": "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
+      "zhHans": "携带者的龙属性招式威力变为 1.2 倍。制裁光砾变为龙属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "dragonfang",
+    "name": "Dragon Fang",
+    "shortDesc": {
+      "en": "Holder's Dragon-type attacks have 1.2x power.",
+      "zhHans": "携带者的龙属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "dreadplate",
+    "name": "Dread Plate",
+    "shortDesc": {
+      "en": "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
+      "zhHans": "携带者的恶属性招式威力变为 1.2 倍。制裁光砾变为恶属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "duskball",
+    "name": "Dusk Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that makes it easier to catch wild Pokemon at night or in caves.",
+      "zhHans": "能很容易地在夜晚或洞窟等阴暗的地方捕捉宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "duskstone",
+    "name": "Dusk Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "earthplate",
+    "name": "Earth Plate",
+    "shortDesc": {
+      "en": "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
+      "zhHans": "携带者的地面属性招式威力变为 1.2 倍。制裁光砾变为地面属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "ejectbutton",
+    "name": "Eject Button",
+    "shortDesc": {
+      "en": "If holder survives a hit, it immediately switches out to a chosen ally. Single use.",
+      "zhHans": "受到伤害后可立即下场与同伴进行交替。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "ejectpack",
+    "name": "Eject Pack",
+    "shortDesc": {
+      "en": "If the holder's stat stages are lowered, it switches to a chosen ally. Single use.",
+      "zhHans": "携带该道具的宝可梦能力下降时，会与同行宝可梦进行替换。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "electricseed",
+    "name": "Electric Seed",
+    "shortDesc": {
+      "en": "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use.",
+      "zhHans": "当场地为电气场地时防御提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "enigmaberry",
+    "name": "Enigma Berry",
+    "shortDesc": {
+      "en": "Restores 1/4 max HP after holder is hit by a supereffective move. Single use.",
+      "zhHans": "受到效果绝佳的攻击时回复1/4最大HP。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "eviolite",
+    "name": "Eviolite",
+    "shortDesc": {
+      "en": "If holder's species can evolve, its Defense and Sp. Def are 1.5x.",
+      "zhHans": "携带后，还能进化的宝可梦的防御和特防就会提高50%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "expertbelt",
+    "name": "Expert Belt",
+    "shortDesc": {
+      "en": "Holder's attacks that are super effective against the target do 1.2x damage.",
+      "zhHans": "招式出现效果绝佳时威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "fairyfeather",
+    "name": "Fairy Feather",
+    "shortDesc": {
+      "en": "Holder's Fairy-type attacks have 1.2x power.",
+      "zhHans": "携带者的妖精属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "fastball",
+    "name": "Fast Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that makes it easier to catch Pokemon which are quick to run away.",
+      "zhHans": "能很容易地捕捉逃跑速度很快的宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "firestone",
+    "name": "Fire Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "fistplate",
+    "name": "Fist Plate",
+    "shortDesc": {
+      "en": "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
+      "zhHans": "携带者的格斗属性招式威力变为 1.2 倍。制裁光砾变为格斗属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "flameorb",
+    "name": "Flame Orb",
+    "shortDesc": {
+      "en": "At the end of every turn, this item attempts to burn the holder.",
+      "zhHans": "回合结束时进入灼伤状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "flameplate",
+    "name": "Flame Plate",
+    "shortDesc": {
+      "en": "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
+      "zhHans": "携带者的火属性招式威力变为 1.2 倍。制裁光砾变为火属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "floatstone",
+    "name": "Float Stone",
+    "shortDesc": {
+      "en": "Holder's weight is halved.",
+      "zhHans": "携带者体重减半",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "flowersweet",
+    "name": "Flower Sweet",
+    "shortDesc": {
+      "en": "Evolves Milcery into Alcremie when held and spun around.",
+      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "focusband",
+    "name": "Focus Band",
+    "shortDesc": {
+      "en": "Holder has a 10% chance to survive an attack that would KO it with 1 HP.",
+      "zhHans": "携带后，即便受到可能会导致濒死的招式，有时也能仅以1HP撑过去。",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "focussash",
+    "name": "Focus Sash",
+    "shortDesc": {
+      "en": "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.",
+      "zhHans": "HP全满时受到攻击而将陷入濒死状态时保留1点HP而不陷入濒死状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "friendball",
+    "name": "Friend Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that makes caught Pokemon more friendly.",
+      "zhHans": "捉到的野生宝可梦会变得容易和训练家亲密",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "ganlonberry",
+    "name": "Ganlon Berry",
+    "shortDesc": {
+      "en": "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.",
+      "zhHans": "HP低于25%时提升1级防御。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "goldbottlecap",
+    "name": "Gold Bottle Cap",
+    "shortDesc": {
+      "en": "Used for Hyper Training. All of a Pokemon's stats are calculated with an IV of 31.",
+      "zhHans": "用作极限特训，提升所有个体值到最大值",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "grassyseed",
+    "name": "Grassy Seed",
+    "shortDesc": {
+      "en": "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use.",
+      "zhHans": "当场地为青草场地时防御提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "greatball",
+    "name": "Great Ball",
+    "shortDesc": {
+      "en": "A high-performance Ball that provides a higher catch rate than a Poke Ball.",
+      "zhHans": "比起精灵球来更容易捉到宝可梦的，性能还算不错的球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "grepaberry",
+    "name": "Grepa Berry",
+    "shortDesc": {
+      "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "gripclaw",
+    "name": "Grip Claw",
+    "shortDesc": {
+      "en": "Holder's partial-trapping moves always last 7 turns.",
+      "zhHans": "绑紧招式所造成的束缚状态持续时间固定为7回合",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "griseouscore",
+    "name": "Griseous Core",
+    "shortDesc": {
+      "en": "If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.",
+      "zhHans": "骑拉帝纳携带后形态转换为起源形态，并且龙属性和幽灵属性的招式威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "griseousorb",
+    "name": "Griseous Orb",
+    "shortDesc": {
+      "en": "If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.",
+      "zhHans": "骑拉帝纳携带后形态转换为起源形态，并且龙属性和幽灵属性的招式威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "habanberry",
+    "name": "Haban Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Dragon-type attack. Single use.",
+      "zhHans": "受到效果绝佳的龙属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "hardstone",
+    "name": "Hard Stone",
+    "shortDesc": {
+      "en": "Holder's Rock-type attacks have 1.2x power.",
+      "zhHans": "携带者的岩石属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "healball",
+    "name": "Heal Ball",
+    "shortDesc": {
+      "en": "A remedial Poke Ball that restores the caught Pokemon's HP and status problem.",
+      "zhHans": "能回复捉到的宝可梦的HP并治愈异常状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "hearthflamemask",
+    "name": "Hearthflame Mask",
+    "shortDesc": {
+      "en": "Ogerpon-Hearthflame: 1.2x power attacks; Terastallize to gain Embody Aspect.",
+      "zhHans": "厄诡椪-火灶携带后招式威力提升20%；太晶化后特性变为面影辉映",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "heatrock",
+    "name": "Heat Rock",
+    "shortDesc": {
+      "en": "Holder's use of Sunny Day lasts 8 turns instead of 5.",
+      "zhHans": "引起的大晴天天气从5回合延长至8回合",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "heavyball",
+    "name": "Heavy Ball",
+    "shortDesc": {
+      "en": "A Poke Ball for catching very heavy Pokemon.",
+      "zhHans": "能很容易地捕捉身体沉重的宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "heavydutyboots",
+    "name": "Heavy-Duty Boots",
+    "shortDesc": {
+      "en": "When switching in, the holder is unaffected by hazards on its side of the field.",
+      "zhHans": "携带后，不受脚下陷阱等的影响",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "hondewberry",
+    "name": "Hondew Berry",
+    "shortDesc": {
+      "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "icestone",
+    "name": "Ice Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "icicleplate",
+    "name": "Icicle Plate",
+    "shortDesc": {
+      "en": "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
+      "zhHans": "携带者的冰属性招式威力变为 1.2 倍。制裁光砾变为冰属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "insectplate",
+    "name": "Insect Plate",
+    "shortDesc": {
+      "en": "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
+      "zhHans": "携带者的虫属性招式威力变为 1.2 倍。制裁光砾变为虫属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "ironball",
+    "name": "Iron Ball",
+    "shortDesc": {
+      "en": "Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.",
+      "zhHans": "速度降低50%，飞行属性和飘浮特性宝可梦可以受到地面属性招式的伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "ironplate",
+    "name": "Iron Plate",
+    "shortDesc": {
+      "en": "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
+      "zhHans": "携带者的钢属性招式威力变为 1.2 倍。制裁光砾变为钢属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "jabocaberry",
+    "name": "Jaboca Berry",
+    "shortDesc": {
+      "en": "If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.",
+      "zhHans": "受到物理招式攻击时对手损伤1/8的HP。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "kasibberry",
+    "name": "Kasib Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Ghost-type attack. Single use.",
+      "zhHans": "受到效果绝佳的幽灵属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "kebiaberry",
+    "name": "Kebia Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Poison-type attack. Single use.",
+      "zhHans": "受到效果绝佳的毒属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "keeberry",
+    "name": "Kee Berry",
+    "shortDesc": {
+      "en": "Raises holder's Defense by 1 stage after it is hit by a physical attack. Single use.",
+      "zhHans": "受到物理招式攻击时，防御提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "kelpsyberry",
+    "name": "Kelpsy Berry",
+    "shortDesc": {
+      "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "kingsrock",
+    "name": "King's Rock",
+    "shortDesc": {
+      "en": "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
+      "zhHans": "使用不会陷入畏缩状态的攻击招式时有10%几率使目标进入畏缩状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "laggingtail",
+    "name": "Lagging Tail",
+    "shortDesc": {
+      "en": "Holder moves last in its priority bracket.",
+      "zhHans": "携带者所用招式在相同优先度内必定后出",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lansatberry",
+    "name": "Lansat Berry",
+    "shortDesc": {
+      "en": "Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.",
+      "zhHans": "HP低于25%时进入易中要害状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "leafstone",
+    "name": "Leaf Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "leftovers",
+    "name": "Leftovers",
+    "shortDesc": {
+      "en": "At the end of every turn, holder restores 1/16 of its max HP.",
+      "zhHans": "回合结束时回复1/16最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "leppaberry",
+    "name": "Leppa Berry",
+    "shortDesc": {
+      "en": "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.",
+      "zhHans": "招式的PP降到0时恢复该招式10点PP。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "levelball",
+    "name": "Level Ball",
+    "shortDesc": {
+      "en": "A Poke Ball for catching Pokemon that are a lower level than your own.",
+      "zhHans": "要捕捉的宝可梦比自己宝可梦的等级越低，就会越容易捕捉",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "liechiberry",
+    "name": "Liechi Berry",
+    "shortDesc": {
+      "en": "Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.",
+      "zhHans": "HP低于25%时攻击提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lifeorb",
+    "name": "Life Orb",
+    "shortDesc": {
+      "en": "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+      "zhHans": "携带后攻击招式伤害提升30%，攻击招式命中后损失1/10最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lightball",
+    "name": "Light Ball",
+    "shortDesc": {
+      "en": "If held by a Pikachu, its Attack and Sp. Atk are doubled.",
+      "zhHans": "皮卡丘携带后攻击和特攻翻倍",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lightclay",
+    "name": "Light Clay",
+    "shortDesc": {
+      "en": "Holder's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5.",
+      "zhHans": "光墙、反射壁和极光幕的有效时间延长至8回合",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "loadeddice",
+    "name": "Loaded Dice",
+    "shortDesc": {
+      "en": "Holder's moves that hit 2-5 times hit 4-5 times; Population Bomb hits 4-10 times.",
+      "zhHans": "在使用连续攻击2～5次的招式或鼠数儿时，至少攻击4次",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "loveball",
+    "name": "Love Ball",
+    "shortDesc": {
+      "en": "Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.",
+      "zhHans": "很容易捕捉和自己宝可梦性别不同的宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lovesweet",
+    "name": "Love Sweet",
+    "shortDesc": {
+      "en": "Evolves Milcery into Alcremie when held and spun around.",
+      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lumberry",
+    "name": "Lum Berry",
+    "shortDesc": {
+      "en": "Holder cures itself if it has a non-volatile status or is confused. Single use.",
+      "zhHans": "陷入异常状态或混乱状态时发动，解除该状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "luminousmoss",
+    "name": "Luminous Moss",
+    "shortDesc": {
+      "en": "Raises holder's Sp. Def by 1 stage if hit by a Water-type attack. Single use.",
+      "zhHans": "受到水属性招式攻击时特防提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lureball",
+    "name": "Lure Ball",
+    "shortDesc": {
+      "en": "A Poke Ball for catching Pokemon hooked by a Rod when fishing.",
+      "zhHans": "能很容易地捕捉用钓竿钓上来的宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lustrousglobe",
+    "name": "Lustrous Globe",
+    "shortDesc": {
+      "en": "If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.",
+      "zhHans": "帕路奇亚携带后龙属性和水属性的招式威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "lustrousorb",
+    "name": "Lustrous Orb",
+    "shortDesc": {
+      "en": "If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.",
+      "zhHans": "帕路奇亚携带后龙属性和水属性的招式威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "luxuryball",
+    "name": "Luxury Ball",
+    "shortDesc": {
+      "en": "A comfortable Poke Ball that makes a caught wild Pokemon quickly grow friendly.",
+      "zhHans": "捉到的野生宝可梦会立刻变得和训练家亲密起来",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "magnet",
+    "name": "Magnet",
+    "shortDesc": {
+      "en": "Holder's Electric-type attacks have 1.2x power.",
+      "zhHans": "携带者的电属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "marangaberry",
+    "name": "Maranga Berry",
+    "shortDesc": {
+      "en": "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use.",
+      "zhHans": "受到特殊攻击时特防提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "masterball",
+    "name": "Master Ball",
+    "shortDesc": {
+      "en": "The best Ball with the ultimate performance. It will catch any wild Pokemon.",
+      "zhHans": "必定能捉到野生宝可梦的，性能最好的球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "meadowplate",
+    "name": "Meadow Plate",
+    "shortDesc": {
+      "en": "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
+      "zhHans": "携带者的草属性招式威力变为 1.2 倍。制裁光砾变为草属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "mentalherb",
+    "name": "Mental Herb",
+    "shortDesc": {
+      "en": "Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use.",
+      "zhHans": "解除着迷、再来一次、挑衅、无理取闹、定身法和回复封锁状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "metalcoat",
+    "name": "Metal Coat",
+    "shortDesc": {
+      "en": "Holder's Steel-type attacks have 1.2x power.",
+      "zhHans": "携带者的钢属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "metronome",
+    "name": "Metronome",
+    "shortDesc": {
+      "en": "Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.",
+      "zhHans": "连续使用相同招式时，每重复使用一次威力提升20%，最高200%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "micleberry",
+    "name": "Micle Berry",
+    "shortDesc": {
+      "en": "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
+      "zhHans": "HP低于25%时命中率增加20%。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "mindplate",
+    "name": "Mind Plate",
+    "shortDesc": {
+      "en": "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
+      "zhHans": "携带者的超能力属性招式威力变为 1.2 倍。制裁光砾变为超能力属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "miracleseed",
+    "name": "Miracle Seed",
+    "shortDesc": {
+      "en": "Holder's Grass-type attacks have 1.2x power.",
+      "zhHans": "携带者的草属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "mirrorherb",
+    "name": "Mirror Herb",
+    "shortDesc": {
+      "en": "When an opposing Pokemon raises a stat stage, the holder copies it. Single use.",
+      "zhHans": "在对手提高能力时，有1次机会对其进行模仿并提高同样的能力。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "mistyseed",
+    "name": "Misty Seed",
+    "shortDesc": {
+      "en": "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+      "zhHans": "当场地为薄雾场地时特防提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "moonball",
+    "name": "Moon Ball",
+    "shortDesc": {
+      "en": "A Poke Ball for catching Pokemon that evolve using the Moon Stone.",
+      "zhHans": "能很容易地捕捉使用月之石进化的宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "moonstone",
+    "name": "Moon Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "muscleband",
+    "name": "Muscle Band",
+    "shortDesc": {
+      "en": "Holder's physical attacks have 1.1x power.",
+      "zhHans": "物理招式威力提升10%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "mysticwater",
+    "name": "Mystic Water",
+    "shortDesc": {
+      "en": "Holder's Water-type attacks have 1.2x power.",
+      "zhHans": "携带者的水属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "nestball",
+    "name": "Nest Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that works especially well on weaker Pokemon in the wild.",
+      "zhHans": "捕捉的野生宝可梦越弱，就会越容易捕捉",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "netball",
+    "name": "Net Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that works especially well on Water- and Bug-type Pokemon.",
+      "zhHans": "能很容易地捕捉水属性和虫属性的宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "nevermeltice",
+    "name": "Never-Melt Ice",
+    "shortDesc": {
+      "en": "Holder's Ice-type attacks have 1.2x power.",
+      "zhHans": "携带者的冰属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "occaberry",
+    "name": "Occa Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Fire-type attack. Single use.",
+      "zhHans": "受到效果绝佳的火属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "oranberry",
+    "name": "Oran Berry",
+    "shortDesc": {
+      "en": "Restores 10 HP when at 1/2 max HP or less. Single use.",
+      "zhHans": "HP低于50%时回复10HP。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "ovalstone",
+    "name": "Oval Stone",
+    "shortDesc": {
+      "en": "Evolves Happiny into Chansey when held and leveled up during the day.",
+      "zhHans": "小福蛋携带后在白天升级可以进化为吉利蛋",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "passhoberry",
+    "name": "Passho Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Water-type attack. Single use.",
+      "zhHans": "受到效果绝佳的水属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "payapaberry",
+    "name": "Payapa Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Psychic-type attack. Single use.",
+      "zhHans": "受到效果绝佳的超能力属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "pechaberry",
+    "name": "Pecha Berry",
+    "shortDesc": {
+      "en": "Holder is cured if it is poisoned. Single use.",
+      "zhHans": "解除中毒状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "persimberry",
+    "name": "Persim Berry",
+    "shortDesc": {
+      "en": "Holder is cured if it is confused. Single use.",
+      "zhHans": "解除混乱状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "petayaberry",
+    "name": "Petaya Berry",
+    "shortDesc": {
+      "en": "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
+      "zhHans": "HP低于25%时特攻提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "pixieplate",
+    "name": "Pixie Plate",
+    "shortDesc": {
+      "en": "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.",
+      "zhHans": "携带者的妖精属性招式威力变为 1.2 倍。制裁光砾变为妖精属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "poisonbarb",
+    "name": "Poison Barb",
+    "shortDesc": {
+      "en": "Holder's Poison-type attacks have 1.2x power.",
+      "zhHans": "携带者的毒属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "pokeball",
+    "name": "Poke Ball",
+    "shortDesc": {
+      "en": "A device for catching wild Pokemon. It is designed as a capsule system.",
+      "zhHans": "胶囊样式的用于投向野生宝可梦并将其捕捉的球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "pomegberry",
+    "name": "Pomeg Berry",
+    "shortDesc": {
+      "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "poweranklet",
+    "name": "Power Anklet",
+    "shortDesc": {
+      "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+      "zhHans": "速度减半。笨拙特性不能无视减半效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "powerband",
+    "name": "Power Band",
+    "shortDesc": {
+      "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+      "zhHans": "速度减半。笨拙特性不能无视减半效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "powerbelt",
+    "name": "Power Belt",
+    "shortDesc": {
+      "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+      "zhHans": "速度减半。笨拙特性不能无视减半效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "powerbracer",
+    "name": "Power Bracer",
+    "shortDesc": {
+      "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+      "zhHans": "速度减半。笨拙特性不能无视减半效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "powerherb",
+    "name": "Power Herb",
+    "shortDesc": {
+      "en": "Holder's two-turn moves complete in one turn (except Sky Drop). Single use.",
+      "zhHans": "有1次机会可以在第1回合使出需要蓄力的招式(自由落体除外)。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "powerlens",
+    "name": "Power Lens",
+    "shortDesc": {
+      "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+      "zhHans": "速度减半。笨拙特性不能无视减半效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "powerweight",
+    "name": "Power Weight",
+    "shortDesc": {
+      "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+      "zhHans": "速度减半。笨拙特性不能无视减半效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "premierball",
+    "name": "Premier Ball",
+    "shortDesc": {
+      "en": "A rare Poke Ball that has been crafted to commemorate an event.",
+      "zhHans": "为了纪念某些事件的稀有的精灵球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "protectivepads",
+    "name": "Protective Pads",
+    "shortDesc": {
+      "en": "Holder's moves are protected from adverse contact effects, except Pickpocket.",
+      "zhHans": "使用接触类招式攻击时，不会受到本应受到的效果，对顺手牵羊特性无效",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "psychicseed",
+    "name": "Psychic Seed",
+    "shortDesc": {
+      "en": "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+      "zhHans": "当场地为精神场地时特防提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "punchingglove",
+    "name": "Punching Glove",
+    "shortDesc": {
+      "en": "Holder's punch-based attacks have 1.1x power and do not make contact.",
+      "zhHans": "拳类招式威力上升10%且不会被视作接触类招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "qualotberry",
+    "name": "Qualot Berry",
+    "shortDesc": {
+      "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "quickball",
+    "name": "Quick Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that provides a better catch rate at the start of a wild encounter.",
+      "zhHans": "在战斗开始时使用捕获成功率更高的特殊的精灵球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "quickclaw",
+    "name": "Quick Claw",
+    "shortDesc": {
+      "en": "Each turn, holder has a 20% chance to move first in its priority bracket.",
+      "zhHans": "20%概率优先使用招式",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rarebone",
+    "name": "Rare Bone",
+    "shortDesc": {
+      "en": "No competitive use other than when used with Fling.",
+      "zhHans": "在宝可梦考古学上非常贵重的骨头，可以在商店高价出售",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rawstberry",
+    "name": "Rawst Berry",
+    "shortDesc": {
+      "en": "Holder is cured if it is burned. Single use.",
+      "zhHans": "解除灼伤状态。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "razorclaw",
+    "name": "Razor Claw",
+    "shortDesc": {
+      "en": "Holder's critical hit ratio is raised by 1 stage.",
+      "zhHans": "击中要害等级提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "razorfang",
+    "name": "Razor Fang",
+    "shortDesc": {
+      "en": "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
+      "zhHans": "使用不会陷入畏缩状态的攻击招式时有10%几率使目标进入畏缩状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "redcard",
+    "name": "Red Card",
+    "shortDesc": {
+      "en": "If holder survives a hit, attacker is forced to switch to a random ally. Single use.",
+      "zhHans": "受到伤害后攻击方随机交换任意宝可梦。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "repeatball",
+    "name": "Repeat Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that works well on Pokemon species that were previously caught.",
+      "zhHans": "对于以前捕获过的宝可梦效果特别好的特殊的球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "ribbonsweet",
+    "name": "Ribbon Sweet",
+    "shortDesc": {
+      "en": "Evolves Milcery into Alcremie when held and spun around.",
+      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rindoberry",
+    "name": "Rindo Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Grass-type attack. Single use.",
+      "zhHans": "受到效果绝佳的草属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "ringtarget",
+    "name": "Ring Target",
+    "shortDesc": {
+      "en": "The holder's type immunities granted solely by its typing are negated.",
+      "zhHans": "受到攻击时，不会出现因属性相性引发的没有效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rockyhelmet",
+    "name": "Rocky Helmet",
+    "shortDesc": {
+      "en": "If holder is hit by a contact move, the attacker loses 1/6 of its max HP.",
+      "zhHans": "受到接触类招式时对手失去1/6最大HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "roomservice",
+    "name": "Room Service",
+    "shortDesc": {
+      "en": "If Trick Room is active, the holder's Speed is lowered by 1 stage. Single use.",
+      "zhHans": "携带后，在戏法空间使用时，速度会下降1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "roseliberry",
+    "name": "Roseli Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Fairy-type attack. Single use.",
+      "zhHans": "受到效果绝佳的妖精属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "rowapberry",
+    "name": "Rowap Berry",
+    "shortDesc": {
+      "en": "If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.",
+      "zhHans": "受到特殊招式攻击时对手损伤1/8的HP。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rustedshield",
+    "name": "Rusted Shield",
+    "shortDesc": {
+      "en": "If held by a Zamazenta, this item changes its forme to Crowned Shield.",
+      "zhHans": "藏玛然特携带后，在对战中会以藏玛然特-盾之王形态登场",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "rustedsword",
+    "name": "Rusted Sword",
+    "shortDesc": {
+      "en": "If held by a Zacian, this item changes its forme to Crowned Sword.",
+      "zhHans": "苍响携带后，在对战中会以苍响-剑之王形态登场",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "safariball",
+    "name": "Safari Ball",
+    "shortDesc": {
+      "en": "A special Poke Ball that is used only in the Safari Zone and Great Marsh.",
+      "zhHans": "仅能在狩猎地带和大湿地中使用的特殊的球,上面有迷彩花纹",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "safetygoggles",
+    "name": "Safety Goggles",
+    "shortDesc": {
+      "en": "Holder is immune to powder moves and damage from Sandstorm or Hail.",
+      "zhHans": "免疫沙暴和冰雹天气造成的伤害",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "salacberry",
+    "name": "Salac Berry",
+    "shortDesc": {
+      "en": "Raises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.",
+      "zhHans": "HP低于25%时速度提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "scopelens",
+    "name": "Scope Lens",
+    "shortDesc": {
+      "en": "Holder's critical hit ratio is raised by 1 stage.",
+      "zhHans": "击中要害等级提升1级",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sharpbeak",
+    "name": "Sharp Beak",
+    "shortDesc": {
+      "en": "Holder's Flying-type attacks have 1.2x power.",
+      "zhHans": "携带者的飞行属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "shellbell",
+    "name": "Shell Bell",
+    "shortDesc": {
+      "en": "After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon.",
+      "zhHans": "造成伤害后回复伤害量的1/8HP",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "shinystone",
+    "name": "Shiny Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "shucaberry",
+    "name": "Shuca Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Ground-type attack. Single use.",
+      "zhHans": "受到效果绝佳的地面属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "silkscarf",
+    "name": "Silk Scarf",
+    "shortDesc": {
+      "en": "Holder's Normal-type attacks have 1.2x power.",
+      "zhHans": "携带者的一般属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "silverpowder",
+    "name": "Silver Powder",
+    "shortDesc": {
+      "en": "Holder's Bug-type attacks have 1.2x power.",
+      "zhHans": "携带者的虫属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "sitrusberry",
+    "name": "Sitrus Berry",
+    "shortDesc": {
+      "en": "Restores 1/4 max HP when at 1/2 max HP or less. Single use.",
+      "zhHans": "HP低于50%时回复1/4最大HP。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "skyplate",
+    "name": "Sky Plate",
+    "shortDesc": {
+      "en": "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
+      "zhHans": "携带者的飞行属性招式威力变为 1.2 倍。制裁光砾变为飞行属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "smoothrock",
+    "name": "Smooth Rock",
+    "shortDesc": {
+      "en": "Holder's use of Sandstorm lasts 8 turns instead of 5.",
+      "zhHans": "引起的沙暴天气从5回合延长至8回合",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "snowball",
+    "name": "Snowball",
+    "shortDesc": {
+      "en": "Raises holder's Attack by 1 if hit by an Ice-type attack. Single use.",
+      "zhHans": "受到冰属性招式攻击时攻击提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "softsand",
+    "name": "Soft Sand",
+    "shortDesc": {
+      "en": "Holder's Ground-type attacks have 1.2x power.",
+      "zhHans": "携带者的地面属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "souldew",
+    "name": "Soul Dew",
+    "shortDesc": {
+      "en": "If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.",
+      "zhHans": "拉帝亚斯/拉帝欧斯携带后龙属性和超能力属性招式威力提升20%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "spelltag",
+    "name": "Spell Tag",
+    "shortDesc": {
+      "en": "Holder's Ghost-type attacks have 1.2x power.",
+      "zhHans": "携带者的幽灵属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "splashplate",
+    "name": "Splash Plate",
+    "shortDesc": {
+      "en": "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
+      "zhHans": "携带者的水属性招式威力变为 1.2 倍。制裁光砾变为水属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "spookyplate",
+    "name": "Spooky Plate",
+    "shortDesc": {
+      "en": "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
+      "zhHans": "携带者的幽灵属性招式威力变为 1.2 倍。制裁光砾变为幽灵属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "sportball",
+    "name": "Sport Ball",
+    "shortDesc": {
+      "en": "A special Poke Ball for the Bug-Catching Contest.",
+      "zhHans": "在捕虫大赛上使用的特殊的球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "starfberry",
+    "name": "Starf Berry",
+    "shortDesc": {
+      "en": "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.",
+      "zhHans": "HP低于25%时随机提升一项能力2级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "starsweet",
+    "name": "Star Sweet",
+    "shortDesc": {
+      "en": "Evolves Milcery into Alcremie when held and spun around.",
+      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stickybarb",
+    "name": "Sticky Barb",
+    "shortDesc": {
+      "en": "Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.",
+      "zhHans": "每回合损失1/8最大HP，受到接触类招式伤害时对手获得该道具",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "stoneplate",
+    "name": "Stone Plate",
+    "shortDesc": {
+      "en": "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
+      "zhHans": "携带者的岩石属性招式威力变为 1.2 倍。制裁光砾变为岩石属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "strawberrysweet",
+    "name": "Strawberry Sweet",
+    "shortDesc": {
+      "en": "Evolves Milcery into Alcremie when held and spun around.",
+      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "sunstone",
+    "name": "Sun Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "tamatoberry",
+    "name": "Tamato Berry",
+    "shortDesc": {
+      "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "tangaberry",
+    "name": "Tanga Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Bug-type attack. Single use.",
+      "zhHans": "受到效果绝佳的虫属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "terrainextender",
+    "name": "Terrain Extender",
+    "shortDesc": {
+      "en": "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
+      "zhHans": "引起的场地从5回合延长至8回合",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "throatspray",
+    "name": "Throat Spray",
+    "shortDesc": {
+      "en": "Raises holder's Special Attack by 1 stage after it uses a sound move. Single use.",
+      "zhHans": "携带该道具的宝可梦使用声音的招式后，特攻提升1级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "thunderstone",
+    "name": "Thunder Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "timerball",
+    "name": "Timer Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that becomes better the more turns there are in a battle.",
+      "zhHans": "随着战斗回合数增加而变得更好的特殊的球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "toxicorb",
+    "name": "Toxic Orb",
+    "shortDesc": {
+      "en": "At the end of every turn, this item attempts to badly poison the holder.",
+      "zhHans": "回合结束时进入剧毒状态",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "toxicplate",
+    "name": "Toxic Plate",
+    "shortDesc": {
+      "en": "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
+      "zhHans": "携带者的毒属性招式威力变为 1.2 倍。制裁光砾变为毒属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "twistedspoon",
+    "name": "Twisted Spoon",
+    "shortDesc": {
+      "en": "Holder's Psychic-type attacks have 1.2x power.",
+      "zhHans": "携带者的超能力属性招式威力变为 1.2 倍。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "ultraball",
+    "name": "Ultra Ball",
+    "shortDesc": {
+      "en": "An ultra-performance Ball that provides a higher catch rate than a Great Ball.",
+      "zhHans": "比起超级球来更容易捉到宝可梦的，性能非常不错的球",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "utilityumbrella",
+    "name": "Utility Umbrella",
+    "shortDesc": {
+      "en": "The holder ignores rain- and sun-based effects.",
+      "zhHans": "携带此道具的宝可梦不受大晴天和下雨的影响，对沙暴或冰雹没有效果",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "wacanberry",
+    "name": "Wacan Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Electric-type attack. Single use.",
+      "zhHans": "受到效果绝佳的电属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "waterstone",
+    "name": "Water Stone",
+    "shortDesc": {
+      "en": "Evolves certain species of Pokemon when used.",
+      "zhHans": "使用后可以进化某些宝可梦",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "weaknesspolicy",
+    "name": "Weakness Policy",
+    "shortDesc": {
+      "en": "If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.",
+      "zhHans": "受到效果绝佳的伤害时攻击和特攻提升2级。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "wellspringmask",
+    "name": "Wellspring Mask",
+    "shortDesc": {
+      "en": "Ogerpon-Wellspring: 1.2x power attacks; Terastallize to gain Embody Aspect.",
+      "zhHans": "厄诡椪-水井携带后招式威力提升20%；太晶化后特性变为面影辉映",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "whiteherb",
+    "name": "White Herb",
+    "shortDesc": {
+      "en": "Restores all lowered stat stages to 0 when one is less than 0. Single use.",
+      "zhHans": "将所有能力等级低于0的能力回复至0。使用后消失",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "widelens",
+    "name": "Wide Lens",
+    "shortDesc": {
+      "en": "The accuracy of attacks by the holder is 1.1x.",
+      "zhHans": "命中率提升10%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "wiseglasses",
+    "name": "Wise Glasses",
+    "shortDesc": {
+      "en": "Holder's special attacks have 1.1x power.",
+      "zhHans": "特殊招式威力提升10%",
+      "source": "userscript"
+    }
+  },
+  {
+    "id": "yacheberry",
+    "name": "Yache Berry",
+    "shortDesc": {
+      "en": "Halves damage taken from a supereffective Ice-type attack. Single use.",
+      "zhHans": "受到效果绝佳的冰属性招式攻击时，伤害减半。使用后消耗。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "zapplate",
+    "name": "Zap Plate",
+    "shortDesc": {
+      "en": "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
+      "zhHans": "携带者的电属性招式威力变为 1.2 倍。制裁光砾变为电属性。",
+      "source": "pattern"
+    }
+  },
+  {
+    "id": "zoomlens",
+    "name": "Zoom Lens",
+    "shortDesc": {
+      "en": "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
+      "zhHans": "出招比目标慢时命中率提升20%",
+      "source": "userscript"
+    }
+  }
+]

@@ -57,6 +57,7 @@ function extractBattleEngine(source) {
 const userscript = fs.readFileSync(userscriptPath, 'utf8').replace(/\r\n/g, '\n');
 const exact = {
 	...readJSON(path.join(generatedPath, 'userscript-dictionary.json')),
+	...readJSON(path.join(generatedPath, 'description-dictionary.json')),
 	...readJSON(path.join(root, 'localization', 'ui-overrides.zh-Hans.json')),
 };
 const catalog = buildCatalog();

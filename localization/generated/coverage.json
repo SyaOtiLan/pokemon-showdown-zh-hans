@@ -61,5 +61,22 @@
         "coverage": 100
       }
     }
+  },
+  "descriptions": {
+    "moves": {
+      "total": 1314,
+      "translated": 1130,
+      "coverage": 86
+    },
+    "abilities": {
+      "total": 500,
+      "translated": 309,
+      "coverage": 61.8
+    },
+    "items": {
+      "total": 266,
+      "translated": 218,
+      "coverage": 81.95
+    }
   }
 }
