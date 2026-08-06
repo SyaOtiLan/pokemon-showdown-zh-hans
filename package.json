@@ -1,12 +1,13 @@
 {
   "name": "pokemon-showdown-zh-hans",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": true,
   "type": "module",
   "homepage": "https://github.com/SyaOtiLan/pokemon-showdown-zh-hans",
   "repository": "github:SyaOtiLan/pokemon-showdown-zh-hans",
   "scripts": {
-	"bootstrap": "node scripts/bootstrap.mjs",
+    "bootstrap": "node scripts/bootstrap.mjs",
+    "update:pokemon-db": "node scripts/update-pokeapi-descriptions.mjs",
     "generate": "node scripts/audit-localization.mjs && node scripts/generate-client-localization.mjs",
     "test": "node --test test/localization.test.mjs",
     "build": "node scripts/build-localized-client.mjs",

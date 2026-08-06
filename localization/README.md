@@ -1,14 +1,18 @@
 # Pokémon Showdown 简体中文资源
 
-这个目录用于生成并维护客户端简体中文资源。Showdown 的英文 ID 和协议值保持不变，中文只用于显示和输入别名。当前生成顺序为：油猴脚本精确匹配、形态名称组合、PKHeX 按游戏内部编号补齐。
+这个目录用于生成并维护客户端简体中文资源。Showdown 的英文 ID 和协议值保持不变，中文只用于显示和输入别名。当前名称生成顺序为：油猴脚本精确匹配、形态名称组合、PKHeX 按游戏内部编号补齐。说明文本优先按 Showdown ID 对齐 PokeAPI 简体中文数据库缓存。
 
 ## 当前覆盖率审计
 
 先将官方 Showdown 仓库放在 `upstream/pokemon-showdown`、PKHeX 放在 `upstream/PKHeX`，然后运行：
 
 ```bash
+npm run update:pokemon-db
 node scripts/audit-localization.mjs
 ```
+
+`update:pokemon-db` 会从 PokeAPI 的 CSV 数据库抓取简体中文 flavor text，并写入
+`localization/external/pokeapi-descriptions.zh-Hans.json`。日常 `generate` 只读取这个本地缓存，不联网。
 
 结果写入 `localization/generated/`：
 
@@ -17,7 +21,8 @@ node scripts/audit-localization.mjs
 - `*.missing.json`：仍需从 PokéAPI、PKHeX 或人工校对补齐的条目；
 - `userscript-dictionary.json`：从油猴脚本安全提取的原始直译词典。
 - `catalog.zh-Hans.json`：以 Showdown 内部 ID 为键、可供客户端直接加载的名称总表。
-- `description-dictionary.json`：从官方 `data/text` 的道具、招式、特性说明生成的英文说明到中文说明映射。
+- `description-dictionary.json`：从官方 `data/text` 的道具、招式、特性说明生成的英文说明到中文说明映射；只写入无歧义或已有通用译文的说明。
+- `description-dictionary.ambiguous.json`：同一句英文说明对应多个 PokeAPI 官方中文说明时的候选记录，避免误套到错误对象。
 - `*-descriptions.json` / `*-descriptions.missing.json`：按 Showdown 内部 ID 归档的说明翻译和缺失说明，便于后续补齐。
 
 名称人工校对项放在 `overrides.zh-Hans.json`，界面补充项放在 `ui-overrides.zh-Hans.json`；它们优先级高于其他来源，不直接修改上游数据。
@@ -32,6 +37,6 @@ node scripts/generate-client-localization.mjs
 node --test test/localization.test.mjs
 ```
 
-客户端运行时会自动提取直译词典、官方说明翻译、长描述前缀规则和战斗正则，并生成
+客户端运行时会自动提取直译词典、PokeAPI 对齐说明翻译、长描述前缀规则和战斗正则，并生成
 `play.pokemonshowdown.com/js/localization-zh-hans.js`。它通过 Preact 渲染钩子和战报节点创建接口工作，
 不使用全页面 `MutationObserver`。协议值、队伍导入导出值以及发送给服务器的 ID 始终保持英文。

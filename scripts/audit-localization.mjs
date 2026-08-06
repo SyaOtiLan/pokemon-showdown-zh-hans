@@ -9,17 +9,8 @@ const userscriptPath = path.join(root, 'PSChina Server Translation SV-1.7.2.txt'
 const showdownDataPath = path.join(root, 'upstream', 'pokemon-showdown', 'data');
 const pkhexTextPath = path.join(root, 'upstream', 'PKHeX', 'PKHeX.Core', 'Resources', 'text');
 const overridesPath = path.join(root, 'localization', 'overrides.zh-Hans.json');
+const pokeApiDescriptionsPath = path.join(root, 'localization', 'external', 'pokeapi-descriptions.zh-Hans.json');
 const outputDir = path.join(root, 'localization', 'generated');
-
-const typeNames = {
-	Bug: '虫', Dark: '恶', Dragon: '龙', Electric: '电', Fairy: '妖精', Fighting: '格斗',
-	Fire: '火', Flying: '飞行', Ghost: '幽灵', Grass: '草', Ground: '地面', Ice: '冰',
-	Normal: '一般', Poison: '毒', Psychic: '超能力', Rock: '岩石', Steel: '钢', Water: '水',
-};
-const statNames = {
-	Attack: '攻击', Defense: '防御', Speed: '速度', Accuracy: '命中率', evasiveness: '闪避率',
-	'Sp. Atk': '特攻', 'Sp. Def': '特防', 'Special Attack': '特攻', 'Special Defense': '特防',
-};
 
 function readUserscriptDictionary() {
 	const source = fs.readFileSync(userscriptPath, 'utf8');
@@ -172,83 +163,57 @@ function summarize(result) {
 	};
 }
 
-function typeZh(type) {
-	return typeNames[type] || type;
+function toPokeApiIdentifier(value) {
+	return String(value || '')
+		.normalize('NFKD')
+		.toLowerCase()
+		.replace(/[’']/g, '')
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/^-+|-+$/g, '');
 }
 
-function statZh(stat) {
-	return statNames[stat] || stat;
+function readPokeApiDescriptionCache() {
+	if (!fs.existsSync(pokeApiDescriptionsPath)) {
+		throw new Error(`Missing ${path.relative(root, pokeApiDescriptionsPath)}. Run scripts/update-pokeapi-descriptions.mjs first.`);
+	}
+	const cache = JSON.parse(fs.readFileSync(pokeApiDescriptionsPath, 'utf8'));
+	const indexes = {};
+	for (const [category, entries] of Object.entries(cache.categories || {})) {
+		indexes[category] = {
+			byId: new Map(entries.map(entry => [String(entry.id), entry])),
+			byIdentifier: new Map(entries.map(entry => [entry.identifier, entry])),
+		};
+	}
+	return {cache, indexes};
 }
 
-function translateDescriptionPattern(value, translations) {
-	if (!value) return null;
-	if (translations[value]) return {zhHans: translations[value], source: 'userscript'};
-
-	let match = value.match(/^Holder's ([A-Za-z]+)-type attacks have ([\d.]+)x power\.$/);
-	if (match) return {zhHans: `携带者的${typeZh(match[1])}属性招式威力变为 ${match[2]} 倍。`, source: 'pattern'};
-
-	match = value.match(/^Holder's ([A-Za-z]+)-type attacks have ([\d.]+)x power\. Judgment is ([A-Za-z]+) type\.$/);
-	if (match) return {zhHans: `携带者的${typeZh(match[1])}属性招式威力变为 ${match[2]} 倍。制裁光砾变为${typeZh(match[3])}属性。`, source: 'pattern'};
-
-	match = value.match(/^Holder's ([A-Za-z]+)- and ([A-Za-z]+)-type attacks have ([\d.]+)x power\.$/);
-	if (match) return {zhHans: `携带者的${typeZh(match[1])}和${typeZh(match[2])}属性招式威力变为 ${match[3]} 倍。`, source: 'pattern'};
-
-	match = value.match(/^If held by an? (.+), its ([A-Za-z]+)- and ([A-Za-z]+)-type attacks have ([\d.]+)x power\.$/);
-	if (match) return {zhHans: `${translations[match[1]] || match[1]}携带时，${typeZh(match[2])}和${typeZh(match[3])}属性招式威力变为 ${match[4]} 倍。`, source: 'pattern'};
-
-	match = value.match(/^If held by an? (.+), this item allows it to Mega Evolve(?: into (.+))? in battle\.$/);
-	if (match) return {zhHans: `${translations[match[1]] || match[1]}携带后，可以在对战中超级进化${match[2] ? `为${translations[match[2]] || match[2]}` : ''}。`, source: 'pattern'};
-
-	match = value.match(/^Raises holder's (.+) by (\d+) stage if hit by an? ([A-Za-z]+)-type attack\. Single use\.$/);
-	if (match) return {zhHans: `受到${typeZh(match[3])}属性招式攻击时，携带者的${statZh(match[1])}提高 ${match[2]} 级。使用后消耗。`, source: 'pattern'};
-
-	match = value.match(/^Raises holder's (.+) by (\d+) stage when at 1\/4 max HP or less\. Single use\.$/);
-	if (match) return {zhHans: `携带者 HP 低于或等于 1/4 时，${statZh(match[1])}提高 ${match[2]} 级。使用后消耗。`, source: 'pattern'};
-
-	match = value.match(/^Halves damage taken from a supereffective ([A-Za-z]+)-type attack\. Single use\.$/);
-	if (match) return {zhHans: `受到效果绝佳的${typeZh(match[1])}属性招式攻击时，伤害减半。使用后消耗。`, source: 'pattern'};
-
-	match = value.match(/^Holder is cured if it is (.+)\. Single use\.$/);
-	if (match) return {zhHans: `携带者陷入${match[1] === 'frozen' ? '冰冻' : match[1]}状态时会治愈。使用后消耗。`, source: 'pattern'};
-
-	match = value.match(/^User recovers (\d+)% of the damage dealt\.$/);
-	if (match) return {zhHans: `使用者回复造成伤害的 ${match[1]}%。`, source: 'pattern'};
-
-	match = value.match(/^Raises the user's (.+) by (\d+)\.$/);
-	if (match) return {zhHans: `使用者的${statZh(match[1])}提高 ${match[2]} 级。`, source: 'pattern'};
-
-	match = value.match(/^Raises the user's (.+) by (\d+) stages\.$/);
-	if (match) return {zhHans: `使用者的${statZh(match[1])}提高 ${match[2]} 级。`, source: 'pattern'};
-
-	match = value.match(/^Has a (\d+)% chance to lower the target's (.+) by (\d+) stage\.$/);
-	if (match) return {zhHans: `${match[1]}% 几率令目标的${statZh(match[2])}降低 ${match[3]} 级。`, source: 'pattern'};
-
-	match = value.match(/^Has a (\d+)% chance to make the target flinch\.$/);
-	if (match) return {zhHans: `${match[1]}% 几率使目标畏缩。`, source: 'pattern'};
-
-	if (value === "Power is equal to the base move's Z-Power.") return {zhHans: '威力等于基础招式的 Z 招式威力。', source: 'pattern'};
-	if (value === 'No additional effect.') return {zhHans: '没有追加效果。', source: 'pattern'};
-	if (value === 'Does nothing.') return {zhHans: '没有效果。', source: 'pattern'};
-	if (value === 'Usually goes first.') return {zhHans: '通常会先制出招。', source: 'pattern'};
-	if (value === 'This move does not check accuracy.') return {zhHans: '这个招式不会进行命中判定。', source: 'pattern'};
-	if (value === 'High critical hit ratio.') return {zhHans: '容易击中要害。', source: 'pattern'};
-	if (value === 'Very high critical hit ratio.') return {zhHans: '非常容易击中要害。', source: 'pattern'};
-	return null;
+function resolvePokeApiDescription(category, entry, pokeApiIndexes) {
+	const index = pokeApiIndexes[category];
+	if (!index) return null;
+	const identifier = toPokeApiIdentifier(entry.name || entry.id);
+	if (category === 'items') return index.byIdentifier.get(identifier) || null;
+	return index.byId.get(String(entry.num)) || index.byIdentifier.get(identifier) || null;
 }
 
-function classifyDescriptions(textEntries, officialIds, translations) {
+function classifyDescriptions(category, textEntries, officialEntries, translations, pokeApiIndexes) {
 	const translated = [];
 	const missing = [];
-	const exact = {};
-	for (const entry of textEntries.filter(entry => officialIds.has(entry.id))) {
+	const exactCandidates = {};
+	const officialById = new Map(officialEntries.map(entry => [entry.id, entry]));
+	for (const entry of textEntries.filter(entry => officialById.has(entry.id))) {
+		const officialEntry = officialById.get(entry.id);
+		const databaseDescription = resolvePokeApiDescription(category, officialEntry, pokeApiIndexes);
 		const out = {id: entry.id, name: entry.name};
 		const miss = {id: entry.id, name: entry.name};
 		for (const field of ['shortDesc', 'desc']) {
 			if (!entry[field]) continue;
-			const resolved = translateDescriptionPattern(entry[field], translations);
+			const resolved = databaseDescription ? {
+				zhHans: databaseDescription.zhHans,
+				source: `pokeapi:${databaseDescription.identifier}:${databaseDescription.versionGroup}`,
+			} : (translations[entry[field]] ? {zhHans: translations[entry[field]], source: 'userscript'} : null);
 			if (resolved) {
 				out[field] = {en: entry[field], zhHans: resolved.zhHans, source: resolved.source};
-				exact[entry[field]] = resolved.zhHans;
+				(exactCandidates[entry[field]] ||= []).push({id: entry.id, zhHans: resolved.zhHans, source: resolved.source});
 			} else {
 				miss[field] = entry[field];
 			}
@@ -256,7 +221,26 @@ function classifyDescriptions(textEntries, officialIds, translations) {
 		if (out.shortDesc || out.desc) translated.push(out);
 		if (miss.shortDesc || miss.desc) missing.push(miss);
 	}
-	return {translated, missing, exact};
+	return {translated, missing, exactCandidates};
+}
+
+function buildDescriptionDictionary(descriptionResults, translations) {
+	const exact = {};
+	const ambiguous = [];
+	for (const [category, result] of Object.entries(descriptionResults)) {
+		for (const [english, candidates] of Object.entries(result.exactCandidates)) {
+			const uniqueZh = [...new Set(candidates.map(candidate => candidate.zhHans))];
+			if (uniqueZh.length === 1) {
+				exact[english] = uniqueZh[0];
+			} else if (translations[english]) {
+				exact[english] = translations[english];
+				ambiguous.push({category, en: english, selected: 'userscript', candidates});
+			} else {
+				ambiguous.push({category, en: english, selected: null, candidates});
+			}
+		}
+	}
+	return {exact, ambiguous};
 }
 
 function summarizeDescriptions(result) {
@@ -271,6 +255,7 @@ function summarizeDescriptions(result) {
 const translations = readUserscriptDictionary();
 const pkhexLists = readPkhexLists();
 const overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8'));
+const pokeApiDescriptions = readPokeApiDescriptionCache();
 const sources = {
 	species: 'pokedex.ts',
 	moves: 'moves.ts',
@@ -288,20 +273,34 @@ for (const [category, filename] of Object.entries(sources)) {
 
 const descriptionSources = {moves: 'moves.ts', abilities: 'abilities.ts', items: 'items.ts'};
 const descriptionResults = {};
-const descriptionExact = {};
 summary.descriptions = {};
+summary.descriptionSource = {
+	name: 'PokeAPI zh-Hans flavor text',
+	source: pokeApiDescriptions.cache.source,
+	language: pokeApiDescriptions.cache.language,
+};
 for (const [category, filename] of Object.entries(descriptionSources)) {
-	const officialIds = new Set(results[category].translated
-		.filter(entry => !entry.nonstandard && (entry.num === null || entry.num >= 0))
-		.map(entry => entry.id));
-	descriptionResults[category] = classifyDescriptions(parseShowdownTextCatalog(filename), officialIds, translations);
-	Object.assign(descriptionExact, descriptionResults[category].exact);
+	const officialEntries = results[category].translated
+		.filter(entry => !entry.nonstandard && (entry.num === null || entry.num >= 0));
+	descriptionResults[category] = classifyDescriptions(
+		category,
+		parseShowdownTextCatalog(filename),
+		officialEntries,
+		translations,
+		pokeApiDescriptions.indexes,
+	);
 	summary.descriptions[category] = summarizeDescriptions(descriptionResults[category]);
 }
+const descriptionDictionary = buildDescriptionDictionary(descriptionResults, translations);
+summary.descriptionDictionary = {
+	entries: Object.keys(descriptionDictionary.exact).length,
+	ambiguous: descriptionDictionary.ambiguous.length,
+};
 
 fs.mkdirSync(outputDir, {recursive: true});
 fs.writeFileSync(path.join(outputDir, 'userscript-dictionary.json'), `${JSON.stringify(translations, null, 2)}\n`);
-fs.writeFileSync(path.join(outputDir, 'description-dictionary.json'), `${JSON.stringify(descriptionExact, null, 2)}\n`);
+fs.writeFileSync(path.join(outputDir, 'description-dictionary.json'), `${JSON.stringify(descriptionDictionary.exact, null, 2)}\n`);
+fs.writeFileSync(path.join(outputDir, 'description-dictionary.ambiguous.json'), `${JSON.stringify(descriptionDictionary.ambiguous, null, 2)}\n`);
 fs.writeFileSync(path.join(outputDir, 'coverage.json'), `${JSON.stringify(summary, null, 2)}\n`);
 for (const [category, result] of Object.entries(results)) {
 	fs.writeFileSync(path.join(outputDir, `${category}.json`), `${JSON.stringify(result.translated, null, 2)}\n`);

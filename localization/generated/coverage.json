@@ -65,18 +65,27 @@
   "descriptions": {
     "moves": {
       "total": 1314,
-      "translated": 1130,
-      "coverage": 86
+      "translated": 1290,
+      "coverage": 98.17
     },
     "abilities": {
       "total": 500,
-      "translated": 309,
-      "coverage": 61.8
+      "translated": 480,
+      "coverage": 96
     },
     "items": {
       "total": 266,
-      "translated": 218,
-      "coverage": 81.95
+      "translated": 255,
+      "coverage": 95.86
     }
+  },
+  "descriptionSource": {
+    "name": "PokeAPI zh-Hans flavor text",
+    "source": "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/{moves,abilities,items,version_groups}.csv",
+    "language": "zh-hans"
+  },
+  "descriptionDictionary": {
+    "entries": 1489,
+    "ambiguous": 188
   }
 }

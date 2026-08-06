@@ -27,7 +27,7 @@ test('runtime translates names and resolves Chinese searches to protocol IDs', (
 	assert.equal(localizer.name('moves', 'thunderbolt', 'Thunderbolt'), '十万伏特');
 	assert.equal(localizer.name('items', 'prettyfeather', 'Pretty Feather'), '美丽之羽');
 	assert.equal(localizer.exact('(no item)'), '（无道具）');
-	assert.equal(localizer.description("Holder's Fire-type attacks have 1.2x power."), '携带者的火属性招式威力变为 1.2 倍。');
+	assert.equal(localizer.description("Holder's Fire-type attacks have 1.2x power."), '焚烧用的燃料。携带后，火属性的招式威力就会提高。');
 	assert.deepEqual(Array.from(localizer.search('十万伏特', 'move')[0]), ['move', 'thunderbolt']);
 	assert.equal(localizer.catalog.species.syclar, undefined, 'CAP species must stay out of the official catalog');
 });

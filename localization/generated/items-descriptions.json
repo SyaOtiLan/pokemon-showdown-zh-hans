@@ -4,8 +4,8 @@
     "name": "Absorb Bulb",
     "shortDesc": {
       "en": "Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use.",
-      "zhHans": "受到水属性招式攻击时特攻提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "一次性使用的球根。携带它的宝可梦如果受到水属性招式的攻击，特攻就会提高。",
+      "source": "pokeapi:absorb-bulb:sword-shield"
     }
   },
   {
@@ -22,8 +22,8 @@
     "name": "Adamant Orb",
     "shortDesc": {
       "en": "If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.",
-      "zhHans": "帝牙卢卡携带后钢属性和龙属性招式威力提升20%",
-      "source": "userscript"
+      "zhHans": "让帝牙卢卡携带的话，龙和钢属性的招式威力就会提高。散发着光辉的宝珠。",
+      "source": "pokeapi:adamant-orb:sword-shield"
     }
   },
   {
@@ -31,8 +31,17 @@
     "name": "Adrenaline Orb",
     "shortDesc": {
       "en": "Raises holder's Speed by 1 stage if it gets affected by Intimidate. Single use.",
-      "zhHans": "受到威吓时速度提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在受到威吓时速度会提高。",
+      "source": "pokeapi:adrenaline-orb:sword-shield"
+    }
+  },
+  {
+    "id": "aguavberry",
+    "name": "Aguav Berry",
+    "shortDesc": {
+      "en": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
+      "zhHans": "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
+      "source": "pokeapi:aguav-berry:sword-shield"
     }
   },
   {
@@ -40,8 +49,8 @@
     "name": "Air Balloon",
     "shortDesc": {
       "en": "Holder is immune to Ground-type attacks. Pops when holder is hit.",
-      "zhHans": "携带后会浮在空中。受到攻击就会破裂",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，宝可梦会浮在空中。受到攻击就会破裂。",
+      "source": "pokeapi:air-balloon:sword-shield"
     }
   },
   {
@@ -49,8 +58,8 @@
     "name": "Apicot Berry",
     "shortDesc": {
       "en": "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
-      "zhHans": "HP低于25%时特防提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，危机时，自己的特防就会提高。",
+      "source": "pokeapi:apicot-berry:sword-shield"
     }
   },
   {
@@ -58,8 +67,8 @@
     "name": "Aspear Berry",
     "shortDesc": {
       "en": "Holder is cured if it is frozen. Single use.",
-      "zhHans": "解除冰冻状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以治愈冰冻。",
+      "source": "pokeapi:aspear-berry:sword-shield"
     }
   },
   {
@@ -67,8 +76,8 @@
     "name": "Assault Vest",
     "shortDesc": {
       "en": "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
-      "zhHans": "会变得富有攻击性的背心。虽然携带后特防会提高50%，但会无法使出变化招式",
-      "source": "userscript"
+      "zhHans": "会变得富有攻击性的背心。虽然携带后特防会提高，但会无法使出变化招式。",
+      "source": "pokeapi:assault-vest:sword-shield"
     }
   },
   {
@@ -76,8 +85,8 @@
     "name": "Babiri Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Steel-type attack. Single use.",
-      "zhHans": "受到效果绝佳的钢属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的钢属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:babiri-berry:sword-shield"
     }
   },
   {
@@ -85,8 +94,8 @@
     "name": "Beast Ball",
     "shortDesc": {
       "en": "A special Poke Ball designed to catch Ultra Beasts.",
-      "zhHans": "为捕获究极异兽而制作的特殊精灵球",
-      "source": "userscript"
+      "zhHans": "有些与众不同的精灵球。很难捕捉一般的宝可梦。",
+      "source": "pokeapi:beast-ball:sword-shield"
     }
   },
   {
@@ -94,8 +103,8 @@
     "name": "Berry Sweet",
     "shortDesc": {
       "en": "Evolves Milcery into Alcremie when held and spun around.",
-      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
-      "source": "userscript"
+      "zhHans": "浆果形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+      "source": "pokeapi:berry-sweet:sword-shield"
     }
   },
   {
@@ -103,8 +112,8 @@
     "name": "Big Nugget",
     "shortDesc": {
       "en": "A big nugget of pure gold that gives off a lustrous gleam.",
-      "zhHans": "以纯金制成，闪着金光的大珠子。可以在商店高价出售",
-      "source": "userscript"
+      "zhHans": "以纯金制成，闪着金光的大珠子。可以在商店高价出售。",
+      "source": "pokeapi:big-nugget:sword-shield"
     }
   },
   {
@@ -112,8 +121,8 @@
     "name": "Big Root",
     "shortDesc": {
       "en": "Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap.",
-      "zhHans": "使用吸取HP的招式、寄生种子、水流环、扎根和吸取力量时HP回复量提升30%",
-      "source": "userscript"
+      "zhHans": "携带后，吸取ＨＰ的招式可以比平时更多地回复自己的ＨＰ。",
+      "source": "pokeapi:big-root:sword-shield"
     }
   },
   {
@@ -121,8 +130,8 @@
     "name": "Binding Band",
     "shortDesc": {
       "en": "Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8.",
-      "zhHans": "绑紧招式所造成的束缚伤害从1/8提升至1/6",
-      "source": "userscript"
+      "zhHans": "能增强绑紧招式的束带。携带后，绑紧招式的威力会变强。",
+      "source": "pokeapi:binding-band:sword-shield"
     }
   },
   {
@@ -130,8 +139,8 @@
     "name": "Black Belt",
     "shortDesc": {
       "en": "Holder's Fighting-type attacks have 1.2x power.",
-      "zhHans": "携带者的格斗属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "能振作精神的带子。携带后，格斗属性的招式威力就会提高。",
+      "source": "pokeapi:black-belt:sword-shield"
     }
   },
   {
@@ -139,8 +148,8 @@
     "name": "Black Sludge",
     "shortDesc": {
       "en": "Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not.",
-      "zhHans": "毒属性宝可梦每回合结束时回复1/16最大HP，非毒属性宝可梦每回合结束时失去1/8最大HP",
-      "source": "userscript"
+      "zhHans": "携带后，毒属性的宝可梦会缓缓回复ＨＰ。其他属性的话，ＨＰ则会减少。",
+      "source": "pokeapi:black-sludge:sword-shield"
     }
   },
   {
@@ -148,8 +157,8 @@
     "name": "Black Glasses",
     "shortDesc": {
       "en": "Holder's Dark-type attacks have 1.2x power.",
-      "zhHans": "携带者的恶属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "看上去很奇怪的眼镜。携带后，恶属性的招式威力就会提高。",
+      "source": "pokeapi:black-glasses:sword-shield"
     }
   },
   {
@@ -157,8 +166,8 @@
     "name": "Blunder Policy",
     "shortDesc": {
       "en": "If the holder misses due to accuracy, its Speed is raised by 2 stages. Single use.",
-      "zhHans": "招式因命中率影响而落空时，速度会提升2级。使用后消失",
-      "source": "userscript"
+      "zhHans": "招式因命中率影响而落空时，速度会大幅提高。",
+      "source": "pokeapi:blunder-policy:sword-shield"
     }
   },
   {
@@ -175,8 +184,8 @@
     "name": "Bottle Cap",
     "shortDesc": {
       "en": "Used for Hyper Training. One of a Pokemon's stats is calculated with an IV of 31.",
-      "zhHans": "用作极限特训，提升一项个体值到最大值",
-      "source": "userscript"
+      "zhHans": "银色的美丽王冠。有些人收到它会很高兴。",
+      "source": "pokeapi:bottle-cap:sword-shield"
     }
   },
   {
@@ -184,8 +193,8 @@
     "name": "Bright Powder",
     "shortDesc": {
       "en": "The accuracy of attacks against the holder is 0.9x.",
-      "zhHans": "对手的命中率降低10%",
-      "source": "userscript"
+      "zhHans": "闪闪发光的粉末。携带后，光芒会迷惑对手，从而使其招式变得不容易命中。",
+      "source": "pokeapi:bright-powder:sword-shield"
     }
   },
   {
@@ -193,8 +202,8 @@
     "name": "Cell Battery",
     "shortDesc": {
       "en": "Raises holder's Attack by 1 if hit by an Electric-type attack. Single use.",
-      "zhHans": "受到电属性招式攻击时提升1级攻击。使用后消失",
-      "source": "userscript"
+      "zhHans": "一次性使用的充电电池。携带它的宝可梦如果受到电属性招式的攻击，攻击就会提高。",
+      "source": "pokeapi:cell-battery:sword-shield"
     }
   },
   {
@@ -202,8 +211,8 @@
     "name": "Charcoal",
     "shortDesc": {
       "en": "Holder's Fire-type attacks have 1.2x power.",
-      "zhHans": "携带者的火属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "焚烧用的燃料。携带后，火属性的招式威力就会提高。",
+      "source": "pokeapi:charcoal:sword-shield"
     }
   },
   {
@@ -211,8 +220,8 @@
     "name": "Charti Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Rock-type attack. Single use.",
-      "zhHans": "受到效果绝佳的岩石属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的岩石属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:charti-berry:sword-shield"
     }
   },
   {
@@ -220,8 +229,8 @@
     "name": "Cheri Berry",
     "shortDesc": {
       "en": "Holder cures itself if it is paralyzed. Single use.",
-      "zhHans": "解除麻痹状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以治愈麻痹。",
+      "source": "pokeapi:cheri-berry:sword-shield"
     }
   },
   {
@@ -229,8 +238,8 @@
     "name": "Chesto Berry",
     "shortDesc": {
       "en": "Holder wakes up if it is asleep. Single use.",
-      "zhHans": "解除睡眠状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以治愈睡眠。",
+      "source": "pokeapi:chesto-berry:sword-shield"
     }
   },
   {
@@ -238,8 +247,17 @@
     "name": "Chilan Berry",
     "shortDesc": {
       "en": "Halves damage taken from a Normal-type attack. Single use.",
-      "zhHans": "受到一般属性招式时伤害减半。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在受到一般属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:chilan-berry:sword-shield"
+    }
+  },
+  {
+    "id": "chippedpot",
+    "name": "Chipped Pot",
+    "shortDesc": {
+      "en": "Evolves Sinistea-Antique into Polteageist-Antique when used.",
+      "zhHans": "这个神奇的茶壶可以使特定的宝可梦进化。虽然有缺陷，但泡出来的茶依旧清香。",
+      "source": "pokeapi:chipped-pot:sword-shield"
     }
   },
   {
@@ -247,8 +265,8 @@
     "name": "Choice Band",
     "shortDesc": {
       "en": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
-      "zhHans": "虽然携带后攻击会提高50%，但只能使出相同的招式",
-      "source": "userscript"
+      "zhHans": "有点讲究的头带。虽然携带后攻击会提高，但只能使出相同的招式。",
+      "source": "pokeapi:choice-band:sword-shield"
     }
   },
   {
@@ -256,8 +274,8 @@
     "name": "Choice Scarf",
     "shortDesc": {
       "en": "Holder's Speed is 1.5x, but it can only select the first move it executes.",
-      "zhHans": "虽然携带后速度会提高50%，但只能使出相同的招式",
-      "source": "userscript"
+      "zhHans": "有点讲究的围巾。虽然携带后速度会提高，但只能使出相同的招式。",
+      "source": "pokeapi:choice-scarf:sword-shield"
     }
   },
   {
@@ -265,8 +283,8 @@
     "name": "Choice Specs",
     "shortDesc": {
       "en": "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
-      "zhHans": "虽然携带后特攻会提高50%，但只能使出相同的招式",
-      "source": "userscript"
+      "zhHans": "有点讲究的眼镜。虽然携带后特攻会提高，但只能使出相同的招式。",
+      "source": "pokeapi:choice-specs:sword-shield"
     }
   },
   {
@@ -274,8 +292,8 @@
     "name": "Chople Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Fighting-type attack. Single use.",
-      "zhHans": "受到效果绝佳的格斗属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的格斗属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:chople-berry:sword-shield"
     }
   },
   {
@@ -292,8 +310,8 @@
     "name": "Clover Sweet",
     "shortDesc": {
       "en": "Evolves Milcery into Alcremie when held and spun around.",
-      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
-      "source": "userscript"
+      "zhHans": "四叶草形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+      "source": "pokeapi:clover-sweet:sword-shield"
     }
   },
   {
@@ -301,8 +319,8 @@
     "name": "Coba Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Flying-type attack. Single use.",
-      "zhHans": "受到效果绝佳的飞行属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的飞行属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:coba-berry:sword-shield"
     }
   },
   {
@@ -310,8 +328,8 @@
     "name": "Colbur Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Dark-type attack. Single use.",
-      "zhHans": "受到效果绝佳的恶属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的恶属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:colbur-berry:sword-shield"
     }
   },
   {
@@ -333,12 +351,21 @@
     }
   },
   {
+    "id": "crackedpot",
+    "name": "Cracked Pot",
+    "shortDesc": {
+      "en": "Evolves Sinistea into Polteageist when used.",
+      "zhHans": "这个神奇的茶壶可以使特定的宝可梦进化。虽然有破损，但泡出来的茶依旧清香。",
+      "source": "pokeapi:cracked-pot:sword-shield"
+    }
+  },
+  {
     "id": "custapberry",
     "name": "Custap Berry",
     "shortDesc": {
       "en": "Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.",
-      "zhHans": "HP低于25%时能优先攻击一次。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，危机时，行动仅会变快１次。",
+      "source": "pokeapi:custap-berry:sword-shield"
     }
   },
   {
@@ -346,8 +373,8 @@
     "name": "Damp Rock",
     "shortDesc": {
       "en": "Holder's use of Rain Dance lasts 8 turns instead of 5.",
-      "zhHans": "引起的下雨天气从5回合延长至8回合",
-      "source": "userscript"
+      "zhHans": "携带它的宝可梦使出求雨的话，下雨的时间就会比平时更长。",
+      "source": "pokeapi:damp-rock:sword-shield"
     }
   },
   {
@@ -355,8 +382,13 @@
     "name": "Dawn Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像眼眸一般光彩动人。",
+      "source": "pokeapi:dawn-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves male Kirlia into Gallade and female Snorunt into Froslass when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像眼眸一般光彩动人。",
+      "source": "pokeapi:dawn-stone:sword-shield"
     }
   },
   {
@@ -364,8 +396,8 @@
     "name": "Destiny Knot",
     "shortDesc": {
       "en": "If holder becomes infatuated, the other Pokemon also becomes infatuated.",
-      "zhHans": "携带者陷入着迷时令对手着迷",
-      "source": "userscript"
+      "zhHans": "长长的鲜红色细线。携带后，在自己着迷时能让对手也着迷。",
+      "source": "pokeapi:destiny-knot:sword-shield"
     }
   },
   {
@@ -373,8 +405,8 @@
     "name": "Dive Ball",
     "shortDesc": {
       "en": "A Poke Ball that works especially well on Pokemon that live underwater.",
-      "zhHans": "能很容易地捕捉生活在水世界里的宝可梦",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。能很容易地捕捉生活在水世界里的宝可梦。",
+      "source": "pokeapi:dive-ball:sword-shield"
     }
   },
   {
@@ -382,8 +414,8 @@
     "name": "Draco Plate",
     "shortDesc": {
       "en": "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
-      "zhHans": "携带者的龙属性招式威力变为 1.2 倍。制裁光砾变为龙属性。",
-      "source": "pattern"
+      "zhHans": "龙属性的石板。携带后，龙属性的招式威力就会增强。",
+      "source": "pokeapi:draco-plate:sword-shield"
     }
   },
   {
@@ -391,8 +423,17 @@
     "name": "Dragon Fang",
     "shortDesc": {
       "en": "Holder's Dragon-type attacks have 1.2x power.",
-      "zhHans": "携带者的龙属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "坚硬锐利的牙齿。携带后，龙属性的招式威力就会提高。",
+      "source": "pokeapi:dragon-fang:sword-shield"
+    }
+  },
+  {
+    "id": "dragonscale",
+    "name": "Dragon Scale",
+    "shortDesc": {
+      "en": "Evolves Seadra into Kingdra when traded.",
+      "zhHans": "又硬又坚固的鳞片。龙属性宝可梦有时会携带它。",
+      "source": "pokeapi:dragon-scale:sword-shield"
     }
   },
   {
@@ -400,8 +441,26 @@
     "name": "Dread Plate",
     "shortDesc": {
       "en": "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
-      "zhHans": "携带者的恶属性招式威力变为 1.2 倍。制裁光砾变为恶属性。",
-      "source": "pattern"
+      "zhHans": "恶属性的石板。携带后，恶属性的招式威力就会增强。",
+      "source": "pokeapi:dread-plate:sword-shield"
+    }
+  },
+  {
+    "id": "dreamball",
+    "name": "Dream Ball",
+    "shortDesc": {
+      "en": "A Poke Ball that makes it easier to catch wild Pokémon while they're asleep.",
+      "zhHans": "有点与众不同的球。能很容易地捕捉睡眠状态的宝可梦。",
+      "source": "pokeapi:dream-ball:sword-shield"
+    }
+  },
+  {
+    "id": "dubiousdisc",
+    "name": "Dubious Disc",
+    "shortDesc": {
+      "en": "Evolves Porygon2 into Porygon-Z when traded.",
+      "zhHans": "内部储存了奇怪信息的透明机器。制造者不明。",
+      "source": "pokeapi:dubious-disc:sword-shield"
     }
   },
   {
@@ -409,8 +468,8 @@
     "name": "Dusk Ball",
     "shortDesc": {
       "en": "A Poke Ball that makes it easier to catch wild Pokemon at night or in caves.",
-      "zhHans": "能很容易地在夜晚或洞窟等阴暗的地方捕捉宝可梦",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。能很容易地在夜晚或洞窟等阴暗的地方捕捉宝可梦。",
+      "source": "pokeapi:dusk-ball:sword-shield"
     }
   },
   {
@@ -418,8 +477,13 @@
     "name": "Dusk Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像黑夜一般漆黑。",
+      "source": "pokeapi:dusk-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像黑夜一般漆黑。",
+      "source": "pokeapi:dusk-stone:sword-shield"
     }
   },
   {
@@ -427,8 +491,8 @@
     "name": "Earth Plate",
     "shortDesc": {
       "en": "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
-      "zhHans": "携带者的地面属性招式威力变为 1.2 倍。制裁光砾变为地面属性。",
-      "source": "pattern"
+      "zhHans": "地面属性的石板。携带后，地面属性的招式威力就会增强。",
+      "source": "pokeapi:earth-plate:sword-shield"
     }
   },
   {
@@ -436,8 +500,8 @@
     "name": "Eject Button",
     "shortDesc": {
       "en": "If holder survives a hit, it immediately switches out to a chosen ally. Single use.",
-      "zhHans": "受到伤害后可立即下场与同伴进行交替。使用后消失",
-      "source": "userscript"
+      "zhHans": "携带它的宝可梦如果受到招式攻击，就能逃脱战斗，并和同行的其他宝可梦进行替换。",
+      "source": "pokeapi:eject-button:sword-shield"
     }
   },
   {
@@ -445,8 +509,17 @@
     "name": "Eject Pack",
     "shortDesc": {
       "en": "If the holder's stat stages are lowered, it switches to a chosen ally. Single use.",
-      "zhHans": "携带该道具的宝可梦能力下降时，会与同行宝可梦进行替换。使用后消失",
-      "source": "userscript"
+      "zhHans": "当携带它的宝可梦能力下降时，同行宝可梦就会自动替换上场。",
+      "source": "pokeapi:eject-pack:sword-shield"
+    }
+  },
+  {
+    "id": "electirizer",
+    "name": "Electirizer",
+    "shortDesc": {
+      "en": "Evolves Electabuzz into Electivire when traded.",
+      "zhHans": "积蓄着庞大电气能量的箱子。某种宝可梦很喜欢它。",
+      "source": "pokeapi:electirizer:sword-shield"
     }
   },
   {
@@ -454,8 +527,8 @@
     "name": "Electric Seed",
     "shortDesc": {
       "en": "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use.",
-      "zhHans": "当场地为电气场地时防御提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在电气场地上使用，防御就会提高。",
+      "source": "pokeapi:electric-seed:sword-shield"
     }
   },
   {
@@ -463,8 +536,8 @@
     "name": "Enigma Berry",
     "shortDesc": {
       "en": "Restores 1/4 max HP after holder is hit by a supereffective move. Single use.",
-      "zhHans": "受到效果绝佳的攻击时回复1/4最大HP。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的招式攻击时，可以回复ＨＰ。",
+      "source": "pokeapi:enigma-berry:sword-shield"
     }
   },
   {
@@ -472,8 +545,8 @@
     "name": "Eviolite",
     "shortDesc": {
       "en": "If holder's species can evolve, its Defense and Sp. Def are 1.5x.",
-      "zhHans": "携带后，还能进化的宝可梦的防御和特防就会提高50%",
-      "source": "userscript"
+      "zhHans": "进化的神奇石块。携带后，还能进化的宝可梦的防御和特防就会提高。",
+      "source": "pokeapi:eviolite:sword-shield"
     }
   },
   {
@@ -481,17 +554,8 @@
     "name": "Expert Belt",
     "shortDesc": {
       "en": "Holder's attacks that are super effective against the target do 1.2x damage.",
-      "zhHans": "招式出现效果绝佳时威力提升20%",
-      "source": "userscript"
-    }
-  },
-  {
-    "id": "fairyfeather",
-    "name": "Fairy Feather",
-    "shortDesc": {
-      "en": "Holder's Fairy-type attacks have 1.2x power.",
-      "zhHans": "携带者的妖精属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "用惯了的黑色带子。携带后，效果绝佳时的招式威力就会少量提高。",
+      "source": "pokeapi:expert-belt:sword-shield"
     }
   },
   {
@@ -499,8 +563,17 @@
     "name": "Fast Ball",
     "shortDesc": {
       "en": "A Poke Ball that makes it easier to catch Pokemon which are quick to run away.",
-      "zhHans": "能很容易地捕捉逃跑速度很快的宝可梦",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。能很容易地捕捉逃跑速度很快的宝可梦。",
+      "source": "pokeapi:fast-ball:sword-shield"
+    }
+  },
+  {
+    "id": "figyberry",
+    "name": "Figy Berry",
+    "shortDesc": {
+      "en": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.",
+      "zhHans": "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
+      "source": "pokeapi:figy-berry:sword-shield"
     }
   },
   {
@@ -508,8 +581,13 @@
     "name": "Fire Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。看上去是橙黄色的。",
+      "source": "pokeapi:fire-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。看上去是橙黄色的。",
+      "source": "pokeapi:fire-stone:sword-shield"
     }
   },
   {
@@ -517,8 +595,8 @@
     "name": "Fist Plate",
     "shortDesc": {
       "en": "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
-      "zhHans": "携带者的格斗属性招式威力变为 1.2 倍。制裁光砾变为格斗属性。",
-      "source": "pattern"
+      "zhHans": "格斗属性的石板。携带后，格斗属性的招式威力就会增强。",
+      "source": "pokeapi:fist-plate:sword-shield"
     }
   },
   {
@@ -526,8 +604,8 @@
     "name": "Flame Orb",
     "shortDesc": {
       "en": "At the end of every turn, this item attempts to burn the holder.",
-      "zhHans": "回合结束时进入灼伤状态",
-      "source": "userscript"
+      "zhHans": "触碰后会放出热量的神奇宝珠。携带后，在战斗时会变成灼伤状态。",
+      "source": "pokeapi:flame-orb:sword-shield"
     }
   },
   {
@@ -535,8 +613,8 @@
     "name": "Flame Plate",
     "shortDesc": {
       "en": "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
-      "zhHans": "携带者的火属性招式威力变为 1.2 倍。制裁光砾变为火属性。",
-      "source": "pattern"
+      "zhHans": "火属性的石板。携带后，火属性的招式威力就会增强。",
+      "source": "pokeapi:flame-plate:sword-shield"
     }
   },
   {
@@ -544,8 +622,8 @@
     "name": "Float Stone",
     "shortDesc": {
       "en": "Holder's weight is halved.",
-      "zhHans": "携带者体重减半",
-      "source": "userscript"
+      "zhHans": "非常轻的石头。携带后，宝可梦的体重会变轻。",
+      "source": "pokeapi:float-stone:sword-shield"
     }
   },
   {
@@ -553,8 +631,8 @@
     "name": "Flower Sweet",
     "shortDesc": {
       "en": "Evolves Milcery into Alcremie when held and spun around.",
-      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
-      "source": "userscript"
+      "zhHans": "花朵形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+      "source": "pokeapi:flower-sweet:sword-shield"
     }
   },
   {
@@ -562,8 +640,8 @@
     "name": "Focus Band",
     "shortDesc": {
       "en": "Holder has a 10% chance to survive an attack that would KO it with 1 HP.",
-      "zhHans": "携带后，即便受到可能会导致濒死的招式，有时也能仅以1HP撑过去。",
-      "source": "userscript"
+      "zhHans": "携带后，即便受到可能会导致濒死的招式，有时也能仅以１ＨＰ撑过去。",
+      "source": "pokeapi:focus-band:sword-shield"
     }
   },
   {
@@ -571,8 +649,8 @@
     "name": "Focus Sash",
     "shortDesc": {
       "en": "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use.",
-      "zhHans": "HP全满时受到攻击而将陷入濒死状态时保留1点HP而不陷入濒死状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "携带后，在ＨＰ全满时，即便受到可能会导致濒死的招式，也能仅以１ＨＰ撑过去１次。",
+      "source": "pokeapi:focus-sash:sword-shield"
     }
   },
   {
@@ -580,8 +658,26 @@
     "name": "Friend Ball",
     "shortDesc": {
       "en": "A Poke Ball that makes caught Pokemon more friendly.",
-      "zhHans": "捉到的野生宝可梦会变得容易和训练家亲密",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。捉到的野生宝可梦会立刻变得和训练家亲密起来。",
+      "source": "pokeapi:friend-ball:sword-shield"
+    }
+  },
+  {
+    "id": "galaricacuff",
+    "name": "Galarica Cuff",
+    "shortDesc": {
+      "en": "Evolves Galarian Slowpoke into Galarian Slowbro when used.",
+      "zhHans": "用伽勒豆蔻枝编织的手环。给伽勒尔地区的呆呆兽戴上，它就会很开心。",
+      "source": "pokeapi:galarica-cuff:sword-shield"
+    }
+  },
+  {
+    "id": "galaricawreath",
+    "name": "Galarica Wreath",
+    "shortDesc": {
+      "en": "Evolves Galarian Slowpoke into Galarian Slowking when used.",
+      "zhHans": "用伽勒豆蔻枝编织的花环头饰。给伽勒尔地区的呆呆兽戴上这种头饰，它就会很开心。",
+      "source": "pokeapi:galarica-wreath:sword-shield"
     }
   },
   {
@@ -589,8 +685,8 @@
     "name": "Ganlon Berry",
     "shortDesc": {
       "en": "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.",
-      "zhHans": "HP低于25%时提升1级防御。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，危机时，自己的防御就会提高。",
+      "source": "pokeapi:ganlon-berry:sword-shield"
     }
   },
   {
@@ -598,8 +694,8 @@
     "name": "Gold Bottle Cap",
     "shortDesc": {
       "en": "Used for Hyper Training. All of a Pokemon's stats are calculated with an IV of 31.",
-      "zhHans": "用作极限特训，提升所有个体值到最大值",
-      "source": "userscript"
+      "zhHans": "金色的美丽王冠。比银色王冠珍贵。有些人收到它会很高兴。",
+      "source": "pokeapi:gold-bottle-cap:sword-shield"
     }
   },
   {
@@ -607,8 +703,8 @@
     "name": "Grassy Seed",
     "shortDesc": {
       "en": "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use.",
-      "zhHans": "当场地为青草场地时防御提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在青草场地上使用，防御就会提高。",
+      "source": "pokeapi:grassy-seed:sword-shield"
     }
   },
   {
@@ -616,8 +712,8 @@
     "name": "Great Ball",
     "shortDesc": {
       "en": "A high-performance Ball that provides a higher catch rate than a Poke Ball.",
-      "zhHans": "比起精灵球来更容易捉到宝可梦的，性能还算不错的球",
-      "source": "userscript"
+      "zhHans": "比起精灵球来更容易捉到宝可梦的，性能还算不错的球。",
+      "source": "pokeapi:great-ball:sword-shield"
     }
   },
   {
@@ -625,8 +721,8 @@
     "name": "Grepa Berry",
     "shortDesc": {
       "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
-      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
-      "source": "userscript"
+      "zhHans": "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但特防的基础点数会降低。",
+      "source": "pokeapi:grepa-berry:sword-shield"
     }
   },
   {
@@ -634,8 +730,8 @@
     "name": "Grip Claw",
     "shortDesc": {
       "en": "Holder's partial-trapping moves always last 7 turns.",
-      "zhHans": "绑紧招式所造成的束缚状态持续时间固定为7回合",
-      "source": "userscript"
+      "zhHans": "携带后，绑紧以及紧束等会持续造成伤害的招式的回合数会增加。",
+      "source": "pokeapi:grip-claw:sword-shield"
     }
   },
   {
@@ -652,8 +748,8 @@
     "name": "Griseous Orb",
     "shortDesc": {
       "en": "If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power.",
-      "zhHans": "骑拉帝纳携带后形态转换为起源形态，并且龙属性和幽灵属性的招式威力提升20%",
-      "source": "userscript"
+      "zhHans": "让骑拉帝纳携带的话，龙和幽灵属性的招式威力就会提高。散发着光辉的宝珠。",
+      "source": "pokeapi:griseous-orb:sword-shield"
     }
   },
   {
@@ -661,8 +757,8 @@
     "name": "Haban Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Dragon-type attack. Single use.",
-      "zhHans": "受到效果绝佳的龙属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的龙属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:haban-berry:sword-shield"
     }
   },
   {
@@ -670,8 +766,8 @@
     "name": "Hard Stone",
     "shortDesc": {
       "en": "Holder's Rock-type attacks have 1.2x power.",
-      "zhHans": "携带者的岩石属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "绝对不会裂开的石头。携带后，岩石属性的招式威力就会提高。",
+      "source": "pokeapi:hard-stone:sword-shield"
     }
   },
   {
@@ -679,8 +775,8 @@
     "name": "Heal Ball",
     "shortDesc": {
       "en": "A remedial Poke Ball that restores the caught Pokemon's HP and status problem.",
-      "zhHans": "能回复捉到的宝可梦的HP并治愈异常状态",
-      "source": "userscript"
+      "zhHans": "有点温柔的球。能回复捉到的宝可梦的ＨＰ并治愈异常状态。",
+      "source": "pokeapi:heal-ball:sword-shield"
     }
   },
   {
@@ -697,8 +793,8 @@
     "name": "Heat Rock",
     "shortDesc": {
       "en": "Holder's use of Sunny Day lasts 8 turns instead of 5.",
-      "zhHans": "引起的大晴天天气从5回合延长至8回合",
-      "source": "userscript"
+      "zhHans": "携带它的宝可梦使出大晴天的话，晴天的时间就会比平时更长。",
+      "source": "pokeapi:heat-rock:sword-shield"
     }
   },
   {
@@ -706,8 +802,8 @@
     "name": "Heavy Ball",
     "shortDesc": {
       "en": "A Poke Ball for catching very heavy Pokemon.",
-      "zhHans": "能很容易地捕捉身体沉重的宝可梦",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。能很容易地捕捉身体沉重的宝可梦。",
+      "source": "pokeapi:heavy-ball:sword-shield"
     }
   },
   {
@@ -715,8 +811,8 @@
     "name": "Heavy-Duty Boots",
     "shortDesc": {
       "en": "When switching in, the holder is unaffected by hazards on its side of the field.",
-      "zhHans": "携带后，不受脚下陷阱等的影响",
-      "source": "userscript"
+      "zhHans": "不受脚下陷阱等的影响。",
+      "source": "pokeapi:heavy-duty-boots:sword-shield"
     }
   },
   {
@@ -724,8 +820,17 @@
     "name": "Hondew Berry",
     "shortDesc": {
       "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
-      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
-      "source": "userscript"
+      "zhHans": "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但特攻的基础点数会降低。",
+      "source": "pokeapi:hondew-berry:sword-shield"
+    }
+  },
+  {
+    "id": "iapapaberry",
+    "name": "Iapapa Berry",
+    "shortDesc": {
+      "en": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.",
+      "zhHans": "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
+      "source": "pokeapi:iapapa-berry:sword-shield"
     }
   },
   {
@@ -733,8 +838,13 @@
     "name": "Ice Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。有着雪花般的花纹。",
+      "source": "pokeapi:ice-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves Alolan Sandshrew into Alolan Sandslash, Alolan Vulpix into Alolan Ninetales, Eevee into Glaceon, and Galarian Darumaka into Galarian Darmanitan when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。有着雪花般的花纹。",
+      "source": "pokeapi:ice-stone:sword-shield"
     }
   },
   {
@@ -742,8 +852,17 @@
     "name": "Icicle Plate",
     "shortDesc": {
       "en": "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
-      "zhHans": "携带者的冰属性招式威力变为 1.2 倍。制裁光砾变为冰属性。",
-      "source": "pattern"
+      "zhHans": "冰属性的石板。携带后，冰属性的招式威力就会增强。",
+      "source": "pokeapi:icicle-plate:sword-shield"
+    }
+  },
+  {
+    "id": "icyrock",
+    "name": "Icy Rock",
+    "shortDesc": {
+      "en": "Holder's use of Snowscape lasts 8 turns instead of 5.",
+      "zhHans": "携带它的宝可梦使出冰雹的话，冰雹的时间就会比平时更长。",
+      "source": "pokeapi:icy-rock:sword-shield"
     }
   },
   {
@@ -751,8 +870,8 @@
     "name": "Insect Plate",
     "shortDesc": {
       "en": "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
-      "zhHans": "携带者的虫属性招式威力变为 1.2 倍。制裁光砾变为虫属性。",
-      "source": "pattern"
+      "zhHans": "虫属性的石板。携带后，虫属性的招式威力就会增强。",
+      "source": "pokeapi:insect-plate:sword-shield"
     }
   },
   {
@@ -760,8 +879,8 @@
     "name": "Iron Ball",
     "shortDesc": {
       "en": "Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage.",
-      "zhHans": "速度降低50%，飞行属性和飘浮特性宝可梦可以受到地面属性招式的伤害",
-      "source": "userscript"
+      "zhHans": "携带后，速度会降低。飞行属性以及飘浮宝可梦会被地面招式击中。",
+      "source": "pokeapi:iron-ball:sword-shield"
     }
   },
   {
@@ -769,8 +888,8 @@
     "name": "Iron Plate",
     "shortDesc": {
       "en": "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
-      "zhHans": "携带者的钢属性招式威力变为 1.2 倍。制裁光砾变为钢属性。",
-      "source": "pattern"
+      "zhHans": "钢属性的石板。携带后，钢属性的招式威力就会增强。",
+      "source": "pokeapi:iron-plate:sword-shield"
     }
   },
   {
@@ -778,8 +897,8 @@
     "name": "Jaboca Berry",
     "shortDesc": {
       "en": "If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.",
-      "zhHans": "受到物理招式攻击时对手损伤1/8的HP。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在受到物理招式攻击时，能给予对手伤害。",
+      "source": "pokeapi:jaboca-berry:sword-shield"
     }
   },
   {
@@ -787,8 +906,8 @@
     "name": "Kasib Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Ghost-type attack. Single use.",
-      "zhHans": "受到效果绝佳的幽灵属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的幽灵属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:kasib-berry:sword-shield"
     }
   },
   {
@@ -796,8 +915,8 @@
     "name": "Kebia Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Poison-type attack. Single use.",
-      "zhHans": "受到效果绝佳的毒属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的毒属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:kebia-berry:sword-shield"
     }
   },
   {
@@ -805,8 +924,8 @@
     "name": "Kee Berry",
     "shortDesc": {
       "en": "Raises holder's Defense by 1 stage after it is hit by a physical attack. Single use.",
-      "zhHans": "受到物理招式攻击时，防御提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在受到物理招式攻击时，自己的防御就会提高。",
+      "source": "pokeapi:kee-berry:sword-shield"
     }
   },
   {
@@ -814,8 +933,8 @@
     "name": "Kelpsy Berry",
     "shortDesc": {
       "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
-      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
-      "source": "userscript"
+      "zhHans": "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但攻击的基础点数会降低。",
+      "source": "pokeapi:kelpsy-berry:sword-shield"
     }
   },
   {
@@ -823,8 +942,13 @@
     "name": "King's Rock",
     "shortDesc": {
       "en": "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
-      "zhHans": "使用不会陷入畏缩状态的攻击招式时有10%几率使目标进入畏缩状态",
-      "source": "userscript"
+      "zhHans": "携带后进行攻击，在造成伤害时，有时会让对手畏缩。",
+      "source": "pokeapi:kings-rock:sword-shield"
+    },
+    "desc": {
+      "en": "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded.",
+      "zhHans": "携带后进行攻击，在造成伤害时，有时会让对手畏缩。",
+      "source": "pokeapi:kings-rock:sword-shield"
     }
   },
   {
@@ -832,8 +956,8 @@
     "name": "Lagging Tail",
     "shortDesc": {
       "en": "Holder moves last in its priority bracket.",
-      "zhHans": "携带者所用招式在相同优先度内必定后出",
-      "source": "userscript"
+      "zhHans": "非常沉重的某种尾巴。携带后，行动会比平时更加迟缓。",
+      "source": "pokeapi:lagging-tail:sword-shield"
     }
   },
   {
@@ -841,8 +965,8 @@
     "name": "Lansat Berry",
     "shortDesc": {
       "en": "Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.",
-      "zhHans": "HP低于25%时进入易中要害状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，危机时，攻击会变得容易击中要害。",
+      "source": "pokeapi:lansat-berry:sword-shield"
     }
   },
   {
@@ -850,8 +974,13 @@
     "name": "Leaf Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。有着叶子般的花纹。",
+      "source": "pokeapi:leaf-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。有着叶子般的花纹。",
+      "source": "pokeapi:leaf-stone:sword-shield"
     }
   },
   {
@@ -859,8 +988,8 @@
     "name": "Leftovers",
     "shortDesc": {
       "en": "At the end of every turn, holder restores 1/16 of its max HP.",
-      "zhHans": "回合结束时回复1/16最大HP",
-      "source": "userscript"
+      "zhHans": "携带后，宝可梦的ＨＰ会在战斗期间缓缓回复。",
+      "source": "pokeapi:leftovers:sword-shield"
     }
   },
   {
@@ -868,8 +997,8 @@
     "name": "Leppa Berry",
     "shortDesc": {
       "en": "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.",
-      "zhHans": "招式的PP降到0时恢复该招式10点PP。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以回复１０ＰＰ。",
+      "source": "pokeapi:leppa-berry:sword-shield"
     }
   },
   {
@@ -877,8 +1006,8 @@
     "name": "Level Ball",
     "shortDesc": {
       "en": "A Poke Ball for catching Pokemon that are a lower level than your own.",
-      "zhHans": "要捕捉的宝可梦比自己宝可梦的等级越低，就会越容易捕捉",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。要捕捉的宝可梦比自己宝可梦的等级越低，就会越容易捕捉。",
+      "source": "pokeapi:level-ball:sword-shield"
     }
   },
   {
@@ -886,8 +1015,8 @@
     "name": "Liechi Berry",
     "shortDesc": {
       "en": "Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.",
-      "zhHans": "HP低于25%时攻击提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，危机时，自己的攻击就会提高。",
+      "source": "pokeapi:liechi-berry:sword-shield"
     }
   },
   {
@@ -895,8 +1024,8 @@
     "name": "Life Orb",
     "shortDesc": {
       "en": "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
-      "zhHans": "携带后攻击招式伤害提升30%，攻击招式命中后损失1/10最大HP",
-      "source": "userscript"
+      "zhHans": "携带后，虽然每次攻击时ＨＰ少量减少，但招式的威力会提高。",
+      "source": "pokeapi:life-orb:sword-shield"
     }
   },
   {
@@ -904,8 +1033,8 @@
     "name": "Light Ball",
     "shortDesc": {
       "en": "If held by a Pikachu, its Attack and Sp. Atk are doubled.",
-      "zhHans": "皮卡丘携带后攻击和特攻翻倍",
-      "source": "userscript"
+      "zhHans": "让皮卡丘携带后，攻击和特攻的威力就会提高的神奇之球。",
+      "source": "pokeapi:light-ball:sword-shield"
     }
   },
   {
@@ -913,8 +1042,8 @@
     "name": "Light Clay",
     "shortDesc": {
       "en": "Holder's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5.",
-      "zhHans": "光墙、反射壁和极光幕的有效时间延长至8回合",
-      "source": "userscript"
+      "zhHans": "当携带它的宝可梦使出光墙或反射壁时，效果会比平时持续得更长。",
+      "source": "pokeapi:light-clay:sword-shield"
     }
   },
   {
@@ -931,8 +1060,8 @@
     "name": "Love Ball",
     "shortDesc": {
       "en": "Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.",
-      "zhHans": "很容易捕捉和自己宝可梦性别不同的宝可梦",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。能很容易地捕捉和自己宝可梦性别不同的宝可梦。",
+      "source": "pokeapi:love-ball:sword-shield"
     }
   },
   {
@@ -940,8 +1069,8 @@
     "name": "Love Sweet",
     "shortDesc": {
       "en": "Evolves Milcery into Alcremie when held and spun around.",
-      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
-      "source": "userscript"
+      "zhHans": "爱心形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+      "source": "pokeapi:love-sweet:sword-shield"
     }
   },
   {
@@ -949,8 +1078,8 @@
     "name": "Lum Berry",
     "shortDesc": {
       "en": "Holder cures itself if it has a non-volatile status or is confused. Single use.",
-      "zhHans": "陷入异常状态或混乱状态时发动，解除该状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以治愈所有异常状态。",
+      "source": "pokeapi:lum-berry:sword-shield"
     }
   },
   {
@@ -958,8 +1087,8 @@
     "name": "Luminous Moss",
     "shortDesc": {
       "en": "Raises holder's Sp. Def by 1 stage if hit by a Water-type attack. Single use.",
-      "zhHans": "受到水属性招式攻击时特防提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "一次性使用的光苔。携带它的宝可梦如果受到水属性招式攻击，特防就会提高。",
+      "source": "pokeapi:luminous-moss:sword-shield"
     }
   },
   {
@@ -967,8 +1096,8 @@
     "name": "Lure Ball",
     "shortDesc": {
       "en": "A Poke Ball for catching Pokemon hooked by a Rod when fishing.",
-      "zhHans": "能很容易地捕捉用钓竿钓上来的宝可梦",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。能很容易地捕捉用钓竿钓上来的宝可梦。",
+      "source": "pokeapi:lure-ball:sword-shield"
     }
   },
   {
@@ -985,8 +1114,8 @@
     "name": "Lustrous Orb",
     "shortDesc": {
       "en": "If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.",
-      "zhHans": "帕路奇亚携带后龙属性和水属性的招式威力提升20%",
-      "source": "userscript"
+      "zhHans": "让帕路奇亚携带的话，龙和水属性的招式威力就会提高。散发着美丽光辉的宝珠。",
+      "source": "pokeapi:lustrous-orb:sword-shield"
     }
   },
   {
@@ -994,8 +1123,17 @@
     "name": "Luxury Ball",
     "shortDesc": {
       "en": "A comfortable Poke Ball that makes a caught wild Pokemon quickly grow friendly.",
-      "zhHans": "捉到的野生宝可梦会立刻变得和训练家亲密起来",
-      "source": "userscript"
+      "zhHans": "舒适宜居的球。捉到的野生宝可梦会变得非常容易和训练家亲密。",
+      "source": "pokeapi:luxury-ball:sword-shield"
+    }
+  },
+  {
+    "id": "magmarizer",
+    "name": "Magmarizer",
+    "shortDesc": {
+      "en": "Evolves Magmar into Magmortar when traded.",
+      "zhHans": "积蓄着庞大熔岩能量的箱子。某种宝可梦很喜欢它。",
+      "source": "pokeapi:magmarizer:sword-shield"
     }
   },
   {
@@ -1003,8 +1141,17 @@
     "name": "Magnet",
     "shortDesc": {
       "en": "Holder's Electric-type attacks have 1.2x power.",
-      "zhHans": "携带者的电属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "强力的磁铁。携带后，电属性的招式威力就会提高。",
+      "source": "pokeapi:magnet:sword-shield"
+    }
+  },
+  {
+    "id": "magoberry",
+    "name": "Mago Berry",
+    "shortDesc": {
+      "en": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.",
+      "zhHans": "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
+      "source": "pokeapi:mago-berry:sword-shield"
     }
   },
   {
@@ -1012,8 +1159,8 @@
     "name": "Maranga Berry",
     "shortDesc": {
       "en": "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use.",
-      "zhHans": "受到特殊攻击时特防提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在受到特殊招式攻击时，自己的特防就会提高。",
+      "source": "pokeapi:maranga-berry:sword-shield"
     }
   },
   {
@@ -1021,8 +1168,8 @@
     "name": "Master Ball",
     "shortDesc": {
       "en": "The best Ball with the ultimate performance. It will catch any wild Pokemon.",
-      "zhHans": "必定能捉到野生宝可梦的，性能最好的球",
-      "source": "userscript"
+      "zhHans": "必定能捉到野生宝可梦的，性能最好的球。",
+      "source": "pokeapi:master-ball:sword-shield"
     }
   },
   {
@@ -1030,8 +1177,8 @@
     "name": "Meadow Plate",
     "shortDesc": {
       "en": "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
-      "zhHans": "携带者的草属性招式威力变为 1.2 倍。制裁光砾变为草属性。",
-      "source": "pattern"
+      "zhHans": "草属性的石板。携带后，草属性的招式威力就会增强。",
+      "source": "pokeapi:meadow-plate:sword-shield"
     }
   },
   {
@@ -1039,8 +1186,8 @@
     "name": "Mental Herb",
     "shortDesc": {
       "en": "Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use.",
-      "zhHans": "解除着迷、再来一次、挑衅、无理取闹、定身法和回复封锁状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "当携带它的宝可梦无法自由使出招式时，仅会回复１次。",
+      "source": "pokeapi:mental-herb:sword-shield"
     }
   },
   {
@@ -1048,8 +1195,13 @@
     "name": "Metal Coat",
     "shortDesc": {
       "en": "Holder's Steel-type attacks have 1.2x power.",
-      "zhHans": "携带者的钢属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "特殊的金属膜。携带后，钢属性的招式威力就会提高。",
+      "source": "pokeapi:metal-coat:sword-shield"
+    },
+    "desc": {
+      "en": "Holder's Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded.",
+      "zhHans": "特殊的金属膜。携带后，钢属性的招式威力就会提高。",
+      "source": "pokeapi:metal-coat:sword-shield"
     }
   },
   {
@@ -1057,8 +1209,8 @@
     "name": "Metronome",
     "shortDesc": {
       "en": "Damage of moves used on consecutive turns is increased. Max 2x after 5 turns.",
-      "zhHans": "连续使用相同招式时，每重复使用一次威力提升20%，最高200%",
-      "source": "userscript"
+      "zhHans": "携带后，连续使出相同招式时，威力就会提高。不再使出相同招式时，威力就会复原。",
+      "source": "pokeapi:metronome:sword-shield"
     }
   },
   {
@@ -1066,8 +1218,8 @@
     "name": "Micle Berry",
     "shortDesc": {
       "en": "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
-      "zhHans": "HP低于25%时命中率增加20%。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，危机时，招式的命中率仅会提高１次。",
+      "source": "pokeapi:micle-berry:sword-shield"
     }
   },
   {
@@ -1075,8 +1227,8 @@
     "name": "Mind Plate",
     "shortDesc": {
       "en": "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
-      "zhHans": "携带者的超能力属性招式威力变为 1.2 倍。制裁光砾变为超能力属性。",
-      "source": "pattern"
+      "zhHans": "超能力属性的石板。携带后，超能力属性的招式威力就会增强。",
+      "source": "pokeapi:mind-plate:sword-shield"
     }
   },
   {
@@ -1084,8 +1236,8 @@
     "name": "Miracle Seed",
     "shortDesc": {
       "en": "Holder's Grass-type attacks have 1.2x power.",
-      "zhHans": "携带者的草属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "孕育生命的种子。携带后，草属性的招式威力就会提高。",
+      "source": "pokeapi:miracle-seed:sword-shield"
     }
   },
   {
@@ -1102,8 +1254,8 @@
     "name": "Misty Seed",
     "shortDesc": {
       "en": "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use.",
-      "zhHans": "当场地为薄雾场地时特防提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在薄雾场地上使用，特防就会提高。",
+      "source": "pokeapi:misty-seed:sword-shield"
     }
   },
   {
@@ -1111,8 +1263,8 @@
     "name": "Moon Ball",
     "shortDesc": {
       "en": "A Poke Ball for catching Pokemon that evolve using the Moon Stone.",
-      "zhHans": "能很容易地捕捉使用月之石进化的宝可梦",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。能很容易地捕捉使用月之石进化的宝可梦。",
+      "source": "pokeapi:moon-ball:sword-shield"
     }
   },
   {
@@ -1120,8 +1272,13 @@
     "name": "Moon Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像夜空一样乌黑。",
+      "source": "pokeapi:moon-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像夜空一样乌黑。",
+      "source": "pokeapi:moon-stone:sword-shield"
     }
   },
   {
@@ -1129,8 +1286,8 @@
     "name": "Muscle Band",
     "shortDesc": {
       "en": "Holder's physical attacks have 1.1x power.",
-      "zhHans": "物理招式威力提升10%",
-      "source": "userscript"
+      "zhHans": "力如泉涌的头带。携带后，物理招式的威力就会少量提高。",
+      "source": "pokeapi:muscle-band:sword-shield"
     }
   },
   {
@@ -1138,8 +1295,8 @@
     "name": "Mystic Water",
     "shortDesc": {
       "en": "Holder's Water-type attacks have 1.2x power.",
-      "zhHans": "携带者的水属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "水滴形状的宝石。携带后，水属性的招式威力就会提高。",
+      "source": "pokeapi:mystic-water:sword-shield"
     }
   },
   {
@@ -1147,8 +1304,8 @@
     "name": "Nest Ball",
     "shortDesc": {
       "en": "A Poke Ball that works especially well on weaker Pokemon in the wild.",
-      "zhHans": "捕捉的野生宝可梦越弱，就会越容易捕捉",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。捕捉的野生宝可梦越弱，就会越容易捕捉。",
+      "source": "pokeapi:nest-ball:sword-shield"
     }
   },
   {
@@ -1156,8 +1313,8 @@
     "name": "Net Ball",
     "shortDesc": {
       "en": "A Poke Ball that works especially well on Water- and Bug-type Pokemon.",
-      "zhHans": "能很容易地捕捉水属性和虫属性的宝可梦",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。能很容易地捕捉水属性和虫属性的宝可梦。",
+      "source": "pokeapi:net-ball:sword-shield"
     }
   },
   {
@@ -1165,8 +1322,17 @@
     "name": "Never-Melt Ice",
     "shortDesc": {
       "en": "Holder's Ice-type attacks have 1.2x power.",
-      "zhHans": "携带者的冰属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "能隔绝热量的冰。携带后，冰属性的招式威力就会提高。",
+      "source": "pokeapi:never-melt-ice:sword-shield"
+    }
+  },
+  {
+    "id": "normalgem",
+    "name": "Normal Gem",
+    "shortDesc": {
+      "en": "Holder's first successful Normal-type attack will have 1.3x power. Single use.",
+      "zhHans": "一般属性的宝石。携带后，一般属性的招式威力仅会增强１次。",
+      "source": "pokeapi:normal-gem:sword-shield"
     }
   },
   {
@@ -1174,8 +1340,8 @@
     "name": "Occa Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Fire-type attack. Single use.",
-      "zhHans": "受到效果绝佳的火属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的火属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:occa-berry:sword-shield"
     }
   },
   {
@@ -1183,8 +1349,8 @@
     "name": "Oran Berry",
     "shortDesc": {
       "en": "Restores 10 HP when at 1/2 max HP or less. Single use.",
-      "zhHans": "HP低于50%时回复10HP。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以回复１０ＨＰ。",
+      "source": "pokeapi:oran-berry:sword-shield"
     }
   },
   {
@@ -1192,8 +1358,8 @@
     "name": "Oval Stone",
     "shortDesc": {
       "en": "Evolves Happiny into Chansey when held and leveled up during the day.",
-      "zhHans": "小福蛋携带后在白天升级可以进化为吉利蛋",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像珠子一般圆润。",
+      "source": "pokeapi:oval-stone:sword-shield"
     }
   },
   {
@@ -1201,8 +1367,8 @@
     "name": "Passho Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Water-type attack. Single use.",
-      "zhHans": "受到效果绝佳的水属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的水属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:passho-berry:sword-shield"
     }
   },
   {
@@ -1210,8 +1376,8 @@
     "name": "Payapa Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Psychic-type attack. Single use.",
-      "zhHans": "受到效果绝佳的超能力属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的超能力属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:payapa-berry:sword-shield"
     }
   },
   {
@@ -1219,8 +1385,8 @@
     "name": "Pecha Berry",
     "shortDesc": {
       "en": "Holder is cured if it is poisoned. Single use.",
-      "zhHans": "解除中毒状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以治愈中毒。",
+      "source": "pokeapi:pecha-berry:sword-shield"
     }
   },
   {
@@ -1228,8 +1394,8 @@
     "name": "Persim Berry",
     "shortDesc": {
       "en": "Holder is cured if it is confused. Single use.",
-      "zhHans": "解除混乱状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以治愈混乱。",
+      "source": "pokeapi:persim-berry:sword-shield"
     }
   },
   {
@@ -1237,8 +1403,8 @@
     "name": "Petaya Berry",
     "shortDesc": {
       "en": "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
-      "zhHans": "HP低于25%时特攻提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，危机时，自己的特攻就会提高。",
+      "source": "pokeapi:petaya-berry:sword-shield"
     }
   },
   {
@@ -1246,8 +1412,8 @@
     "name": "Pixie Plate",
     "shortDesc": {
       "en": "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.",
-      "zhHans": "携带者的妖精属性招式威力变为 1.2 倍。制裁光砾变为妖精属性。",
-      "source": "pattern"
+      "zhHans": "妖精属性的石板。携带后，妖精属性的招式威力就会增强。",
+      "source": "pokeapi:pixie-plate:sword-shield"
     }
   },
   {
@@ -1255,8 +1421,8 @@
     "name": "Poison Barb",
     "shortDesc": {
       "en": "Holder's Poison-type attacks have 1.2x power.",
-      "zhHans": "携带者的毒属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "有毒的小针。携带后，毒属性的招式威力就会提高。",
+      "source": "pokeapi:poison-barb:sword-shield"
     }
   },
   {
@@ -1264,8 +1430,8 @@
     "name": "Poke Ball",
     "shortDesc": {
       "en": "A device for catching wild Pokemon. It is designed as a capsule system.",
-      "zhHans": "胶囊样式的用于投向野生宝可梦并将其捕捉的球",
-      "source": "userscript"
+      "zhHans": "用于投向野生宝可梦并将其捕捉的球。它是胶囊样式的。",
+      "source": "pokeapi:poke-ball:sword-shield"
     }
   },
   {
@@ -1273,8 +1439,8 @@
     "name": "Pomeg Berry",
     "shortDesc": {
       "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
-      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
-      "source": "userscript"
+      "zhHans": "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但ＨＰ的基础点数会降低。",
+      "source": "pokeapi:pomeg-berry:sword-shield"
     }
   },
   {
@@ -1282,8 +1448,8 @@
     "name": "Power Anklet",
     "shortDesc": {
       "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
-      "zhHans": "速度减半。笨拙特性不能无视减半效果",
-      "source": "userscript"
+      "zhHans": "虽然携带后速度会降低，但宝可梦的速度会比平时成长得更高。",
+      "source": "pokeapi:power-anklet:sword-shield"
     }
   },
   {
@@ -1291,8 +1457,8 @@
     "name": "Power Band",
     "shortDesc": {
       "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
-      "zhHans": "速度减半。笨拙特性不能无视减半效果",
-      "source": "userscript"
+      "zhHans": "虽然携带后速度会降低，但宝可梦的特防会比平时成长得更高。",
+      "source": "pokeapi:power-band:sword-shield"
     }
   },
   {
@@ -1300,8 +1466,8 @@
     "name": "Power Belt",
     "shortDesc": {
       "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
-      "zhHans": "速度减半。笨拙特性不能无视减半效果",
-      "source": "userscript"
+      "zhHans": "虽然携带后速度会降低，但宝可梦的防御会比平时成长得更高。",
+      "source": "pokeapi:power-belt:sword-shield"
     }
   },
   {
@@ -1309,8 +1475,8 @@
     "name": "Power Bracer",
     "shortDesc": {
       "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
-      "zhHans": "速度减半。笨拙特性不能无视减半效果",
-      "source": "userscript"
+      "zhHans": "虽然携带后速度会降低，但宝可梦的攻击会比平时成长得更高。",
+      "source": "pokeapi:power-bracer:sword-shield"
     }
   },
   {
@@ -1318,8 +1484,8 @@
     "name": "Power Herb",
     "shortDesc": {
       "en": "Holder's two-turn moves complete in one turn (except Sky Drop). Single use.",
-      "zhHans": "有1次机会可以在第1回合使出需要蓄力的招式(自由落体除外)。使用后消失",
-      "source": "userscript"
+      "zhHans": "携带它的宝可梦仅有１次机会可以在第１回合使出需要蓄力的招式。",
+      "source": "pokeapi:power-herb:sword-shield"
     }
   },
   {
@@ -1327,8 +1493,8 @@
     "name": "Power Lens",
     "shortDesc": {
       "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
-      "zhHans": "速度减半。笨拙特性不能无视减半效果",
-      "source": "userscript"
+      "zhHans": "虽然携带后速度会降低，但宝可梦的特攻会比平时成长得更高。",
+      "source": "pokeapi:power-lens:sword-shield"
     }
   },
   {
@@ -1336,8 +1502,8 @@
     "name": "Power Weight",
     "shortDesc": {
       "en": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
-      "zhHans": "速度减半。笨拙特性不能无视减半效果",
-      "source": "userscript"
+      "zhHans": "虽然携带后速度会降低，但宝可梦的ＨＰ会比平时成长得更高。",
+      "source": "pokeapi:power-weight:sword-shield"
     }
   },
   {
@@ -1345,8 +1511,17 @@
     "name": "Premier Ball",
     "shortDesc": {
       "en": "A rare Poke Ball that has been crafted to commemorate an event.",
-      "zhHans": "为了纪念某些事件的稀有的精灵球",
-      "source": "userscript"
+      "zhHans": "有点珍贵的球。特制出来的某种纪念品。",
+      "source": "pokeapi:premier-ball:sword-shield"
+    }
+  },
+  {
+    "id": "prismscale",
+    "name": "Prism Scale",
+    "shortDesc": {
+      "en": "Evolves Feebas into Milotic when traded.",
+      "zhHans": "能让某些特定宝可梦进化的神奇鳞片。散发着虹色光辉。",
+      "source": "pokeapi:prism-scale:sword-shield"
     }
   },
   {
@@ -1354,8 +1529,17 @@
     "name": "Protective Pads",
     "shortDesc": {
       "en": "Holder's moves are protected from adverse contact effects, except Pickpocket.",
-      "zhHans": "使用接触类招式攻击时，不会受到本应受到的效果，对顺手牵羊特性无效",
-      "source": "userscript"
+      "zhHans": "不会受到触碰攻击对手时本应受到的效果。",
+      "source": "pokeapi:protective-pads:sword-shield"
+    }
+  },
+  {
+    "id": "protector",
+    "name": "Protector",
+    "shortDesc": {
+      "en": "Evolves Rhydon into Rhyperior when traded.",
+      "zhHans": "某种护具。非常坚硬而且沉重。某种宝可梦很喜欢它。",
+      "source": "pokeapi:protector:sword-shield"
     }
   },
   {
@@ -1363,8 +1547,8 @@
     "name": "Psychic Seed",
     "shortDesc": {
       "en": "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use.",
-      "zhHans": "当场地为精神场地时特防提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在精神场地上使用，特防就会提高。",
+      "source": "pokeapi:psychic-seed:sword-shield"
     }
   },
   {
@@ -1381,8 +1565,8 @@
     "name": "Qualot Berry",
     "shortDesc": {
       "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
-      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
-      "source": "userscript"
+      "zhHans": "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但防御的基础点数会降低。",
+      "source": "pokeapi:qualot-berry:sword-shield"
     }
   },
   {
@@ -1390,8 +1574,8 @@
     "name": "Quick Ball",
     "shortDesc": {
       "en": "A Poke Ball that provides a better catch rate at the start of a wild encounter.",
-      "zhHans": "在战斗开始时使用捕获成功率更高的特殊的精灵球",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。如果战斗开始后立刻使用，就能很容易地捉到宝可梦。",
+      "source": "pokeapi:quick-ball:sword-shield"
     }
   },
   {
@@ -1399,8 +1583,8 @@
     "name": "Quick Claw",
     "shortDesc": {
       "en": "Each turn, holder has a 20% chance to move first in its priority bracket.",
-      "zhHans": "20%概率优先使用招式",
-      "source": "userscript"
+      "zhHans": "又轻又尖锐的爪子。携带后，有时能比对手先一步行动。",
+      "source": "pokeapi:quick-claw:sword-shield"
     }
   },
   {
@@ -1408,8 +1592,8 @@
     "name": "Rare Bone",
     "shortDesc": {
       "en": "No competitive use other than when used with Fling.",
-      "zhHans": "在宝可梦考古学上非常贵重的骨头，可以在商店高价出售",
-      "source": "userscript"
+      "zhHans": "在宝可梦考古学上非常贵重的骨头。可以在商店高价出售。",
+      "source": "pokeapi:rare-bone:sword-shield"
     }
   },
   {
@@ -1417,8 +1601,8 @@
     "name": "Rawst Berry",
     "shortDesc": {
       "en": "Holder is cured if it is burned. Single use.",
-      "zhHans": "解除灼伤状态。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以治愈灼伤。",
+      "source": "pokeapi:rawst-berry:sword-shield"
     }
   },
   {
@@ -1426,8 +1610,13 @@
     "name": "Razor Claw",
     "shortDesc": {
       "en": "Holder's critical hit ratio is raised by 1 stage.",
-      "zhHans": "击中要害等级提升1级",
-      "source": "userscript"
+      "zhHans": "尖锐的爪子。携带后，招式会变得容易击中要害。",
+      "source": "pokeapi:razor-claw:sword-shield"
+    },
+    "desc": {
+      "en": "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night.",
+      "zhHans": "尖锐的爪子。携带后，招式会变得容易击中要害。",
+      "source": "pokeapi:razor-claw:sword-shield"
     }
   },
   {
@@ -1435,8 +1624,22 @@
     "name": "Razor Fang",
     "shortDesc": {
       "en": "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
-      "zhHans": "使用不会陷入畏缩状态的攻击招式时有10%几率使目标进入畏缩状态",
-      "source": "userscript"
+      "zhHans": "尖锐的牙齿。携带后，在给予伤害时，有时会让对手畏缩。",
+      "source": "pokeapi:razor-fang:sword-shield"
+    },
+    "desc": {
+      "en": "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
+      "zhHans": "尖锐的牙齿。携带后，在给予伤害时，有时会让对手畏缩。",
+      "source": "pokeapi:razor-fang:sword-shield"
+    }
+  },
+  {
+    "id": "reapercloth",
+    "name": "Reaper Cloth",
+    "shortDesc": {
+      "en": "Evolves Dusclops into Dusknoir when traded.",
+      "zhHans": "蕴含着惊人强大灵力的布。某种宝可梦很喜欢它。",
+      "source": "pokeapi:reaper-cloth:sword-shield"
     }
   },
   {
@@ -1444,8 +1647,8 @@
     "name": "Red Card",
     "shortDesc": {
       "en": "If holder survives a hit, attacker is forced to switch to a random ally. Single use.",
-      "zhHans": "受到伤害后攻击方随机交换任意宝可梦。使用后消失",
-      "source": "userscript"
+      "zhHans": "有着神奇力量的卡片。携带后，能让使用了招式的对手退场。",
+      "source": "pokeapi:red-card:sword-shield"
     }
   },
   {
@@ -1453,8 +1656,8 @@
     "name": "Repeat Ball",
     "shortDesc": {
       "en": "A Poke Ball that works well on Pokemon species that were previously caught.",
-      "zhHans": "对于以前捕获过的宝可梦效果特别好的特殊的球",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。能很容易地捕捉以前曾捉到过的宝可梦。",
+      "source": "pokeapi:repeat-ball:sword-shield"
     }
   },
   {
@@ -1462,8 +1665,8 @@
     "name": "Ribbon Sweet",
     "shortDesc": {
       "en": "Evolves Milcery into Alcremie when held and spun around.",
-      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
-      "source": "userscript"
+      "zhHans": "蝴蝶结形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+      "source": "pokeapi:ribbon-sweet:sword-shield"
     }
   },
   {
@@ -1471,8 +1674,8 @@
     "name": "Rindo Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Grass-type attack. Single use.",
-      "zhHans": "受到效果绝佳的草属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的草属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:rindo-berry:sword-shield"
     }
   },
   {
@@ -1480,8 +1683,8 @@
     "name": "Ring Target",
     "shortDesc": {
       "en": "The holder's type immunities granted solely by its typing are negated.",
-      "zhHans": "受到攻击时，不会出现因属性相性引发的没有效果",
-      "source": "userscript"
+      "zhHans": "原本因宝可梦的属性相克关系而无效的招式现在会变得能够击中自己。",
+      "source": "pokeapi:ring-target:sword-shield"
     }
   },
   {
@@ -1489,8 +1692,8 @@
     "name": "Rocky Helmet",
     "shortDesc": {
       "en": "If holder is hit by a contact move, the attacker loses 1/6 of its max HP.",
-      "zhHans": "受到接触类招式时对手失去1/6最大HP",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在受到打击招式攻击时，能给予对手伤害。",
+      "source": "pokeapi:rocky-helmet:sword-shield"
     }
   },
   {
@@ -1498,8 +1701,8 @@
     "name": "Room Service",
     "shortDesc": {
       "en": "If Trick Room is active, the holder's Speed is lowered by 1 stage. Single use.",
-      "zhHans": "携带后，在戏法空间使用时，速度会下降1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在戏法空间使用时，速度会下降。",
+      "source": "pokeapi:room-service:sword-shield"
     }
   },
   {
@@ -1507,8 +1710,8 @@
     "name": "Roseli Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Fairy-type attack. Single use.",
-      "zhHans": "受到效果绝佳的妖精属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的妖精属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:roseli-berry:sword-shield"
     }
   },
   {
@@ -1516,8 +1719,8 @@
     "name": "Rowap Berry",
     "shortDesc": {
       "en": "If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.",
-      "zhHans": "受到特殊招式攻击时对手损伤1/8的HP。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，在受到特殊招式攻击时，能给予对手伤害。",
+      "source": "pokeapi:rowap-berry:sword-shield"
     }
   },
   {
@@ -1525,8 +1728,8 @@
     "name": "Rusted Shield",
     "shortDesc": {
       "en": "If held by a Zamazenta, this item changes its forme to Crowned Shield.",
-      "zhHans": "藏玛然特携带后，在对战中会以藏玛然特-盾之王形态登场",
-      "source": "userscript"
+      "zhHans": "据说很久以前，英雄就是拿着这面盾驱走了灾厄。而现在早已变得锈迹斑斑。",
+      "source": "pokeapi:rusted-shield:sword-shield"
     }
   },
   {
@@ -1534,8 +1737,8 @@
     "name": "Rusted Sword",
     "shortDesc": {
       "en": "If held by a Zacian, this item changes its forme to Crowned Sword.",
-      "zhHans": "苍响携带后，在对战中会以苍响-剑之王形态登场",
-      "source": "userscript"
+      "zhHans": "据说很久以前，英雄就是拿着这把剑驱走了灾厄。而现在早已变得锈迹斑斑。",
+      "source": "pokeapi:rusted-sword:sword-shield"
     }
   },
   {
@@ -1543,8 +1746,8 @@
     "name": "Safari Ball",
     "shortDesc": {
       "en": "A special Poke Ball that is used only in the Safari Zone and Great Marsh.",
-      "zhHans": "仅能在狩猎地带和大湿地中使用的特殊的球,上面有迷彩花纹",
-      "source": "userscript"
+      "zhHans": "曾在关都地区的狩猎地带以及神奥地区的大湿地被使用。是一种特殊的球。",
+      "source": "pokeapi:safari-ball:sword-shield"
     }
   },
   {
@@ -1552,8 +1755,8 @@
     "name": "Safety Goggles",
     "shortDesc": {
       "en": "Holder is immune to powder moves and damage from Sandstorm or Hail.",
-      "zhHans": "免疫沙暴和冰雹天气造成的伤害",
-      "source": "userscript"
+      "zhHans": "不单是天气造成的伤害，就连粉末类招式的效果也能防御的护目镜。",
+      "source": "pokeapi:safety-goggles:sword-shield"
     }
   },
   {
@@ -1561,8 +1764,8 @@
     "name": "Salac Berry",
     "shortDesc": {
       "en": "Raises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.",
-      "zhHans": "HP低于25%时速度提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，危机时，自己的速度就会提高。",
+      "source": "pokeapi:salac-berry:sword-shield"
     }
   },
   {
@@ -1570,8 +1773,8 @@
     "name": "Scope Lens",
     "shortDesc": {
       "en": "Holder's critical hit ratio is raised by 1 stage.",
-      "zhHans": "击中要害等级提升1级",
-      "source": "userscript"
+      "zhHans": "能看见弱点的镜片。携带它的宝可梦的招式会变得容易击中要害。",
+      "source": "pokeapi:scope-lens:sword-shield"
     }
   },
   {
@@ -1579,8 +1782,17 @@
     "name": "Sharp Beak",
     "shortDesc": {
       "en": "Holder's Flying-type attacks have 1.2x power.",
-      "zhHans": "携带者的飞行属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "又长又尖的鸟嘴。携带后，飞行属性的招式威力就会提高。",
+      "source": "pokeapi:sharp-beak:sword-shield"
+    }
+  },
+  {
+    "id": "shedshell",
+    "name": "Shed Shell",
+    "shortDesc": {
+      "en": "Holder cannot be prevented from choosing to switch out by any effect.",
+      "zhHans": "结实坚硬的空壳。携带它的宝可梦必定可以和后备的宝可梦进行替换。",
+      "source": "pokeapi:shed-shell:sword-shield"
     }
   },
   {
@@ -1588,8 +1800,8 @@
     "name": "Shell Bell",
     "shortDesc": {
       "en": "After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon.",
-      "zhHans": "造成伤害后回复伤害量的1/8HP",
-      "source": "userscript"
+      "zhHans": "当携带它的宝可梦攻击对手并造成伤害时，能回复少量ＨＰ。",
+      "source": "pokeapi:shell-bell:sword-shield"
     }
   },
   {
@@ -1597,8 +1809,13 @@
     "name": "Shiny Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像光芒一样耀眼。",
+      "source": "pokeapi:shiny-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像光芒一样耀眼。",
+      "source": "pokeapi:shiny-stone:sword-shield"
     }
   },
   {
@@ -1606,8 +1823,8 @@
     "name": "Shuca Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Ground-type attack. Single use.",
-      "zhHans": "受到效果绝佳的地面属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的地面属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:shuca-berry:sword-shield"
     }
   },
   {
@@ -1615,8 +1832,8 @@
     "name": "Silk Scarf",
     "shortDesc": {
       "en": "Holder's Normal-type attacks have 1.2x power.",
-      "zhHans": "携带者的一般属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "手感不错的围巾。携带后，一般属性的招式威力就会提高。",
+      "source": "pokeapi:silk-scarf:sword-shield"
     }
   },
   {
@@ -1624,8 +1841,8 @@
     "name": "Silver Powder",
     "shortDesc": {
       "en": "Holder's Bug-type attacks have 1.2x power.",
-      "zhHans": "携带者的虫属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "散发着银色光辉的粉末。携带后，虫属性的招式威力就会提高。",
+      "source": "pokeapi:silver-powder:sword-shield"
     }
   },
   {
@@ -1633,8 +1850,8 @@
     "name": "Sitrus Berry",
     "shortDesc": {
       "en": "Restores 1/4 max HP when at 1/2 max HP or less. Single use.",
-      "zhHans": "HP低于50%时回复1/4最大HP。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，可以回复少量ＨＰ。",
+      "source": "pokeapi:sitrus-berry:sword-shield"
     }
   },
   {
@@ -1642,8 +1859,8 @@
     "name": "Sky Plate",
     "shortDesc": {
       "en": "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
-      "zhHans": "携带者的飞行属性招式威力变为 1.2 倍。制裁光砾变为飞行属性。",
-      "source": "pattern"
+      "zhHans": "飞行属性的石板。携带后，飞行属性的招式威力就会增强。",
+      "source": "pokeapi:sky-plate:sword-shield"
     }
   },
   {
@@ -1651,8 +1868,8 @@
     "name": "Smooth Rock",
     "shortDesc": {
       "en": "Holder's use of Sandstorm lasts 8 turns instead of 5.",
-      "zhHans": "引起的沙暴天气从5回合延长至8回合",
-      "source": "userscript"
+      "zhHans": "携带它的宝可梦使出沙暴的话，沙暴的时间就会比平时更长。",
+      "source": "pokeapi:smooth-rock:sword-shield"
     }
   },
   {
@@ -1660,8 +1877,8 @@
     "name": "Snowball",
     "shortDesc": {
       "en": "Raises holder's Attack by 1 if hit by an Ice-type attack. Single use.",
-      "zhHans": "受到冰属性招式攻击时攻击提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "一次性使用的雪球。携带它的宝可梦如果受到冰属性招式攻击，攻击就会提高。",
+      "source": "pokeapi:snowball:sword-shield"
     }
   },
   {
@@ -1669,8 +1886,8 @@
     "name": "Soft Sand",
     "shortDesc": {
       "en": "Holder's Ground-type attacks have 1.2x power.",
-      "zhHans": "携带者的地面属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "手感细腻的沙子。携带后，地面属性的招式威力就会提高。",
+      "source": "pokeapi:soft-sand:sword-shield"
     }
   },
   {
@@ -1678,8 +1895,8 @@
     "name": "Soul Dew",
     "shortDesc": {
       "en": "If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power.",
-      "zhHans": "拉帝亚斯/拉帝欧斯携带后龙属性和超能力属性招式威力提升20%",
-      "source": "userscript"
+      "zhHans": "让拉帝欧斯或拉帝亚斯携带后，超能力和龙属性的招式威力就会提高的神奇珠子。",
+      "source": "pokeapi:soul-dew:sword-shield"
     }
   },
   {
@@ -1687,8 +1904,8 @@
     "name": "Spell Tag",
     "shortDesc": {
       "en": "Holder's Ghost-type attacks have 1.2x power.",
-      "zhHans": "携带者的幽灵属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "古怪可怕的咒符。携带后，幽灵属性的招式威力就会提高。",
+      "source": "pokeapi:spell-tag:sword-shield"
     }
   },
   {
@@ -1696,8 +1913,8 @@
     "name": "Splash Plate",
     "shortDesc": {
       "en": "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
-      "zhHans": "携带者的水属性招式威力变为 1.2 倍。制裁光砾变为水属性。",
-      "source": "pattern"
+      "zhHans": "水属性的石板。携带后，水属性的招式威力就会增强。",
+      "source": "pokeapi:splash-plate:sword-shield"
     }
   },
   {
@@ -1705,8 +1922,8 @@
     "name": "Spooky Plate",
     "shortDesc": {
       "en": "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
-      "zhHans": "携带者的幽灵属性招式威力变为 1.2 倍。制裁光砾变为幽灵属性。",
-      "source": "pattern"
+      "zhHans": "幽灵属性的石板。携带后，幽灵属性的招式威力就会增强。",
+      "source": "pokeapi:spooky-plate:sword-shield"
     }
   },
   {
@@ -1714,8 +1931,8 @@
     "name": "Sport Ball",
     "shortDesc": {
       "en": "A special Poke Ball for the Bug-Catching Contest.",
-      "zhHans": "在捕虫大赛上使用的特殊的球",
-      "source": "userscript"
+      "zhHans": "曽在城都地区的捕虫大赛上使用的特殊的球。",
+      "source": "pokeapi:sport-ball:sword-shield"
     }
   },
   {
@@ -1723,8 +1940,8 @@
     "name": "Starf Berry",
     "shortDesc": {
       "en": "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.",
-      "zhHans": "HP低于25%时随机提升一项能力2级。使用后消失",
-      "source": "userscript"
+      "zhHans": "让宝可梦携带后，危机时，某一项能力就会大幅提高。",
+      "source": "pokeapi:starf-berry:sword-shield"
     }
   },
   {
@@ -1732,8 +1949,8 @@
     "name": "Star Sweet",
     "shortDesc": {
       "en": "Evolves Milcery into Alcremie when held and spun around.",
-      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
-      "source": "userscript"
+      "zhHans": "星星形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+      "source": "pokeapi:star-sweet:sword-shield"
     }
   },
   {
@@ -1741,8 +1958,8 @@
     "name": "Sticky Barb",
     "shortDesc": {
       "en": "Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.",
-      "zhHans": "每回合损失1/8最大HP，受到接触类招式伤害时对手获得该道具",
-      "source": "userscript"
+      "zhHans": "携带后，每回合都会受到伤害。有时也会附着到碰到自己的对手身上。",
+      "source": "pokeapi:sticky-barb:sword-shield"
     }
   },
   {
@@ -1750,8 +1967,8 @@
     "name": "Stone Plate",
     "shortDesc": {
       "en": "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
-      "zhHans": "携带者的岩石属性招式威力变为 1.2 倍。制裁光砾变为岩石属性。",
-      "source": "pattern"
+      "zhHans": "岩石属性的石板。携带后，岩石属性的招式威力就会增强。",
+      "source": "pokeapi:stone-plate:sword-shield"
     }
   },
   {
@@ -1759,8 +1976,8 @@
     "name": "Strawberry Sweet",
     "shortDesc": {
       "en": "Evolves Milcery into Alcremie when held and spun around.",
-      "zhHans": "小仙奶携带后滑动摇杆可以进化为霜奶仙",
-      "source": "userscript"
+      "zhHans": "草莓形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+      "source": "pokeapi:strawberry-sweet:sword-shield"
     }
   },
   {
@@ -1768,8 +1985,22 @@
     "name": "Sun Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像太阳一样赤红。",
+      "source": "pokeapi:sun-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。像太阳一样赤红。",
+      "source": "pokeapi:sun-stone:sword-shield"
+    }
+  },
+  {
+    "id": "sweetapple",
+    "name": "Sweet Apple",
+    "shortDesc": {
+      "en": "Evolves Applin into Appletun when used.",
+      "zhHans": "这种神奇的苹果可以使特定的宝可梦进化。吃起来非常甜美。",
+      "source": "pokeapi:sweet-apple:sword-shield"
     }
   },
   {
@@ -1777,8 +2008,8 @@
     "name": "Tamato Berry",
     "shortDesc": {
       "en": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
-      "zhHans": "用于制作宝可方块或宝芬，被虫咬或啄食时没有效果",
-      "source": "userscript"
+      "zhHans": "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但速度的基础点数会降低。",
+      "source": "pokeapi:tamato-berry:sword-shield"
     }
   },
   {
@@ -1786,8 +2017,17 @@
     "name": "Tanga Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Bug-type attack. Single use.",
-      "zhHans": "受到效果绝佳的虫属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的虫属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:tanga-berry:sword-shield"
+    }
+  },
+  {
+    "id": "tartapple",
+    "name": "Tart Apple",
+    "shortDesc": {
+      "en": "Evolves Applin into Flapple when used.",
+      "zhHans": "这种神奇的苹果可以使特定的宝可梦进化。吃起来酸酸的。",
+      "source": "pokeapi:tart-apple:sword-shield"
     }
   },
   {
@@ -1795,8 +2035,8 @@
     "name": "Terrain Extender",
     "shortDesc": {
       "en": "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
-      "zhHans": "引起的场地从5回合延长至8回合",
-      "source": "userscript"
+      "zhHans": "当携带它的宝可梦利用招式或特性展开场地时，场地的持续时间会比平时更长。",
+      "source": "pokeapi:terrain-extender:sword-shield"
     }
   },
   {
@@ -1804,8 +2044,8 @@
     "name": "Throat Spray",
     "shortDesc": {
       "en": "Raises holder's Special Attack by 1 stage after it uses a sound move. Single use.",
-      "zhHans": "携带该道具的宝可梦使用声音的招式后，特攻提升1级。使用后消失",
-      "source": "userscript"
+      "zhHans": "使用声音相关的招式时，特攻会提高。",
+      "source": "pokeapi:throat-spray:sword-shield"
     }
   },
   {
@@ -1813,8 +2053,13 @@
     "name": "Thunder Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。有着闪电般的花纹。",
+      "source": "pokeapi:thunder-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。有着闪电般的花纹。",
+      "source": "pokeapi:thunder-stone:sword-shield"
     }
   },
   {
@@ -1822,8 +2067,8 @@
     "name": "Timer Ball",
     "shortDesc": {
       "en": "A Poke Ball that becomes better the more turns there are in a battle.",
-      "zhHans": "随着战斗回合数增加而变得更好的特殊的球",
-      "source": "userscript"
+      "zhHans": "有点与众不同的球。回合数花费得越多，宝可梦就会越容易捕捉。",
+      "source": "pokeapi:timer-ball:sword-shield"
     }
   },
   {
@@ -1831,8 +2076,8 @@
     "name": "Toxic Orb",
     "shortDesc": {
       "en": "At the end of every turn, this item attempts to badly poison the holder.",
-      "zhHans": "回合结束时进入剧毒状态",
-      "source": "userscript"
+      "zhHans": "触碰后会放出毒的神奇宝珠。携带后，在战斗时会变成剧毒状态。",
+      "source": "pokeapi:toxic-orb:sword-shield"
     }
   },
   {
@@ -1840,8 +2085,8 @@
     "name": "Toxic Plate",
     "shortDesc": {
       "en": "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
-      "zhHans": "携带者的毒属性招式威力变为 1.2 倍。制裁光砾变为毒属性。",
-      "source": "pattern"
+      "zhHans": "毒属性的石板。携带后，毒属性的招式威力就会增强。",
+      "source": "pokeapi:toxic-plate:sword-shield"
     }
   },
   {
@@ -1849,8 +2094,8 @@
     "name": "Twisted Spoon",
     "shortDesc": {
       "en": "Holder's Psychic-type attacks have 1.2x power.",
-      "zhHans": "携带者的超能力属性招式威力变为 1.2 倍。",
-      "source": "pattern"
+      "zhHans": "注入了念力的汤匙。携带后，超能力属性的招式威力就会提高。",
+      "source": "pokeapi:twisted-spoon:sword-shield"
     }
   },
   {
@@ -1858,8 +2103,17 @@
     "name": "Ultra Ball",
     "shortDesc": {
       "en": "An ultra-performance Ball that provides a higher catch rate than a Great Ball.",
-      "zhHans": "比起超级球来更容易捉到宝可梦的，性能非常不错的球",
-      "source": "userscript"
+      "zhHans": "比起超级球来更容易捉到宝可梦的，性能非常不错的球。",
+      "source": "pokeapi:ultra-ball:sword-shield"
+    }
+  },
+  {
+    "id": "upgrade",
+    "name": "Up-Grade",
+    "shortDesc": {
+      "en": "Evolves Porygon into Porygon2 when traded.",
+      "zhHans": "内部储存了各种信息的透明机器。西尔佛公司制造。",
+      "source": "pokeapi:up-grade:sword-shield"
     }
   },
   {
@@ -1867,8 +2121,13 @@
     "name": "Utility Umbrella",
     "shortDesc": {
       "en": "The holder ignores rain- and sun-based effects.",
-      "zhHans": "携带此道具的宝可梦不受大晴天和下雨的影响，对沙暴或冰雹没有效果",
-      "source": "userscript"
+      "zhHans": "携带它的宝可梦在下雨或日照很强时，不会受到天气的影响。",
+      "source": "pokeapi:utility-umbrella:sword-shield"
+    },
+    "desc": {
+      "en": "The holder ignores rain- and sun-based effects, including those of its Ability unless it is Orichalcum Pulse or Protosynthesis. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.",
+      "zhHans": "携带它的宝可梦在下雨或日照很强时，不会受到天气的影响。",
+      "source": "pokeapi:utility-umbrella:sword-shield"
     }
   },
   {
@@ -1876,8 +2135,8 @@
     "name": "Wacan Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Electric-type attack. Single use.",
-      "zhHans": "受到效果绝佳的电属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的电属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:wacan-berry:sword-shield"
     }
   },
   {
@@ -1885,8 +2144,13 @@
     "name": "Water Stone",
     "shortDesc": {
       "en": "Evolves certain species of Pokemon when used.",
-      "zhHans": "使用后可以进化某些宝可梦",
-      "source": "userscript"
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。看上去是澄蓝色的。",
+      "source": "pokeapi:water-stone:sword-shield"
+    },
+    "desc": {
+      "en": "Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.",
+      "zhHans": "能让某些特定宝可梦进化的神奇石头。看上去是澄蓝色的。",
+      "source": "pokeapi:water-stone:sword-shield"
     }
   },
   {
@@ -1894,8 +2158,8 @@
     "name": "Weakness Policy",
     "shortDesc": {
       "en": "If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.",
-      "zhHans": "受到效果绝佳的伤害时攻击和特攻提升2级。使用后消失",
-      "source": "userscript"
+      "zhHans": "被针对弱点时，攻击和特攻就会大幅提高。",
+      "source": "pokeapi:weakness-policy:sword-shield"
     }
   },
   {
@@ -1912,8 +2176,8 @@
     "name": "White Herb",
     "shortDesc": {
       "en": "Restores all lowered stat stages to 0 when one is less than 0. Single use.",
-      "zhHans": "将所有能力等级低于0的能力回复至0。使用后消失",
-      "source": "userscript"
+      "zhHans": "当携带它的宝可梦能力降低时，仅能回到之前的状态１次。",
+      "source": "pokeapi:white-herb:sword-shield"
     }
   },
   {
@@ -1921,8 +2185,17 @@
     "name": "Wide Lens",
     "shortDesc": {
       "en": "The accuracy of attacks by the holder is 1.1x.",
-      "zhHans": "命中率提升10%",
-      "source": "userscript"
+      "zhHans": "能放大观看物体的镜片。携带后，招式的命中率就会少量提高。",
+      "source": "pokeapi:wide-lens:sword-shield"
+    }
+  },
+  {
+    "id": "wikiberry",
+    "name": "Wiki Berry",
+    "shortDesc": {
+      "en": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.",
+      "zhHans": "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
+      "source": "pokeapi:wiki-berry:sword-shield"
     }
   },
   {
@@ -1930,8 +2203,8 @@
     "name": "Wise Glasses",
     "shortDesc": {
       "en": "Holder's special attacks have 1.1x power.",
-      "zhHans": "特殊招式威力提升10%",
-      "source": "userscript"
+      "zhHans": "装着很厚镜片的眼镜。携带后，特殊招式的威力就会少量提高。",
+      "source": "pokeapi:wise-glasses:sword-shield"
     }
   },
   {
@@ -1939,8 +2212,8 @@
     "name": "Yache Berry",
     "shortDesc": {
       "en": "Halves damage taken from a supereffective Ice-type attack. Single use.",
-      "zhHans": "受到效果绝佳的冰属性招式攻击时，伤害减半。使用后消耗。",
-      "source": "pattern"
+      "zhHans": "让宝可梦携带后，在受到效果绝佳的冰属性招式攻击时，能令其威力减弱。",
+      "source": "pokeapi:yache-berry:sword-shield"
     }
   },
   {
@@ -1948,8 +2221,8 @@
     "name": "Zap Plate",
     "shortDesc": {
       "en": "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
-      "zhHans": "携带者的电属性招式威力变为 1.2 倍。制裁光砾变为电属性。",
-      "source": "pattern"
+      "zhHans": "电属性的石板。携带后，电属性的招式威力就会增强。",
+      "source": "pokeapi:zap-plate:sword-shield"
     }
   },
   {
@@ -1957,8 +2230,8 @@
     "name": "Zoom Lens",
     "shortDesc": {
       "en": "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
-      "zhHans": "出招比目标慢时命中率提升20%",
-      "source": "userscript"
+      "zhHans": "当携带它的宝可梦比对手行动迟缓时，招式会变得容易命中。",
+      "source": "pokeapi:zoom-lens:sword-shield"
     }
   }
 ]

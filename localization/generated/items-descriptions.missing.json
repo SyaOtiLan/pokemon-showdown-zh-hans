@@ -5,19 +5,9 @@
     "shortDesc": "Holder's Ability cannot be changed, suppressed, or ignored by any effect."
   },
   {
-    "id": "aguavberry",
-    "name": "Aguav Berry",
-    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use."
-  },
-  {
     "id": "auspiciousarmor",
     "name": "Auspicious Armor",
     "shortDesc": "Evolves Charcadet into Armarouge when used."
-  },
-  {
-    "id": "chippedpot",
-    "name": "Chipped Pot",
-    "shortDesc": "Evolves Sinistea-Antique into Polteageist-Antique when used."
   },
   {
     "id": "covertcloak",
@@ -25,99 +15,14 @@
     "desc": "The holder is not affected by the secondary effect of another Pokemon's attack. Attacks with secondary effects that are prevented include those with a chance (even 100%) to paralyze, sleep, freeze, burn, poison, confuse, cause the holder to flinch, cause the holder's stat stages to be lowered, as well as Anchor Shot, Eerie Spell, Fling, Psychic Noise, Salt Cure, Spirit Shackle, Syrup Bomb, and Throat Chop. The effect of Sparkling Aria is prevented if the holder is the only target. Secondary effects added by King's Rock, Razor Fang, and the Poison Touch, Stench, and Toxic Chain Abilities are also prevented against the holder."
   },
   {
-    "id": "crackedpot",
-    "name": "Cracked Pot",
-    "shortDesc": "Evolves Sinistea into Polteageist when used."
-  },
-  {
-    "id": "dawnstone",
-    "name": "Dawn Stone",
-    "desc": "Evolves male Kirlia into Gallade and female Snorunt into Froslass when used."
-  },
-  {
-    "id": "dragonscale",
-    "name": "Dragon Scale",
-    "shortDesc": "Evolves Seadra into Kingdra when traded."
-  },
-  {
-    "id": "dreamball",
-    "name": "Dream Ball",
-    "shortDesc": "A Poke Ball that makes it easier to catch wild Pokémon while they're asleep."
-  },
-  {
-    "id": "dubiousdisc",
-    "name": "Dubious Disc",
-    "shortDesc": "Evolves Porygon2 into Porygon-Z when traded."
-  },
-  {
-    "id": "duskstone",
-    "name": "Dusk Stone",
-    "desc": "Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used."
-  },
-  {
-    "id": "electirizer",
-    "name": "Electirizer",
-    "shortDesc": "Evolves Electabuzz into Electivire when traded."
-  },
-  {
-    "id": "figyberry",
-    "name": "Figy Berry",
-    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use."
-  },
-  {
-    "id": "firestone",
-    "name": "Fire Stone",
-    "desc": "Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used."
-  },
-  {
-    "id": "galaricacuff",
-    "name": "Galarica Cuff",
-    "shortDesc": "Evolves Galarian Slowpoke into Galarian Slowbro when used."
-  },
-  {
-    "id": "galaricawreath",
-    "name": "Galarica Wreath",
-    "shortDesc": "Evolves Galarian Slowpoke into Galarian Slowking when used."
-  },
-  {
-    "id": "iapapaberry",
-    "name": "Iapapa Berry",
-    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use."
-  },
-  {
-    "id": "icestone",
-    "name": "Ice Stone",
-    "desc": "Evolves Alolan Sandshrew into Alolan Sandslash, Alolan Vulpix into Alolan Ninetales, Eevee into Glaceon, and Galarian Darumaka into Galarian Darmanitan when used."
-  },
-  {
-    "id": "icyrock",
-    "name": "Icy Rock",
-    "shortDesc": "Holder's use of Snowscape lasts 8 turns instead of 5."
-  },
-  {
-    "id": "kingsrock",
-    "name": "King's Rock",
-    "desc": "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded."
-  },
-  {
-    "id": "leafstone",
-    "name": "Leaf Stone",
-    "desc": "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used."
+    "id": "fairyfeather",
+    "name": "Fairy Feather",
+    "shortDesc": "Holder's Fairy-type attacks have 1.2x power."
   },
   {
     "id": "loadeddice",
     "name": "Loaded Dice",
     "desc": "The holder's moves that normally hit 2 to 5 times instead hit 4 or 5 times. If the first hit is successful, the holder's use of Triple Kick or Triple Axel hits 3 times, and Population Bomb hits 4 to 10 times, at random."
-  },
-  {
-    "id": "magmarizer",
-    "name": "Magmarizer",
-    "shortDesc": "Evolves Magmar into Magmortar when traded."
-  },
-  {
-    "id": "magoberry",
-    "name": "Mago Berry",
-    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use."
   },
   {
     "id": "maliciousarmor",
@@ -135,69 +40,9 @@
     "shortDesc": "Evolves Duraludon into Archaludon when used."
   },
   {
-    "id": "metalcoat",
-    "name": "Metal Coat",
-    "desc": "Holder's Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded."
-  },
-  {
-    "id": "moonstone",
-    "name": "Moon Stone",
-    "desc": "Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used."
-  },
-  {
-    "id": "normalgem",
-    "name": "Normal Gem",
-    "shortDesc": "Holder's first successful Normal-type attack will have 1.3x power. Single use."
-  },
-  {
     "id": "prettyfeather",
     "name": "Pretty Feather",
     "shortDesc": "Though this feather is beautiful, it's just a regular feather and has no effect."
-  },
-  {
-    "id": "prismscale",
-    "name": "Prism Scale",
-    "shortDesc": "Evolves Feebas into Milotic when traded."
-  },
-  {
-    "id": "protector",
-    "name": "Protector",
-    "shortDesc": "Evolves Rhydon into Rhyperior when traded."
-  },
-  {
-    "id": "razorclaw",
-    "name": "Razor Claw",
-    "desc": "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night."
-  },
-  {
-    "id": "razorfang",
-    "name": "Razor Fang",
-    "desc": "Holder's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Evolves Gligar into Gliscor when held and leveled up during the night."
-  },
-  {
-    "id": "reapercloth",
-    "name": "Reaper Cloth",
-    "shortDesc": "Evolves Dusclops into Dusknoir when traded."
-  },
-  {
-    "id": "shedshell",
-    "name": "Shed Shell",
-    "shortDesc": "Holder cannot be prevented from choosing to switch out by any effect."
-  },
-  {
-    "id": "shinystone",
-    "name": "Shiny Stone",
-    "desc": "Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used."
-  },
-  {
-    "id": "sunstone",
-    "name": "Sun Stone",
-    "desc": "Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used."
-  },
-  {
-    "id": "sweetapple",
-    "name": "Sweet Apple",
-    "shortDesc": "Evolves Applin into Appletun when used."
   },
   {
     "id": "syrupyapple",
@@ -205,38 +50,8 @@
     "shortDesc": "Evolves Applin into Dipplin when used."
   },
   {
-    "id": "tartapple",
-    "name": "Tart Apple",
-    "shortDesc": "Evolves Applin into Flapple when used."
-  },
-  {
-    "id": "thunderstone",
-    "name": "Thunder Stone",
-    "desc": "Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, Eelektrik into Eelektross, and Charjabug into Vikavolt when used."
-  },
-  {
     "id": "unremarkableteacup",
     "name": "Unremarkable Teacup",
     "shortDesc": "Evolves Poltchageist into Sinistcha when used."
-  },
-  {
-    "id": "upgrade",
-    "name": "Up-Grade",
-    "shortDesc": "Evolves Porygon into Porygon2 when traded."
-  },
-  {
-    "id": "utilityumbrella",
-    "name": "Utility Umbrella",
-    "desc": "The holder ignores rain- and sun-based effects, including those of its Ability unless it is Orichalcum Pulse or Protosynthesis. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder."
-  },
-  {
-    "id": "waterstone",
-    "name": "Water Stone",
-    "desc": "Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used."
-  },
-  {
-    "id": "wikiberry",
-    "name": "Wiki Berry",
-    "shortDesc": "Restores 1/3 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use."
   }
 ]
