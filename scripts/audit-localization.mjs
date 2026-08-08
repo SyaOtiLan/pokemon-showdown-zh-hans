@@ -226,14 +226,18 @@ function classifyDescriptions(category, textEntries, officialEntries, translatio
 	return {translated, missing, exactCandidates};
 }
 
-function buildDescriptionDictionary(descriptionResults, translations) {
+function buildDescriptionDictionary(descriptionResults, translations, descriptionOverrides) {
 	const exact = {};
 	const ambiguous = [];
+	const exactOverrides = descriptionOverrides._exact || {};
 	for (const [category, result] of Object.entries(descriptionResults)) {
 		for (const [english, candidates] of Object.entries(result.exactCandidates)) {
 			const uniqueZh = [...new Set(candidates.map(candidate => candidate.zhHans))];
 			if (uniqueZh.length === 1) {
 				exact[english] = uniqueZh[0];
+			} else if (exactOverrides[english]) {
+				exact[english] = exactOverrides[english];
+				ambiguous.push({category, en: english, selected: 'override-exact', candidates});
 			} else if (translations[english]) {
 				exact[english] = translations[english];
 				ambiguous.push({category, en: english, selected: 'userscript', candidates});
@@ -295,7 +299,7 @@ for (const [category, filename] of Object.entries(descriptionSources)) {
 	);
 	summary.descriptions[category] = summarizeDescriptions(descriptionResults[category]);
 }
-const descriptionDictionary = buildDescriptionDictionary(descriptionResults, translations);
+const descriptionDictionary = buildDescriptionDictionary(descriptionResults, translations, descriptionOverrides);
 summary.descriptionDictionary = {
 	entries: Object.keys(descriptionDictionary.exact).length,
 	ambiguous: descriptionDictionary.ambiguous.length,

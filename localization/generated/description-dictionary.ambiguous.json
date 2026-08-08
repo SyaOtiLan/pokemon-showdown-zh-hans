@@ -1061,7 +1061,7 @@
   {
     "category": "moves",
     "en": "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "armthrust",
@@ -1270,7 +1270,7 @@
   {
     "category": "moves",
     "en": "Prevents the target from switching for four or five turns (seven turns if the user is holding Grip Claw). Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Shed Tail, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Mortal Spin, Rapid Spin, or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "bind",
@@ -1492,7 +1492,7 @@
   {
     "category": "moves",
     "en": "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "block",
@@ -1673,7 +1673,7 @@
   {
     "category": "moves",
     "en": "If this move is successful and the user has not fainted, it steals the target's held Berry if it is holding one and eats it immediately, gaining its effects even if the user's item is being ignored. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "bugbite",
@@ -1896,7 +1896,7 @@
   {
     "category": "moves",
     "en": "Deals damage to the last opposing Pokemon to hit the user with a physical or special attack this turn equal to 1.5 times the HP lost by the user from that attack, rounded down. If the user did not lose HP from that attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical or special attack this turn.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "comeuppance",
@@ -2064,7 +2064,7 @@
   {
     "category": "moves",
     "en": "If this attack was successful and the user has not fainted, it steals the target's held item if the user is not holding one. A target with the Sticky Hold Ability does not lose its held item if it has not fainted. The target's item is not stolen if it is a Blue Orb, Red Orb, Adamant Crystal, Lustrous Globe, Griseous Core, Plate, Drive, Memory, Rusted Sword, Rusted Shield, Booster Energy, or Mask held by a Kyogre, Groudon, Dialga, Palkia, Giratina, Arceus, Genesect, Silvally, Zacian, Zamazenta, Paradox Pokemon, or Ogerpon, respectively, or if the user is one of those species and the target is holding the respective item. In this case, Paradox Pokemon include every species with the Protosynthesis and Quark Drive Abilities, except Gouging Fire, Raging Bolt, Iron Boulder, and Iron Crown. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "covet",
@@ -2739,7 +2739,7 @@
   {
     "category": "moves",
     "en": "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "feint",
@@ -2829,7 +2829,7 @@
   {
     "category": "moves",
     "en": "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "fissure",
@@ -2936,7 +2936,7 @@
   {
     "category": "moves",
     "en": "Until the end of the turn, all single-target attacks from the opposing side are redirected to the user. Such attacks are redirected to the user before they can be reflected by Magic Coat or the Magic Bounce Ability, or drawn in by the Lightning Rod or Storm Drain Abilities. Fails if it is not a Double Battle or Battle Royal. This effect is ignored while the user is under the effect of Sky Drop.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "followme",
@@ -3200,7 +3200,7 @@
   {
     "category": "moves",
     "en": "The power of this move depends on (user's weight / target's weight), rounded down. Power is equal to 120 if the result is 5 or more, 100 if 4, 80 if 3, 60 if 2, and 40 if 1 or less. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "heatcrash",
@@ -3629,7 +3629,7 @@
   {
     "category": "moves",
     "en": "The user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, is asleep at the beginning of a turn, or the attack is not successful against the target on the first turn of the effect or the second turn of a three-turn effect, the effect ends without causing confusion. If this move is called by Sleep Talk and the user is asleep, the move is used for one turn and does not confuse the user.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "outrage",
@@ -3673,7 +3673,7 @@
   {
     "category": "moves",
     "en": "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "phantomforce",
@@ -3712,7 +3712,7 @@
   {
     "category": "moves",
     "en": " + 20 power for each of the user's stat boosts.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "powertrip",
@@ -3970,7 +3970,7 @@
   {
     "category": "moves",
     "en": "Power doubles if the user's last move on the previous turn, including moves called by other moves or those used through Instruct, Magic Coat, Snatch, or the Dancer or Magic Bounce Abilities, failed to do any of its normal effects, not including damage from an unsuccessful High Jump Kick, Jump Kick, or Mind Blown, or if the user was prevented from moving by any effect other than recharging or Sky Drop. A move that was blocked by Baneful Bunker, Detect, King's Shield, Protect, Spiky Shield, Crafty Shield, Mat Block, Quick Guard, or Wide Guard will not double this move's power, nor will Bounce or Fly ending early due to the effect of Gravity, Smack Down, or Thousand Arrows.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "stompingtantrum",
@@ -4072,7 +4072,7 @@
   {
     "category": "moves",
     "en": "The user swaps its held item with the target's held item. Fails if both the user and the target have no held item, or if the user is trying to give or take a Blue Orb, Red Orb, Adamant Crystal, Lustrous Globe, Griseous Core, Plate, Drive, Memory, Rusted Sword, Rusted Shield, Booster Energy, or Mask to or from a Kyogre, Groudon, Dialga, Palkia, Giratina, Arceus, Genesect, Silvally, Zacian, Zamazenta, Paradox Pokemon, or Ogerpon, respectively. In this case, Paradox Pokemon include every species with the Protosynthesis and Quark Drive Abilities, except Gouging Fire, Raging Bolt, Iron Boulder, and Iron Crown. The target is immune to this move if it has the Sticky Hold Ability.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "switcheroo",
@@ -4206,7 +4206,7 @@
   {
     "category": "abilities",
     "en": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "armortail",
@@ -4284,7 +4284,7 @@
   {
     "category": "abilities",
     "en": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "chillingneigh",
@@ -4340,7 +4340,7 @@
   {
     "category": "abilities",
     "en": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, and confusion damage.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "emergencyexit",
@@ -4391,7 +4391,7 @@
   {
     "category": "abilities",
     "en": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "illuminate",
@@ -4442,7 +4442,7 @@
   {
     "category": "abilities",
     "en": "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down.",
-    "selected": null,
+    "selected": "override-exact",
     "candidates": [
       {
         "id": "ironbarbs",

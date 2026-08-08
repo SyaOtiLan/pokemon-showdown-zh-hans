@@ -33,8 +33,18 @@ test('runtime translates names and resolves Chinese searches to protocol IDs', (
 	assert.equal(localizer.description("Holder's Fire-type attacks have 1.2x power."), '焚烧用的燃料。携带后，火属性的招式威力就会提高。');
 	assert.equal(localizer.description("Holder's Ability cannot be changed, suppressed, or ignored by any effect."), '携带者的特性不会被改变、压制或无视。');
 	assert.equal(localizer.description('100% flinch. Fails unless target using priority attack.'), '必定畏缩。目标未使用优先度招式则失败。');
+	assert.equal(
+		localizer.description("Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times."),
+		'攻击 2～5 次。命中 2 次或 3 次的概率各为 35%，命中 4 次或 5 次的概率各为 15%。若其中一击打破目标的替身，剩余次数仍会继续造成伤害。若使用者拥有连续攻击特性，则必定攻击 5 次。若使用者携带机变骰子，则攻击 4～5 次。'
+	);
 	assert.deepEqual(Array.from(localizer.search('十万伏特', 'move')[0]), ['move', 'thunderbolt']);
 	assert.equal(localizer.catalog.species.syclar, undefined, 'CAP species must stay out of the official catalog');
+});
+
+test('ambiguous descriptions use explicit generic overrides', () => {
+	const ambiguous = JSON.parse(fs.readFileSync(path.join(root, 'localization', 'generated', 'description-dictionary.ambiguous.json')));
+	assert.equal(ambiguous.filter(entry => entry.selected === null).length, 0);
+	assert.equal(ambiguous.filter(entry => entry.selected === 'override-exact').length, 20);
 });
 
 test('runtime reuses battle rules and provides a guarded DOM observer', () => {
