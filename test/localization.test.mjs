@@ -19,6 +19,9 @@ test('official localization catalogs have complete coverage', () => {
 	for (const category of ['species', 'moves', 'abilities', 'items', 'natures']) {
 		assert.equal(coverage.catalogs[category].current.coverage, 100, category);
 	}
+	for (const category of ['moves', 'abilities', 'items']) {
+		assert.equal(coverage.descriptions[category].coverage, 100, `${category} descriptions`);
+	}
 });
 
 test('runtime translates names and resolves Chinese searches to protocol IDs', () => {
@@ -28,6 +31,8 @@ test('runtime translates names and resolves Chinese searches to protocol IDs', (
 	assert.equal(localizer.name('items', 'prettyfeather', 'Pretty Feather'), '美丽之羽');
 	assert.equal(localizer.exact('(no item)'), '（无道具）');
 	assert.equal(localizer.description("Holder's Fire-type attacks have 1.2x power."), '焚烧用的燃料。携带后，火属性的招式威力就会提高。');
+	assert.equal(localizer.description("Holder's Ability cannot be changed, suppressed, or ignored by any effect."), '携带者的特性不会被改变、压制或无视。');
+	assert.equal(localizer.description('100% flinch. Fails unless target using priority attack.'), '必定畏缩。目标未使用优先度招式则失败。');
 	assert.deepEqual(Array.from(localizer.search('十万伏特', 'move')[0]), ['move', 'thunderbolt']);
 	assert.equal(localizer.catalog.species.syclar, undefined, 'CAP species must stay out of the official catalog');
 });

@@ -85,6 +85,11 @@
       "en": "At 1/2 or less of this Pokemon's max HP: +1 Atk, Sp. Atk, Spe, and -1 Def, Sp. Def.",
       "zhHans": "HP因受到攻击变为1/2以下时，防御和特防降低1级，攻击、特攻和速度提高1级。",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Attack, Special Attack, and Speed are raised by 1 stage, and its Defense and Special Defense are lowered by 1 stage. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
+      "zhHans": "此宝可梦 HP 高于最大 HP 的 1/2 时，若受到攻击伤害后 HP 降至 1/2 或以下，攻击、特攻和速度提高 1 级，防御和特防降低 1 级。多段攻击全部命中后再结算此效果。若该招式的追加效果被强行特性移除，则此效果不会发动。",
+      "source": "override"
     }
   },
   {
@@ -122,6 +127,11 @@
       "en": "This Pokemon and its allies are protected from opposing priority moves.",
       "zhHans": "使对手无法对我方使出先制招式",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect.",
+      "zhHans": "对手宝可梦对该宝可梦或其同伴使用的先制招式不会产生效果。",
+      "source": "override"
     }
   },
   {
@@ -389,6 +399,11 @@
       "en": "If ally is Dondozo: this Pokemon cannot act or be hit, +2 to all Dondozo's stats.",
       "zhHans": "若我方有吃吼霸，则该宝可梦无法被攻击，吃吼霸全属性提高2级",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If this Pokemon is a Tatsugiri and a Dondozo is an active ally, this Pokemon goes into the Dondozo's mouth. The Dondozo has its Attack, Special Attack, Speed, Defense, and Special Defense raised by 2 stages. During the effect, the Dondozo cannot be switched out, this Pokemon cannot select an action, and attacks targeted at this Pokemon will be avoided but it will still take indirect damage. If this Pokemon faints during the effect, a Pokemon can be switched in as a replacement but the Dondozo remains unable to be switched out. If the Dondozo faints during the effect, this Pokemon regains the ability to select an action.",
+      "zhHans": "若此宝可梦是米立龙，且吃吼霸是场上的同伴，此宝可梦会进入吃吼霸口中。吃吼霸的攻击、特攻、速度、防御和特防提高 2 级。效果期间，吃吼霸不能替换，此宝可梦不能选择行动；以此宝可梦为目标的攻击会被避开，但它仍会受到间接伤害。若此宝可梦在效果期间倒下，可以换入替代宝可梦，但吃吼霸仍不能替换；若吃吼霸倒下，此宝可梦恢复选择行动的能力。",
+      "source": "override"
     }
   },
   {
@@ -707,6 +722,11 @@
       "en": "This Pokemon heals 1/4 of its max HP when hit by Ground moves; Ground immunity.",
       "zhHans": "该特性的宝可梦不受地面属性招式的影响；当被地面属性的招式击中时，回复25%最大HP",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon is immune to Ground-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Ground-type move.",
+      "zhHans": "此宝可梦不受地面属性招式影响；被地面属性招式击中时，回复最大 HP 的 1/4，向下取整。",
+      "source": "override"
     }
   },
   {
@@ -1065,6 +1085,11 @@
       "en": "Immune to Intimidate. Intimidated: +1 Attack. Cannot be forced to switch out.",
       "zhHans": "受到威吓时使物攻提升1级，令替换宝可梦的招式和道具无效",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon is immune to the effect of the Intimidate Ability and raises its Attack by 1 stage instead. This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+      "zhHans": "此宝可梦不受威吓特性影响，并改为使自身攻击提高 1 级。此宝可梦不会被其他宝可梦的攻击或道具强制替换。",
+      "source": "override"
     }
   },
   {
@@ -1551,6 +1576,11 @@
       "en": "Making contact with this Pokemon has the attacker's Ability become Lingering Aroma.",
       "zhHans": "该特性的宝可梦在受到接触类招式的攻击时，对手的特性会变成甩不掉的气味",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "Pokemon making contact with this Pokemon have their Ability changed to Lingering Aroma. Does not affect Pokemon with the As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Lingering Aroma, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, or Zero to Hero Abilities.",
+      "zhHans": "与此宝可梦接触的宝可梦特性会变为甩不掉的气味。对拥有人马一体、牵绊变身、绝对睡眠、画皮、一口导弹、结冻头、甩不掉的气味、多属性、群聚变形、AR系统、鱼群、界限盾壳、战斗切换、太晶变形、达摩模式或全能变身特性的宝可梦无效。",
+      "source": "override"
     }
   },
   {
@@ -1703,6 +1733,11 @@
       "en": "Fighting, Normal moves hit Ghost. Accuracy can't be lowered, ignores evasiveness.",
       "zhHans": "使出一般属性和格斗属性的招式时可以击中幽灵属性的宝可梦",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon can hit Ghost types with Normal- and Fighting-type moves. Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
+      "zhHans": "此宝可梦可以用一般属性和格斗属性招式击中幽灵属性目标。防止其他宝可梦降低此宝可梦的命中率能力阶级。此宝可梦无视目标的闪避率能力阶级。",
+      "source": "override"
     }
   },
   {
@@ -1837,6 +1872,11 @@
       "en": "This Pokemon's Status moves go last in their priority bracket and ignore Abilities.",
       "zhHans": "该特性的宝可梦使出变化招式时，使目标的特性失效。在同一优先度下最晚行动",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon's Status moves ignore certain Abilities of other Pokemon, and go last among Pokemon using the same or greater priority moves.",
+      "zhHans": "此宝可梦使用的变化招式会无视其他宝可梦的部分特性，并在使用相同或更高优先度招式的宝可梦之中最后行动。",
+      "source": "override"
     }
   },
   {
@@ -2101,6 +2141,11 @@
       "en": "Pecharunt: If this Pokemon poisons a target, the target also becomes confused.",
       "zhHans": "因桃歹郎的招式而陷入中毒状态的对手同时也会陷入混乱状态",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If this Pokemon is a Pecharunt and poisons or badly poisons a target, the target also becomes confused.",
+      "zhHans": "若此宝可梦是桃歹郎，且使目标中毒或剧毒，目标也会混乱。",
+      "source": "override"
     }
   },
   {
@@ -2240,6 +2285,11 @@
       "en": "Sunny Day active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.",
       "zhHans": "携带驱劲能量或天气为大晴天时，数值最高的能力会提高30%；若该项能力为速度，则会提高50%",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If Sunny Day is active or this Pokemon uses a held Booster Energy, this Pokemon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Sunny Day, a held Booster Energy will not activate and the effect ends when Sunny Day is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokemon is no longer active.",
+      "zhHans": "大晴天有效时，或此宝可梦使用携带的驱劲能量时，此宝可梦最高的能力变为 1.3 倍；若最高能力是速度，则变为 1.5 倍。发动时会计入能力阶级变化。若多项能力并列最高，按攻击、防御、特攻、特防、速度的顺序优先。若效果由大晴天发动，携带的驱劲能量不会发动，且大晴天不再有效时效果结束。若效果由驱劲能量发动，此宝可梦离场时效果结束。",
+      "source": "override"
     }
   },
   {
@@ -2281,6 +2331,11 @@
       "en": "Ghost damage to this Pokemon dealt with a halved offensive stat; can't be statused.",
       "zhHans": "该特性的宝可梦不会陷入异常状态。受到幽灵属性的攻击招式伤害减半",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon cannot become affected by a non-volatile status condition or Yawn. If a Pokemon uses a Ghost-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon.",
+      "zhHans": "此宝可梦不会陷入非易失异常状态，也不会受到哈欠影响。若其他宝可梦用幽灵属性招式攻击此宝可梦，计算伤害时攻击方使用的攻击或特攻减半。",
+      "source": "override"
     }
   },
   {
@@ -2290,6 +2345,11 @@
       "en": "Electric Terrain active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.",
       "zhHans": "携带驱劲能量或场地处于电气场地时，数值最高的能力会提高30%；若该项能力为速度，则会提高50%",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If Electric Terrain is active or this Pokemon uses a held Booster Energy, this Pokemon's highest stat is multiplied by 1.3, or by 1.5 if the highest stat is Speed. Stat stage changes are considered at the time this Ability activates. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order. If this effect was started by Electric Terrain, a held Booster Energy will not activate and the effect ends when Electric Terrain is no longer active. If this effect was started by a held Booster Energy, it ends when this Pokemon is no longer active.",
+      "zhHans": "电气场地有效时，或此宝可梦使用携带的驱劲能量时，此宝可梦最高的能力变为 1.3 倍；若最高能力是速度，则变为 1.5 倍。发动时会计入能力阶级变化。若多项能力并列最高，按攻击、防御、特攻、特防、速度的顺序优先。若效果由电气场地发动，携带的驱劲能量不会发动，且电气场地不再有效时效果结束。若效果由驱劲能量发动，此宝可梦离场时效果结束。",
+      "source": "override"
     }
   },
   {
@@ -3059,6 +3119,11 @@
       "en": "This Pokemon's moves have 10% more power for each fainted ally, up to 5 allies.",
       "zhHans": "我方每有一只宝可梦陷入过濒死，招式威力提升10%。最多触发5次",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon's moves have their power multiplied by 1+(X*0.1), where X is the total number of times any Pokemon has fainted on the user's side when this Ability became active, and X cannot be greater than 5.",
+      "zhHans": "此宝可梦的招式威力变为 1+(X*0.1) 倍，X 为此特性发动时使用者一方已经倒下的宝可梦总数，最高按 5 计算。",
+      "source": "override"
     }
   },
   {
@@ -3215,6 +3280,11 @@
       "en": "Terapagos: If full HP, attacks taken have 0.5x effectiveness unless naturally immune.",
       "zhHans": "HP全满时，如果受到的攻击招式的属性相性倍率为1或以上，将变为效果不好",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If this Pokemon is a Terapagos at full HP, the effectiveness of attacks against it is changed to 0.5 unless this Pokemon is immune to the move. Multi-hit moves retain the same effectiveness throughout the attack.",
+      "zhHans": "若此宝可梦是太乐巴戈斯且 HP 全满，攻击对它的属性相性会变为 0.5 倍，除非此宝可梦本来免疫该招式。多段攻击在整次攻击中保持同一属性相性。",
+      "source": "override"
     }
   },
   {
@@ -3247,6 +3317,11 @@
       "en": "This Pokemon's Attack is raised by 1 when damaged by Fire moves; can't be burned.",
       "zhHans": "受到火属性招式攻击时攻击提升1级；不会陷入灼伤状态",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon's Attack is raised 1 stage after it is damaged by a Fire-type move. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+      "zhHans": "此宝可梦受到火属性招式伤害后，攻击提高 1 级。此宝可梦不会灼伤；若获得此特性时已处于灼伤状态，则解除灼伤。",
+      "source": "override"
     }
   },
   {
@@ -3307,6 +3382,20 @@
       "en": "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
       "zhHans": "变为中毒状态时，物理招式的威力会提高。",
       "source": "pokeapi:toxic-boost:sword-shield"
+    }
+  },
+  {
+    "id": "toxicchain",
+    "name": "Toxic Chain",
+    "shortDesc": {
+      "en": "This Pokemon's attacks have a 30% chance of badly poisoning.",
+      "zhHans": "此宝可梦的攻击有 30% 几率使目标中剧毒。",
+      "source": "override"
+    },
+    "desc": {
+      "en": "This Pokemon's attacks have a 30% chance of badly poisoning. This effect comes before a move's inherent secondary effect chance.",
+      "zhHans": "此宝可梦的攻击有 30% 几率使目标中剧毒。此效果会先于招式本身的追加效果几率结算。",
+      "source": "override"
     }
   },
   {
@@ -3546,6 +3635,11 @@
       "en": "This Pokemon's Defense is raised 2 stages if hit by a Fire move; Fire immunity.",
       "zhHans": "受到火属性的招式攻击时，不会受到伤害，而是会提升2级防御",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon is immune to Fire-type moves and raises its Defense by 2 stages when hit by a Fire-type move.",
+      "zhHans": "此宝可梦不受火属性招式影响；被火属性招式击中时，防御提高 2 级。",
+      "source": "override"
     }
   },
   {
@@ -3578,6 +3672,11 @@
       "en": "This Pokemon gains the Charge effect when hit by a wind move or Tailwind begins.",
       "zhHans": "受到风的招式攻击或己方使用顺风时，会进入充电状态",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon gains the Charge effect when it takes a hit from a wind move or when Tailwind begins on this Pokemon's side.",
+      "zhHans": "此宝可梦受到风类招式攻击，或顺风在此宝可梦一方开始时，获得充电效果。",
+      "source": "override"
     }
   },
   {
@@ -3587,6 +3686,11 @@
       "en": "Attack raised by 1 if hit by a wind move or Tailwind begins. Wind move immunity.",
       "zhHans": "受到风的招式攻击或己方使用顺风时，提升1级攻击。不受风的招式影响。",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This Pokemon is immune to wind moves and raises its Attack by 1 stage when hit by a wind move or when Tailwind begins on this Pokemon's side.",
+      "zhHans": "此宝可梦不受风类招式影响；被风类招式击中，或顺风在此宝可梦一方开始时，攻击提高 1 级。",
+      "source": "override"
     }
   },
   {

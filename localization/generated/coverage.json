@@ -65,18 +65,18 @@
   "descriptions": {
     "moves": {
       "total": 1314,
-      "translated": 1290,
-      "coverage": 98.17
+      "translated": 1314,
+      "coverage": 100
     },
     "abilities": {
       "total": 500,
-      "translated": 480,
-      "coverage": 96
+      "translated": 500,
+      "coverage": 100
     },
     "items": {
       "total": 266,
-      "translated": 255,
-      "coverage": 95.86
+      "translated": 266,
+      "coverage": 100
     }
   },
   "descriptionSource": {
@@ -85,7 +85,7 @@
     "language": "zh-hans"
   },
   "descriptionDictionary": {
-    "entries": 1489,
-    "ambiguous": 188
+    "entries": 1538,
+    "ambiguous": 190
   }
 }

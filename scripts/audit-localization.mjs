@@ -9,6 +9,7 @@ const userscriptPath = path.join(root, 'PSChina Server Translation SV-1.7.2.txt'
 const showdownDataPath = path.join(root, 'upstream', 'pokemon-showdown', 'data');
 const pkhexTextPath = path.join(root, 'upstream', 'PKHeX', 'PKHeX.Core', 'Resources', 'text');
 const overridesPath = path.join(root, 'localization', 'overrides.zh-Hans.json');
+const descriptionOverridesPath = path.join(root, 'localization', 'description-overrides.zh-Hans.json');
 const pokeApiDescriptionsPath = path.join(root, 'localization', 'external', 'pokeapi-descriptions.zh-Hans.json');
 const outputDir = path.join(root, 'localization', 'generated');
 
@@ -195,7 +196,7 @@ function resolvePokeApiDescription(category, entry, pokeApiIndexes) {
 	return index.byId.get(String(entry.num)) || index.byIdentifier.get(identifier) || null;
 }
 
-function classifyDescriptions(category, textEntries, officialEntries, translations, pokeApiIndexes) {
+function classifyDescriptions(category, textEntries, officialEntries, translations, pokeApiIndexes, descriptionOverrides) {
 	const translated = [];
 	const missing = [];
 	const exactCandidates = {};
@@ -207,10 +208,11 @@ function classifyDescriptions(category, textEntries, officialEntries, translatio
 		const miss = {id: entry.id, name: entry.name};
 		for (const field of ['shortDesc', 'desc']) {
 			if (!entry[field]) continue;
+			const override = descriptionOverrides[category]?.[entry.id]?.[field];
 			const resolved = databaseDescription ? {
 				zhHans: databaseDescription.zhHans,
 				source: `pokeapi:${databaseDescription.identifier}:${databaseDescription.versionGroup}`,
-			} : (translations[entry[field]] ? {zhHans: translations[entry[field]], source: 'userscript'} : null);
+			} : (override ? {zhHans: override, source: 'override'} : (translations[entry[field]] ? {zhHans: translations[entry[field]], source: 'userscript'} : null));
 			if (resolved) {
 				out[field] = {en: entry[field], zhHans: resolved.zhHans, source: resolved.source};
 				(exactCandidates[entry[field]] ||= []).push({id: entry.id, zhHans: resolved.zhHans, source: resolved.source});
@@ -255,6 +257,7 @@ function summarizeDescriptions(result) {
 const translations = readUserscriptDictionary();
 const pkhexLists = readPkhexLists();
 const overrides = JSON.parse(fs.readFileSync(overridesPath, 'utf8'));
+const descriptionOverrides = JSON.parse(fs.readFileSync(descriptionOverridesPath, 'utf8'));
 const pokeApiDescriptions = readPokeApiDescriptionCache();
 const sources = {
 	species: 'pokedex.ts',
@@ -288,6 +291,7 @@ for (const [category, filename] of Object.entries(descriptionSources)) {
 		officialEntries,
 		translations,
 		pokeApiDescriptions.indexes,
+		descriptionOverrides,
 	);
 	summary.descriptions[category] = summarizeDescriptions(descriptionResults[category]);
 }

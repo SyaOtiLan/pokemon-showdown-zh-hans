@@ -1895,6 +1895,23 @@
   },
   {
     "category": "moves",
+    "en": "Deals damage to the last opposing Pokemon to hit the user with a physical or special attack this turn equal to 1.5 times the HP lost by the user from that attack, rounded down. If the user did not lose HP from that attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical or special attack this turn.",
+    "selected": null,
+    "candidates": [
+      {
+        "id": "comeuppance",
+        "zhHans": "对本回合最后用物理或特殊攻击命中使用者的对手造成伤害，伤害等于使用者因此失去 HP 的 1.5 倍，向下取整。若使用者未因此失去 HP，则造成 1 点伤害。若该对手的位置已不存在且场上有另一只对手宝可梦，则伤害转向该宝可梦。多段攻击只计算最后一击。若本回合使用者未被对手的物理或特殊攻击命中则失败。",
+        "source": "override"
+      },
+      {
+        "id": "metalburst",
+        "zhHans": "使出招式前，将最后受到的招式的伤害大力返还给对手。",
+        "source": "pokeapi:metal-burst:sword-shield"
+      }
+    ]
+  },
+  {
+    "category": "moves",
     "en": "Causes the target to become confused.",
     "selected": "userscript",
     "candidates": [
@@ -3625,6 +3642,11 @@
         "source": "pokeapi:petal-dance:sword-shield"
       },
       {
+        "id": "ragingfury",
+        "zhHans": "使用者会连续 2 到 3 回合使出此招式，并在效果最后一回合行动后立即混乱；若已经混乱则不会重复混乱。每回合随机以一只对手宝可梦为目标。若使用者无法行动、回合开始时处于睡眠，或攻击在效果第一回合或三回合效果的第二回合未成功命中目标，则效果结束且不会混乱。若此招式由梦话调用且使用者处于睡眠，则只使用一回合且不会使使用者混乱。",
+        "source": "override"
+      },
+      {
         "id": "thrash",
         "zhHans": "在２～３回合内，乱打一气地攻击对手。大闹一番后自己会陷入混乱。",
         "source": "pokeapi:thrash:sword-shield"
@@ -3947,6 +3969,23 @@
   },
   {
     "category": "moves",
+    "en": "Power doubles if the user's last move on the previous turn, including moves called by other moves or those used through Instruct, Magic Coat, Snatch, or the Dancer or Magic Bounce Abilities, failed to do any of its normal effects, not including damage from an unsuccessful High Jump Kick, Jump Kick, or Mind Blown, or if the user was prevented from moving by any effect other than recharging or Sky Drop. A move that was blocked by Baneful Bunker, Detect, King's Shield, Protect, Spiky Shield, Crafty Shield, Mat Block, Quick Guard, or Wide Guard will not double this move's power, nor will Bounce or Fly ending early due to the effect of Gravity, Smack Down, or Thousand Arrows.",
+    "selected": null,
+    "candidates": [
+      {
+        "id": "stompingtantrum",
+        "zhHans": "化悔恨为力量进行攻击。如果上一回合招式没有打中，威力就会翻倍。",
+        "source": "pokeapi:stomping-tantrum:sword-shield"
+      },
+      {
+        "id": "temperflare",
+        "zhHans": "若使用者上一回合最后使用的招式未能产生正常效果，则此招式威力加倍；由其他招式调用、通过号令、魔法反射、抢夺、舞者或魔法镜使用的招式也计入。飞膝踢、飞踢、惊爆大头失败造成的伤害不计入；因需要恢复精力或自由落体以外的效果导致无法行动时也会触发。被碉堡、看穿、王者盾牌、守住、尖刺防守、戏法防守、掀榻榻米、快速防守或广域防守挡下时不会加倍；弹跳或飞翔因重力、击落、千箭齐发提前结束时也不会加倍。",
+        "source": "override"
+      }
+    ]
+  },
+  {
+    "category": "moves",
     "en": "20% chance to confuse the target.",
     "selected": "userscript",
     "candidates": [
@@ -4166,6 +4205,28 @@
   },
   {
     "category": "abilities",
+    "en": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect.",
+    "selected": null,
+    "candidates": [
+      {
+        "id": "armortail",
+        "zhHans": "对手宝可梦对该宝可梦或其同伴使用的先制招式不会产生效果。",
+        "source": "override"
+      },
+      {
+        "id": "dazzling",
+        "zhHans": "让对手吓一跳，使其无法对我方使出先制招式。",
+        "source": "pokeapi:dazzling:sword-shield"
+      },
+      {
+        "id": "queenlymajesty",
+        "zhHans": "向对手施加威慑力，使其无法对我方使出先制招式。",
+        "source": "pokeapi:queenly-majesty:sword-shield"
+      }
+    ]
+  },
+  {
+    "category": "abilities",
     "en": "No competitive use.",
     "selected": "userscript",
     "candidates": [
@@ -4256,23 +4317,6 @@
         "id": "whitesmoke",
         "zhHans": "被白色烟雾保护着，不会被对手降低能力。",
         "source": "pokeapi:white-smoke:sword-shield"
-      }
-    ]
-  },
-  {
-    "category": "abilities",
-    "en": "Priority moves used by opposing Pokemon targeting this Pokemon or its allies are prevented from having an effect.",
-    "selected": null,
-    "candidates": [
-      {
-        "id": "dazzling",
-        "zhHans": "让对手吓一跳，使其无法对我方使出先制招式。",
-        "source": "pokeapi:dazzling:sword-shield"
-      },
-      {
-        "id": "queenlymajesty",
-        "zhHans": "向对手施加威慑力，使其无法对我方使出先制招式。",
-        "source": "pokeapi:queenly-majesty:sword-shield"
       }
     ]
   },

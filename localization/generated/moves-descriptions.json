@@ -1049,6 +1049,11 @@
       "en": "Protects from damaging attacks. Contact: burn.",
       "zhHans": "进入守住状态，这期间受到接触类招式时令攻击方陷入灼伤",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user become burned. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+      "zhHans": "本回合使用者防住大多数其他宝可梦的攻击，试图接触使用者的宝可梦会灼伤。变化招式可穿过此保护。此招式成功使用后，下次连续使用的成功率为 1/X，X 从 1 开始且每次成功后变为 3 倍；若招式失败、上次使用的招式不是守住类招式，或守住类招式的保护被破坏，X 重置为 1。若使用者本回合最后行动则失败。",
+      "source": "override"
     }
   },
   {
@@ -1086,6 +1091,11 @@
       "en": "Sets a layer of Spikes on the opposing side.",
       "zhHans": "令目标场地变为撒菱状态",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in, unless it is a Flying-type Pokemon or has the Levitate Ability. A maximum of three layers may be set, and opponents lose 1/8 of their maximum HP with one layer, 1/6 of their maximum HP with two layers, and 1/4 of their maximum HP with three layers, all rounded down. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+      "zhHans": "招式成功时，在对手场地撒下撒菱；对手宝可梦替换上场时会受到伤害，飞行属性或拥有飘浮特性的宝可梦除外。最多可叠加三层，一层、两层、三层分别造成最大 HP 的 1/8、1/6、1/4 伤害，向下取整。可被大扫除移除，也可在对手成功使用晶光转转、高速旋转、清除浓雾，或被清除浓雾击中时移除。",
+      "source": "override"
     }
   },
   {
@@ -1174,6 +1184,11 @@
       "en": "User loses 50% max HP.",
       "zhHans": "使用后损失50%最大HP",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If this move is successful, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard or Rock Head Abilities.",
+      "zhHans": "招式成功时，使用者失去自身最大 HP 的 1/2，向上取整；拥有魔法防守或坚硬脑袋特性时不会失去 HP。",
+      "source": "override"
     }
   },
   {
@@ -1290,6 +1305,11 @@
       "en": "If hit by an attack, returns 1.5x damage.",
       "zhHans": "如果因攻击而受到伤害，则返还1.5倍的伤害",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "Deals damage to the last opposing Pokemon to hit the user with a physical or special attack this turn equal to 1.5 times the HP lost by the user from that attack, rounded down. If the user did not lose HP from that attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical or special attack this turn.",
+      "zhHans": "对本回合最后用物理或特殊攻击命中使用者的对手造成伤害，伤害等于使用者因此失去 HP 的 1.5 倍，向下取整。若使用者未因此失去 HP，则造成 1 点伤害。若该对手的位置已不存在且场上有另一只对手宝可梦，则伤害转向该宝可梦。多段攻击只计算最后一击。若本回合使用者未被对手的物理或特殊攻击命中则失败。",
+      "source": "override"
     }
   },
   {
@@ -1803,6 +1823,11 @@
       "en": "User and ally's Abilities become target's Ability.",
       "zhHans": "将自身和同伴的特性转变为目标的特性",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "The user and its ally's Abilities change to match the target's Ability. Does not change Ability if the user's or its ally's is As One, Battle Bond, Comatose, Disguise, Gulp Missile, Ice Face, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Tera Shift, Zen Mode, Zero to Hero, or already matches the target. Fails if both the user and its ally's Ability already matches the target, or if the target's Ability is As One, Battle Bond, Comatose, Commander, Disguise, Embody Aspect, Flower Gift, Forecast, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Neutralizing Gas, Poison Puppeteer, Power Construct, Power of Alchemy, Protosynthesis, Quark Drive, Receiver, RKS System, Schooling, Shields Down, Stance Change, Tera Shell, Tera Shift, Teraform Zero, Trace, Wonder Guard, Zen Mode, or Zero to Hero.",
+      "zhHans": "使用者及其同伴的特性会变为目标的特性。若使用者或同伴的特性为人马一体、牵绊变身、绝对睡眠、画皮、一口导弹、结冻头、多属性、群聚变形、AR系统、鱼群、界限盾壳、战斗切换、太晶变形、达摩模式、全能变身，或已经与目标相同，则不会改变。若使用者和同伴都已是目标特性，或目标特性属于不可复制的特性，则失败。",
+      "source": "override"
     }
   },
   {
@@ -1938,6 +1963,11 @@
       "en": "Ally: Crit ratio +1, or +2 if ally is Dragon type.",
       "zhHans": "令所有同伴的击中要害率提升1级。龙属性同伴改为提升2级",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "Raises the target's chance for a critical hit by 1 stage, or by 2 stages if the target is Dragon type. Fails if there is no ally adjacent to the user, or if the target already has this effect or the Focus Energy effect. Baton Pass can be used to transfer this effect to an ally.",
+      "zhHans": "使目标的击中要害率提高 1 级；若目标为龙属性，则提高 2 级。若使用者相邻位置没有同伴，或目标已处于此效果或聚气效果下，则失败。接棒可以将此效果传给同伴。",
+      "source": "override"
     }
   },
   {
@@ -2272,6 +2302,11 @@
       "en": "Raises Sp. Atk by 1, hits turn 2. Rain: no charge.",
       "zhHans": "第一回合进行蓄力，在第二回合发动招式。雨天时不需蓄力",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "This attack charges on the first turn and executes on the second. Raises the user's Special Attack by 1 stage on the first turn. If the user is holding a Power Herb or the weather is Primordial Sea or Rain Dance, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Primordial Sea or Rain Dance, the move still requires a turn to charge.",
+      "zhHans": "第一回合蓄力，第二回合攻击。蓄力回合会使使用者的特攻提高 1 级。若使用者携带强力香草，或天气为始源之海、下雨，则一回合内完成。若使用者携带万能伞且天气为始源之海或下雨，仍需要蓄力一回合。",
+      "source": "override"
     }
   },
   {
@@ -4247,6 +4282,11 @@
       "en": "High critical hit ratio. Type depends on user's form.",
       "zhHans": "容易击中要害。该招式的属性会根据使用者的形态而改变",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "Has a higher chance for a critical hit. If the user is an Ogerpon, this move's type changes depending on its form. Water type for Wellspring Mask, Fire type for Hearthflame Mask, and Rock type for Cornerstone Mask.",
+      "zhHans": "容易击中要害。若使用者是厄诡椪，此招式属性会随形态改变：水井面具为水属性，火灶面具为火属性，础石面具为岩石属性。",
+      "source": "override"
     }
   },
   {
@@ -5299,6 +5339,11 @@
       "en": "Curly|Droopy|Stretchy eaten: +1 Atk|Def|Spe.",
       "zhHans": "上弓提升攻击1级，下垂提升防御1级，平挺提升速度1级",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If an ally Tatsugiri has activated its Commander Ability, this move raises the user's Attack by 1 stage if the Tatsugiri is Curly Form, Defense by 1 stage if Droopy Form, or Speed by 1 stage if Stretchy Form. The effect happens even if the Tatsugiri that activated the effect has since fainted.",
+      "zhHans": "若同伴米立龙已发动发号施令特性，则根据米立龙形态提升使用者能力：上弓姿势提高攻击 1 级，下垂姿势提高防御 1 级，平挺姿势提高速度 1 级。即使发动效果的米立龙之后倒下，此效果仍会发生。",
+      "source": "override"
     }
   },
   {
@@ -5676,6 +5721,11 @@
       "en": "Hits 10 times. Each hit can miss.",
       "zhHans": "攻击10次，每次攻击都可能被闪避",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "Hits ten times. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit ten times. If the user is holding Loaded Dice, this move hits four to ten times at random without checking accuracy between hits.",
+      "zhHans": "连续攻击 10 次。每一击都会分别进行命中判定，目标避开任意一击时攻击结束。若其中一击打破目标的替身，剩余次数仍会继续造成伤害。若使用者拥有连续攻击特性，则必定攻击 10 次。若使用者携带机变骰子，则随机攻击 4 到 10 次，且中途不再逐次判定命中。",
+      "source": "override"
     }
   },
   {
@@ -5908,6 +5958,11 @@
       "en": "For 2 turns, the target is prevented from healing.",
       "zhHans": "使目标在2回合内陷入回复封锁状态",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "For 2 turns, the target is prevented from restoring any HP as long as it remains active. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. If an affected Pokemon uses Baton Pass, the replacement will remain unable to restore its HP. Pain Split and the Regenerator Ability are unaffected.",
+      "zhHans": "在 2 回合内，只要目标仍在场，就无法回复 HP。效果期间，回复和吸取类招式无法使用，能提供回复的特性和道具也不会回复 HP。受影响的宝可梦使用接棒时，替换上场的宝可梦仍无法回复 HP。分担痛楚和再生力特性不受影响。",
+      "source": "override"
     }
   },
   {
@@ -6085,6 +6140,11 @@
       "en": "+50 power for each time user was hit. Max 6 hits.",
       "zhHans": "使用者每受到一次攻击，招式的威力增加50，最大为350。",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "Power is equal to 50+(X*50), where X is the total number of times the user has been hit by a damaging attack during the battle, even if the user did not lose HP from the attack. X cannot be greater than 6 and does not reset upon switching out or fainting. Each hit of a multi-hit attack is counted, but confusion damage is not counted.",
+      "zhHans": "威力等于 50+(X*50)，X 为使用者在本场对战中被伤害招式击中的总次数，即使没有损失 HP 也会计入。X 最高为 6，替换下场或倒下不会重置。多段攻击每一击都会计入，混乱造成的伤害不计入。",
+      "source": "override"
     }
   },
   {
@@ -6108,6 +6168,11 @@
       "en": "Destroys screens. Type depends on user's form.",
       "zhHans": "招式的属性随形态改变，可以破坏光墙和反射壁等招式",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated. If the user's current form is a Paldean Tauros, this move's type changes to match. Fighting type for Combat Breed, Fire type for Blaze Breed, and Water type for Aqua Breed.",
+      "zhHans": "若攻击没有落空，在伤害计算前解除目标一方场地上的反射壁、光墙和极光幕。若使用者当前形态为帕底亚肯泰罗，此招式属性会随形态改变：斗战种为格斗属性，火炽种为火属性，水澜种为水属性。",
+      "source": "override"
     }
   },
   {
@@ -6117,6 +6182,11 @@
       "en": "Lasts 2-3 turns. Confuses the user afterwards.",
       "zhHans": "持续2～3回合，乱打一通后陷入混乱",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "The user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, is asleep at the beginning of a turn, or the attack is not successful against the target on the first turn of the effect or the second turn of a three-turn effect, the effect ends without causing confusion. If this move is called by Sleep Talk and the user is asleep, the move is used for one turn and does not confuse the user.",
+      "zhHans": "使用者会连续 2 到 3 回合使出此招式，并在效果最后一回合行动后立即混乱；若已经混乱则不会重复混乱。每回合随机以一只对手宝可梦为目标。若使用者无法行动、回合开始时处于睡眠，或攻击在效果第一回合或三回合效果的第二回合未成功命中目标，则效果结束且不会混乱。若此招式由梦话调用且使用者处于睡眠，则只使用一回合且不会使使用者混乱。",
+      "source": "override"
     }
   },
   {
@@ -6848,6 +6918,11 @@
       "en": "User takes 1/2 its max HP to pass a substitute.",
       "zhHans": "削减1/2HP制造分身，并和后备宝可梦进行替换",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "The user takes 1/2 of its maximum HP, rounded up, and creates a substitute that has 1/4 of the user's maximum HP, rounded down. The user is replaced with another Pokemon in its party and the selected Pokemon has the substitute transferred to it. Fails if the user would faint, or if there are no unfainted party members.",
+      "zhHans": "使用者消耗自身最大 HP 的 1/2，向上取整，并制造一个拥有使用者最大 HP 1/4 的替身，向下取整。随后使用者与队伍中的另一只宝可梦替换，替换上场的宝可梦继承该替身。若使用者会因此倒下，或队伍中没有未倒下的后备宝可梦，则失败。",
+      "source": "override"
     }
   },
   {
@@ -6950,6 +7025,11 @@
       "en": "Protects from damaging attacks. Contact: -1 Spe.",
       "zhHans": "免受对手攻击，并使接触到的对手的速度降低1级",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Speed lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+      "zhHans": "本回合使用者防住大多数其他宝可梦的攻击，试图接触使用者的宝可梦速度降低 1 级。变化招式可穿过此保护。此招式成功使用后，下次连续使用的成功率为 1/X，X 从 1 开始且每次成功后变为 3 倍；若招式失败、上次使用的招式不是守住类招式，或守住类招式的保护被破坏，X 重置为 1。若使用者本回合最后行动则失败。",
+      "source": "override"
     }
   },
   {
@@ -7233,6 +7313,11 @@
       "en": "For 5 turns, snow falls. Ice: 1.5x Def.",
       "zhHans": "使天气变为雪景，持续5回合",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "For 5 turns, the weather becomes Snow. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
+      "zhHans": "在 5 回合内，天气变为下雪。效果期间，冰属性宝可梦受到物理攻击伤害时防御按 1.5 倍计算。若使用者携带冰冷岩石，则持续 8 回合。若当前天气已是下雪则失败。",
+      "source": "override"
     }
   },
   {
@@ -7624,6 +7709,11 @@
       "en": "Sets Stealth Rock on the target's side.",
       "zhHans": "令目标场地进入隐形岩状态",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+      "zhHans": "招式成功时，在对手场地设置隐形岩；对手宝可梦替换上场时会受到伤害。根据其对岩石属性的抗性造成最大 HP 的 1/32、1/16、1/8、1/4 或 1/2 伤害，分别对应 0.25 倍、0.5 倍、1 倍、2 倍或 4 倍，向下取整。可被大扫除移除，也可在对手成功使用晶光转转、高速旋转、清除浓雾，或被清除浓雾击中时移除。",
+      "source": "override"
     }
   },
   {
@@ -7824,6 +7914,11 @@
       "en": "User is hurt by 50% of its max HP if it misses.",
       "zhHans": "如果招式未命中则使用者失去50%最大HP",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+      "zhHans": "若攻击未成功，使用者因撞击反作用力失去自身最大 HP 的一半，向下取整。拥有魔法防守特性的宝可梦不会受到反作用力伤害。若目标在场时使用过变小，此招式伤害加倍且不进行命中判定。",
+      "source": "override"
     }
   },
   {
@@ -8210,6 +8305,11 @@
       "en": "Power doubles if the user's last move failed.",
       "zhHans": "如果使用者的上一次攻击使用失败，此招式威力翻倍",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "Power doubles if the user's last move on the previous turn, including moves called by other moves or those used through Instruct, Magic Coat, Snatch, or the Dancer or Magic Bounce Abilities, failed to do any of its normal effects, not including damage from an unsuccessful High Jump Kick, Jump Kick, or Mind Blown, or if the user was prevented from moving by any effect other than recharging or Sky Drop. A move that was blocked by Baneful Bunker, Detect, King's Shield, Protect, Spiky Shield, Crafty Shield, Mat Block, Quick Guard, or Wide Guard will not double this move's power, nor will Bounce or Fly ending early due to the effect of Gravity, Smack Down, or Thousand Arrows.",
+      "zhHans": "若使用者上一回合最后使用的招式未能产生正常效果，则此招式威力加倍；由其他招式调用、通过号令、魔法反射、抢夺、舞者或魔法镜使用的招式也计入。飞膝踢、飞踢、惊爆大头失败造成的伤害不计入；因需要恢复精力或自由落体以外的效果导致无法行动时也会触发。被碉堡、看穿、王者盾牌、守住、尖刺防守、戏法防守、掀榻榻米、快速防守或广域防守挡下时不会加倍；弹跳或飞翔因重力、击落、千箭齐发提前结束时也不会加倍。",
+      "source": "override"
     }
   },
   {
@@ -8219,6 +8319,11 @@
       "en": "If Terastallized: Phys. if Atk > SpA, type = Tera.",
       "zhHans": "太晶化后变为太晶属性。此时若攻击大于特攻，变为物理招式",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "If the user is Terastallized, this move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes, and this move's type becomes the same as the user's Tera Type. In addition, if the user's Tera Type is Stellar, this move has 100 power, is super effective against Terastallized targets and neutral against other targets, and lowers the user's Attack and Special Attack by 1 stage.",
+      "zhHans": "若使用者已太晶化，当使用者的攻击高于特攻时，此招式变为物理招式，能力阶级也计入比较；招式属性变为使用者的太晶属性。此外，若使用者的太晶属性为星晶，此招式威力变为 100，对太晶化目标效果绝佳，对其他目标为一般效果，并使使用者的攻击和特攻降低 1 级。",
+      "source": "override"
     }
   },
   {
@@ -8438,6 +8543,11 @@
       "en": "User +1 Atk, Spe. Clears all substitutes/hazards.",
       "zhHans": "自身提升1级攻击和速度。消除所有替身/入场生效状态",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "Raises the user's Attack and Speed by 1 stage. Removes substitutes from all active Pokemon and ends the effects of Spikes, Stealth Rock, Sticky Web, and Toxic Spikes for both sides.",
+      "zhHans": "使用者的攻击和速度提高 1 级。移除场上所有宝可梦的替身，并清除双方场地上的撒菱、隐形岩、黏黏网和毒菱。",
+      "source": "override"
     }
   },
   {
@@ -8690,6 +8800,20 @@
       "en": "Has a 20% chance to make the target flinch. Power doubles if the target is using Bounce, Fly, or Sky Drop, or is under the effect of Sky Drop.",
       "zhHans": "兴起龙卷风，将对手卷入进行攻击。有时会使对手畏缩。",
       "source": "pokeapi:twister:sword-shield"
+    }
+  },
+  {
+    "id": "upperhand",
+    "name": "Upper Hand",
+    "shortDesc": {
+      "en": "100% flinch. Fails unless target using priority attack.",
+      "zhHans": "必定畏缩。目标未使用优先度招式则失败。",
+      "source": "override"
+    },
+    "desc": {
+      "en": "Has a 100% chance to make the target flinch. Fails if the target did not select a physical or special attack for use this turn with altered priority greater than 0, or if the target moves before the user.",
+      "zhHans": "必定使目标畏缩。若目标本回合没有选择优先度大于 0 的物理或特殊攻击招式，或目标先于使用者行动，则失败。",
+      "source": "override"
     }
   },
   {

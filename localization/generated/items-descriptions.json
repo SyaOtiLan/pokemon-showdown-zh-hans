@@ -1,5 +1,14 @@
 [
   {
+    "id": "abilityshield",
+    "name": "Ability Shield",
+    "shortDesc": {
+      "en": "Holder's Ability cannot be changed, suppressed, or ignored by any effect.",
+      "zhHans": "携带者的特性不会被改变、压制或无视。",
+      "source": "override"
+    }
+  },
+  {
     "id": "absorbbulb",
     "name": "Absorb Bulb",
     "shortDesc": {
@@ -78,6 +87,15 @@
       "en": "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
       "zhHans": "会变得富有攻击性的背心。虽然携带后特防会提高，但会无法使出变化招式。",
       "source": "pokeapi:assault-vest:sword-shield"
+    }
+  },
+  {
+    "id": "auspiciousarmor",
+    "name": "Auspicious Armor",
+    "shortDesc": {
+      "en": "Evolves Charcadet into Armarouge when used.",
+      "zhHans": "使用后可使炭小侍进化为红莲铠骑。",
+      "source": "override"
     }
   },
   {
@@ -348,6 +366,11 @@
       "en": "Holder is not affected by the secondary effect of another Pokemon's attack.",
       "zhHans": "不受其他宝可梦的招式追加效果影响",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "The holder is not affected by the secondary effect of another Pokemon's attack. Attacks with secondary effects that are prevented include those with a chance (even 100%) to paralyze, sleep, freeze, burn, poison, confuse, cause the holder to flinch, cause the holder's stat stages to be lowered, as well as Anchor Shot, Eerie Spell, Fling, Psychic Noise, Salt Cure, Spirit Shackle, Syrup Bomb, and Throat Chop. The effect of Sparkling Aria is prevented if the holder is the only target. Secondary effects added by King's Rock, Razor Fang, and the Poison Touch, Stench, and Toxic Chain Abilities are also prevented against the holder.",
+      "zhHans": "携带者不受其他宝可梦攻击招式的追加效果影响。会被防止的追加效果包括一定几率或必定造成麻痹、睡眠、冰冻、灼伤、中毒、混乱、畏缩、能力阶级降低的效果，以及掷锚、诡异咒语、投掷、精神噪音、盐腌、缝影、糖浆炸弹和地狱突刺。若携带者是泡影的咏叹调的唯一目标，其效果也会被防止。王者之证、锐利之牙，以及毒手、恶臭、毒锁链特性追加的效果也不会影响携带者。",
+      "source": "override"
     }
   },
   {
@@ -556,6 +579,15 @@
       "en": "Holder's attacks that are super effective against the target do 1.2x damage.",
       "zhHans": "用惯了的黑色带子。携带后，效果绝佳时的招式威力就会少量提高。",
       "source": "pokeapi:expert-belt:sword-shield"
+    }
+  },
+  {
+    "id": "fairyfeather",
+    "name": "Fairy Feather",
+    "shortDesc": {
+      "en": "Holder's Fairy-type attacks have 1.2x power.",
+      "zhHans": "携带者的妖精属性招式威力变为 1.2 倍。",
+      "source": "override"
     }
   },
   {
@@ -1053,6 +1085,11 @@
       "en": "Holder's moves that hit 2-5 times hit 4-5 times; Population Bomb hits 4-10 times.",
       "zhHans": "在使用连续攻击2～5次的招式或鼠数儿时，至少攻击4次",
       "source": "userscript"
+    },
+    "desc": {
+      "en": "The holder's moves that normally hit 2 to 5 times instead hit 4 or 5 times. If the first hit is successful, the holder's use of Triple Kick or Triple Axel hits 3 times, and Population Bomb hits 4 to 10 times, at random.",
+      "zhHans": "携带者原本攻击 2 到 5 次的招式改为攻击 4 或 5 次。若第一击成功，三连踢或三旋击会攻击 3 次，鼠数儿会随机攻击 4 到 10 次。",
+      "source": "override"
     }
   },
   {
@@ -1155,6 +1192,15 @@
     }
   },
   {
+    "id": "maliciousarmor",
+    "name": "Malicious Armor",
+    "shortDesc": {
+      "en": "Evolves Charcadet into Ceruledge when used.",
+      "zhHans": "使用后可使炭小侍进化为苍炎刃鬼。",
+      "source": "override"
+    }
+  },
+  {
     "id": "marangaberry",
     "name": "Maranga Berry",
     "shortDesc": {
@@ -1173,6 +1219,15 @@
     }
   },
   {
+    "id": "masterpieceteacup",
+    "name": "Masterpiece Teacup",
+    "shortDesc": {
+      "en": "Evolves Poltchageist-Artisan into Sinistcha-Masterpiece when used.",
+      "zhHans": "使用后可使来悲粗茶-杰作的样子进化为怖思壶-杰作的样子。",
+      "source": "override"
+    }
+  },
+  {
     "id": "meadowplate",
     "name": "Meadow Plate",
     "shortDesc": {
@@ -1188,6 +1243,15 @@
       "en": "Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use.",
       "zhHans": "当携带它的宝可梦无法自由使出招式时，仅会回复１次。",
       "source": "pokeapi:mental-herb:sword-shield"
+    }
+  },
+  {
+    "id": "metalalloy",
+    "name": "Metal Alloy",
+    "shortDesc": {
+      "en": "Evolves Duraludon into Archaludon when used.",
+      "zhHans": "使用后可使铝钢龙进化为铝钢桥龙。",
+      "source": "override"
     }
   },
   {
@@ -1513,6 +1577,15 @@
       "en": "A rare Poke Ball that has been crafted to commemorate an event.",
       "zhHans": "有点珍贵的球。特制出来的某种纪念品。",
       "source": "pokeapi:premier-ball:sword-shield"
+    }
+  },
+  {
+    "id": "prettyfeather",
+    "name": "Pretty Feather",
+    "shortDesc": {
+      "en": "Though this feather is beautiful, it's just a regular feather and has no effect.",
+      "zhHans": "虽然很漂亮，但只是普通的羽毛，没有任何效果。",
+      "source": "override"
     }
   },
   {
@@ -2004,6 +2077,15 @@
     }
   },
   {
+    "id": "syrupyapple",
+    "name": "Syrupy Apple",
+    "shortDesc": {
+      "en": "Evolves Applin into Dipplin when used.",
+      "zhHans": "使用后可使啃果虫进化为裹蜜虫。",
+      "source": "override"
+    }
+  },
+  {
     "id": "tamatoberry",
     "name": "Tamato Berry",
     "shortDesc": {
@@ -2105,6 +2187,15 @@
       "en": "An ultra-performance Ball that provides a higher catch rate than a Great Ball.",
       "zhHans": "比起超级球来更容易捉到宝可梦的，性能非常不错的球。",
       "source": "pokeapi:ultra-ball:sword-shield"
+    }
+  },
+  {
+    "id": "unremarkableteacup",
+    "name": "Unremarkable Teacup",
+    "shortDesc": {
+      "en": "Evolves Poltchageist into Sinistcha when used.",
+      "zhHans": "使用后可使来悲粗茶进化为怖思壶。",
+      "source": "override"
     }
   },
   {

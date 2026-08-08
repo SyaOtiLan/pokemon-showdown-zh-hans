@@ -25,7 +25,7 @@ node scripts/audit-localization.mjs
 - `description-dictionary.ambiguous.json`：同一句英文说明对应多个 PokeAPI 官方中文说明时的候选记录，避免误套到错误对象。
 - `*-descriptions.json` / `*-descriptions.missing.json`：按 Showdown 内部 ID 归档的说明翻译和缺失说明，便于后续补齐。
 
-名称人工校对项放在 `overrides.zh-Hans.json`，界面补充项放在 `ui-overrides.zh-Hans.json`；它们优先级高于其他来源，不直接修改上游数据。
+名称人工校对项放在 `overrides.zh-Hans.json`，说明文本补充项放在 `description-overrides.zh-Hans.json`，界面补充项放在 `ui-overrides.zh-Hans.json`；它们不直接修改上游数据。说明文本的优先级为：PokeAPI ID 对齐、ID 级说明补充、旧油猴脚本通用译文。
 
 报告同时统计全部历史数据和未标记 `isNonstandard` 的当前数据。UI 与动态战斗句式不在这份名称覆盖率中，后续单独审计。
 
